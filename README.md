@@ -7,7 +7,7 @@
 
 ## 🚀 Features
 
-- 🧠 **Machine Learning-based Detection** (trained on NSL-KDD)
+- 🧠 **Machine Learning-based Detection** (trained on Custom Data Set)
 - 🌐 **Real-time Network Traffic Monitoring**
 - 🔍 **Detects:**
   - Port scanning
