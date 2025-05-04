@@ -23,3 +23,25 @@
 ## NOTE: This is a work on progress project.
 
 ---
+## 👨‍💻 Developers
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/dollarboysushil.png" width="100" /><br />
+      <b>Sushil Poudel</b><br />
+      <a href="https://dollarboysushil.com">Portfolio</a><br />
+      🎓 Final Year Computer Engineering Student<br />
+      🛡️ CPTS Certified | Cybersecurity Enthusiast
+    </td>
+    <td align="center">
+      <img src="https://github.com/sulavghimiree.png" width="100" /><br />
+      <b>Sulav Ghimire</b><br />
+      <a href="https://github.com/sulavghimiree">GitHub Profile</a><br />
+      🎓 Final Year Computer Engineering Student<br />
+      🔭 Passionate about AI & System Design
+    </td>
+  </tr>
+</table>
+
+---
