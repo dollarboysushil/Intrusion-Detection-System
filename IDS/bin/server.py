@@ -18,7 +18,7 @@ class SimpleHandler(BaseHTTPRequestHandler):
         self.wfile.write(b"Received")
 
 if __name__ == "__main__":
-    server_address = ("", 8080)
+    server_address = ("", 8000)
     httpd = HTTPServer(server_address, SimpleHandler)
     print("Listening on port 8080...")
     httpd.serve_forever()

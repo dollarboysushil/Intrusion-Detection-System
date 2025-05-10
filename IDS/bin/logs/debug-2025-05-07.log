@@ -1,0 +1,58 @@
+2025-05-07 00:49:19 INFO  cic.cs.unb.ca.ifm.Cmd    You select: captures\20250507_004902_converted.pcap
+2025-05-07 00:49:19 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: csv_output
+2025-05-07 00:49:20 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-07 00:49:20 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on captures\20250507_004902_converted.pcap
+2025-05-07 00:49:31 INFO  cic.cs.unb.ca.ifm.Cmd    You select: captures\20250507_004920_converted.pcap
+2025-05-07 00:49:31 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: csv_output
+2025-05-07 00:49:32 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-07 00:49:32 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*84 5c f3 2a  2c 5e f0 c8  14 e1 f5 39  08 06 00 01*   .\.*,^.....9....
+0010: 08 00 06 04  00 01 f0 c8  14 e1 f5 39  c0 a8 10 01    ...........9....
+0020: 00 00 00 00  00 00 c0 a8  10 68*                      .........h      
+
+
+2025-05-07 00:49:32 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on captures\20250507_004920_converted.pcap
+2025-05-07 00:49:44 INFO  cic.cs.unb.ca.ifm.Cmd    You select: captures\20250507_004933_converted.pcap
+2025-05-07 00:49:44 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: csv_output
+2025-05-07 00:49:44 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-07 00:49:45 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on captures\20250507_004933_converted.pcap
+2025-05-07 00:49:57 INFO  cic.cs.unb.ca.ifm.Cmd    You select: captures\20250507_004946_converted.pcap
+2025-05-07 00:49:57 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: csv_output
+2025-05-07 00:49:57 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-07 00:49:58 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 17 flow
+2025-05-07 00:49:58 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 17 flow
+2025-05-07 00:49:58 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 19 flow
+2025-05-07 00:49:58 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 20 flow
+2025-05-07 00:49:58 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 21 flow
+2025-05-07 00:49:58 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on captures\20250507_004946_converted.pcap
+2025-05-07 00:50:10 INFO  cic.cs.unb.ca.ifm.Cmd    You select: captures\20250507_004959_converted.pcap
+2025-05-07 00:50:10 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: csv_output
+2025-05-07 00:50:10 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-07 00:50:10 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on captures\20250507_004959_converted.pcap
+2025-05-07 00:50:22 INFO  cic.cs.unb.ca.ifm.Cmd    You select: captures\20250507_005011_converted.pcap
+2025-05-07 00:50:22 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: csv_output
+2025-05-07 00:50:22 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-07 00:50:23 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 13 flow
+2025-05-07 00:50:23 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on captures\20250507_005011_converted.pcap
+2025-05-07 00:50:35 INFO  cic.cs.unb.ca.ifm.Cmd    You select: captures\20250507_005024_converted.pcap
+2025-05-07 00:50:35 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: csv_output
+2025-05-07 00:50:35 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-07 00:50:35 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 15 flow
+2025-05-07 00:50:35 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 15 flow
+2025-05-07 00:50:35 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on captures\20250507_005024_converted.pcap
+2025-05-07 00:50:48 INFO  cic.cs.unb.ca.ifm.Cmd    You select: captures\20250507_005037_converted.pcap
+2025-05-07 00:50:48 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: csv_output
+2025-05-07 00:50:48 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-07 00:50:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*84 5c f3 2a  2c 5e f0 c8  14 e1 f5 39  08 06 00 01*   .\.*,^.....9....
+0010: 08 00 06 04  00 01 f0 c8  14 e1 f5 39  c0 a8 10 01    ...........9....
+0020: 00 00 00 00  00 00 c0 a8  10 68*                      .........h      
+
+
+2025-05-07 00:50:48 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on captures\20250507_005037_converted.pcap
+2025-05-07 00:51:00 INFO  cic.cs.unb.ca.ifm.Cmd    You select: captures\20250507_005049_converted.pcap
+2025-05-07 00:51:00 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: csv_output
+2025-05-07 00:51:00 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-05-07 00:51:01 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on captures\20250507_005049_converted.pcap
