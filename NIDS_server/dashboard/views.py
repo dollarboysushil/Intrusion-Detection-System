@@ -7,7 +7,7 @@ from datetime import timedelta
 from ml_model.predict import predict_intrusion
 import json
 from collections import defaultdict
-
+from django.db.models import Count, Case, When, IntegerField
 # Create your views here.
 
 def dashboard(request):
@@ -36,23 +36,15 @@ def attack_dashboard(request):
     return render(request, 'attack_dashboard.html')
 
 def get_attack_data(request):
-    """API endpoint to fetch attack data for the chart"""
+    """API endpoint to fetch attack data for the chart - optimized for performance"""
     # Get records from the last 5 minutes
     end_time = timezone.now()
     start_time = end_time - timedelta(minutes=5)
     
-    # Round the times to the nearest 30-second interval to create stable time buckets
-    # This ensures consistency between refreshes
+    # Round the times to the nearest 30-second interval
     seconds = start_time.second
     microseconds = start_time.microsecond
-    # Round down to the nearest 30-second mark
     start_time = start_time - timedelta(seconds=seconds % 30, microseconds=microseconds)
-    
-    # Query all records in the time range
-    records = IntrusionRecord.objects.filter(
-        detected__gte=start_time,
-        detected__lte=end_time
-    ).order_by('detected')
     
     # Define the interval (30 seconds)
     interval = timedelta(seconds=30)
@@ -70,46 +62,41 @@ def get_attack_data(request):
         })
         current_interval += interval
     
-    # Initialize the data structure for counting attacks
+    # Initialize data structure
     attack_counts = {
-        'labels': [],
+        'labels': [interval['label'] for interval in intervals],
         'datasets': {
-            'DDoS': [],
-            'PortScan': [],
-            'Other': []  # For all other attack types
+            'DDoS': [0] * 10,
+            'PortScan': [0] * 10,
+            'Other': [0] * 10
         }
     }
     
-    # Pre-calculate counts for all intervals
-    interval_counts = {}
-    for interval in intervals:
-        # Count records in this interval
-        interval_records = records.filter(
+    # Use optimized database query with single query using group by
+    for i, interval in enumerate(intervals):
+        # Get counts for each attack type in this interval using annotations
+        counts = IntrusionRecord.objects.filter(
             detected__gte=interval['start'],
             detected__lt=interval['end']
+        ).aggregate(
+            ddos_count=Count(Case(
+                When(attack='DDoS', then=1),
+                output_field=IntegerField()
+            )),
+            portscan_count=Count(Case(
+                When(attack='PortScan', then=1),
+                output_field=IntegerField()
+            )),
+            other_count=Count(Case(
+                When(attack__in=['DDoS', 'PortScan'], then=None),
+                default=1,
+                output_field=IntegerField()
+            ))
         )
         
-        # Count by attack type
-        counts = {'DDoS': 0, 'PortScan': 0, 'Other': 0}
-        for record in interval_records:
-            if record.attack == 'DDoS':
-                counts['DDoS'] += 1
-            elif record.attack == 'PortScan':
-                counts['PortScan'] += 1
-            else:
-                counts['Other'] += 1
-                
-        interval_counts[interval['label']] = counts
-    
-    # Populate the data structure in order
-    for interval in intervals:
-        label = interval['label']
-        attack_counts['labels'].append(label)
-        counts = interval_counts[label]
-        
-        attack_counts['datasets']['DDoS'].append(counts['DDoS'])
-        attack_counts['datasets']['PortScan'].append(counts['PortScan'])
-        attack_counts['datasets']['Other'].append(counts['Other'])
+        attack_counts['datasets']['DDoS'][i] = counts['ddos_count']
+        attack_counts['datasets']['PortScan'][i] = counts['portscan_count']
+        attack_counts['datasets']['Other'][i] = counts['other_count']
     
     # Format for Chart.js
     chart_data = {

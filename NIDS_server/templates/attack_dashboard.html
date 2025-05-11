@@ -138,6 +138,7 @@
       // Chart configuration
       let ctx = document.getElementById("attackTrendsChart").getContext("2d");
       let attackChart;
+      let lastUpdateTime = 0;
 
       // Function to initialize the chart
       function initChart(data) {
@@ -189,22 +190,49 @@
               mode: "nearest",
               intersect: false,
             },
+            animation: {
+              duration: 200, // Faster animations
+            },
           },
         });
       }
 
-      // Function to update the chart
+      // Enhanced update function with data comparison and minimal updates
       function updateChart() {
-        fetch('{% url "get_attack_data" %}')
+        // Add cache-busting parameter to avoid browser caching
+        const cacheBuster = new Date().getTime();
+        fetch(`{% url "get_attack_data" %}?_=${cacheBuster}`, {
+          cache: "no-store", // Force fresh data
+        })
           .then((response) => response.json())
           .then((data) => {
             if (attackChart) {
-              // Update existing chart
+              // Skip animation if updates are frequent
+              const now = Date.now();
+              const useAnimation = now - lastUpdateTime > 1000;
+              lastUpdateTime = now;
+
+              // Update existing chart with minimal animation for frequent updates
               attackChart.data.labels = data.labels;
               attackChart.data.datasets.forEach((dataset, index) => {
                 dataset.data = data.datasets[index].data;
               });
-              attackChart.update();
+
+              if (useAnimation) {
+                attackChart.update();
+              } else {
+                attackChart.update("none"); // No animation for rapid updates
+              }
+
+              // Visual indicator of update
+              document
+                .querySelector(".status-dot")
+                .classList.add("status-update");
+              setTimeout(() => {
+                document
+                  .querySelector(".status-dot")
+                  .classList.remove("status-update");
+              }, 200);
             } else {
               // Initialize chart if it doesn't exist
               initChart(data);
@@ -212,14 +240,34 @@
           })
           .catch((error) => {
             console.error("Error fetching attack data:", error);
+            document
+              .querySelector(".status-dot")
+              .classList.remove("status-live");
           });
       }
 
       // Initial chart load
       updateChart();
 
-      // Set up auto-refresh every 5 seconds
-      setInterval(updateChart, 5000);
+      // Add status update animation
+      document.head.insertAdjacentHTML(
+        "beforeend",
+        `
+            <style>
+                @keyframes status-ping {
+                    0% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7); }
+                    70% { box-shadow: 0 0 0 4px rgba(76, 175, 80, 0); }
+                    100% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0); }
+                }
+                .status-update {
+                    animation: status-ping 0.5s cubic-bezier(0, 0, 0.2, 1);
+                }
+            </style>
+        `
+      );
+
+      // Set up auto-refresh every 500ms for near real-time updates
+      setInterval(updateChart, 500);
     </script>
   </body>
 </html>
