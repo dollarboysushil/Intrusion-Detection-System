@@ -6,9 +6,9 @@ import requests
 from datetime import datetime
 
 # Configuration
-INTERFACE = "Wi-Fi"  # Change this to your real network interface
+INTERFACE = "Ethernet"  # Change this to your real network interface
 DURATION = 10  # Capture duration in seconds
-ENDPOINT = "http://127.0.0.1:8000/api/predict/"
+ENDPOINT = "http://127.0.0.1:8000/predict/"
 CFM_BAT = "cfm.bat"
 OUTPUT_DIR = "captures"
 CSV_DIR = "csv_output"
