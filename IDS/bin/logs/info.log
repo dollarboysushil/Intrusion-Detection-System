@@ -33,3 +33,79 @@
 2023-04-02 20:27:20 - Pcap is listening...
 2023-04-02 20:27:22 - Pcap stop listening
 2023-04-02 20:27:22 - path:C:\Users\TribeConnect\Downloads\cicflowmeter\bin\data\daily\2023-04-02_Flow.csv
+2025-06-17 08:56:04 - You select: captures\20250617_085531.pcap
+2025-06-17 08:56:04 - Out folder: csv_output
+2025-06-17 08:56:05 - CICFlowMeter received 1 pcap file
+2025-06-17 08:56:34 - You select: captures\20250617_085603.pcap
+2025-06-17 08:56:34 - Out folder: csv_output
+2025-06-17 08:56:34 - CICFlowMeter received 1 pcap file
+2025-06-17 08:57:04 - You select: captures\20250617_085633.pcap
+2025-06-17 08:57:04 - Out folder: csv_output
+2025-06-17 08:57:04 - CICFlowMeter received 1 pcap file
+2025-06-17 08:57:35 - You select: captures\20250617_085704.pcap
+2025-06-17 08:57:35 - Out folder: csv_output
+2025-06-17 08:57:35 - CICFlowMeter received 1 pcap file
+2025-06-17 08:58:05 - You select: captures\20250617_085734.pcap
+2025-06-17 08:58:05 - Out folder: csv_output
+2025-06-17 08:58:06 - You select: captures\20250617_085804.pcap
+2025-06-17 08:58:06 - Out folder: csv_output
+2025-06-17 08:58:06 - CICFlowMeter received 1 pcap file
+2025-06-17 08:58:07 - You select: captures\20250617_085805.pcap
+2025-06-17 08:58:07 - Out folder: csv_output
+2025-06-17 08:58:09 - You select: captures\20250617_085808.pcap
+2025-06-17 08:58:09 - Out folder: csv_output
+2025-06-17 08:59:09 - You select: captures\20250617_085838.pcap
+2025-06-17 08:59:09 - Out folder: csv_output
+2025-06-17 08:59:10 - CICFlowMeter received 1 pcap file
+2025-06-17 08:59:40 - You select: captures\20250617_085909.pcap
+2025-06-17 08:59:40 - Out folder: csv_output
+2025-06-17 08:59:40 - CICFlowMeter received 1 pcap file
+2025-06-17 09:01:06 - You select: captures\20250617_090036.pcap
+2025-06-17 09:01:06 - Out folder: csv_output
+2025-06-17 09:01:07 - CICFlowMeter received 1 pcap file
+2025-06-17 09:01:37 - You select: captures\20250617_090106.pcap
+2025-06-17 09:01:37 - Out folder: csv_output
+2025-06-17 09:01:37 - CICFlowMeter received 1 pcap file
+2025-06-17 09:02:07 - You select: captures\20250617_090137.pcap
+2025-06-17 09:02:07 - Out folder: csv_output
+2025-06-17 09:02:08 - CICFlowMeter received 1 pcap file
+2025-06-17 09:02:38 - You select: captures\20250617_090207.pcap
+2025-06-17 09:02:38 - Out folder: csv_output
+2025-06-17 09:02:38 - CICFlowMeter received 1 pcap file
+2025-06-17 09:02:47 - You select: captures\20250617_090238.pcap
+2025-06-17 09:02:47 - Out folder: csv_output
+2025-06-17 09:02:47 - CICFlowMeter received 1 pcap file
+2025-06-17 09:02:47 - You select: captures\20250617_090246.pcap
+2025-06-17 09:02:47 - Out folder: csv_output
+2025-06-17 09:02:47 - CICFlowMeter received 1 pcap file
+2025-06-17 09:02:48 - You select: captures\20250617_090247.pcap
+2025-06-17 09:02:48 - Out folder: csv_output
+2025-06-17 09:02:49 - You select: captures\20250617_090248.pcap
+2025-06-17 09:02:49 - Out folder: csv_output
+2025-06-17 09:02:49 - CICFlowMeter received 1 pcap file
+2025-06-17 09:04:21 - You select: captures\20250617_090350.pcap
+2025-06-17 09:04:21 - Out folder: csv_output
+2025-06-17 09:04:21 - CICFlowMeter received 1 pcap file
+2025-06-17 09:04:52 - You select: captures\20250617_090421.pcap
+2025-06-17 09:04:52 - Out folder: csv_output
+2025-06-17 09:04:52 - CICFlowMeter received 1 pcap file
+2025-06-17 09:05:22 - You select: captures\20250617_090451.pcap
+2025-06-17 09:05:22 - Out folder: csv_output
+2025-06-17 09:05:22 - CICFlowMeter received 1 pcap file
+2025-06-17 09:05:53 - You select: captures\20250617_090522.pcap
+2025-06-17 09:05:53 - Out folder: csv_output
+2025-06-17 09:05:53 - CICFlowMeter received 1 pcap file
+2025-06-17 09:06:23 - You select: captures\20250617_090552.pcap
+2025-06-17 09:06:23 - Out folder: csv_output
+2025-06-17 09:06:23 - CICFlowMeter received 1 pcap file
+2025-06-17 09:06:54 - You select: captures\20250617_090623.pcap
+2025-06-17 09:06:54 - Out folder: csv_output
+2025-06-17 09:06:54 - CICFlowMeter received 1 pcap file
+2025-06-17 09:07:18 - You select: captures\20250617_090717.pcap
+2025-06-17 09:07:18 - Out folder: csv_output
+2025-06-17 09:16:01 - You select: captures\20250617_091530.pcap
+2025-06-17 09:16:01 - Out folder: csv_output
+2025-06-17 09:16:01 - CICFlowMeter received 1 pcap file
+2025-06-17 09:16:31 - You select: captures\20250617_091601.pcap
+2025-06-17 09:16:31 - Out folder: csv_output
+2025-06-17 09:16:32 - CICFlowMeter received 1 pcap file
