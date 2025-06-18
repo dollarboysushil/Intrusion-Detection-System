@@ -12,7 +12,7 @@ import logging
 # Configuration
 INTERFACE = "Ethernet"  # Change this to your real network interface
 DURATION = 30  # Capture duration in seconds
-ENDPOINT = "http://localhost:8080/predict"
+ENDPOINT = "http://localhost:8000/predict/"
 ENDPOINT_HOST = "localhost"  # Extract host for filtering
 ENDPOINT_PORT = "8080"  # Extract port for filtering
 CFM_BAT = "cfm.bat"
