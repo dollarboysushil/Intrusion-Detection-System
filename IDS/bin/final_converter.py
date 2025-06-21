@@ -12,6 +12,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import logging
 from pathlib import Path
 import json
+from urllib3.util.retry import Retry
+from requests.adapters import HTTPAdapter
 
 # Configuration
 INTERFACE = "Ethernet"  # Change this to your real network interface
@@ -23,11 +25,17 @@ CFM_BAT = "cfm.bat"
 OUTPUT_DIR = "captures"
 CSV_DIR = "csv_output"
 TEMP_DIR = "temp_processing"
-MAX_WORKERS = 4  # Reduced for better control
+MAX_WORKERS = 2  # Reduced to prevent connection pool exhaustion
 CYCLE_COOLDOWN = 2  # Seconds to wait between cycles for cleanup
-MAX_FLOWS_PER_CYCLE = 100  # Limit flows per cycle to prevent bottleneck
+MAX_FLOWS_PER_CYCLE = 50  # Reduced to prevent bottleneck
 PREDICTION_TIMEOUT = 30  # Maximum time to spend on predictions per cycle
-REQUEST_TIMEOUT = 5  # Individual request timeout (reduced)
+REQUEST_TIMEOUT = 10  # Individual request timeout (increased for stability)
+
+# Connection pool configuration
+POOL_CONNECTIONS = 10
+POOL_MAXSIZE = 10
+MAX_RETRIES = 3
+BACKOFF_FACTOR = 0.3
 
 # Setup logging with ASCII-safe format and UTF-8 encoding
 logging.basicConfig(
@@ -40,6 +48,9 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Suppress urllib3 warnings about connection pool
+logging.getLogger("urllib3.connectionpool").setLevel(logging.ERROR)
+
 # Ensure directories exist
 for directory in [OUTPUT_DIR, CSV_DIR, TEMP_DIR]:
     os.makedirs(directory, exist_ok=True)
@@ -48,6 +59,52 @@ for directory in [OUTPUT_DIR, CSV_DIR, TEMP_DIR]:
 processing_lock = threading.Lock()
 current_cycle = 0
 shutdown_event = threading.Event()
+
+# Global session with connection pooling
+session = None
+session_lock = threading.Lock()
+
+
+def create_session():
+    """Create a session with proper connection pooling and retry strategy"""
+    global session
+
+    with session_lock:
+        if session is None:
+            session = requests.Session()
+
+            # Configure retry strategy
+            retry_strategy = Retry(
+                total=MAX_RETRIES,
+                backoff_factor=BACKOFF_FACTOR,
+                status_forcelist=[429, 500, 502, 503, 504],
+                allowed_methods=["POST"]
+            )
+
+            # Configure HTTP adapter with connection pooling
+            adapter = HTTPAdapter(
+                pool_connections=POOL_CONNECTIONS,
+                pool_maxsize=POOL_MAXSIZE,
+                max_retries=retry_strategy
+            )
+
+            session.mount("http://", adapter)
+            session.mount("https://", adapter)
+
+            logger.info(f"Created session with pool size: {POOL_MAXSIZE}")
+
+    return session
+
+
+def cleanup_session():
+    """Clean up the global session"""
+    global session
+
+    with session_lock:
+        if session is not None:
+            session.close()
+            session = None
+            logger.info("Closed HTTP session")
 
 
 class CycleManager:
@@ -253,10 +310,13 @@ def count_csv_rows(csv_file):
 
 
 def process_predictions_isolated(csv_file, cycle_id):
-    """Process predictions with complete isolation and flow limiting"""
+    """Process predictions with connection pooling and batching"""
     logger.info(f"[{cycle_id}] Processing predictions...")
 
     try:
+        # Ensure session is created
+        http_session = create_session()
+
         # Read CSV with error handling
         rows = []
         with open(csv_file, 'r', encoding='utf-8', errors='ignore') as file:
@@ -289,70 +349,67 @@ def process_predictions_isolated(csv_file, cycle_id):
             'original_total': total_flows
         }
 
-        # Add overall timeout for predictions
-        start_time = time.time()
+        # Process in smaller batches to avoid connection pool exhaustion
+        batch_size = MAX_WORKERS
         completed_requests = 0
 
-        # Process rows with controlled parallelism and timeout
-        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-            # Submit all prediction requests
-            future_to_row = {
-                executor.submit(send_prediction_request, row, cycle_id): i
-                for i, row in enumerate(rows)
-            }
+        for i in range(0, len(rows), batch_size):
+            batch = rows[i:i + batch_size]
 
-            # Collect results with timeout
-            for future in as_completed(future_to_row, timeout=PREDICTION_TIMEOUT):
-                # Check overall timeout
-                if time.time() - start_time > PREDICTION_TIMEOUT:
-                    logger.warning(
-                        f"[{cycle_id}] Prediction timeout reached, cancelling remaining requests")
-                    # Cancel remaining futures
-                    for remaining_future in future_to_row:
-                        if not remaining_future.done():
-                            remaining_future.cancel()
-                    break
+            # Process batch with controlled parallelism
+            with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+                # Submit batch requests
+                future_to_row = {
+                    executor.submit(send_prediction_request, row, cycle_id, http_session): j
+                    for j, row in enumerate(batch)
+                }
 
-                row_index = future_to_row[future]
-                try:
-                    # Quick timeout for individual results
-                    result = future.result(timeout=1)
-                    completed_requests += 1
+                # Collect batch results
+                for future in as_completed(future_to_row, timeout=REQUEST_TIMEOUT * 2):
+                    row_index = future_to_row[future]
+                    try:
+                        result = future.result(timeout=REQUEST_TIMEOUT)
+                        completed_requests += 1
 
-                    if result.get('success'):
-                        prediction = result.get(
-                            'prediction', 'unknown').lower()
-                        if 'attack' in prediction or 'malicious' in prediction:
-                            predictions['attack'] += 1
+                        if result.get('success'):
+                            prediction = result.get(
+                                'prediction', 'unknown').lower()
+                            if 'attack' in prediction or 'malicious' in prediction:
+                                predictions['attack'] += 1
+                            else:
+                                predictions['normal'] += 1
                         else:
-                            predictions['normal'] += 1
-                    else:
+                            predictions['errors'] += 1
+
+                    except Exception as e:
                         predictions['errors'] += 1
+                        logger.debug(
+                            f"[{cycle_id}] Error processing batch row {row_index}: {e}")
 
-                    # Log progress every 25 requests
-                    if completed_requests % 25 == 0:
-                        logger.info(
-                            f"[{cycle_id}] Progress: {completed_requests}/{len(rows)} requests completed")
+            # Small delay between batches to prevent overwhelming the endpoint
+            if i + batch_size < len(rows):
+                time.sleep(0.5)
 
-                except Exception as e:
-                    predictions['errors'] += 1
-                    logger.debug(
-                        f"[{cycle_id}] Error processing row {row_index}: {e}")
+            # Log progress
+            progress = min(i + batch_size, len(rows))
+            logger.info(
+                f"[{cycle_id}] Progress: {progress}/{len(rows)} flows processed")
 
         # Log cycle summary
         log_cycle_summary(cycle_id, predictions)
 
-        # Success if we completed at least 50% of requests
-        success_rate = completed_requests / len(rows)
-        return success_rate >= 0.5
+        # Success if we completed at least 70% of requests
+        success_rate = completed_requests / len(rows) if len(rows) > 0 else 0
+        logger.info(f"[{cycle_id}] Success rate: {success_rate:.2%}")
+        return success_rate >= 0.7
 
     except Exception as e:
         logger.error(f"[{cycle_id}] Error processing predictions: {e}")
         return False
 
 
-def send_prediction_request(row, cycle_id):
-    """Send individual prediction request with proper error handling"""
+def send_prediction_request(row, cycle_id, http_session):
+    """Send individual prediction request with session reuse"""
     try:
         # Clean the row data - only include numeric/essential fields
         cleaned_row = {}
@@ -366,10 +423,11 @@ def send_prediction_request(row, cycle_id):
 
         headers = {
             'Content-Type': 'application/json',
-            'X-Cycle-ID': cycle_id  # Add cycle tracking
+            'X-Cycle-ID': cycle_id,
+            'Connection': 'keep-alive'  # Ensure connection reuse
         }
 
-        response = requests.post(
+        response = http_session.post(
             ENDPOINT,
             json=cleaned_row,
             headers=headers,
@@ -556,6 +614,11 @@ def main():
     logger.info(f"Endpoint: {ENDPOINT}")
     logger.info(f"Filtering traffic to {ENDPOINT_HOST}:{ENDPOINT_PORT}")
     logger.info(f"Cycle cooldown: {CYCLE_COOLDOWN} seconds")
+    logger.info(f"Max workers: {MAX_WORKERS}")
+    logger.info(f"Connection pool size: {POOL_MAXSIZE}")
+
+    # Create initial session
+    create_session()
 
     # Start health monitor thread
     health_thread = threading.Thread(target=monitor_system_health, daemon=True)
@@ -583,6 +646,8 @@ def main():
                             "Too many consecutive failures - performing system reset")
                         # Emergency reset
                         cycle_manager.cleanup_processes()
+                        cleanup_session()
+                        create_session()  # Recreate session
                         emergency_cleanup()
                         consecutive_failures = 0
                         time.sleep(30)  # Extended cooldown after reset
@@ -605,6 +670,7 @@ def main():
         shutdown_event.set()
 
         # Final cleanup
+        cleanup_session()
         cycle_manager.cleanup_processes()
         cleanup_old_files()
 

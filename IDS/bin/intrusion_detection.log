@@ -1259,3 +1259,809 @@ Please check that you have the proper interface or pipe specified.
 2025-06-21 15:30:13,353 - MainThread - INFO - [cycle_28_20250621_153002] CSV conversion successful: temp_processing\cycle_28_20250621_153002\csv_output\cycle_28_20250621_153002_20250621_153002.pcap_Flow.csv (27 flows)
 2025-06-21 15:30:13,353 - MainThread - INFO - [cycle_28_20250621_153002] Processing predictions...
 2025-06-21 15:30:13,354 - MainThread - INFO - [cycle_28_20250621_153002] Sending 27 flows for prediction (from 27 total)
+2025-06-21 15:30:41,397 - MainThread - INFO - [cycle_28_20250621_153002] Progress: 25/27 requests completed
+2025-06-21 15:30:41,442 - MainThread - INFO - [cycle_28_20250621_153002] CYCLE SUMMARY:
+2025-06-21 15:30:41,442 - MainThread - INFO - [cycle_28_20250621_153002]   Total flows: 27
+2025-06-21 15:30:41,442 - MainThread - INFO - [cycle_28_20250621_153002]   Normal: 0 (0.0%)
+2025-06-21 15:30:41,442 - MainThread - INFO - [cycle_28_20250621_153002]   Attack: 0 (0.0%)
+2025-06-21 15:30:41,442 - MainThread - INFO - [cycle_28_20250621_153002]   Errors: 27 (100.0%)
+2025-06-21 15:30:41,442 - MainThread - INFO - [cycle_28_20250621_153002] [OK] Normal traffic levels
+2025-06-21 15:30:41,443 - MainThread - INFO - === Ending cycle_28_20250621_153002 ===
+2025-06-21 15:30:42,513 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_28_20250621_153002
+2025-06-21 15:30:42,513 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:30:44,514 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:30:45,514 - MainThread - INFO - === Starting cycle_29_20250621_153045 ===
+2025-06-21 15:30:45,515 - MainThread - INFO - [cycle_29_20250621_153045] Starting capture for 10 seconds...
+2025-06-21 15:30:55,924 - MainThread - INFO - [cycle_29_20250621_153045] Capture successful: temp_processing\cycle_29_20250621_153045\cycle_29_20250621_153045_20250621_153045.pcap (2041682 bytes)
+2025-06-21 15:30:55,924 - MainThread - INFO - [cycle_29_20250621_153045] Converting PCAP to CSV...
+2025-06-21 15:30:56,773 - MainThread - INFO - [cycle_29_20250621_153045] CSV conversion successful: temp_processing\cycle_29_20250621_153045\csv_output\cycle_29_20250621_153045_20250621_153045.pcap_Flow.csv (43 flows)
+2025-06-21 15:30:56,773 - MainThread - INFO - [cycle_29_20250621_153045] Processing predictions...
+2025-06-21 15:30:56,773 - MainThread - INFO - [cycle_29_20250621_153045] Sending 43 flows for prediction (from 43 total)
+2025-06-21 15:31:24,814 - MainThread - INFO - [cycle_29_20250621_153045] Progress: 25/43 requests completed
+2025-06-21 15:31:40,874 - MainThread - ERROR - [cycle_29_20250621_153045] Error processing predictions: 15 (of 43) futures unfinished
+2025-06-21 15:31:40,875 - MainThread - INFO - === Ending cycle_29_20250621_153045 ===
+2025-06-21 15:31:41,962 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_29_20250621_153045
+2025-06-21 15:31:41,962 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:31:43,962 - MainThread - WARNING - [FAIL] Cycle failed (1/5)
+2025-06-21 15:31:44,963 - MainThread - INFO - === Starting cycle_30_20250621_153144 ===
+2025-06-21 15:31:44,963 - MainThread - INFO - [cycle_30_20250621_153144] Starting capture for 10 seconds...
+2025-06-21 15:31:55,327 - MainThread - INFO - [cycle_30_20250621_153144] Capture successful: temp_processing\cycle_30_20250621_153144\cycle_30_20250621_153144_20250621_153144.pcap (1113161 bytes)
+2025-06-21 15:31:55,327 - MainThread - INFO - [cycle_30_20250621_153144] Converting PCAP to CSV...
+2025-06-21 15:31:56,121 - MainThread - INFO - [cycle_30_20250621_153144] CSV conversion successful: temp_processing\cycle_30_20250621_153144\csv_output\cycle_30_20250621_153144_20250621_153144.pcap_Flow.csv (30 flows)
+2025-06-21 15:31:56,122 - MainThread - INFO - [cycle_30_20250621_153144] Processing predictions...
+2025-06-21 15:31:56,122 - MainThread - INFO - [cycle_30_20250621_153144] Sending 30 flows for prediction (from 30 total)
+2025-06-21 15:32:24,165 - MainThread - INFO - [cycle_30_20250621_153144] Progress: 25/30 requests completed
+2025-06-21 15:32:28,198 - MainThread - ERROR - [cycle_30_20250621_153144] Error processing predictions: 2 (of 30) futures unfinished
+2025-06-21 15:32:28,198 - MainThread - INFO - === Ending cycle_30_20250621_153144 ===
+2025-06-21 15:32:29,282 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_30_20250621_153144
+2025-06-21 15:32:29,282 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:32:31,234 - MainThread - INFO - Shutdown requested by user
+2025-06-21 15:32:31,234 - MainThread - INFO - Shutting down...
+2025-06-21 15:32:36,253 - MainThread - INFO - === Starting Robust Network Intrusion Detection System ===
+2025-06-21 15:32:36,254 - MainThread - INFO - Interface: Ethernet
+2025-06-21 15:32:36,254 - MainThread - INFO - Capture duration: 10 seconds
+2025-06-21 15:32:36,254 - MainThread - INFO - Endpoint: http://localhost:8000/predict/
+2025-06-21 15:32:36,254 - MainThread - INFO - Filtering traffic to localhost:8080
+2025-06-21 15:32:36,254 - MainThread - INFO - Cycle cooldown: 2 seconds
+2025-06-21 15:32:36,255 - MainThread - INFO - === Starting cycle_1_20250621_153236 ===
+2025-06-21 15:32:36,255 - MainThread - INFO - [cycle_1_20250621_153236] Starting capture for 10 seconds...
+2025-06-21 15:32:36,338 - MainThread - ERROR - [cycle_1_20250621_153236] Capture failed: Command '['tshark', '-i', 'Ethernet', '-a', 'duration:10', '-f', 'not (host localhost and port 8080)', '-F', 'pcap', '-w', 'temp_processing\\cycle_1_20250621_153236\\cycle_1_20250621_153236_20250621_153236.pcap', '-q']' returned non-zero exit status 1.
+2025-06-21 15:32:36,338 - MainThread - INFO - === Ending cycle_1_20250621_153236 ===
+2025-06-21 15:32:37,406 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:32:39,407 - MainThread - WARNING - [FAIL] Cycle failed (1/5)
+2025-06-21 15:32:40,407 - MainThread - INFO - === Starting cycle_2_20250621_153240 ===
+2025-06-21 15:32:40,408 - MainThread - INFO - [cycle_2_20250621_153240] Starting capture for 10 seconds...
+2025-06-21 15:32:50,827 - MainThread - INFO - [cycle_2_20250621_153240] Capture successful: temp_processing\cycle_2_20250621_153240\cycle_2_20250621_153240_20250621_153240.pcap (1182397 bytes)
+2025-06-21 15:32:50,828 - MainThread - INFO - [cycle_2_20250621_153240] Converting PCAP to CSV...
+2025-06-21 15:32:51,598 - MainThread - INFO - [cycle_2_20250621_153240] CSV conversion successful: temp_processing\cycle_2_20250621_153240\csv_output\cycle_2_20250621_153240_20250621_153240.pcap_Flow.csv (49 flows)
+2025-06-21 15:32:51,598 - MainThread - INFO - [cycle_2_20250621_153240] Processing predictions...
+2025-06-21 15:32:51,599 - MainThread - INFO - [cycle_2_20250621_153240] Sending 49 flows for prediction (from 49 total)
+2025-06-21 15:33:07,541 - MainThread - INFO - [cycle_2_20250621_153240] Progress: 25/49 requests completed
+2025-06-21 15:33:20,516 - MainThread - INFO - [cycle_2_20250621_153240] CYCLE SUMMARY:
+2025-06-21 15:33:20,516 - MainThread - INFO - [cycle_2_20250621_153240]   Total flows: 49
+2025-06-21 15:33:20,516 - MainThread - INFO - [cycle_2_20250621_153240]   Normal: 0 (0.0%)
+2025-06-21 15:33:20,516 - MainThread - INFO - [cycle_2_20250621_153240]   Attack: 0 (0.0%)
+2025-06-21 15:33:20,516 - MainThread - INFO - [cycle_2_20250621_153240]   Errors: 49 (100.0%)
+2025-06-21 15:33:20,517 - MainThread - INFO - [cycle_2_20250621_153240] [OK] Normal traffic levels
+2025-06-21 15:33:20,517 - MainThread - INFO - === Ending cycle_2_20250621_153240 ===
+2025-06-21 15:33:21,591 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_2_20250621_153240
+2025-06-21 15:33:21,591 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:33:23,591 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:33:24,592 - MainThread - INFO - === Starting cycle_3_20250621_153324 ===
+2025-06-21 15:33:24,592 - MainThread - INFO - [cycle_3_20250621_153324] Starting capture for 10 seconds...
+2025-06-21 15:33:35,078 - MainThread - INFO - [cycle_3_20250621_153324] Capture successful: temp_processing\cycle_3_20250621_153324\cycle_3_20250621_153324_20250621_153324.pcap (2155094 bytes)
+2025-06-21 15:33:35,078 - MainThread - INFO - [cycle_3_20250621_153324] Converting PCAP to CSV...
+2025-06-21 15:33:35,950 - MainThread - INFO - [cycle_3_20250621_153324] CSV conversion successful: temp_processing\cycle_3_20250621_153324\csv_output\cycle_3_20250621_153324_20250621_153324.pcap_Flow.csv (51 flows)
+2025-06-21 15:33:35,950 - MainThread - INFO - [cycle_3_20250621_153324] Processing predictions...
+2025-06-21 15:33:35,951 - MainThread - INFO - [cycle_3_20250621_153324] Sending 51 flows for prediction (from 51 total)
+2025-06-21 15:38:51,711 - MainThread - INFO - === Starting FAST Network Intrusion Detection System ===
+2025-06-21 15:38:51,712 - MainThread - INFO - Interface: Ethernet
+2025-06-21 15:38:51,712 - MainThread - INFO - Capture duration: 10 seconds
+2025-06-21 15:38:51,712 - MainThread - INFO - Endpoint: http://localhost:8000/predict/
+2025-06-21 15:38:51,712 - MainThread - INFO - Max workers: 20
+2025-06-21 15:38:51,712 - MainThread - INFO - Request timeout: 2s
+2025-06-21 15:38:51,712 - MainThread - INFO - Filtering traffic to localhost:8080
+2025-06-21 15:38:51,713 - MainThread - INFO - === Starting cycle_1_20250621_153851 ===
+2025-06-21 15:38:51,713 - MainThread - INFO - [cycle_1_20250621_153851] Starting capture for 10 seconds...
+2025-06-21 15:38:51,837 - MainThread - ERROR - [cycle_1_20250621_153851] Capture failed: Command '['tshark', '-i', 'Ethernet', '-a', 'duration:10', '-f', 'not (host localhost and port 8080)', '-F', 'pcap', '-w', 'temp_processing\\cycle_1_20250621_153851\\cycle_1_20250621_153851_20250621_153851.pcap', '-q']' returned non-zero exit status 1.
+2025-06-21 15:38:51,837 - MainThread - INFO - === Ending cycle_1_20250621_153851 ===
+2025-06-21 15:38:52,906 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:38:54,906 - MainThread - WARNING - [FAIL] Cycle failed (1/5)
+2025-06-21 15:38:55,907 - MainThread - INFO - === Starting cycle_2_20250621_153855 ===
+2025-06-21 15:38:55,907 - MainThread - INFO - [cycle_2_20250621_153855] Starting capture for 10 seconds...
+2025-06-21 15:39:06,350 - MainThread - INFO - [cycle_2_20250621_153855] Capture successful: temp_processing\cycle_2_20250621_153855\cycle_2_20250621_153855_20250621_153855.pcap (984332 bytes)
+2025-06-21 15:39:06,350 - MainThread - INFO - [cycle_2_20250621_153855] Converting PCAP to CSV...
+2025-06-21 15:39:07,092 - MainThread - INFO - [cycle_2_20250621_153855] CSV conversion successful: temp_processing\cycle_2_20250621_153855\csv_output\cycle_2_20250621_153855_20250621_153855.pcap_Flow.csv (17 flows)
+2025-06-21 15:39:07,092 - MainThread - INFO - [cycle_2_20250621_153855] Processing predictions...
+2025-06-21 15:39:07,093 - MainThread - INFO - [cycle_2_20250621_153855] Sending 17 flows for prediction (from 17 total)
+2025-06-21 15:39:10,689 - ThreadPoolExecutor-0_15 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:39:10,889 - ThreadPoolExecutor-0_16 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:39:11,037 - ThreadPoolExecutor-0_14 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:39:11,103 - ThreadPoolExecutor-0_10 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:39:11,104 - ThreadPoolExecutor-0_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:39:11,104 - ThreadPoolExecutor-0_3 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:39:11,105 - ThreadPoolExecutor-0_6 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:39:11,106 - MainThread - INFO - [cycle_2_20250621_153855] CYCLE SUMMARY:
+2025-06-21 15:39:11,106 - MainThread - INFO - [cycle_2_20250621_153855]   Total flows: 17
+2025-06-21 15:39:11,106 - MainThread - INFO - [cycle_2_20250621_153855]   Normal: 0 (0.0%)
+2025-06-21 15:39:11,107 - MainThread - INFO - [cycle_2_20250621_153855]   Attack: 0 (0.0%)
+2025-06-21 15:39:11,107 - MainThread - INFO - [cycle_2_20250621_153855]   Errors: 17 (100.0%)
+2025-06-21 15:39:11,107 - MainThread - INFO - [cycle_2_20250621_153855] [OK] Normal traffic levels
+2025-06-21 15:39:11,107 - MainThread - INFO - === Ending cycle_2_20250621_153855 ===
+2025-06-21 15:39:12,227 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_2_20250621_153855
+2025-06-21 15:39:12,227 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:39:14,227 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:39:15,227 - MainThread - INFO - === Starting cycle_3_20250621_153915 ===
+2025-06-21 15:39:15,228 - MainThread - INFO - [cycle_3_20250621_153915] Starting capture for 10 seconds...
+2025-06-21 15:39:25,719 - MainThread - INFO - [cycle_3_20250621_153915] Capture successful: temp_processing\cycle_3_20250621_153915\cycle_3_20250621_153915_20250621_153915.pcap (6336490 bytes)
+2025-06-21 15:39:25,719 - MainThread - INFO - [cycle_3_20250621_153915] Converting PCAP to CSV...
+2025-06-21 15:39:29,509 - MainThread - INFO - [cycle_3_20250621_153915] CSV conversion successful: temp_processing\cycle_3_20250621_153915\csv_output\cycle_3_20250621_153915_20250621_153915.pcap_Flow.csv (8995 flows)
+2025-06-21 15:39:29,510 - MainThread - INFO - [cycle_3_20250621_153915] Processing predictions...
+2025-06-21 15:39:29,637 - MainThread - INFO - [cycle_3_20250621_153915] Limiting flows from 8995 to 100
+2025-06-21 15:39:29,650 - MainThread - INFO - [cycle_3_20250621_153915] Sending 100 flows for prediction (from 8995 total)
+2025-06-21 15:39:35,434 - MainThread - INFO - [cycle_3_20250621_153915] Progress: 50/100 requests completed
+2025-06-21 15:39:39,604 - ThreadPoolExecutor-1_1 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:39:39,987 - ThreadPoolExecutor-1_6 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:39:40,193 - ThreadPoolExecutor-1_0 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:39:40,309 - ThreadPoolExecutor-1_7 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:39:40,503 - ThreadPoolExecutor-1_5 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:39:40,609 - ThreadPoolExecutor-1_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:39:40,723 - ThreadPoolExecutor-1_10 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:39:41,334 - ThreadPoolExecutor-1_11 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:39:41,450 - ThreadPoolExecutor-1_17 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:39:41,656 - ThreadPoolExecutor-1_2 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:39:41,656 - MainThread - INFO - [cycle_3_20250621_153915] Progress: 100/100 requests completed
+2025-06-21 15:39:41,658 - MainThread - INFO - [cycle_3_20250621_153915] CYCLE SUMMARY:
+2025-06-21 15:39:41,658 - MainThread - INFO - [cycle_3_20250621_153915]   Original flows: 8995 (sampled: 100)
+2025-06-21 15:39:41,658 - MainThread - INFO - [cycle_3_20250621_153915]   Normal: 0 (0.0%)
+2025-06-21 15:39:41,658 - MainThread - INFO - [cycle_3_20250621_153915]   Attack: 0 (0.0%)
+2025-06-21 15:39:41,658 - MainThread - INFO - [cycle_3_20250621_153915]   Errors: 100 (100.0%)
+2025-06-21 15:39:41,658 - MainThread - INFO - [cycle_3_20250621_153915] [OK] Normal traffic levels
+2025-06-21 15:39:41,660 - MainThread - INFO - === Ending cycle_3_20250621_153915 ===
+2025-06-21 15:39:42,789 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_3_20250621_153915
+2025-06-21 15:39:42,789 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:39:44,790 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:39:45,790 - MainThread - INFO - === Starting cycle_4_20250621_153945 ===
+2025-06-21 15:39:45,791 - MainThread - INFO - [cycle_4_20250621_153945] Starting capture for 10 seconds...
+2025-06-21 15:39:56,326 - MainThread - INFO - [cycle_4_20250621_153945] Capture successful: temp_processing\cycle_4_20250621_153945\cycle_4_20250621_153945_20250621_153945.pcap (1536443 bytes)
+2025-06-21 15:39:56,326 - MainThread - INFO - [cycle_4_20250621_153945] Converting PCAP to CSV...
+2025-06-21 15:39:57,251 - MainThread - INFO - [cycle_4_20250621_153945] CSV conversion successful: temp_processing\cycle_4_20250621_153945\csv_output\cycle_4_20250621_153945_20250621_153945.pcap_Flow.csv (24 flows)
+2025-06-21 15:39:57,251 - MainThread - INFO - [cycle_4_20250621_153945] Processing predictions...
+2025-06-21 15:39:57,252 - MainThread - INFO - [cycle_4_20250621_153945] Sending 24 flows for prediction (from 24 total)
+2025-06-21 15:39:59,986 - ThreadPoolExecutor-2_18 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:00,112 - ThreadPoolExecutor-2_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:00,238 - ThreadPoolExecutor-2_16 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:00,407 - ThreadPoolExecutor-2_19 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:00,533 - ThreadPoolExecutor-2_14 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:00,723 - ThreadPoolExecutor-2_3 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:00,850 - ThreadPoolExecutor-2_2 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:01,039 - ThreadPoolExecutor-2_10 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:01,154 - ThreadPoolExecutor-2_15 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:01,262 - ThreadPoolExecutor-2_8 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:01,264 - MainThread - INFO - [cycle_4_20250621_153945] CYCLE SUMMARY:
+2025-06-21 15:40:01,264 - MainThread - INFO - [cycle_4_20250621_153945]   Total flows: 24
+2025-06-21 15:40:01,264 - MainThread - INFO - [cycle_4_20250621_153945]   Normal: 0 (0.0%)
+2025-06-21 15:40:01,264 - MainThread - INFO - [cycle_4_20250621_153945]   Attack: 0 (0.0%)
+2025-06-21 15:40:01,264 - MainThread - INFO - [cycle_4_20250621_153945]   Errors: 24 (100.0%)
+2025-06-21 15:40:01,264 - MainThread - INFO - [cycle_4_20250621_153945] [OK] Normal traffic levels
+2025-06-21 15:40:01,264 - MainThread - INFO - === Ending cycle_4_20250621_153945 ===
+2025-06-21 15:40:02,370 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_4_20250621_153945
+2025-06-21 15:40:02,371 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:40:04,371 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:40:05,372 - MainThread - INFO - === Starting cycle_5_20250621_154005 ===
+2025-06-21 15:40:05,373 - MainThread - INFO - [cycle_5_20250621_154005] Starting capture for 10 seconds...
+2025-06-21 15:40:15,891 - MainThread - INFO - [cycle_5_20250621_154005] Capture successful: temp_processing\cycle_5_20250621_154005\cycle_5_20250621_154005_20250621_154005.pcap (1169472 bytes)
+2025-06-21 15:40:15,892 - MainThread - INFO - [cycle_5_20250621_154005] Converting PCAP to CSV...
+2025-06-21 15:40:16,759 - MainThread - INFO - [cycle_5_20250621_154005] CSV conversion successful: temp_processing\cycle_5_20250621_154005\csv_output\cycle_5_20250621_154005_20250621_154005.pcap_Flow.csv (17 flows)
+2025-06-21 15:40:16,759 - MainThread - INFO - [cycle_5_20250621_154005] Processing predictions...
+2025-06-21 15:40:16,760 - MainThread - INFO - [cycle_5_20250621_154005] Sending 17 flows for prediction (from 17 total)
+2025-06-21 15:40:19,048 - ThreadPoolExecutor-3_10 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:19,206 - ThreadPoolExecutor-3_13 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:19,385 - ThreadPoolExecutor-3_11 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:19,574 - ThreadPoolExecutor-3_15 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:19,784 - ThreadPoolExecutor-3_14 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:19,996 - ThreadPoolExecutor-3_16 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:20,226 - ThreadPoolExecutor-3_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:20,227 - MainThread - INFO - [cycle_5_20250621_154005] CYCLE SUMMARY:
+2025-06-21 15:40:20,228 - MainThread - INFO - [cycle_5_20250621_154005]   Total flows: 17
+2025-06-21 15:40:20,228 - MainThread - INFO - [cycle_5_20250621_154005]   Normal: 0 (0.0%)
+2025-06-21 15:40:20,228 - MainThread - INFO - [cycle_5_20250621_154005]   Attack: 0 (0.0%)
+2025-06-21 15:40:20,228 - MainThread - INFO - [cycle_5_20250621_154005]   Errors: 17 (100.0%)
+2025-06-21 15:40:20,228 - MainThread - INFO - [cycle_5_20250621_154005] [OK] Normal traffic levels
+2025-06-21 15:40:20,228 - MainThread - INFO - === Ending cycle_5_20250621_154005 ===
+2025-06-21 15:40:21,344 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_5_20250621_154005
+2025-06-21 15:40:21,345 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:40:23,346 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:40:24,346 - MainThread - INFO - === Starting cycle_6_20250621_154024 ===
+2025-06-21 15:40:24,347 - MainThread - INFO - [cycle_6_20250621_154024] Starting capture for 10 seconds...
+2025-06-21 15:40:34,811 - MainThread - INFO - [cycle_6_20250621_154024] Capture successful: temp_processing\cycle_6_20250621_154024\cycle_6_20250621_154024_20250621_154024.pcap (12478427 bytes)
+2025-06-21 15:40:34,811 - MainThread - INFO - [cycle_6_20250621_154024] Converting PCAP to CSV...
+2025-06-21 15:40:39,867 - MainThread - INFO - [cycle_6_20250621_154024] CSV conversion successful: temp_processing\cycle_6_20250621_154024\csv_output\cycle_6_20250621_154024_20250621_154024.pcap_Flow.csv (19702 flows)
+2025-06-21 15:40:39,868 - MainThread - INFO - [cycle_6_20250621_154024] Processing predictions...
+2025-06-21 15:40:40,084 - MainThread - INFO - [cycle_6_20250621_154024] Limiting flows from 19702 to 100
+2025-06-21 15:40:40,100 - MainThread - INFO - [cycle_6_20250621_154024] Sending 100 flows for prediction (from 19702 total)
+2025-06-21 15:40:45,192 - MainThread - INFO - [cycle_6_20250621_154024] Progress: 50/100 requests completed
+2025-06-21 15:40:49,965 - ThreadPoolExecutor-4_9 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:50,070 - ThreadPoolExecutor-4_7 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:50,269 - ThreadPoolExecutor-4_0 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:50,292 - ThreadPoolExecutor-4_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:50,313 - ThreadPoolExecutor-4_8 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:50,397 - ThreadPoolExecutor-4_10 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:50,502 - ThreadPoolExecutor-4_19 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:51,060 - ThreadPoolExecutor-4_15 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:51,178 - ThreadPoolExecutor-4_13 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:51,913 - ThreadPoolExecutor-4_14 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:40:51,913 - MainThread - INFO - [cycle_6_20250621_154024] Progress: 100/100 requests completed
+2025-06-21 15:40:51,915 - MainThread - INFO - [cycle_6_20250621_154024] CYCLE SUMMARY:
+2025-06-21 15:40:51,915 - MainThread - INFO - [cycle_6_20250621_154024]   Original flows: 19702 (sampled: 100)
+2025-06-21 15:40:51,915 - MainThread - INFO - [cycle_6_20250621_154024]   Normal: 0 (0.0%)
+2025-06-21 15:40:51,915 - MainThread - INFO - [cycle_6_20250621_154024]   Attack: 0 (0.0%)
+2025-06-21 15:40:51,915 - MainThread - INFO - [cycle_6_20250621_154024]   Errors: 100 (100.0%)
+2025-06-21 15:40:51,915 - MainThread - INFO - [cycle_6_20250621_154024] [OK] Normal traffic levels
+2025-06-21 15:40:51,920 - MainThread - INFO - === Ending cycle_6_20250621_154024 ===
+2025-06-21 15:40:53,045 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_6_20250621_154024
+2025-06-21 15:40:53,045 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:40:55,046 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:40:56,046 - MainThread - INFO - === Starting cycle_7_20250621_154056 ===
+2025-06-21 15:40:56,047 - MainThread - INFO - [cycle_7_20250621_154056] Starting capture for 10 seconds...
+2025-06-21 15:41:06,729 - MainThread - INFO - [cycle_7_20250621_154056] Capture successful: temp_processing\cycle_7_20250621_154056\cycle_7_20250621_154056_20250621_154056.pcap (1261170 bytes)
+2025-06-21 15:41:06,729 - MainThread - INFO - [cycle_7_20250621_154056] Converting PCAP to CSV...
+2025-06-21 15:41:07,629 - MainThread - INFO - [cycle_7_20250621_154056] CSV conversion successful: temp_processing\cycle_7_20250621_154056\csv_output\cycle_7_20250621_154056_20250621_154056.pcap_Flow.csv (19 flows)
+2025-06-21 15:41:07,629 - MainThread - INFO - [cycle_7_20250621_154056] Processing predictions...
+2025-06-21 15:41:07,629 - MainThread - INFO - [cycle_7_20250621_154056] Sending 19 flows for prediction (from 19 total)
+2025-06-21 15:41:10,217 - ThreadPoolExecutor-5_11 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:10,343 - ThreadPoolExecutor-5_10 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:10,470 - ThreadPoolExecutor-5_16 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:10,627 - ThreadPoolExecutor-5_15 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:10,754 - ThreadPoolExecutor-5_13 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:10,901 - ThreadPoolExecutor-5_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:11,038 - ThreadPoolExecutor-5_5 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:11,175 - ThreadPoolExecutor-5_6 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:11,176 - MainThread - INFO - [cycle_7_20250621_154056] CYCLE SUMMARY:
+2025-06-21 15:41:11,176 - MainThread - INFO - [cycle_7_20250621_154056]   Total flows: 19
+2025-06-21 15:41:11,176 - MainThread - INFO - [cycle_7_20250621_154056]   Normal: 0 (0.0%)
+2025-06-21 15:41:11,176 - MainThread - INFO - [cycle_7_20250621_154056]   Attack: 0 (0.0%)
+2025-06-21 15:41:11,177 - MainThread - INFO - [cycle_7_20250621_154056]   Errors: 19 (100.0%)
+2025-06-21 15:41:11,177 - MainThread - INFO - [cycle_7_20250621_154056] [OK] Normal traffic levels
+2025-06-21 15:41:11,177 - MainThread - INFO - === Ending cycle_7_20250621_154056 ===
+2025-06-21 15:41:12,277 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_7_20250621_154056
+2025-06-21 15:41:12,278 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:41:14,278 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:41:15,278 - MainThread - INFO - === Starting cycle_8_20250621_154115 ===
+2025-06-21 15:41:15,279 - MainThread - INFO - [cycle_8_20250621_154115] Starting capture for 10 seconds...
+2025-06-21 15:41:25,750 - MainThread - INFO - [cycle_8_20250621_154115] Capture successful: temp_processing\cycle_8_20250621_154115\cycle_8_20250621_154115_20250621_154115.pcap (17253158 bytes)
+2025-06-21 15:41:25,750 - MainThread - INFO - [cycle_8_20250621_154115] Converting PCAP to CSV...
+2025-06-21 15:41:29,000 - MainThread - INFO - [cycle_8_20250621_154115] CSV conversion successful: temp_processing\cycle_8_20250621_154115\csv_output\cycle_8_20250621_154115_20250621_154115.pcap_Flow.csv (52103 flows)
+2025-06-21 15:41:29,000 - MainThread - INFO - [cycle_8_20250621_154115] Processing predictions...
+2025-06-21 15:41:29,481 - MainThread - INFO - [cycle_8_20250621_154115] Limiting flows from 52103 to 100
+2025-06-21 15:41:29,531 - MainThread - INFO - [cycle_8_20250621_154115] Sending 100 flows for prediction (from 52103 total)
+2025-06-21 15:41:35,543 - MainThread - INFO - [cycle_8_20250621_154115] Progress: 50/100 requests completed
+2025-06-21 15:41:39,546 - ThreadPoolExecutor-6_8 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:39,547 - ThreadPoolExecutor-6_9 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:39,547 - ThreadPoolExecutor-6_5 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:39,555 - ThreadPoolExecutor-6_18 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:39,704 - ThreadPoolExecutor-6_11 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:39,841 - ThreadPoolExecutor-6_13 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:39,928 - ThreadPoolExecutor-6_0 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:40,231 - ThreadPoolExecutor-6_15 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:40,388 - ThreadPoolExecutor-6_4 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:40,683 - ThreadPoolExecutor-6_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:40,684 - MainThread - INFO - [cycle_8_20250621_154115] Progress: 100/100 requests completed
+2025-06-21 15:41:40,685 - MainThread - INFO - [cycle_8_20250621_154115] CYCLE SUMMARY:
+2025-06-21 15:41:40,685 - MainThread - INFO - [cycle_8_20250621_154115]   Original flows: 52103 (sampled: 100)
+2025-06-21 15:41:40,685 - MainThread - INFO - [cycle_8_20250621_154115]   Normal: 0 (0.0%)
+2025-06-21 15:41:40,685 - MainThread - INFO - [cycle_8_20250621_154115]   Attack: 0 (0.0%)
+2025-06-21 15:41:40,686 - MainThread - INFO - [cycle_8_20250621_154115]   Errors: 100 (100.0%)
+2025-06-21 15:41:40,686 - MainThread - INFO - [cycle_8_20250621_154115] [OK] Normal traffic levels
+2025-06-21 15:41:40,695 - MainThread - INFO - === Ending cycle_8_20250621_154115 ===
+2025-06-21 15:41:41,799 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_8_20250621_154115
+2025-06-21 15:41:41,799 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:41:43,800 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:41:44,801 - MainThread - INFO - === Starting cycle_9_20250621_154144 ===
+2025-06-21 15:41:44,801 - MainThread - INFO - [cycle_9_20250621_154144] Starting capture for 10 seconds...
+2025-06-21 15:41:55,428 - MainThread - INFO - [cycle_9_20250621_154144] Capture successful: temp_processing\cycle_9_20250621_154144\cycle_9_20250621_154144_20250621_154144.pcap (1396897 bytes)
+2025-06-21 15:41:55,429 - MainThread - INFO - [cycle_9_20250621_154144] Converting PCAP to CSV...
+2025-06-21 15:41:56,440 - MainThread - INFO - [cycle_9_20250621_154144] CSV conversion successful: temp_processing\cycle_9_20250621_154144\csv_output\cycle_9_20250621_154144_20250621_154144.pcap_Flow.csv (14 flows)
+2025-06-21 15:41:56,440 - MainThread - INFO - [cycle_9_20250621_154144] Processing predictions...
+2025-06-21 15:41:56,441 - MainThread - INFO - [cycle_9_20250621_154144] Sending 14 flows for prediction (from 14 total)
+2025-06-21 15:41:59,240 - ThreadPoolExecutor-7_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:59,460 - ThreadPoolExecutor-7_10 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:59,671 - ThreadPoolExecutor-7_13 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:59,881 - ThreadPoolExecutor-7_11 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:41:59,883 - MainThread - INFO - [cycle_9_20250621_154144] CYCLE SUMMARY:
+2025-06-21 15:41:59,883 - MainThread - INFO - [cycle_9_20250621_154144]   Total flows: 14
+2025-06-21 15:41:59,883 - MainThread - INFO - [cycle_9_20250621_154144]   Normal: 0 (0.0%)
+2025-06-21 15:41:59,883 - MainThread - INFO - [cycle_9_20250621_154144]   Attack: 0 (0.0%)
+2025-06-21 15:41:59,883 - MainThread - INFO - [cycle_9_20250621_154144]   Errors: 14 (100.0%)
+2025-06-21 15:41:59,883 - MainThread - INFO - [cycle_9_20250621_154144] [OK] Normal traffic levels
+2025-06-21 15:41:59,883 - MainThread - INFO - === Ending cycle_9_20250621_154144 ===
+2025-06-21 15:42:00,959 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_9_20250621_154144
+2025-06-21 15:42:00,960 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:42:02,960 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:42:03,961 - MainThread - INFO - === Starting cycle_10_20250621_154203 ===
+2025-06-21 15:42:03,962 - MainThread - INFO - [cycle_10_20250621_154203] Starting capture for 10 seconds...
+2025-06-21 15:42:14,494 - MainThread - INFO - [cycle_10_20250621_154203] Capture successful: temp_processing\cycle_10_20250621_154203\cycle_10_20250621_154203_20250621_154203.pcap (12079386 bytes)
+2025-06-21 15:42:14,494 - MainThread - INFO - [cycle_10_20250621_154203] Converting PCAP to CSV...
+2025-06-21 15:42:20,345 - MainThread - INFO - [cycle_10_20250621_154203] CSV conversion successful: temp_processing\cycle_10_20250621_154203\csv_output\cycle_10_20250621_154203_20250621_154203.pcap_Flow.csv (18789 flows)
+2025-06-21 15:42:20,346 - MainThread - INFO - [cycle_10_20250621_154203] Processing predictions...
+2025-06-21 15:42:20,544 - MainThread - INFO - [cycle_10_20250621_154203] Limiting flows from 18789 to 100
+2025-06-21 15:42:20,569 - MainThread - INFO - [cycle_10_20250621_154203] Sending 100 flows for prediction (from 18789 total)
+2025-06-21 15:42:26,100 - MainThread - INFO - [cycle_10_20250621_154203] Progress: 50/100 requests completed
+2025-06-21 15:42:30,583 - ThreadPoolExecutor-8_6 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:30,583 - ThreadPoolExecutor-8_9 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:30,627 - ThreadPoolExecutor-8_17 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:30,671 - ThreadPoolExecutor-8_15 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:30,742 - ThreadPoolExecutor-8_18 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:30,879 - ThreadPoolExecutor-8_16 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:31,237 - ThreadPoolExecutor-8_14 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:31,364 - ThreadPoolExecutor-8_0 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:32,344 - ThreadPoolExecutor-8_8 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:32,564 - ThreadPoolExecutor-8_2 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:32,564 - MainThread - INFO - [cycle_10_20250621_154203] Progress: 100/100 requests completed
+2025-06-21 15:42:32,565 - MainThread - INFO - [cycle_10_20250621_154203] CYCLE SUMMARY:
+2025-06-21 15:42:32,565 - MainThread - INFO - [cycle_10_20250621_154203]   Original flows: 18789 (sampled: 100)
+2025-06-21 15:42:32,565 - MainThread - INFO - [cycle_10_20250621_154203]   Normal: 0 (0.0%)
+2025-06-21 15:42:32,565 - MainThread - INFO - [cycle_10_20250621_154203]   Attack: 0 (0.0%)
+2025-06-21 15:42:32,565 - MainThread - INFO - [cycle_10_20250621_154203]   Errors: 100 (100.0%)
+2025-06-21 15:42:32,565 - MainThread - INFO - [cycle_10_20250621_154203] [OK] Normal traffic levels
+2025-06-21 15:42:32,569 - MainThread - INFO - === Ending cycle_10_20250621_154203 ===
+2025-06-21 15:42:33,683 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_10_20250621_154203
+2025-06-21 15:42:33,684 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:42:35,684 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:42:36,685 - MainThread - INFO - === Starting cycle_11_20250621_154236 ===
+2025-06-21 15:42:36,689 - MainThread - INFO - [cycle_11_20250621_154236] Starting capture for 10 seconds...
+2025-06-21 15:42:47,091 - MainThread - INFO - [cycle_11_20250621_154236] Capture successful: temp_processing\cycle_11_20250621_154236\cycle_11_20250621_154236_20250621_154236.pcap (1388345 bytes)
+2025-06-21 15:42:47,091 - MainThread - INFO - [cycle_11_20250621_154236] Converting PCAP to CSV...
+2025-06-21 15:42:47,998 - MainThread - INFO - [cycle_11_20250621_154236] CSV conversion successful: temp_processing\cycle_11_20250621_154236\csv_output\cycle_11_20250621_154236_20250621_154236.pcap_Flow.csv (36 flows)
+2025-06-21 15:42:47,998 - MainThread - INFO - [cycle_11_20250621_154236] Processing predictions...
+2025-06-21 15:42:47,998 - MainThread - INFO - [cycle_11_20250621_154236] Sending 36 flows for prediction (from 36 total)
+2025-06-21 15:42:51,320 - ThreadPoolExecutor-9_15 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:51,446 - ThreadPoolExecutor-9_17 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:51,458 - ThreadPoolExecutor-9_3 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:51,709 - ThreadPoolExecutor-9_19 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:51,846 - ThreadPoolExecutor-9_13 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:51,972 - ThreadPoolExecutor-9_14 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:52,002 - ThreadPoolExecutor-9_1 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:52,288 - ThreadPoolExecutor-9_2 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:52,436 - ThreadPoolExecutor-9_9 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:52,572 - ThreadPoolExecutor-9_5 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:42:52,573 - MainThread - INFO - [cycle_11_20250621_154236] CYCLE SUMMARY:
+2025-06-21 15:42:52,573 - MainThread - INFO - [cycle_11_20250621_154236]   Total flows: 36
+2025-06-21 15:42:52,573 - MainThread - INFO - [cycle_11_20250621_154236]   Normal: 0 (0.0%)
+2025-06-21 15:42:52,573 - MainThread - INFO - [cycle_11_20250621_154236]   Attack: 0 (0.0%)
+2025-06-21 15:42:52,573 - MainThread - INFO - [cycle_11_20250621_154236]   Errors: 36 (100.0%)
+2025-06-21 15:42:52,573 - MainThread - INFO - [cycle_11_20250621_154236] [OK] Normal traffic levels
+2025-06-21 15:42:52,573 - MainThread - INFO - === Ending cycle_11_20250621_154236 ===
+2025-06-21 15:42:53,641 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_11_20250621_154236
+2025-06-21 15:42:53,641 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:42:55,641 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:42:56,642 - MainThread - INFO - === Starting cycle_12_20250621_154256 ===
+2025-06-21 15:42:56,642 - MainThread - INFO - [cycle_12_20250621_154256] Starting capture for 10 seconds...
+2025-06-21 15:43:07,024 - MainThread - INFO - [cycle_12_20250621_154256] Capture successful: temp_processing\cycle_12_20250621_154256\cycle_12_20250621_154256_20250621_154256.pcap (1679483 bytes)
+2025-06-21 15:43:07,025 - MainThread - INFO - [cycle_12_20250621_154256] Converting PCAP to CSV...
+2025-06-21 15:43:08,389 - MainThread - INFO - [cycle_12_20250621_154256] CSV conversion successful: temp_processing\cycle_12_20250621_154256\csv_output\cycle_12_20250621_154256_20250621_154256.pcap_Flow.csv (1185 flows)
+2025-06-21 15:43:08,389 - MainThread - INFO - [cycle_12_20250621_154256] Processing predictions...
+2025-06-21 15:43:08,402 - MainThread - INFO - [cycle_12_20250621_154256] Limiting flows from 1185 to 100
+2025-06-21 15:43:08,404 - MainThread - INFO - [cycle_12_20250621_154256] Sending 100 flows for prediction (from 1185 total)
+2025-06-21 15:43:14,225 - MainThread - INFO - [cycle_12_20250621_154256] Progress: 50/100 requests completed
+2025-06-21 15:43:18,770 - ThreadPoolExecutor-10_2 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:18,846 - ThreadPoolExecutor-10_6 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:19,044 - ThreadPoolExecutor-10_8 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:19,171 - ThreadPoolExecutor-10_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:19,310 - ThreadPoolExecutor-10_10 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:19,403 - ThreadPoolExecutor-10_9 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:19,518 - ThreadPoolExecutor-10_16 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:19,886 - ThreadPoolExecutor-10_17 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:20,318 - ThreadPoolExecutor-10_18 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:20,554 - ThreadPoolExecutor-10_5 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:20,554 - MainThread - INFO - [cycle_12_20250621_154256] Progress: 100/100 requests completed
+2025-06-21 15:43:20,555 - MainThread - INFO - [cycle_12_20250621_154256] CYCLE SUMMARY:
+2025-06-21 15:43:20,556 - MainThread - INFO - [cycle_12_20250621_154256]   Original flows: 1185 (sampled: 100)
+2025-06-21 15:43:20,556 - MainThread - INFO - [cycle_12_20250621_154256]   Normal: 0 (0.0%)
+2025-06-21 15:43:20,556 - MainThread - INFO - [cycle_12_20250621_154256]   Attack: 0 (0.0%)
+2025-06-21 15:43:20,556 - MainThread - INFO - [cycle_12_20250621_154256]   Errors: 100 (100.0%)
+2025-06-21 15:43:20,556 - MainThread - INFO - [cycle_12_20250621_154256] [OK] Normal traffic levels
+2025-06-21 15:43:20,556 - MainThread - INFO - === Ending cycle_12_20250621_154256 ===
+2025-06-21 15:43:21,652 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_12_20250621_154256
+2025-06-21 15:43:21,652 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:43:23,652 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:43:24,653 - MainThread - INFO - === Starting cycle_13_20250621_154324 ===
+2025-06-21 15:43:24,654 - MainThread - INFO - [cycle_13_20250621_154324] Starting capture for 10 seconds...
+2025-06-21 15:43:35,102 - MainThread - INFO - [cycle_13_20250621_154324] Capture successful: temp_processing\cycle_13_20250621_154324\cycle_13_20250621_154324_20250621_154324.pcap (10234747 bytes)
+2025-06-21 15:43:35,102 - MainThread - INFO - [cycle_13_20250621_154324] Converting PCAP to CSV...
+2025-06-21 15:43:40,161 - MainThread - INFO - [cycle_13_20250621_154324] CSV conversion successful: temp_processing\cycle_13_20250621_154324\csv_output\cycle_13_20250621_154324_20250621_154324.pcap_Flow.csv (15447 flows)
+2025-06-21 15:43:40,162 - MainThread - INFO - [cycle_13_20250621_154324] Processing predictions...
+2025-06-21 15:43:40,299 - MainThread - INFO - [cycle_13_20250621_154324] Limiting flows from 15447 to 100
+2025-06-21 15:43:40,318 - MainThread - INFO - [cycle_13_20250621_154324] Sending 100 flows for prediction (from 15447 total)
+2025-06-21 15:43:45,823 - MainThread - INFO - [cycle_13_20250621_154324] Progress: 50/100 requests completed
+2025-06-21 15:43:50,611 - ThreadPoolExecutor-11_3 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:50,654 - ThreadPoolExecutor-11_5 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:50,736 - ThreadPoolExecutor-11_13 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:50,853 - ThreadPoolExecutor-11_4 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:51,317 - ThreadPoolExecutor-11_9 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:51,443 - ThreadPoolExecutor-11_19 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:51,452 - ThreadPoolExecutor-11_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:51,600 - ThreadPoolExecutor-11_16 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:51,853 - ThreadPoolExecutor-11_11 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:51,989 - ThreadPoolExecutor-11_0 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:43:51,990 - MainThread - INFO - [cycle_13_20250621_154324] Progress: 100/100 requests completed
+2025-06-21 15:43:51,991 - MainThread - INFO - [cycle_13_20250621_154324] CYCLE SUMMARY:
+2025-06-21 15:43:51,991 - MainThread - INFO - [cycle_13_20250621_154324]   Original flows: 15447 (sampled: 100)
+2025-06-21 15:43:51,991 - MainThread - INFO - [cycle_13_20250621_154324]   Normal: 0 (0.0%)
+2025-06-21 15:43:51,991 - MainThread - INFO - [cycle_13_20250621_154324]   Attack: 0 (0.0%)
+2025-06-21 15:43:51,991 - MainThread - INFO - [cycle_13_20250621_154324]   Errors: 100 (100.0%)
+2025-06-21 15:43:51,991 - MainThread - INFO - [cycle_13_20250621_154324] [OK] Normal traffic levels
+2025-06-21 15:43:51,995 - MainThread - INFO - === Ending cycle_13_20250621_154324 ===
+2025-06-21 15:43:53,087 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_13_20250621_154324
+2025-06-21 15:43:53,087 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:43:55,088 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:43:56,088 - MainThread - INFO - === Starting cycle_14_20250621_154356 ===
+2025-06-21 15:43:56,089 - MainThread - INFO - [cycle_14_20250621_154356] Starting capture for 10 seconds...
+2025-06-21 15:44:06,569 - MainThread - INFO - [cycle_14_20250621_154356] Capture successful: temp_processing\cycle_14_20250621_154356\cycle_14_20250621_154356_20250621_154356.pcap (1009958 bytes)
+2025-06-21 15:44:06,569 - MainThread - INFO - [cycle_14_20250621_154356] Converting PCAP to CSV...
+2025-06-21 15:44:07,483 - MainThread - INFO - [cycle_14_20250621_154356] CSV conversion successful: temp_processing\cycle_14_20250621_154356\csv_output\cycle_14_20250621_154356_20250621_154356.pcap_Flow.csv (15 flows)
+2025-06-21 15:44:07,484 - MainThread - INFO - [cycle_14_20250621_154356] Processing predictions...
+2025-06-21 15:44:07,485 - MainThread - INFO - [cycle_14_20250621_154356] Sending 15 flows for prediction (from 15 total)
+2025-06-21 15:44:10,462 - ThreadPoolExecutor-12_13 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:10,609 - ThreadPoolExecutor-12_6 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:10,830 - ThreadPoolExecutor-12_11 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:11,051 - ThreadPoolExecutor-12_14 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:11,251 - ThreadPoolExecutor-12_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:11,252 - MainThread - INFO - [cycle_14_20250621_154356] CYCLE SUMMARY:
+2025-06-21 15:44:11,252 - MainThread - INFO - [cycle_14_20250621_154356]   Total flows: 15
+2025-06-21 15:44:11,252 - MainThread - INFO - [cycle_14_20250621_154356]   Normal: 0 (0.0%)
+2025-06-21 15:44:11,252 - MainThread - INFO - [cycle_14_20250621_154356]   Attack: 0 (0.0%)
+2025-06-21 15:44:11,253 - MainThread - INFO - [cycle_14_20250621_154356]   Errors: 15 (100.0%)
+2025-06-21 15:44:11,253 - MainThread - INFO - [cycle_14_20250621_154356] [OK] Normal traffic levels
+2025-06-21 15:44:11,253 - MainThread - INFO - === Ending cycle_14_20250621_154356 ===
+2025-06-21 15:44:12,363 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_14_20250621_154356
+2025-06-21 15:44:12,364 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:44:14,364 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:44:15,365 - MainThread - INFO - === Starting cycle_15_20250621_154415 ===
+2025-06-21 15:44:15,365 - MainThread - INFO - [cycle_15_20250621_154415] Starting capture for 10 seconds...
+2025-06-21 15:44:25,792 - MainThread - INFO - [cycle_15_20250621_154415] Capture successful: temp_processing\cycle_15_20250621_154415\cycle_15_20250621_154415_20250621_154415.pcap (1132738 bytes)
+2025-06-21 15:44:25,793 - MainThread - INFO - [cycle_15_20250621_154415] Converting PCAP to CSV...
+2025-06-21 15:44:26,687 - MainThread - INFO - [cycle_15_20250621_154415] CSV conversion successful: temp_processing\cycle_15_20250621_154415\csv_output\cycle_15_20250621_154415_20250621_154415.pcap_Flow.csv (24 flows)
+2025-06-21 15:44:26,687 - MainThread - INFO - [cycle_15_20250621_154415] Processing predictions...
+2025-06-21 15:44:26,688 - MainThread - INFO - [cycle_15_20250621_154415] Sending 24 flows for prediction (from 24 total)
+2025-06-21 15:44:28,955 - ThreadPoolExecutor-13_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:29,091 - ThreadPoolExecutor-13_16 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:29,219 - ThreadPoolExecutor-13_17 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:29,439 - ThreadPoolExecutor-13_11 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:29,619 - ThreadPoolExecutor-13_14 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:29,881 - ThreadPoolExecutor-13_10 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:29,987 - ThreadPoolExecutor-13_18 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:30,144 - ThreadPoolExecutor-13_15 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:30,366 - ThreadPoolExecutor-13_13 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:30,576 - ThreadPoolExecutor-13_19 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:30,577 - MainThread - INFO - [cycle_15_20250621_154415] CYCLE SUMMARY:
+2025-06-21 15:44:30,577 - MainThread - INFO - [cycle_15_20250621_154415]   Total flows: 24
+2025-06-21 15:44:30,577 - MainThread - INFO - [cycle_15_20250621_154415]   Normal: 0 (0.0%)
+2025-06-21 15:44:30,577 - MainThread - INFO - [cycle_15_20250621_154415]   Attack: 0 (0.0%)
+2025-06-21 15:44:30,577 - MainThread - INFO - [cycle_15_20250621_154415]   Errors: 24 (100.0%)
+2025-06-21 15:44:30,578 - MainThread - INFO - [cycle_15_20250621_154415] [OK] Normal traffic levels
+2025-06-21 15:44:30,578 - MainThread - INFO - === Ending cycle_15_20250621_154415 ===
+2025-06-21 15:44:31,700 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_15_20250621_154415
+2025-06-21 15:44:31,700 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:44:33,701 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:44:34,702 - MainThread - INFO - === Starting cycle_16_20250621_154434 ===
+2025-06-21 15:44:34,702 - MainThread - INFO - [cycle_16_20250621_154434] Starting capture for 10 seconds...
+2025-06-21 15:44:45,317 - MainThread - INFO - [cycle_16_20250621_154434] Capture successful: temp_processing\cycle_16_20250621_154434\cycle_16_20250621_154434_20250621_154434.pcap (1073340 bytes)
+2025-06-21 15:44:45,317 - MainThread - INFO - [cycle_16_20250621_154434] Converting PCAP to CSV...
+2025-06-21 15:44:46,143 - MainThread - INFO - [cycle_16_20250621_154434] CSV conversion successful: temp_processing\cycle_16_20250621_154434\csv_output\cycle_16_20250621_154434_20250621_154434.pcap_Flow.csv (20 flows)
+2025-06-21 15:44:46,144 - MainThread - INFO - [cycle_16_20250621_154434] Processing predictions...
+2025-06-21 15:44:46,144 - MainThread - INFO - [cycle_16_20250621_154434] Sending 20 flows for prediction (from 20 total)
+2025-06-21 15:44:48,480 - ThreadPoolExecutor-14_18 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:48,616 - ThreadPoolExecutor-14_19 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:48,764 - ThreadPoolExecutor-14_11 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:48,943 - ThreadPoolExecutor-14_13 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:49,080 - ThreadPoolExecutor-14_14 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:49,248 - ThreadPoolExecutor-14_16 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:49,385 - ThreadPoolExecutor-14_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:49,585 - ThreadPoolExecutor-14_10 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:49,816 - ThreadPoolExecutor-14_17 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:49,985 - ThreadPoolExecutor-14_15 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:44:49,987 - MainThread - INFO - [cycle_16_20250621_154434] CYCLE SUMMARY:
+2025-06-21 15:44:49,987 - MainThread - INFO - [cycle_16_20250621_154434]   Total flows: 20
+2025-06-21 15:44:49,987 - MainThread - INFO - [cycle_16_20250621_154434]   Normal: 0 (0.0%)
+2025-06-21 15:44:49,987 - MainThread - INFO - [cycle_16_20250621_154434]   Attack: 0 (0.0%)
+2025-06-21 15:44:49,987 - MainThread - INFO - [cycle_16_20250621_154434]   Errors: 20 (100.0%)
+2025-06-21 15:44:49,987 - MainThread - INFO - [cycle_16_20250621_154434] [OK] Normal traffic levels
+2025-06-21 15:44:49,987 - MainThread - INFO - === Ending cycle_16_20250621_154434 ===
+2025-06-21 15:44:51,085 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_16_20250621_154434
+2025-06-21 15:44:51,085 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:44:53,085 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:44:54,086 - MainThread - INFO - === Starting cycle_17_20250621_154454 ===
+2025-06-21 15:44:54,086 - MainThread - INFO - [cycle_17_20250621_154454] Starting capture for 10 seconds...
+2025-06-21 15:45:04,981 - MainThread - INFO - [cycle_17_20250621_154454] Capture successful: temp_processing\cycle_17_20250621_154454\cycle_17_20250621_154454_20250621_154454.pcap (436037 bytes)
+2025-06-21 15:45:04,981 - MainThread - INFO - [cycle_17_20250621_154454] Converting PCAP to CSV...
+2025-06-21 15:45:05,799 - MainThread - INFO - [cycle_17_20250621_154454] CSV conversion successful: temp_processing\cycle_17_20250621_154454\csv_output\cycle_17_20250621_154454_20250621_154454.pcap_Flow.csv (27 flows)
+2025-06-21 15:45:05,799 - MainThread - INFO - [cycle_17_20250621_154454] Processing predictions...
+2025-06-21 15:45:05,799 - MainThread - INFO - [cycle_17_20250621_154454] Sending 27 flows for prediction (from 27 total)
+2025-06-21 15:45:08,037 - ThreadPoolExecutor-15_11 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:08,184 - ThreadPoolExecutor-15_17 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:08,320 - ThreadPoolExecutor-15_13 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:08,667 - ThreadPoolExecutor-15_15 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:08,942 - ThreadPoolExecutor-15_19 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:09,068 - ThreadPoolExecutor-15_16 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:09,215 - ThreadPoolExecutor-15_10 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:09,331 - ThreadPoolExecutor-15_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:09,480 - ThreadPoolExecutor-15_14 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:09,825 - ThreadPoolExecutor-15_18 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:09,827 - MainThread - INFO - [cycle_17_20250621_154454] CYCLE SUMMARY:
+2025-06-21 15:45:09,827 - MainThread - INFO - [cycle_17_20250621_154454]   Total flows: 27
+2025-06-21 15:45:09,827 - MainThread - INFO - [cycle_17_20250621_154454]   Normal: 0 (0.0%)
+2025-06-21 15:45:09,828 - MainThread - INFO - [cycle_17_20250621_154454]   Attack: 0 (0.0%)
+2025-06-21 15:45:09,828 - MainThread - INFO - [cycle_17_20250621_154454]   Errors: 27 (100.0%)
+2025-06-21 15:45:09,828 - MainThread - INFO - [cycle_17_20250621_154454] [OK] Normal traffic levels
+2025-06-21 15:45:09,828 - MainThread - INFO - === Ending cycle_17_20250621_154454 ===
+2025-06-21 15:45:10,952 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_17_20250621_154454
+2025-06-21 15:45:10,953 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:45:12,953 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:45:13,954 - MainThread - INFO - === Starting cycle_18_20250621_154513 ===
+2025-06-21 15:45:13,955 - MainThread - INFO - [cycle_18_20250621_154513] Starting capture for 10 seconds...
+2025-06-21 15:45:24,429 - MainThread - INFO - [cycle_18_20250621_154513] Capture successful: temp_processing\cycle_18_20250621_154513\cycle_18_20250621_154513_20250621_154513.pcap (2540811 bytes)
+2025-06-21 15:45:24,429 - MainThread - INFO - [cycle_18_20250621_154513] Converting PCAP to CSV...
+2025-06-21 15:45:25,391 - MainThread - INFO - [cycle_18_20250621_154513] CSV conversion successful: temp_processing\cycle_18_20250621_154513\csv_output\cycle_18_20250621_154513_20250621_154513.pcap_Flow.csv (43 flows)
+2025-06-21 15:45:25,391 - MainThread - INFO - [cycle_18_20250621_154513] Processing predictions...
+2025-06-21 15:45:25,392 - MainThread - INFO - [cycle_18_20250621_154513] Sending 43 flows for prediction (from 43 total)
+2025-06-21 15:45:29,407 - ThreadPoolExecutor-16_14 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:29,408 - ThreadPoolExecutor-16_16 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:29,409 - ThreadPoolExecutor-16_15 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:29,409 - ThreadPoolExecutor-16_19 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:29,409 - ThreadPoolExecutor-16_18 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:29,929 - ThreadPoolExecutor-16_17 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:29,984 - ThreadPoolExecutor-16_13 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:30,782 - ThreadPoolExecutor-16_9 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:31,182 - ThreadPoolExecutor-16_6 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:31,382 - ThreadPoolExecutor-16_5 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:31,384 - MainThread - INFO - [cycle_18_20250621_154513] CYCLE SUMMARY:
+2025-06-21 15:45:31,384 - MainThread - INFO - [cycle_18_20250621_154513]   Total flows: 43
+2025-06-21 15:45:31,384 - MainThread - INFO - [cycle_18_20250621_154513]   Normal: 0 (0.0%)
+2025-06-21 15:45:31,384 - MainThread - INFO - [cycle_18_20250621_154513]   Attack: 0 (0.0%)
+2025-06-21 15:45:31,384 - MainThread - INFO - [cycle_18_20250621_154513]   Errors: 43 (100.0%)
+2025-06-21 15:45:31,384 - MainThread - INFO - [cycle_18_20250621_154513] [OK] Normal traffic levels
+2025-06-21 15:45:31,384 - MainThread - INFO - === Ending cycle_18_20250621_154513 ===
+2025-06-21 15:45:32,488 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_18_20250621_154513
+2025-06-21 15:45:32,488 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:45:34,489 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:45:35,490 - MainThread - INFO - === Starting cycle_19_20250621_154535 ===
+2025-06-21 15:45:35,490 - MainThread - INFO - [cycle_19_20250621_154535] Starting capture for 10 seconds...
+2025-06-21 15:45:45,869 - MainThread - INFO - [cycle_19_20250621_154535] Capture successful: temp_processing\cycle_19_20250621_154535\cycle_19_20250621_154535_20250621_154535.pcap (55229 bytes)
+2025-06-21 15:45:45,869 - MainThread - INFO - [cycle_19_20250621_154535] Converting PCAP to CSV...
+2025-06-21 15:45:46,655 - MainThread - INFO - [cycle_19_20250621_154535] CSV conversion successful: temp_processing\cycle_19_20250621_154535\csv_output\cycle_19_20250621_154535_20250621_154535.pcap_Flow.csv (31 flows)
+2025-06-21 15:45:46,655 - MainThread - INFO - [cycle_19_20250621_154535] Processing predictions...
+2025-06-21 15:45:46,656 - MainThread - INFO - [cycle_19_20250621_154535] Sending 31 flows for prediction (from 31 total)
+2025-06-21 15:45:49,718 - ThreadPoolExecutor-17_13 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:50,033 - ThreadPoolExecutor-17_10 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:50,191 - ThreadPoolExecutor-17_1 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:50,307 - ThreadPoolExecutor-17_2 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:50,433 - ThreadPoolExecutor-17_17 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:50,559 - ThreadPoolExecutor-17_11 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:50,668 - ThreadPoolExecutor-17_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:50,669 - ThreadPoolExecutor-17_14 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:50,671 - ThreadPoolExecutor-17_15 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:50,865 - ThreadPoolExecutor-17_18 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:45:50,866 - MainThread - INFO - [cycle_19_20250621_154535] CYCLE SUMMARY:
+2025-06-21 15:45:50,866 - MainThread - INFO - [cycle_19_20250621_154535]   Total flows: 31
+2025-06-21 15:45:50,866 - MainThread - INFO - [cycle_19_20250621_154535]   Normal: 0 (0.0%)
+2025-06-21 15:45:50,866 - MainThread - INFO - [cycle_19_20250621_154535]   Attack: 0 (0.0%)
+2025-06-21 15:45:50,866 - MainThread - INFO - [cycle_19_20250621_154535]   Errors: 31 (100.0%)
+2025-06-21 15:45:50,867 - MainThread - INFO - [cycle_19_20250621_154535] [OK] Normal traffic levels
+2025-06-21 15:45:50,867 - MainThread - INFO - === Ending cycle_19_20250621_154535 ===
+2025-06-21 15:45:51,964 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_19_20250621_154535
+2025-06-21 15:45:51,964 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:45:53,965 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:45:54,965 - MainThread - INFO - === Starting cycle_20_20250621_154554 ===
+2025-06-21 15:45:54,966 - MainThread - INFO - [cycle_20_20250621_154554] Starting capture for 10 seconds...
+2025-06-21 15:46:05,457 - MainThread - INFO - [cycle_20_20250621_154554] Capture successful: temp_processing\cycle_20_20250621_154554\cycle_20_20250621_154554_20250621_154554.pcap (94211 bytes)
+2025-06-21 15:46:05,457 - MainThread - INFO - [cycle_20_20250621_154554] Converting PCAP to CSV...
+2025-06-21 15:46:06,239 - MainThread - INFO - [cycle_20_20250621_154554] CSV conversion successful: temp_processing\cycle_20_20250621_154554\csv_output\cycle_20_20250621_154554_20250621_154554.pcap_Flow.csv (38 flows)
+2025-06-21 15:46:06,239 - MainThread - INFO - [cycle_20_20250621_154554] Processing predictions...
+2025-06-21 15:46:06,240 - MainThread - INFO - [cycle_20_20250621_154554] Sending 38 flows for prediction (from 38 total)
+2025-06-21 15:46:10,148 - ThreadPoolExecutor-18_7 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:10,179 - ThreadPoolExecutor-18_0 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:10,251 - ThreadPoolExecutor-18_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:10,252 - ThreadPoolExecutor-18_14 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:10,254 - ThreadPoolExecutor-18_16 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:10,254 - ThreadPoolExecutor-18_17 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:10,295 - ThreadPoolExecutor-18_4 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:10,422 - ThreadPoolExecutor-18_6 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:10,527 - ThreadPoolExecutor-18_9 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:10,789 - ThreadPoolExecutor-18_2 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:10,791 - MainThread - INFO - [cycle_20_20250621_154554] CYCLE SUMMARY:
+2025-06-21 15:46:10,791 - MainThread - INFO - [cycle_20_20250621_154554]   Total flows: 38
+2025-06-21 15:46:10,791 - MainThread - INFO - [cycle_20_20250621_154554]   Normal: 0 (0.0%)
+2025-06-21 15:46:10,791 - MainThread - INFO - [cycle_20_20250621_154554]   Attack: 0 (0.0%)
+2025-06-21 15:46:10,791 - MainThread - INFO - [cycle_20_20250621_154554]   Errors: 38 (100.0%)
+2025-06-21 15:46:10,792 - MainThread - INFO - [cycle_20_20250621_154554] [OK] Normal traffic levels
+2025-06-21 15:46:10,792 - MainThread - INFO - === Ending cycle_20_20250621_154554 ===
+2025-06-21 15:46:11,865 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_20_20250621_154554
+2025-06-21 15:46:11,866 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:46:13,866 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:46:14,867 - MainThread - INFO - === Starting cycle_21_20250621_154614 ===
+2025-06-21 15:46:14,868 - MainThread - INFO - [cycle_21_20250621_154614] Starting capture for 10 seconds...
+2025-06-21 15:46:25,237 - MainThread - INFO - [cycle_21_20250621_154614] Capture successful: temp_processing\cycle_21_20250621_154614\cycle_21_20250621_154614_20250621_154614.pcap (50675 bytes)
+2025-06-21 15:46:25,238 - MainThread - INFO - [cycle_21_20250621_154614] Converting PCAP to CSV...
+2025-06-21 15:46:26,009 - MainThread - INFO - [cycle_21_20250621_154614] CSV conversion successful: temp_processing\cycle_21_20250621_154614\csv_output\cycle_21_20250621_154614_20250621_154614.pcap_Flow.csv (29 flows)
+2025-06-21 15:46:26,009 - MainThread - INFO - [cycle_21_20250621_154614] Processing predictions...
+2025-06-21 15:46:26,010 - MainThread - INFO - [cycle_21_20250621_154614] Sending 29 flows for prediction (from 29 total)
+2025-06-21 15:46:28,652 - ThreadPoolExecutor-19_17 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:28,821 - ThreadPoolExecutor-19_7 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:28,864 - ThreadPoolExecutor-19_5 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:28,967 - ThreadPoolExecutor-19_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:29,241 - ThreadPoolExecutor-19_15 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:29,336 - ThreadPoolExecutor-19_11 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:29,473 - ThreadPoolExecutor-19_19 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:29,757 - ThreadPoolExecutor-19_18 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:29,872 - ThreadPoolExecutor-19_14 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:30,023 - ThreadPoolExecutor-19_10 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:30,024 - MainThread - INFO - [cycle_21_20250621_154614] CYCLE SUMMARY:
+2025-06-21 15:46:30,024 - MainThread - INFO - [cycle_21_20250621_154614]   Total flows: 29
+2025-06-21 15:46:30,024 - MainThread - INFO - [cycle_21_20250621_154614]   Normal: 0 (0.0%)
+2025-06-21 15:46:30,025 - MainThread - INFO - [cycle_21_20250621_154614]   Attack: 0 (0.0%)
+2025-06-21 15:46:30,025 - MainThread - INFO - [cycle_21_20250621_154614]   Errors: 29 (100.0%)
+2025-06-21 15:46:30,025 - MainThread - INFO - [cycle_21_20250621_154614] [OK] Normal traffic levels
+2025-06-21 15:46:30,025 - MainThread - INFO - === Ending cycle_21_20250621_154614 ===
+2025-06-21 15:46:31,107 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_21_20250621_154614
+2025-06-21 15:46:31,108 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:46:33,108 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:46:34,109 - MainThread - INFO - === Starting cycle_22_20250621_154634 ===
+2025-06-21 15:46:34,109 - MainThread - INFO - [cycle_22_20250621_154634] Starting capture for 10 seconds...
+2025-06-21 15:46:44,474 - MainThread - INFO - [cycle_22_20250621_154634] Capture successful: temp_processing\cycle_22_20250621_154634\cycle_22_20250621_154634_20250621_154634.pcap (53568 bytes)
+2025-06-21 15:46:44,474 - MainThread - INFO - [cycle_22_20250621_154634] Converting PCAP to CSV...
+2025-06-21 15:46:45,249 - MainThread - INFO - [cycle_22_20250621_154634] CSV conversion successful: temp_processing\cycle_22_20250621_154634\csv_output\cycle_22_20250621_154634_20250621_154634.pcap_Flow.csv (25 flows)
+2025-06-21 15:46:45,250 - MainThread - INFO - [cycle_22_20250621_154634] Processing predictions...
+2025-06-21 15:46:45,250 - MainThread - INFO - [cycle_22_20250621_154634] Sending 25 flows for prediction (from 25 total)
+2025-06-21 15:46:48,008 - ThreadPoolExecutor-20_10 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:48,166 - ThreadPoolExecutor-20_13 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:48,292 - ThreadPoolExecutor-20_15 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:48,419 - ThreadPoolExecutor-20_3 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:48,576 - ThreadPoolExecutor-20_1 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:48,703 - ThreadPoolExecutor-20_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:48,829 - ThreadPoolExecutor-20_16 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:48,945 - ThreadPoolExecutor-20_18 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:49,124 - ThreadPoolExecutor-20_5 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:49,240 - ThreadPoolExecutor-20_19 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:46:49,241 - MainThread - INFO - [cycle_22_20250621_154634] CYCLE SUMMARY:
+2025-06-21 15:46:49,242 - MainThread - INFO - [cycle_22_20250621_154634]   Total flows: 25
+2025-06-21 15:46:49,242 - MainThread - INFO - [cycle_22_20250621_154634]   Normal: 0 (0.0%)
+2025-06-21 15:46:49,242 - MainThread - INFO - [cycle_22_20250621_154634]   Attack: 0 (0.0%)
+2025-06-21 15:46:49,242 - MainThread - INFO - [cycle_22_20250621_154634]   Errors: 25 (100.0%)
+2025-06-21 15:46:49,242 - MainThread - INFO - [cycle_22_20250621_154634] [OK] Normal traffic levels
+2025-06-21 15:46:49,242 - MainThread - INFO - === Ending cycle_22_20250621_154634 ===
+2025-06-21 15:46:50,332 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_22_20250621_154634
+2025-06-21 15:46:50,332 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:46:52,333 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:46:53,333 - MainThread - INFO - === Starting cycle_23_20250621_154653 ===
+2025-06-21 15:46:53,335 - MainThread - INFO - [cycle_23_20250621_154653] Starting capture for 10 seconds...
+2025-06-21 15:47:03,682 - MainThread - INFO - [cycle_23_20250621_154653] Capture successful: temp_processing\cycle_23_20250621_154653\cycle_23_20250621_154653_20250621_154653.pcap (23197 bytes)
+2025-06-21 15:47:03,682 - MainThread - INFO - [cycle_23_20250621_154653] Converting PCAP to CSV...
+2025-06-21 15:47:04,445 - MainThread - INFO - [cycle_23_20250621_154653] CSV conversion successful: temp_processing\cycle_23_20250621_154653\csv_output\cycle_23_20250621_154653_20250621_154653.pcap_Flow.csv (17 flows)
+2025-06-21 15:47:04,445 - MainThread - INFO - [cycle_23_20250621_154653] Processing predictions...
+2025-06-21 15:47:04,445 - MainThread - INFO - [cycle_23_20250621_154653] Sending 17 flows for prediction (from 17 total)
+2025-06-21 15:47:06,617 - ThreadPoolExecutor-21_13 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:47:06,733 - ThreadPoolExecutor-21_10 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:47:06,880 - ThreadPoolExecutor-21_14 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:47:07,038 - ThreadPoolExecutor-21_11 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:47:07,249 - ThreadPoolExecutor-21_15 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:47:07,365 - ThreadPoolExecutor-21_16 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:47:07,575 - ThreadPoolExecutor-21_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:47:07,576 - MainThread - INFO - [cycle_23_20250621_154653] CYCLE SUMMARY:
+2025-06-21 15:47:07,576 - MainThread - INFO - [cycle_23_20250621_154653]   Total flows: 17
+2025-06-21 15:47:07,576 - MainThread - INFO - [cycle_23_20250621_154653]   Normal: 0 (0.0%)
+2025-06-21 15:47:07,576 - MainThread - INFO - [cycle_23_20250621_154653]   Attack: 0 (0.0%)
+2025-06-21 15:47:07,576 - MainThread - INFO - [cycle_23_20250621_154653]   Errors: 17 (100.0%)
+2025-06-21 15:47:07,576 - MainThread - INFO - [cycle_23_20250621_154653] [OK] Normal traffic levels
+2025-06-21 15:47:07,577 - MainThread - INFO - === Ending cycle_23_20250621_154653 ===
+2025-06-21 15:47:08,647 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_23_20250621_154653
+2025-06-21 15:47:08,647 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:47:10,648 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:47:11,648 - MainThread - INFO - === Starting cycle_24_20250621_154711 ===
+2025-06-21 15:47:11,649 - MainThread - INFO - [cycle_24_20250621_154711] Starting capture for 10 seconds...
+2025-06-21 15:47:21,960 - MainThread - INFO - [cycle_24_20250621_154711] Capture successful: temp_processing\cycle_24_20250621_154711\cycle_24_20250621_154711_20250621_154711.pcap (14324 bytes)
+2025-06-21 15:47:21,960 - MainThread - INFO - [cycle_24_20250621_154711] Converting PCAP to CSV...
+2025-06-21 15:47:22,654 - MainThread - INFO - [cycle_24_20250621_154711] CSV conversion successful: temp_processing\cycle_24_20250621_154711\csv_output\cycle_24_20250621_154711_20250621_154711.pcap_Flow.csv (8 flows)
+2025-06-21 15:47:22,654 - MainThread - INFO - [cycle_24_20250621_154711] Processing predictions...
+2025-06-21 15:47:22,655 - MainThread - INFO - [cycle_24_20250621_154711] Sending 8 flows for prediction (from 8 total)
+2025-06-21 15:47:24,079 - MainThread - INFO - [cycle_24_20250621_154711] CYCLE SUMMARY:
+2025-06-21 15:47:24,079 - MainThread - INFO - [cycle_24_20250621_154711]   Total flows: 8
+2025-06-21 15:47:24,079 - MainThread - INFO - [cycle_24_20250621_154711]   Normal: 0 (0.0%)
+2025-06-21 15:47:24,079 - MainThread - INFO - [cycle_24_20250621_154711]   Attack: 0 (0.0%)
+2025-06-21 15:47:24,080 - MainThread - INFO - [cycle_24_20250621_154711]   Errors: 8 (100.0%)
+2025-06-21 15:47:24,080 - MainThread - INFO - [cycle_24_20250621_154711] [OK] Normal traffic levels
+2025-06-21 15:47:24,080 - MainThread - INFO - === Ending cycle_24_20250621_154711 ===
+2025-06-21 15:47:25,146 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_24_20250621_154711
+2025-06-21 15:47:25,146 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:47:27,147 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:47:28,147 - MainThread - INFO - === Starting cycle_25_20250621_154728 ===
+2025-06-21 15:47:28,148 - MainThread - INFO - [cycle_25_20250621_154728] Starting capture for 10 seconds...
+2025-06-21 15:47:38,547 - MainThread - INFO - [cycle_25_20250621_154728] Capture successful: temp_processing\cycle_25_20250621_154728\cycle_25_20250621_154728_20250621_154728.pcap (307820 bytes)
+2025-06-21 15:47:38,547 - MainThread - INFO - [cycle_25_20250621_154728] Converting PCAP to CSV...
+2025-06-21 15:47:39,279 - MainThread - INFO - [cycle_25_20250621_154728] CSV conversion successful: temp_processing\cycle_25_20250621_154728\csv_output\cycle_25_20250621_154728_20250621_154728.pcap_Flow.csv (25 flows)
+2025-06-21 15:47:39,280 - MainThread - INFO - [cycle_25_20250621_154728] Processing predictions...
+2025-06-21 15:47:39,280 - MainThread - INFO - [cycle_25_20250621_154728] Sending 25 flows for prediction (from 25 total)
+2025-06-21 15:47:41,499 - ThreadPoolExecutor-23_10 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:47:41,783 - ThreadPoolExecutor-23_17 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:47:41,993 - ThreadPoolExecutor-23_12 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:47:42,425 - ThreadPoolExecutor-23_14 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:47:42,635 - ThreadPoolExecutor-23_13 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:47:42,825 - ThreadPoolExecutor-23_11 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:47:43,025 - ThreadPoolExecutor-23_15 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:47:43,162 - ThreadPoolExecutor-23_18 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:47:43,294 - ThreadPoolExecutor-23_16 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:47:43,295 - ThreadPoolExecutor-23_19 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 10
+2025-06-21 15:47:43,296 - MainThread - INFO - [cycle_25_20250621_154728] CYCLE SUMMARY:
+2025-06-21 15:47:43,296 - MainThread - INFO - [cycle_25_20250621_154728]   Total flows: 25
+2025-06-21 15:47:43,296 - MainThread - INFO - [cycle_25_20250621_154728]   Normal: 0 (0.0%)
+2025-06-21 15:47:43,296 - MainThread - INFO - [cycle_25_20250621_154728]   Attack: 0 (0.0%)
+2025-06-21 15:47:43,297 - MainThread - INFO - [cycle_25_20250621_154728]   Errors: 25 (100.0%)
+2025-06-21 15:47:43,297 - MainThread - INFO - [cycle_25_20250621_154728] [OK] Normal traffic levels
+2025-06-21 15:47:43,297 - MainThread - INFO - === Ending cycle_25_20250621_154728 ===
+2025-06-21 15:47:44,364 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_25_20250621_154728
+2025-06-21 15:47:44,364 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:47:45,657 - MainThread - INFO - Shutdown requested by user
+2025-06-21 15:47:45,657 - MainThread - INFO - Shutting down...
+2025-06-21 15:47:49,387 - MainThread - INFO - === Starting Robust Network Intrusion Detection System ===
+2025-06-21 15:47:49,387 - MainThread - INFO - Interface: Ethernet
+2025-06-21 15:47:49,387 - MainThread - INFO - Capture duration: 10 seconds
+2025-06-21 15:47:49,387 - MainThread - INFO - Endpoint: http://localhost:8000/predict/
+2025-06-21 15:47:49,387 - MainThread - INFO - Filtering traffic to localhost:8080
+2025-06-21 15:47:49,387 - MainThread - INFO - Cycle cooldown: 2 seconds
+2025-06-21 15:47:49,388 - MainThread - INFO - Max workers: 2
+2025-06-21 15:47:49,388 - MainThread - INFO - Connection pool size: 10
+2025-06-21 15:47:49,388 - MainThread - INFO - Created session with pool size: 10
+2025-06-21 15:47:49,389 - MainThread - INFO - === Starting cycle_1_20250621_154749 ===
+2025-06-21 15:47:49,389 - MainThread - INFO - [cycle_1_20250621_154749] Starting capture for 10 seconds...
+2025-06-21 15:47:49,464 - MainThread - ERROR - [cycle_1_20250621_154749] Capture failed: Command '['tshark', '-i', 'Ethernet', '-a', 'duration:10', '-f', 'not (host localhost and port 8080)', '-F', 'pcap', '-w', 'temp_processing\\cycle_1_20250621_154749\\cycle_1_20250621_154749_20250621_154749.pcap', '-q']' returned non-zero exit status 1.
+2025-06-21 15:47:49,464 - MainThread - INFO - === Ending cycle_1_20250621_154749 ===
+2025-06-21 15:47:50,529 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:47:52,529 - MainThread - WARNING - [FAIL] Cycle failed (1/5)
+2025-06-21 15:47:53,530 - MainThread - INFO - === Starting cycle_2_20250621_154753 ===
+2025-06-21 15:47:53,531 - MainThread - INFO - [cycle_2_20250621_154753] Starting capture for 10 seconds...
+2025-06-21 15:48:03,868 - MainThread - INFO - [cycle_2_20250621_154753] Capture successful: temp_processing\cycle_2_20250621_154753\cycle_2_20250621_154753_20250621_154753.pcap (94472 bytes)
+2025-06-21 15:48:03,868 - MainThread - INFO - [cycle_2_20250621_154753] Converting PCAP to CSV...
+2025-06-21 15:48:04,568 - MainThread - INFO - [cycle_2_20250621_154753] CSV conversion successful: temp_processing\cycle_2_20250621_154753\csv_output\cycle_2_20250621_154753_20250621_154753.pcap_Flow.csv (18 flows)
+2025-06-21 15:48:04,568 - MainThread - INFO - [cycle_2_20250621_154753] Processing predictions...
+2025-06-21 15:48:04,569 - MainThread - INFO - [cycle_2_20250621_154753] Sending 18 flows for prediction (from 18 total)
+2025-06-21 15:48:07,397 - MainThread - INFO - [cycle_2_20250621_154753] Progress: 2/18 flows processed
+2025-06-21 15:48:08,261 - MainThread - INFO - [cycle_2_20250621_154753] Progress: 4/18 flows processed
+2025-06-21 15:48:09,081 - MainThread - INFO - [cycle_2_20250621_154753] Progress: 6/18 flows processed
+2025-06-21 15:48:09,945 - MainThread - INFO - [cycle_2_20250621_154753] Progress: 8/18 flows processed
+2025-06-21 15:48:10,733 - MainThread - INFO - [cycle_2_20250621_154753] Progress: 10/18 flows processed
+2025-06-21 15:48:11,513 - MainThread - INFO - [cycle_2_20250621_154753] Progress: 12/18 flows processed
+2025-06-21 15:48:12,323 - MainThread - INFO - [cycle_2_20250621_154753] Progress: 14/18 flows processed
+2025-06-21 15:48:13,144 - MainThread - INFO - [cycle_2_20250621_154753] Progress: 16/18 flows processed
+2025-06-21 15:48:13,454 - MainThread - INFO - [cycle_2_20250621_154753] Progress: 18/18 flows processed
+2025-06-21 15:48:13,454 - MainThread - INFO - [cycle_2_20250621_154753] CYCLE SUMMARY:
+2025-06-21 15:48:13,455 - MainThread - INFO - [cycle_2_20250621_154753]   Total flows: 18
+2025-06-21 15:48:13,455 - MainThread - INFO - [cycle_2_20250621_154753]   Normal: 0 (0.0%)
+2025-06-21 15:48:13,455 - MainThread - INFO - [cycle_2_20250621_154753]   Attack: 0 (0.0%)
+2025-06-21 15:48:13,455 - MainThread - INFO - [cycle_2_20250621_154753]   Errors: 18 (100.0%)
+2025-06-21 15:48:13,455 - MainThread - INFO - [cycle_2_20250621_154753] [OK] Normal traffic levels
+2025-06-21 15:48:13,455 - MainThread - INFO - [cycle_2_20250621_154753] Success rate: 100.00%
+2025-06-21 15:48:13,455 - MainThread - INFO - === Ending cycle_2_20250621_154753 ===
+2025-06-21 15:48:14,520 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_2_20250621_154753
+2025-06-21 15:48:14,520 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:48:16,521 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:48:17,521 - MainThread - INFO - === Starting cycle_3_20250621_154817 ===
+2025-06-21 15:48:17,522 - MainThread - INFO - [cycle_3_20250621_154817] Starting capture for 10 seconds...
+2025-06-21 15:48:28,082 - MainThread - INFO - [cycle_3_20250621_154817] Capture successful: temp_processing\cycle_3_20250621_154817\cycle_3_20250621_154817_20250621_154817.pcap (312590 bytes)
+2025-06-21 15:48:28,082 - MainThread - INFO - [cycle_3_20250621_154817] Converting PCAP to CSV...
+2025-06-21 15:48:28,897 - MainThread - INFO - [cycle_3_20250621_154817] CSV conversion successful: temp_processing\cycle_3_20250621_154817\csv_output\cycle_3_20250621_154817_20250621_154817.pcap_Flow.csv (36 flows)
+2025-06-21 15:48:28,897 - MainThread - INFO - [cycle_3_20250621_154817] Processing predictions...
+2025-06-21 15:48:28,898 - MainThread - INFO - [cycle_3_20250621_154817] Sending 36 flows for prediction (from 36 total)
+2025-06-21 15:48:29,711 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 2/36 flows processed
+2025-06-21 15:48:30,491 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 4/36 flows processed
+2025-06-21 15:48:31,312 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 6/36 flows processed
+2025-06-21 15:48:32,122 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 8/36 flows processed
+2025-06-21 15:48:32,785 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 10/36 flows processed
+2025-06-21 15:48:33,648 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 12/36 flows processed
+2025-06-21 15:48:34,459 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 14/36 flows processed
+2025-06-21 15:48:35,279 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 16/36 flows processed
+2025-06-21 15:48:36,069 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 18/36 flows processed
+2025-06-21 15:48:36,859 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 20/36 flows processed
+2025-06-21 15:48:37,659 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 22/36 flows processed
+2025-06-21 15:48:38,458 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 24/36 flows processed
+2025-06-21 15:48:39,301 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 26/36 flows processed
+2025-06-21 15:48:40,111 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 28/36 flows processed
+2025-06-21 15:48:40,880 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 30/36 flows processed
+2025-06-21 15:48:41,658 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 32/36 flows processed
+2025-06-21 15:48:42,489 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 34/36 flows processed
+2025-06-21 15:48:42,852 - MainThread - INFO - [cycle_3_20250621_154817] Progress: 36/36 flows processed
+2025-06-21 15:48:42,853 - MainThread - INFO - [cycle_3_20250621_154817] CYCLE SUMMARY:
+2025-06-21 15:48:42,853 - MainThread - INFO - [cycle_3_20250621_154817]   Total flows: 36
+2025-06-21 15:48:42,853 - MainThread - INFO - [cycle_3_20250621_154817]   Normal: 0 (0.0%)
+2025-06-21 15:48:42,853 - MainThread - INFO - [cycle_3_20250621_154817]   Attack: 0 (0.0%)
+2025-06-21 15:48:42,853 - MainThread - INFO - [cycle_3_20250621_154817]   Errors: 36 (100.0%)
+2025-06-21 15:48:42,853 - MainThread - INFO - [cycle_3_20250621_154817] [OK] Normal traffic levels
+2025-06-21 15:48:42,853 - MainThread - INFO - [cycle_3_20250621_154817] Success rate: 100.00%
+2025-06-21 15:48:42,853 - MainThread - INFO - === Ending cycle_3_20250621_154817 ===
+2025-06-21 15:48:43,942 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_3_20250621_154817
+2025-06-21 15:48:43,942 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-21 15:48:45,943 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-21 15:48:46,943 - MainThread - INFO - === Starting cycle_4_20250621_154846 ===
+2025-06-21 15:48:46,945 - MainThread - INFO - [cycle_4_20250621_154846] Starting capture for 10 seconds...
+2025-06-21 15:48:57,535 - MainThread - INFO - [cycle_4_20250621_154846] Capture successful: temp_processing\cycle_4_20250621_154846\cycle_4_20250621_154846_20250621_154846.pcap (71257 bytes)
+2025-06-21 15:48:57,535 - MainThread - INFO - [cycle_4_20250621_154846] Converting PCAP to CSV...
+2025-06-21 15:48:57,982 - MainThread - ERROR - [cycle_4_20250621_154846] CSV conversion failed: Command '['cfm.bat', 'temp_processing\\cycle_4_20250621_154846\\cycle_4_20250621_154846_20250621_154846.pcap', 'temp_processing\\cycle_4_20250621_154846\\csv_output']' returned non-zero exit status 3221225786.
