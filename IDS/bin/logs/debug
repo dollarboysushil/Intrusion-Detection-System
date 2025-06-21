@@ -9692,3 +9692,35 @@
 2025-06-19 14:09:12 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: temp_processing\capture_37_20250619_140902_033\csv_output
 2025-06-19 14:09:12 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
 2025-06-19 14:09:13 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on temp_processing\capture_37_20250619_140902_033\capture_37_20250619_140902_033_20250619_140902_034.pcap
+2025-06-21 15:28:02 INFO  cic.cs.unb.ca.ifm.Cmd    You select: temp_processing\cycle_25_20250621_152751\cycle_25_20250621_152751_20250621_152751.pcap
+2025-06-21 15:28:02 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: temp_processing\cycle_25_20250621_152751\csv_output
+2025-06-21 15:28:03 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-06-21 15:28:03 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 58 flow
+2025-06-21 15:28:03 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 58 flow
+2025-06-21 15:28:03 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on temp_processing\cycle_25_20250621_152751\cycle_25_20250621_152751_20250621_152751.pcap
+2025-06-21 15:28:42 INFO  cic.cs.unb.ca.ifm.Cmd    You select: temp_processing\cycle_26_20250621_152831\cycle_26_20250621_152831_20250621_152831.pcap
+2025-06-21 15:28:42 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: temp_processing\cycle_26_20250621_152831\csv_output
+2025-06-21 15:28:42 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-06-21 15:28:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 16 flow
+2025-06-21 15:28:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 24 flow
+2025-06-21 15:28:42 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on temp_processing\cycle_26_20250621_152831\cycle_26_20250621_152831_20250621_152831.pcap
+2025-06-21 15:29:33 INFO  cic.cs.unb.ca.ifm.Cmd    You select: temp_processing\cycle_27_20250621_152922\cycle_27_20250621_152922_20250621_152922.pcap
+2025-06-21 15:29:33 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: temp_processing\cycle_27_20250621_152922\csv_output
+2025-06-21 15:29:33 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-06-21 15:29:33 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*62 d6 7a 65  22 d8 f0 68* 65 a4 85 00  08 06 00 01    b.ze"..he.......
+0010: 08 00 06 04  00 01 f0 68  65 a4 85 00  c0 a8 01 fe    .......he.......
+0020: 00 00 00 00  00 00 c0 a8  01 47 00 00  00 00 00 00    .........G......
+0030: 00 00 00 00  00 00 00 00  00 00 00 00*                ............    
+
+
+2025-06-21 15:29:33 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 41 flow
+2025-06-21 15:29:34 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 41 flow
+2025-06-21 15:29:34 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on temp_processing\cycle_27_20250621_152922\cycle_27_20250621_152922_20250621_152922.pcap
+2025-06-21 15:30:12 INFO  cic.cs.unb.ca.ifm.Cmd    You select: temp_processing\cycle_28_20250621_153002\cycle_28_20250621_153002_20250621_153002.pcap
+2025-06-21 15:30:12 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: temp_processing\cycle_28_20250621_153002\csv_output
+2025-06-21 15:30:13 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2025-06-21 15:30:13 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 32 flow
+2025-06-21 15:30:13 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 33 flow
+2025-06-21 15:30:13 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on temp_processing\cycle_28_20250621_153002\cycle_28_20250621_153002_20250621_153002.pcap
