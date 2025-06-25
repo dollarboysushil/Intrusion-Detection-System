@@ -2065,3 +2065,1161 @@ Please check that you have the proper interface or pipe specified.
 2025-06-21 15:48:57,535 - MainThread - INFO - [cycle_4_20250621_154846] Capture successful: temp_processing\cycle_4_20250621_154846\cycle_4_20250621_154846_20250621_154846.pcap (71257 bytes)
 2025-06-21 15:48:57,535 - MainThread - INFO - [cycle_4_20250621_154846] Converting PCAP to CSV...
 2025-06-21 15:48:57,982 - MainThread - ERROR - [cycle_4_20250621_154846] CSV conversion failed: Command '['cfm.bat', 'temp_processing\\cycle_4_20250621_154846\\cycle_4_20250621_154846_20250621_154846.pcap', 'temp_processing\\cycle_4_20250621_154846\\csv_output']' returned non-zero exit status 3221225786.
+2025-06-23 16:31:21,424 - MainThread - INFO - === Starting Robust Network Intrusion Detection System ===
+2025-06-23 16:31:21,439 - MainThread - INFO - Interface: Ethernet
+2025-06-23 16:31:21,439 - MainThread - INFO - Capture duration: 10 seconds
+2025-06-23 16:31:21,439 - MainThread - INFO - Endpoint: http://localhost:8000/predict/
+2025-06-23 16:31:21,439 - MainThread - INFO - Filtering traffic to localhost:8080
+2025-06-23 16:31:21,439 - MainThread - INFO - Cycle cooldown: 2 seconds
+2025-06-23 16:31:21,439 - MainThread - INFO - Max workers: 2
+2025-06-23 16:31:21,439 - MainThread - INFO - Connection pool size: 10
+2025-06-23 16:31:21,440 - MainThread - INFO - Created session with pool size: 10
+2025-06-23 16:31:21,440 - MainThread - INFO - === Starting cycle_1_20250623_163121 ===
+2025-06-23 16:31:21,447 - MainThread - INFO - [cycle_1_20250623_163121] Starting capture for 10 seconds...
+2025-06-23 16:31:21,620 - MainThread - ERROR - [cycle_1_20250623_163121] Capture failed: Command '['tshark', '-i', 'Ethernet', '-a', 'duration:10', '-f', 'not (host localhost and port 8080)', '-F', 'pcap', '-w', 'temp_processing\\cycle_1_20250623_163121\\cycle_1_20250623_163121_20250623_163121.pcap', '-q']' returned non-zero exit status 1.
+2025-06-23 16:31:21,620 - MainThread - INFO - === Ending cycle_1_20250623_163121 ===
+2025-06-23 16:31:22,673 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 16:31:24,673 - MainThread - WARNING - [FAIL] Cycle failed (1/5)
+2025-06-23 16:31:25,674 - MainThread - INFO - === Starting cycle_2_20250623_163125 ===
+2025-06-23 16:31:25,674 - MainThread - INFO - [cycle_2_20250623_163125] Starting capture for 10 seconds...
+2025-06-23 16:31:38,639 - MainThread - INFO - [cycle_2_20250623_163125] Capture successful: temp_processing\cycle_2_20250623_163125\cycle_2_20250623_163125_20250623_163125.pcap (301762 bytes)
+2025-06-23 16:31:38,639 - MainThread - INFO - [cycle_2_20250623_163125] Converting PCAP to CSV...
+2025-06-23 16:31:40,369 - MainThread - INFO - [cycle_2_20250623_163125] CSV conversion successful: temp_processing\cycle_2_20250623_163125\csv_output\cycle_2_20250623_163125_20250623_163125.pcap_Flow.csv (48 flows)
+2025-06-23 16:31:40,369 - MainThread - INFO - [cycle_2_20250623_163125] Processing predictions...
+2025-06-23 16:31:40,370 - MainThread - INFO - [cycle_2_20250623_163125] Sending 48 flows for prediction (from 48 total)
+2025-06-23 16:31:58,226 - MainThread - INFO - === Ending cycle_2_20250623_163125 ===
+2025-06-23 16:31:59,285 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_2_20250623_163125
+2025-06-23 16:31:59,285 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 16:32:01,285 - MainThread - INFO - Shutdown requested by user
+2025-06-23 16:32:01,286 - MainThread - INFO - Shutting down...
+2025-06-23 16:32:01,286 - MainThread - INFO - Closed HTTP session
+2025-06-23 16:32:02,348 - MainThread - INFO - === Network Intrusion Detection System Stopped ===
+2025-06-23 16:33:20,859 - MainThread - INFO - === Starting Robust Network Intrusion Detection System ===
+2025-06-23 16:33:20,859 - MainThread - INFO - Interface: Ethernet
+2025-06-23 16:33:20,860 - MainThread - INFO - Capture duration: 10 seconds
+2025-06-23 16:33:20,860 - MainThread - INFO - Endpoint: http://localhost:8000/predict/
+2025-06-23 16:33:20,860 - MainThread - INFO - Filtering traffic to localhost:8080
+2025-06-23 16:33:20,860 - MainThread - INFO - Cycle cooldown: 2 seconds
+2025-06-23 16:33:20,860 - MainThread - INFO - Max workers: 2
+2025-06-23 16:33:20,860 - MainThread - INFO - Connection pool size: 10
+2025-06-23 16:33:20,860 - MainThread - INFO - Created session with pool size: 10
+2025-06-23 16:33:20,861 - MainThread - INFO - === Starting cycle_1_20250623_163320 ===
+2025-06-23 16:33:20,861 - MainThread - INFO - [cycle_1_20250623_163320] Starting capture for 10 seconds...
+2025-06-23 16:33:20,932 - MainThread - ERROR - [cycle_1_20250623_163320] Capture failed: Command '['tshark', '-i', 'Ethernet', '-a', 'duration:10', '-f', 'not (host localhost and port 8080)', '-F', 'pcap', '-w', 'temp_processing\\cycle_1_20250623_163320\\cycle_1_20250623_163320_20250623_163320.pcap', '-q']' returned non-zero exit status 1.
+2025-06-23 16:33:20,932 - MainThread - INFO - === Ending cycle_1_20250623_163320 ===
+2025-06-23 16:33:21,995 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 16:33:23,995 - MainThread - WARNING - [FAIL] Cycle failed (1/5)
+2025-06-23 16:33:24,996 - MainThread - INFO - === Starting cycle_2_20250623_163324 ===
+2025-06-23 16:33:24,996 - MainThread - INFO - [cycle_2_20250623_163324] Starting capture for 10 seconds...
+2025-06-23 16:33:35,420 - MainThread - INFO - [cycle_2_20250623_163324] Capture successful: temp_processing\cycle_2_20250623_163324\cycle_2_20250623_163324_20250623_163324.pcap (94542 bytes)
+2025-06-23 16:33:35,420 - MainThread - INFO - [cycle_2_20250623_163324] Converting PCAP to CSV...
+2025-06-23 16:33:36,134 - MainThread - INFO - [cycle_2_20250623_163324] CSV conversion successful: temp_processing\cycle_2_20250623_163324\csv_output\cycle_2_20250623_163324_20250623_163324.pcap_Flow.csv (13 flows)
+2025-06-23 16:33:36,135 - MainThread - INFO - [cycle_2_20250623_163324] Processing predictions...
+2025-06-23 16:33:36,135 - MainThread - INFO - [cycle_2_20250623_163324] Sending 13 flows for prediction (from 13 total)
+2025-06-23 16:33:54,469 - MainThread - INFO - [cycle_2_20250623_163324] Progress: 2/13 flows processed
+2025-06-23 16:34:12,805 - MainThread - INFO - [cycle_2_20250623_163324] Progress: 4/13 flows processed
+2025-06-23 16:34:31,126 - MainThread - INFO - [cycle_2_20250623_163324] Progress: 6/13 flows processed
+2025-06-23 16:34:49,456 - MainThread - INFO - [cycle_2_20250623_163324] Progress: 8/13 flows processed
+2025-06-23 16:35:07,784 - MainThread - INFO - [cycle_2_20250623_163324] Progress: 10/13 flows processed
+2025-06-23 16:35:26,121 - MainThread - INFO - [cycle_2_20250623_163324] Progress: 12/13 flows processed
+2025-06-23 16:35:43,961 - MainThread - INFO - [cycle_2_20250623_163324] Progress: 13/13 flows processed
+2025-06-23 16:35:43,962 - MainThread - INFO - [cycle_2_20250623_163324] CYCLE SUMMARY:
+2025-06-23 16:35:43,962 - MainThread - INFO - [cycle_2_20250623_163324]   Total flows: 13
+2025-06-23 16:35:43,962 - MainThread - INFO - [cycle_2_20250623_163324]   Normal: 0 (0.0%)
+2025-06-23 16:35:43,962 - MainThread - INFO - [cycle_2_20250623_163324]   Attack: 0 (0.0%)
+2025-06-23 16:35:43,962 - MainThread - INFO - [cycle_2_20250623_163324]   Errors: 13 (100.0%)
+2025-06-23 16:35:43,962 - MainThread - INFO - [cycle_2_20250623_163324] [OK] Normal traffic levels
+2025-06-23 16:35:43,962 - MainThread - INFO - [cycle_2_20250623_163324] Success rate: 100.00%
+2025-06-23 16:35:43,962 - MainThread - INFO - === Ending cycle_2_20250623_163324 ===
+2025-06-23 16:35:45,021 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_2_20250623_163324
+2025-06-23 16:35:45,021 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 16:35:47,022 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 16:35:48,022 - MainThread - INFO - === Starting cycle_3_20250623_163548 ===
+2025-06-23 16:35:48,023 - MainThread - INFO - [cycle_3_20250623_163548] Starting capture for 10 seconds...
+2025-06-23 16:35:58,345 - MainThread - INFO - [cycle_3_20250623_163548] Capture successful: temp_processing\cycle_3_20250623_163548\cycle_3_20250623_163548_20250623_163548.pcap (76542 bytes)
+2025-06-23 16:35:58,345 - MainThread - INFO - [cycle_3_20250623_163548] Converting PCAP to CSV...
+2025-06-23 16:35:59,019 - MainThread - INFO - [cycle_3_20250623_163548] CSV conversion successful: temp_processing\cycle_3_20250623_163548\csv_output\cycle_3_20250623_163548_20250623_163548.pcap_Flow.csv (29 flows)
+2025-06-23 16:35:59,020 - MainThread - INFO - [cycle_3_20250623_163548] Processing predictions...
+2025-06-23 16:35:59,020 - MainThread - INFO - [cycle_3_20250623_163548] Sending 29 flows for prediction (from 29 total)
+2025-06-23 16:36:17,342 - MainThread - INFO - [cycle_3_20250623_163548] Progress: 2/29 flows processed
+2025-06-23 16:36:35,677 - MainThread - INFO - [cycle_3_20250623_163548] Progress: 4/29 flows processed
+2025-06-23 16:36:54,004 - MainThread - INFO - [cycle_3_20250623_163548] Progress: 6/29 flows processed
+2025-06-23 16:37:12,332 - MainThread - INFO - [cycle_3_20250623_163548] Progress: 8/29 flows processed
+2025-06-23 16:37:30,661 - MainThread - INFO - [cycle_3_20250623_163548] Progress: 10/29 flows processed
+2025-06-23 16:37:48,983 - MainThread - INFO - [cycle_3_20250623_163548] Progress: 12/29 flows processed
+2025-06-23 16:38:07,312 - MainThread - INFO - [cycle_3_20250623_163548] Progress: 14/29 flows processed
+2025-06-23 16:38:25,649 - MainThread - INFO - [cycle_3_20250623_163548] Progress: 16/29 flows processed
+2025-06-23 16:38:43,987 - MainThread - INFO - [cycle_3_20250623_163548] Progress: 18/29 flows processed
+2025-06-23 16:39:02,313 - MainThread - INFO - [cycle_3_20250623_163548] Progress: 20/29 flows processed
+2025-06-23 16:39:20,638 - MainThread - INFO - [cycle_3_20250623_163548] Progress: 22/29 flows processed
+2025-06-23 16:39:38,973 - MainThread - INFO - [cycle_3_20250623_163548] Progress: 24/29 flows processed
+2025-06-23 16:39:57,306 - MainThread - INFO - [cycle_3_20250623_163548] Progress: 26/29 flows processed
+2025-06-23 16:40:15,629 - MainThread - INFO - [cycle_3_20250623_163548] Progress: 28/29 flows processed
+2025-06-23 16:40:33,450 - MainThread - INFO - [cycle_3_20250623_163548] Progress: 29/29 flows processed
+2025-06-23 16:40:33,450 - MainThread - INFO - [cycle_3_20250623_163548] CYCLE SUMMARY:
+2025-06-23 16:40:33,450 - MainThread - INFO - [cycle_3_20250623_163548]   Total flows: 29
+2025-06-23 16:40:33,451 - MainThread - INFO - [cycle_3_20250623_163548]   Normal: 0 (0.0%)
+2025-06-23 16:40:33,451 - MainThread - INFO - [cycle_3_20250623_163548]   Attack: 0 (0.0%)
+2025-06-23 16:40:33,451 - MainThread - INFO - [cycle_3_20250623_163548]   Errors: 29 (100.0%)
+2025-06-23 16:40:33,451 - MainThread - INFO - [cycle_3_20250623_163548] [OK] Normal traffic levels
+2025-06-23 16:40:33,451 - MainThread - INFO - [cycle_3_20250623_163548] Success rate: 100.00%
+2025-06-23 16:40:33,451 - MainThread - INFO - === Ending cycle_3_20250623_163548 ===
+2025-06-23 16:40:34,511 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_3_20250623_163548
+2025-06-23 16:40:34,511 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 16:40:36,511 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 16:40:37,512 - MainThread - INFO - === Starting cycle_4_20250623_164037 ===
+2025-06-23 16:40:37,513 - MainThread - INFO - [cycle_4_20250623_164037] Starting capture for 10 seconds...
+2025-06-23 16:40:47,953 - MainThread - INFO - [cycle_4_20250623_164037] Capture successful: temp_processing\cycle_4_20250623_164037\cycle_4_20250623_164037_20250623_164037.pcap (161496 bytes)
+2025-06-23 16:40:47,953 - MainThread - INFO - [cycle_4_20250623_164037] Converting PCAP to CSV...
+2025-06-23 16:40:48,657 - MainThread - INFO - [cycle_4_20250623_164037] CSV conversion successful: temp_processing\cycle_4_20250623_164037\csv_output\cycle_4_20250623_164037_20250623_164037.pcap_Flow.csv (28 flows)
+2025-06-23 16:40:48,657 - MainThread - INFO - [cycle_4_20250623_164037] Processing predictions...
+2025-06-23 16:40:48,657 - MainThread - INFO - [cycle_4_20250623_164037] Sending 28 flows for prediction (from 28 total)
+2025-06-23 16:41:06,993 - MainThread - INFO - [cycle_4_20250623_164037] Progress: 2/28 flows processed
+2025-06-23 16:41:25,327 - MainThread - INFO - [cycle_4_20250623_164037] Progress: 4/28 flows processed
+2025-06-23 16:41:43,664 - MainThread - INFO - [cycle_4_20250623_164037] Progress: 6/28 flows processed
+2025-06-23 16:42:02,009 - MainThread - INFO - [cycle_4_20250623_164037] Progress: 8/28 flows processed
+2025-06-23 16:42:20,331 - MainThread - INFO - [cycle_4_20250623_164037] Progress: 10/28 flows processed
+2025-06-23 16:42:38,665 - MainThread - INFO - [cycle_4_20250623_164037] Progress: 12/28 flows processed
+2025-06-23 16:42:57,002 - MainThread - INFO - [cycle_4_20250623_164037] Progress: 14/28 flows processed
+2025-06-23 16:43:15,336 - MainThread - INFO - [cycle_4_20250623_164037] Progress: 16/28 flows processed
+2025-06-23 16:43:33,677 - MainThread - INFO - [cycle_4_20250623_164037] Progress: 18/28 flows processed
+2025-06-23 16:43:52,025 - MainThread - INFO - [cycle_4_20250623_164037] Progress: 20/28 flows processed
+2025-06-23 16:44:10,351 - MainThread - INFO - [cycle_4_20250623_164037] Progress: 22/28 flows processed
+2025-06-23 16:44:28,699 - MainThread - INFO - [cycle_4_20250623_164037] Progress: 24/28 flows processed
+2025-06-23 16:44:47,039 - MainThread - INFO - [cycle_4_20250623_164037] Progress: 26/28 flows processed
+2025-06-23 16:45:04,876 - MainThread - INFO - [cycle_4_20250623_164037] Progress: 28/28 flows processed
+2025-06-23 16:45:04,877 - MainThread - INFO - [cycle_4_20250623_164037] CYCLE SUMMARY:
+2025-06-23 16:45:04,877 - MainThread - INFO - [cycle_4_20250623_164037]   Total flows: 28
+2025-06-23 16:45:04,877 - MainThread - INFO - [cycle_4_20250623_164037]   Normal: 0 (0.0%)
+2025-06-23 16:45:04,877 - MainThread - INFO - [cycle_4_20250623_164037]   Attack: 0 (0.0%)
+2025-06-23 16:45:04,877 - MainThread - INFO - [cycle_4_20250623_164037]   Errors: 28 (100.0%)
+2025-06-23 16:45:04,877 - MainThread - INFO - [cycle_4_20250623_164037] [OK] Normal traffic levels
+2025-06-23 16:45:04,877 - MainThread - INFO - [cycle_4_20250623_164037] Success rate: 100.00%
+2025-06-23 16:45:04,877 - MainThread - INFO - === Ending cycle_4_20250623_164037 ===
+2025-06-23 16:45:05,965 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_4_20250623_164037
+2025-06-23 16:45:05,965 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 16:45:07,965 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 16:45:08,966 - MainThread - INFO - === Starting cycle_5_20250623_164508 ===
+2025-06-23 16:45:08,966 - MainThread - INFO - [cycle_5_20250623_164508] Starting capture for 10 seconds...
+2025-06-23 16:45:19,289 - MainThread - INFO - [cycle_5_20250623_164508] Capture successful: temp_processing\cycle_5_20250623_164508\cycle_5_20250623_164508_20250623_164508.pcap (1056046 bytes)
+2025-06-23 16:45:19,289 - MainThread - INFO - [cycle_5_20250623_164508] Converting PCAP to CSV...
+2025-06-23 16:45:20,015 - MainThread - INFO - [cycle_5_20250623_164508] CSV conversion successful: temp_processing\cycle_5_20250623_164508\csv_output\cycle_5_20250623_164508_20250623_164508.pcap_Flow.csv (53 flows)
+2025-06-23 16:45:20,015 - MainThread - INFO - [cycle_5_20250623_164508] Processing predictions...
+2025-06-23 16:45:20,016 - MainThread - INFO - [cycle_5_20250623_164508] Limiting flows from 53 to 50
+2025-06-23 16:45:20,016 - MainThread - INFO - [cycle_5_20250623_164508] Sending 50 flows for prediction (from 53 total)
+2025-06-23 16:45:38,350 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 2/50 flows processed
+2025-06-23 16:45:56,689 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 4/50 flows processed
+2025-06-23 16:46:15,021 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 6/50 flows processed
+2025-06-23 16:46:33,360 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 8/50 flows processed
+2025-06-23 16:46:51,714 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 10/50 flows processed
+2025-06-23 16:47:10,046 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 12/50 flows processed
+2025-06-23 16:47:28,397 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 14/50 flows processed
+2025-06-23 16:47:46,721 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 16/50 flows processed
+2025-06-23 16:48:05,061 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 18/50 flows processed
+2025-06-23 16:48:23,409 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 20/50 flows processed
+2025-06-23 16:48:41,765 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 22/50 flows processed
+2025-06-23 16:49:00,101 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 24/50 flows processed
+2025-06-23 16:49:18,443 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 26/50 flows processed
+2025-06-23 16:49:36,790 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 28/50 flows processed
+2025-06-23 16:49:55,129 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 30/50 flows processed
+2025-06-23 16:50:13,457 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 32/50 flows processed
+2025-06-23 16:50:31,801 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 34/50 flows processed
+2025-06-23 16:50:50,134 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 36/50 flows processed
+2025-06-23 16:51:08,473 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 38/50 flows processed
+2025-06-23 16:51:26,830 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 40/50 flows processed
+2025-06-23 16:51:45,191 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 42/50 flows processed
+2025-06-23 16:52:03,526 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 44/50 flows processed
+2025-06-23 16:52:21,877 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 46/50 flows processed
+2025-06-23 16:52:40,223 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 48/50 flows processed
+2025-06-23 16:52:58,057 - MainThread - INFO - [cycle_5_20250623_164508] Progress: 50/50 flows processed
+2025-06-23 16:52:58,057 - MainThread - INFO - [cycle_5_20250623_164508] CYCLE SUMMARY:
+2025-06-23 16:52:58,057 - MainThread - INFO - [cycle_5_20250623_164508]   Original flows: 53 (sampled: 50)
+2025-06-23 16:52:58,057 - MainThread - INFO - [cycle_5_20250623_164508]   Normal: 0 (0.0%)
+2025-06-23 16:52:58,057 - MainThread - INFO - [cycle_5_20250623_164508]   Attack: 0 (0.0%)
+2025-06-23 16:52:58,057 - MainThread - INFO - [cycle_5_20250623_164508]   Errors: 50 (100.0%)
+2025-06-23 16:52:58,058 - MainThread - INFO - [cycle_5_20250623_164508] [OK] Normal traffic levels
+2025-06-23 16:52:58,058 - MainThread - INFO - [cycle_5_20250623_164508] Success rate: 100.00%
+2025-06-23 16:52:58,058 - MainThread - INFO - === Ending cycle_5_20250623_164508 ===
+2025-06-23 16:52:59,179 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_5_20250623_164508
+2025-06-23 16:52:59,180 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 16:53:01,180 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 16:53:02,180 - MainThread - INFO - === Starting cycle_6_20250623_165302 ===
+2025-06-23 16:53:02,181 - MainThread - INFO - [cycle_6_20250623_165302] Starting capture for 10 seconds...
+2025-06-23 16:53:12,587 - MainThread - INFO - [cycle_6_20250623_165302] Capture successful: temp_processing\cycle_6_20250623_165302\cycle_6_20250623_165302_20250623_165302.pcap (5372112 bytes)
+2025-06-23 16:53:12,587 - MainThread - INFO - [cycle_6_20250623_165302] Converting PCAP to CSV...
+2025-06-23 16:53:13,340 - MainThread - INFO - [cycle_6_20250623_165302] CSV conversion successful: temp_processing\cycle_6_20250623_165302\csv_output\cycle_6_20250623_165302_20250623_165302.pcap_Flow.csv (71 flows)
+2025-06-23 16:53:13,340 - MainThread - INFO - [cycle_6_20250623_165302] Processing predictions...
+2025-06-23 16:53:13,341 - MainThread - INFO - [cycle_6_20250623_165302] Limiting flows from 71 to 50
+2025-06-23 16:53:13,341 - MainThread - INFO - [cycle_6_20250623_165302] Sending 50 flows for prediction (from 71 total)
+2025-06-23 16:53:31,682 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 2/50 flows processed
+2025-06-23 16:53:50,018 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 4/50 flows processed
+2025-06-23 16:54:08,353 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 6/50 flows processed
+2025-06-23 16:54:26,719 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 8/50 flows processed
+2025-06-23 16:54:45,075 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 10/50 flows processed
+2025-06-23 16:55:03,422 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 12/50 flows processed
+2025-06-23 16:55:21,761 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 14/50 flows processed
+2025-06-23 16:55:40,106 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 16/50 flows processed
+2025-06-23 16:55:58,447 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 18/50 flows processed
+2025-06-23 16:56:16,802 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 20/50 flows processed
+2025-06-23 16:56:35,155 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 22/50 flows processed
+2025-06-23 16:56:53,497 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 24/50 flows processed
+2025-06-23 16:57:11,851 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 26/50 flows processed
+2025-06-23 16:57:30,170 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 28/50 flows processed
+2025-06-23 16:57:48,508 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 30/50 flows processed
+2025-06-23 16:58:06,871 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 32/50 flows processed
+2025-06-23 16:58:25,236 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 34/50 flows processed
+2025-06-23 16:58:43,569 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 36/50 flows processed
+2025-06-23 16:59:01,890 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 38/50 flows processed
+2025-06-23 16:59:20,214 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 40/50 flows processed
+2025-06-23 16:59:38,542 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 42/50 flows processed
+2025-06-23 16:59:56,879 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 44/50 flows processed
+2025-06-23 17:00:15,207 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 46/50 flows processed
+2025-06-23 17:00:33,543 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 48/50 flows processed
+2025-06-23 17:00:51,368 - MainThread - INFO - [cycle_6_20250623_165302] Progress: 50/50 flows processed
+2025-06-23 17:00:51,368 - MainThread - INFO - [cycle_6_20250623_165302] CYCLE SUMMARY:
+2025-06-23 17:00:51,368 - MainThread - INFO - [cycle_6_20250623_165302]   Original flows: 71 (sampled: 50)
+2025-06-23 17:00:51,368 - MainThread - INFO - [cycle_6_20250623_165302]   Normal: 0 (0.0%)
+2025-06-23 17:00:51,369 - MainThread - INFO - [cycle_6_20250623_165302]   Attack: 0 (0.0%)
+2025-06-23 17:00:51,369 - MainThread - INFO - [cycle_6_20250623_165302]   Errors: 50 (100.0%)
+2025-06-23 17:00:51,369 - MainThread - INFO - [cycle_6_20250623_165302] [OK] Normal traffic levels
+2025-06-23 17:00:51,369 - MainThread - INFO - [cycle_6_20250623_165302] Success rate: 100.00%
+2025-06-23 17:00:51,369 - MainThread - INFO - === Ending cycle_6_20250623_165302 ===
+2025-06-23 17:00:52,534 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_6_20250623_165302
+2025-06-23 17:00:52,534 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 17:00:54,535 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 17:00:55,535 - MainThread - INFO - === Starting cycle_7_20250623_170055 ===
+2025-06-23 17:00:55,536 - MainThread - INFO - [cycle_7_20250623_170055] Starting capture for 10 seconds...
+2025-06-23 17:01:06,310 - MainThread - INFO - [cycle_7_20250623_170055] Capture successful: temp_processing\cycle_7_20250623_170055\cycle_7_20250623_170055_20250623_170055.pcap (5357495 bytes)
+2025-06-23 17:01:06,310 - MainThread - INFO - [cycle_7_20250623_170055] Converting PCAP to CSV...
+2025-06-23 17:01:07,219 - MainThread - INFO - [cycle_7_20250623_170055] CSV conversion successful: temp_processing\cycle_7_20250623_170055\csv_output\cycle_7_20250623_170055_20250623_170055.pcap_Flow.csv (65 flows)
+2025-06-23 17:01:07,219 - MainThread - INFO - [cycle_7_20250623_170055] Processing predictions...
+2025-06-23 17:01:07,220 - MainThread - INFO - [cycle_7_20250623_170055] Limiting flows from 65 to 50
+2025-06-23 17:01:07,220 - MainThread - INFO - [cycle_7_20250623_170055] Sending 50 flows for prediction (from 65 total)
+2025-06-23 17:01:25,544 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 2/50 flows processed
+2025-06-23 17:01:43,871 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 4/50 flows processed
+2025-06-23 17:02:02,198 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 6/50 flows processed
+2025-06-23 17:02:20,525 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 8/50 flows processed
+2025-06-23 17:02:38,850 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 10/50 flows processed
+2025-06-23 17:02:57,173 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 12/50 flows processed
+2025-06-23 17:03:15,510 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 14/50 flows processed
+2025-06-23 17:03:33,836 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 16/50 flows processed
+2025-06-23 17:03:52,170 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 18/50 flows processed
+2025-06-23 17:04:10,515 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 20/50 flows processed
+2025-06-23 17:04:28,836 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 22/50 flows processed
+2025-06-23 17:04:47,162 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 24/50 flows processed
+2025-06-23 17:05:05,530 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 26/50 flows processed
+2025-06-23 17:05:23,869 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 28/50 flows processed
+2025-06-23 17:05:42,201 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 30/50 flows processed
+2025-06-23 17:06:00,538 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 32/50 flows processed
+2025-06-23 17:06:18,901 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 34/50 flows processed
+2025-06-23 17:06:37,227 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 36/50 flows processed
+2025-06-23 17:06:55,570 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 38/50 flows processed
+2025-06-23 17:07:13,899 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 40/50 flows processed
+2025-06-23 17:07:32,245 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 42/50 flows processed
+2025-06-23 17:07:50,581 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 44/50 flows processed
+2025-06-23 17:08:08,924 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 46/50 flows processed
+2025-06-23 17:08:27,268 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 48/50 flows processed
+2025-06-23 17:08:45,090 - MainThread - INFO - [cycle_7_20250623_170055] Progress: 50/50 flows processed
+2025-06-23 17:08:45,090 - MainThread - INFO - [cycle_7_20250623_170055] CYCLE SUMMARY:
+2025-06-23 17:08:45,090 - MainThread - INFO - [cycle_7_20250623_170055]   Original flows: 65 (sampled: 50)
+2025-06-23 17:08:45,090 - MainThread - INFO - [cycle_7_20250623_170055]   Normal: 0 (0.0%)
+2025-06-23 17:08:45,090 - MainThread - INFO - [cycle_7_20250623_170055]   Attack: 0 (0.0%)
+2025-06-23 17:08:45,091 - MainThread - INFO - [cycle_7_20250623_170055]   Errors: 50 (100.0%)
+2025-06-23 17:08:45,091 - MainThread - INFO - [cycle_7_20250623_170055] [OK] Normal traffic levels
+2025-06-23 17:08:45,091 - MainThread - INFO - [cycle_7_20250623_170055] Success rate: 100.00%
+2025-06-23 17:08:45,091 - MainThread - INFO - === Ending cycle_7_20250623_170055 ===
+2025-06-23 17:08:46,153 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_7_20250623_170055
+2025-06-23 17:08:46,153 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 17:08:48,153 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 17:08:49,154 - MainThread - INFO - === Starting cycle_8_20250623_170849 ===
+2025-06-23 17:08:49,154 - MainThread - INFO - [cycle_8_20250623_170849] Starting capture for 10 seconds...
+2025-06-23 17:08:59,528 - MainThread - INFO - [cycle_8_20250623_170849] Capture successful: temp_processing\cycle_8_20250623_170849\cycle_8_20250623_170849_20250623_170849.pcap (1778391 bytes)
+2025-06-23 17:08:59,528 - MainThread - INFO - [cycle_8_20250623_170849] Converting PCAP to CSV...
+2025-06-23 17:09:00,359 - MainThread - INFO - [cycle_8_20250623_170849] CSV conversion successful: temp_processing\cycle_8_20250623_170849\csv_output\cycle_8_20250623_170849_20250623_170849.pcap_Flow.csv (117 flows)
+2025-06-23 17:09:00,359 - MainThread - INFO - [cycle_8_20250623_170849] Processing predictions...
+2025-06-23 17:09:00,360 - MainThread - INFO - [cycle_8_20250623_170849] Limiting flows from 117 to 50
+2025-06-23 17:09:00,361 - MainThread - INFO - [cycle_8_20250623_170849] Sending 50 flows for prediction (from 117 total)
+2025-06-23 17:09:18,698 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 2/50 flows processed
+2025-06-23 17:09:37,031 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 4/50 flows processed
+2025-06-23 17:09:55,384 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 6/50 flows processed
+2025-06-23 17:10:13,720 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 8/50 flows processed
+2025-06-23 17:10:32,061 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 10/50 flows processed
+2025-06-23 17:10:50,413 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 12/50 flows processed
+2025-06-23 17:11:08,743 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 14/50 flows processed
+2025-06-23 17:11:27,072 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 16/50 flows processed
+2025-06-23 17:11:45,406 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 18/50 flows processed
+2025-06-23 17:12:03,737 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 20/50 flows processed
+2025-06-23 17:12:22,074 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 22/50 flows processed
+2025-06-23 17:12:40,428 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 24/50 flows processed
+2025-06-23 17:12:58,774 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 26/50 flows processed
+2025-06-23 17:13:17,103 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 28/50 flows processed
+2025-06-23 17:13:35,436 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 30/50 flows processed
+2025-06-23 17:13:53,781 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 32/50 flows processed
+2025-06-23 17:14:12,118 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 34/50 flows processed
+2025-06-23 17:14:30,452 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 36/50 flows processed
+2025-06-23 17:14:48,788 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 38/50 flows processed
+2025-06-23 17:15:07,127 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 40/50 flows processed
+2025-06-23 17:15:25,471 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 42/50 flows processed
+2025-06-23 17:15:43,814 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 44/50 flows processed
+2025-06-23 17:16:02,151 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 46/50 flows processed
+2025-06-23 17:16:20,509 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 48/50 flows processed
+2025-06-23 17:16:38,336 - MainThread - INFO - [cycle_8_20250623_170849] Progress: 50/50 flows processed
+2025-06-23 17:16:38,337 - MainThread - INFO - [cycle_8_20250623_170849] CYCLE SUMMARY:
+2025-06-23 17:16:38,337 - MainThread - INFO - [cycle_8_20250623_170849]   Original flows: 117 (sampled: 50)
+2025-06-23 17:16:38,337 - MainThread - INFO - [cycle_8_20250623_170849]   Normal: 0 (0.0%)
+2025-06-23 17:16:38,337 - MainThread - INFO - [cycle_8_20250623_170849]   Attack: 0 (0.0%)
+2025-06-23 17:16:38,337 - MainThread - INFO - [cycle_8_20250623_170849]   Errors: 50 (100.0%)
+2025-06-23 17:16:38,337 - MainThread - INFO - [cycle_8_20250623_170849] [OK] Normal traffic levels
+2025-06-23 17:16:38,337 - MainThread - INFO - [cycle_8_20250623_170849] Success rate: 100.00%
+2025-06-23 17:16:38,337 - MainThread - INFO - === Ending cycle_8_20250623_170849 ===
+2025-06-23 17:16:39,446 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_8_20250623_170849
+2025-06-23 17:16:39,446 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 17:16:41,446 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 17:16:42,447 - MainThread - INFO - === Starting cycle_9_20250623_171642 ===
+2025-06-23 17:16:42,447 - MainThread - INFO - [cycle_9_20250623_171642] Starting capture for 10 seconds...
+2025-06-23 17:16:52,886 - MainThread - INFO - [cycle_9_20250623_171642] Capture successful: temp_processing\cycle_9_20250623_171642\cycle_9_20250623_171642_20250623_171642.pcap (1512592 bytes)
+2025-06-23 17:16:52,886 - MainThread - INFO - [cycle_9_20250623_171642] Converting PCAP to CSV...
+2025-06-23 17:16:53,641 - MainThread - INFO - [cycle_9_20250623_171642] CSV conversion successful: temp_processing\cycle_9_20250623_171642\csv_output\cycle_9_20250623_171642_20250623_171642.pcap_Flow.csv (45 flows)
+2025-06-23 17:16:53,641 - MainThread - INFO - [cycle_9_20250623_171642] Processing predictions...
+2025-06-23 17:16:53,642 - MainThread - INFO - [cycle_9_20250623_171642] Sending 45 flows for prediction (from 45 total)
+2025-06-23 17:17:11,969 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 2/45 flows processed
+2025-06-23 17:17:30,300 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 4/45 flows processed
+2025-06-23 17:17:48,658 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 6/45 flows processed
+2025-06-23 17:18:06,986 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 8/45 flows processed
+2025-06-23 17:18:25,324 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 10/45 flows processed
+2025-06-23 17:18:43,662 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 12/45 flows processed
+2025-06-23 17:19:02,012 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 14/45 flows processed
+2025-06-23 17:19:20,363 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 16/45 flows processed
+2025-06-23 17:19:38,698 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 18/45 flows processed
+2025-06-23 17:19:57,046 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 20/45 flows processed
+2025-06-23 17:20:15,375 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 22/45 flows processed
+2025-06-23 17:20:33,712 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 24/45 flows processed
+2025-06-23 17:20:52,061 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 26/45 flows processed
+2025-06-23 17:21:10,395 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 28/45 flows processed
+2025-06-23 17:21:28,740 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 30/45 flows processed
+2025-06-23 17:21:47,075 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 32/45 flows processed
+2025-06-23 17:22:05,404 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 34/45 flows processed
+2025-06-23 17:22:23,729 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 36/45 flows processed
+2025-06-23 17:22:42,056 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 38/45 flows processed
+2025-06-23 17:23:00,388 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 40/45 flows processed
+2025-06-23 17:23:18,716 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 42/45 flows processed
+2025-06-23 17:23:37,071 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 44/45 flows processed
+2025-06-23 17:23:54,903 - MainThread - INFO - [cycle_9_20250623_171642] Progress: 45/45 flows processed
+2025-06-23 17:23:54,903 - MainThread - INFO - [cycle_9_20250623_171642] CYCLE SUMMARY:
+2025-06-23 17:23:54,903 - MainThread - INFO - [cycle_9_20250623_171642]   Total flows: 45
+2025-06-23 17:23:54,903 - MainThread - INFO - [cycle_9_20250623_171642]   Normal: 0 (0.0%)
+2025-06-23 17:23:54,904 - MainThread - INFO - [cycle_9_20250623_171642]   Attack: 0 (0.0%)
+2025-06-23 17:23:54,904 - MainThread - INFO - [cycle_9_20250623_171642]   Errors: 45 (100.0%)
+2025-06-23 17:23:54,904 - MainThread - INFO - [cycle_9_20250623_171642] [OK] Normal traffic levels
+2025-06-23 17:23:54,904 - MainThread - INFO - [cycle_9_20250623_171642] Success rate: 100.00%
+2025-06-23 17:23:54,904 - MainThread - INFO - === Ending cycle_9_20250623_171642 ===
+2025-06-23 17:23:55,979 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_9_20250623_171642
+2025-06-23 17:23:55,979 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 17:23:57,980 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 17:23:58,980 - MainThread - INFO - === Starting cycle_10_20250623_172358 ===
+2025-06-23 17:23:58,981 - MainThread - INFO - [cycle_10_20250623_172358] Starting capture for 10 seconds...
+2025-06-23 17:24:09,417 - MainThread - INFO - [cycle_10_20250623_172358] Capture successful: temp_processing\cycle_10_20250623_172358\cycle_10_20250623_172358_20250623_172358.pcap (1389084 bytes)
+2025-06-23 17:24:09,418 - MainThread - INFO - [cycle_10_20250623_172358] Converting PCAP to CSV...
+2025-06-23 17:24:10,127 - MainThread - INFO - [cycle_10_20250623_172358] CSV conversion successful: temp_processing\cycle_10_20250623_172358\csv_output\cycle_10_20250623_172358_20250623_172358.pcap_Flow.csv (28 flows)
+2025-06-23 17:24:10,127 - MainThread - INFO - [cycle_10_20250623_172358] Processing predictions...
+2025-06-23 17:24:10,127 - MainThread - INFO - [cycle_10_20250623_172358] Sending 28 flows for prediction (from 28 total)
+2025-06-23 17:24:28,466 - MainThread - INFO - [cycle_10_20250623_172358] Progress: 2/28 flows processed
+2025-06-23 17:24:46,809 - MainThread - INFO - [cycle_10_20250623_172358] Progress: 4/28 flows processed
+2025-06-23 17:25:05,141 - MainThread - INFO - [cycle_10_20250623_172358] Progress: 6/28 flows processed
+2025-06-23 17:25:23,493 - MainThread - INFO - [cycle_10_20250623_172358] Progress: 8/28 flows processed
+2025-06-23 17:25:41,840 - MainThread - INFO - [cycle_10_20250623_172358] Progress: 10/28 flows processed
+2025-06-23 17:26:00,188 - MainThread - INFO - [cycle_10_20250623_172358] Progress: 12/28 flows processed
+2025-06-23 17:26:18,552 - MainThread - INFO - [cycle_10_20250623_172358] Progress: 14/28 flows processed
+2025-06-23 17:26:36,885 - MainThread - INFO - [cycle_10_20250623_172358] Progress: 16/28 flows processed
+2025-06-23 17:26:55,219 - MainThread - INFO - [cycle_10_20250623_172358] Progress: 18/28 flows processed
+2025-06-23 17:27:13,573 - MainThread - INFO - [cycle_10_20250623_172358] Progress: 20/28 flows processed
+2025-06-23 17:27:31,917 - MainThread - INFO - [cycle_10_20250623_172358] Progress: 22/28 flows processed
+2025-06-23 17:27:50,269 - MainThread - INFO - [cycle_10_20250623_172358] Progress: 24/28 flows processed
+2025-06-23 17:28:08,618 - MainThread - INFO - [cycle_10_20250623_172358] Progress: 26/28 flows processed
+2025-06-23 17:28:26,448 - MainThread - INFO - [cycle_10_20250623_172358] Progress: 28/28 flows processed
+2025-06-23 17:28:26,448 - MainThread - INFO - [cycle_10_20250623_172358] CYCLE SUMMARY:
+2025-06-23 17:28:26,448 - MainThread - INFO - [cycle_10_20250623_172358]   Total flows: 28
+2025-06-23 17:28:26,448 - MainThread - INFO - [cycle_10_20250623_172358]   Normal: 0 (0.0%)
+2025-06-23 17:28:26,448 - MainThread - INFO - [cycle_10_20250623_172358]   Attack: 0 (0.0%)
+2025-06-23 17:28:26,448 - MainThread - INFO - [cycle_10_20250623_172358]   Errors: 28 (100.0%)
+2025-06-23 17:28:26,449 - MainThread - INFO - [cycle_10_20250623_172358] [OK] Normal traffic levels
+2025-06-23 17:28:26,449 - MainThread - INFO - [cycle_10_20250623_172358] Success rate: 100.00%
+2025-06-23 17:28:26,449 - MainThread - INFO - === Ending cycle_10_20250623_172358 ===
+2025-06-23 17:28:27,507 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_10_20250623_172358
+2025-06-23 17:28:27,507 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 17:28:29,508 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 17:28:30,508 - MainThread - INFO - === Starting cycle_11_20250623_172830 ===
+2025-06-23 17:28:30,509 - MainThread - INFO - [cycle_11_20250623_172830] Starting capture for 10 seconds...
+2025-06-23 17:28:41,022 - MainThread - INFO - [cycle_11_20250623_172830] Capture successful: temp_processing\cycle_11_20250623_172830\cycle_11_20250623_172830_20250623_172830.pcap (1258453 bytes)
+2025-06-23 17:28:41,022 - MainThread - INFO - [cycle_11_20250623_172830] Converting PCAP to CSV...
+2025-06-23 17:28:41,730 - MainThread - INFO - [cycle_11_20250623_172830] CSV conversion successful: temp_processing\cycle_11_20250623_172830\csv_output\cycle_11_20250623_172830_20250623_172830.pcap_Flow.csv (12 flows)
+2025-06-23 17:28:41,730 - MainThread - INFO - [cycle_11_20250623_172830] Processing predictions...
+2025-06-23 17:28:41,730 - MainThread - INFO - [cycle_11_20250623_172830] Sending 12 flows for prediction (from 12 total)
+2025-06-23 17:29:00,056 - MainThread - INFO - [cycle_11_20250623_172830] Progress: 2/12 flows processed
+2025-06-23 17:29:18,402 - MainThread - INFO - [cycle_11_20250623_172830] Progress: 4/12 flows processed
+2025-06-23 17:29:36,740 - MainThread - INFO - [cycle_11_20250623_172830] Progress: 6/12 flows processed
+2025-06-23 17:29:55,077 - MainThread - INFO - [cycle_11_20250623_172830] Progress: 8/12 flows processed
+2025-06-23 17:30:13,417 - MainThread - INFO - [cycle_11_20250623_172830] Progress: 10/12 flows processed
+2025-06-23 17:30:31,271 - MainThread - INFO - [cycle_11_20250623_172830] Progress: 12/12 flows processed
+2025-06-23 17:30:31,271 - MainThread - INFO - [cycle_11_20250623_172830] CYCLE SUMMARY:
+2025-06-23 17:30:31,271 - MainThread - INFO - [cycle_11_20250623_172830]   Total flows: 12
+2025-06-23 17:30:31,271 - MainThread - INFO - [cycle_11_20250623_172830]   Normal: 0 (0.0%)
+2025-06-23 17:30:31,271 - MainThread - INFO - [cycle_11_20250623_172830]   Attack: 0 (0.0%)
+2025-06-23 17:30:31,271 - MainThread - INFO - [cycle_11_20250623_172830]   Errors: 12 (100.0%)
+2025-06-23 17:30:31,272 - MainThread - INFO - [cycle_11_20250623_172830] [OK] Normal traffic levels
+2025-06-23 17:30:31,272 - MainThread - INFO - [cycle_11_20250623_172830] Success rate: 100.00%
+2025-06-23 17:30:31,272 - MainThread - INFO - === Ending cycle_11_20250623_172830 ===
+2025-06-23 17:30:32,376 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_11_20250623_172830
+2025-06-23 17:30:32,376 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 17:30:34,377 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 17:30:35,377 - MainThread - INFO - === Starting cycle_12_20250623_173035 ===
+2025-06-23 17:30:35,378 - MainThread - INFO - [cycle_12_20250623_173035] Starting capture for 10 seconds...
+2025-06-23 17:30:45,907 - MainThread - INFO - [cycle_12_20250623_173035] Capture successful: temp_processing\cycle_12_20250623_173035\cycle_12_20250623_173035_20250623_173035.pcap (1292155 bytes)
+2025-06-23 17:30:45,907 - MainThread - INFO - [cycle_12_20250623_173035] Converting PCAP to CSV...
+2025-06-23 17:30:46,626 - MainThread - INFO - [cycle_12_20250623_173035] CSV conversion successful: temp_processing\cycle_12_20250623_173035\csv_output\cycle_12_20250623_173035_20250623_173035.pcap_Flow.csv (14 flows)
+2025-06-23 17:30:46,626 - MainThread - INFO - [cycle_12_20250623_173035] Processing predictions...
+2025-06-23 17:30:46,626 - MainThread - INFO - [cycle_12_20250623_173035] Sending 14 flows for prediction (from 14 total)
+2025-06-23 17:31:04,962 - MainThread - INFO - [cycle_12_20250623_173035] Progress: 2/14 flows processed
+2025-06-23 17:31:23,287 - MainThread - INFO - [cycle_12_20250623_173035] Progress: 4/14 flows processed
+2025-06-23 17:31:41,624 - MainThread - INFO - [cycle_12_20250623_173035] Progress: 6/14 flows processed
+2025-06-23 17:31:59,954 - MainThread - INFO - [cycle_12_20250623_173035] Progress: 8/14 flows processed
+2025-06-23 17:32:18,292 - MainThread - INFO - [cycle_12_20250623_173035] Progress: 10/14 flows processed
+2025-06-23 17:32:36,636 - MainThread - INFO - [cycle_12_20250623_173035] Progress: 12/14 flows processed
+2025-06-23 17:32:54,492 - MainThread - INFO - [cycle_12_20250623_173035] Progress: 14/14 flows processed
+2025-06-23 17:32:54,492 - MainThread - INFO - [cycle_12_20250623_173035] CYCLE SUMMARY:
+2025-06-23 17:32:54,492 - MainThread - INFO - [cycle_12_20250623_173035]   Total flows: 14
+2025-06-23 17:32:54,493 - MainThread - INFO - [cycle_12_20250623_173035]   Normal: 0 (0.0%)
+2025-06-23 17:32:54,493 - MainThread - INFO - [cycle_12_20250623_173035]   Attack: 0 (0.0%)
+2025-06-23 17:32:54,493 - MainThread - INFO - [cycle_12_20250623_173035]   Errors: 14 (100.0%)
+2025-06-23 17:32:54,493 - MainThread - INFO - [cycle_12_20250623_173035] [OK] Normal traffic levels
+2025-06-23 17:32:54,493 - MainThread - INFO - [cycle_12_20250623_173035] Success rate: 100.00%
+2025-06-23 17:32:54,493 - MainThread - INFO - === Ending cycle_12_20250623_173035 ===
+2025-06-23 17:32:55,595 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_12_20250623_173035
+2025-06-23 17:32:55,596 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 17:32:57,596 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 17:32:58,597 - MainThread - INFO - === Starting cycle_13_20250623_173258 ===
+2025-06-23 17:32:58,597 - MainThread - INFO - [cycle_13_20250623_173258] Starting capture for 10 seconds...
+2025-06-23 17:33:08,969 - MainThread - INFO - [cycle_13_20250623_173258] Capture successful: temp_processing\cycle_13_20250623_173258\cycle_13_20250623_173258_20250623_173258.pcap (2027026 bytes)
+2025-06-23 17:33:08,970 - MainThread - INFO - [cycle_13_20250623_173258] Converting PCAP to CSV...
+2025-06-23 17:33:09,686 - MainThread - INFO - [cycle_13_20250623_173258] CSV conversion successful: temp_processing\cycle_13_20250623_173258\csv_output\cycle_13_20250623_173258_20250623_173258.pcap_Flow.csv (50 flows)
+2025-06-23 17:33:09,686 - MainThread - INFO - [cycle_13_20250623_173258] Processing predictions...
+2025-06-23 17:33:09,687 - MainThread - INFO - [cycle_13_20250623_173258] Sending 50 flows for prediction (from 50 total)
+2025-06-23 17:33:28,013 - MainThread - INFO - [cycle_13_20250623_173258] Progress: 2/50 flows processed
+2025-06-23 17:33:46,348 - MainThread - INFO - [cycle_13_20250623_173258] Progress: 4/50 flows processed
+2025-06-23 17:34:04,687 - MainThread - INFO - [cycle_13_20250623_173258] Progress: 6/50 flows processed
+2025-06-23 17:34:23,032 - MainThread - INFO - [cycle_13_20250623_173258] Progress: 8/50 flows processed
+2025-06-23 17:34:41,354 - MainThread - INFO - [cycle_13_20250623_173258] Progress: 10/50 flows processed
+2025-06-23 17:34:59,713 - MainThread - INFO - [cycle_13_20250623_173258] Progress: 12/50 flows processed
+2025-06-23 17:35:18,049 - MainThread - INFO - [cycle_13_20250623_173258] Progress: 14/50 flows processed
+2025-06-23 17:35:36,393 - MainThread - INFO - [cycle_13_20250623_173258] Progress: 16/50 flows processed
+2025-06-23 17:35:54,757 - MainThread - INFO - [cycle_13_20250623_173258] Progress: 18/50 flows processed
+2025-06-23 17:36:13,119 - MainThread - INFO - [cycle_13_20250623_173258] Progress: 20/50 flows processed
+2025-06-23 17:36:31,443 - MainThread - INFO - [cycle_13_20250623_173258] Progress: 22/50 flows processed
+2025-06-23 17:36:49,777 - MainThread - INFO - [cycle_13_20250623_173258] Progress: 24/50 flows processed
+2025-06-23 21:28:40,866 - MainThread - INFO - === Starting Robust Network Intrusion Detection System ===
+2025-06-23 21:28:40,894 - MainThread - INFO - Interface: Ethernet
+2025-06-23 21:28:40,894 - MainThread - INFO - Capture duration: 10 seconds
+2025-06-23 21:28:40,894 - MainThread - INFO - Endpoint: http://localhost:8000/predict/
+2025-06-23 21:28:40,894 - MainThread - INFO - Filtering traffic to localhost:8080
+2025-06-23 21:28:40,894 - MainThread - INFO - Cycle cooldown: 2 seconds
+2025-06-23 21:28:40,895 - MainThread - INFO - === Starting cycle_1_20250623_212840 ===
+2025-06-23 21:28:40,895 - MainThread - INFO - [cycle_1_20250623_212840] Starting capture for 10 seconds...
+2025-06-23 21:28:41,504 - MainThread - ERROR - [cycle_1_20250623_212840] Capture failed: Command '['tshark', '-i', 'Ethernet', '-a', 'duration:10', '-f', 'not (host localhost and port 8080)', '-w', 'temp_processing\\cycle_1_20250623_212840\\cycle_1_20250623_212840_20250623_212840.pcap', '-q']' returned non-zero exit status 1.
+2025-06-23 21:28:41,504 - MainThread - INFO - === Ending cycle_1_20250623_212840 ===
+2025-06-23 21:28:42,583 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:28:44,583 - MainThread - WARNING - [FAIL] Cycle failed (1/5)
+2025-06-23 21:28:45,584 - MainThread - INFO - === Starting cycle_2_20250623_212845 ===
+2025-06-23 21:28:45,584 - MainThread - INFO - [cycle_2_20250623_212845] Starting capture for 10 seconds...
+2025-06-23 21:28:57,245 - MainThread - INFO - [cycle_2_20250623_212845] Capture successful: temp_processing\cycle_2_20250623_212845\cycle_2_20250623_212845_20250623_212845.pcap (4975172 bytes)
+2025-06-23 21:28:57,246 - MainThread - INFO - [cycle_2_20250623_212845] Converting PCAP to CSV...
+2025-06-23 21:28:59,926 - MainThread - INFO - [cycle_2_20250623_212845] CSV conversion successful: temp_processing\cycle_2_20250623_212845\csv_output\cycle_2_20250623_212845_20250623_212845.pcap_Flow.csv (46 flows)
+2025-06-23 21:28:59,926 - MainThread - INFO - [cycle_2_20250623_212845] Processing predictions...
+2025-06-23 21:28:59,927 - MainThread - INFO - [cycle_2_20250623_212845] Sending 46 flows for prediction (from 46 total)
+2025-06-23 21:29:24,621 - MainThread - INFO - [cycle_2_20250623_212845] Progress: 25/46 requests completed
+2025-06-23 21:29:35,413 - MainThread - ERROR - [cycle_2_20250623_212845] Error processing predictions: 10 (of 46) futures unfinished
+2025-06-23 21:29:35,414 - MainThread - INFO - === Ending cycle_2_20250623_212845 ===
+2025-06-23 21:29:36,533 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_2_20250623_212845
+2025-06-23 21:29:36,533 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:29:38,533 - MainThread - WARNING - [FAIL] Cycle failed (2/5)
+2025-06-23 21:29:39,534 - MainThread - INFO - === Starting cycle_3_20250623_212939 ===
+2025-06-23 21:29:39,535 - MainThread - INFO - [cycle_3_20250623_212939] Starting capture for 10 seconds...
+2025-06-23 21:29:50,023 - MainThread - INFO - [cycle_3_20250623_212939] Capture successful: temp_processing\cycle_3_20250623_212939\cycle_3_20250623_212939_20250623_212939.pcap (3979332 bytes)
+2025-06-23 21:29:50,023 - MainThread - INFO - [cycle_3_20250623_212939] Converting PCAP to CSV...
+2025-06-23 21:29:50,936 - MainThread - INFO - [cycle_3_20250623_212939] CSV conversion successful: temp_processing\cycle_3_20250623_212939\csv_output\cycle_3_20250623_212939_20250623_212939.pcap_Flow.csv (21 flows)
+2025-06-23 21:29:50,937 - MainThread - INFO - [cycle_3_20250623_212939] Processing predictions...
+2025-06-23 21:29:50,937 - MainThread - INFO - [cycle_3_20250623_212939] Sending 21 flows for prediction (from 21 total)
+2025-06-23 21:30:03,809 - MainThread - INFO - [cycle_3_20250623_212939] CYCLE SUMMARY:
+2025-06-23 21:30:03,809 - MainThread - INFO - [cycle_3_20250623_212939]   Total flows: 21
+2025-06-23 21:30:03,809 - MainThread - INFO - [cycle_3_20250623_212939]   Normal: 0 (0.0%)
+2025-06-23 21:30:03,809 - MainThread - INFO - [cycle_3_20250623_212939]   Attack: 0 (0.0%)
+2025-06-23 21:30:03,810 - MainThread - INFO - [cycle_3_20250623_212939]   Errors: 21 (100.0%)
+2025-06-23 21:30:03,810 - MainThread - INFO - [cycle_3_20250623_212939] [OK] Normal traffic levels
+2025-06-23 21:30:03,810 - MainThread - INFO - === Ending cycle_3_20250623_212939 ===
+2025-06-23 21:30:04,966 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_3_20250623_212939
+2025-06-23 21:30:04,966 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:30:06,967 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:30:07,968 - MainThread - INFO - === Starting cycle_4_20250623_213007 ===
+2025-06-23 21:30:07,978 - MainThread - INFO - [cycle_4_20250623_213007] Starting capture for 10 seconds...
+2025-06-23 21:30:18,503 - MainThread - INFO - [cycle_4_20250623_213007] Capture successful: temp_processing\cycle_4_20250623_213007\cycle_4_20250623_213007_20250623_213007.pcap (4635036 bytes)
+2025-06-23 21:30:18,503 - MainThread - INFO - [cycle_4_20250623_213007] Converting PCAP to CSV...
+2025-06-23 21:30:19,354 - MainThread - INFO - [cycle_4_20250623_213007] CSV conversion successful: temp_processing\cycle_4_20250623_213007\csv_output\cycle_4_20250623_213007_20250623_213007.pcap_Flow.csv (28 flows)
+2025-06-23 21:30:19,354 - MainThread - INFO - [cycle_4_20250623_213007] Processing predictions...
+2025-06-23 21:30:19,355 - MainThread - INFO - [cycle_4_20250623_213007] Sending 28 flows for prediction (from 28 total)
+2025-06-23 21:30:34,302 - MainThread - INFO - [cycle_4_20250623_213007] Progress: 25/28 requests completed
+2025-06-23 21:30:34,684 - MainThread - INFO - [cycle_4_20250623_213007] CYCLE SUMMARY:
+2025-06-23 21:30:34,685 - MainThread - INFO - [cycle_4_20250623_213007]   Total flows: 28
+2025-06-23 21:30:34,685 - MainThread - INFO - [cycle_4_20250623_213007]   Normal: 0 (0.0%)
+2025-06-23 21:30:34,685 - MainThread - INFO - [cycle_4_20250623_213007]   Attack: 0 (0.0%)
+2025-06-23 21:30:34,685 - MainThread - INFO - [cycle_4_20250623_213007]   Errors: 28 (100.0%)
+2025-06-23 21:30:34,686 - MainThread - INFO - [cycle_4_20250623_213007] [OK] Normal traffic levels
+2025-06-23 21:30:34,686 - MainThread - INFO - === Ending cycle_4_20250623_213007 ===
+2025-06-23 21:30:35,787 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_4_20250623_213007
+2025-06-23 21:30:35,788 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:30:37,788 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:30:38,788 - MainThread - INFO - === Starting cycle_5_20250623_213038 ===
+2025-06-23 21:30:38,789 - MainThread - INFO - [cycle_5_20250623_213038] Starting capture for 10 seconds...
+2025-06-23 21:30:49,224 - MainThread - INFO - [cycle_5_20250623_213038] Capture successful: temp_processing\cycle_5_20250623_213038\cycle_5_20250623_213038_20250623_213038.pcap (4263028 bytes)
+2025-06-23 21:30:49,224 - MainThread - INFO - [cycle_5_20250623_213038] Converting PCAP to CSV...
+2025-06-23 21:30:50,071 - MainThread - INFO - [cycle_5_20250623_213038] CSV conversion successful: temp_processing\cycle_5_20250623_213038\csv_output\cycle_5_20250623_213038_20250623_213038.pcap_Flow.csv (21 flows)
+2025-06-23 21:30:50,071 - MainThread - INFO - [cycle_5_20250623_213038] Processing predictions...
+2025-06-23 21:30:50,072 - MainThread - INFO - [cycle_5_20250623_213038] Sending 21 flows for prediction (from 21 total)
+2025-06-23 21:31:02,931 - MainThread - INFO - [cycle_5_20250623_213038] CYCLE SUMMARY:
+2025-06-23 21:31:02,931 - MainThread - INFO - [cycle_5_20250623_213038]   Total flows: 21
+2025-06-23 21:31:02,931 - MainThread - INFO - [cycle_5_20250623_213038]   Normal: 0 (0.0%)
+2025-06-23 21:31:02,932 - MainThread - INFO - [cycle_5_20250623_213038]   Attack: 0 (0.0%)
+2025-06-23 21:31:02,932 - MainThread - INFO - [cycle_5_20250623_213038]   Errors: 21 (100.0%)
+2025-06-23 21:31:02,932 - MainThread - INFO - [cycle_5_20250623_213038] [OK] Normal traffic levels
+2025-06-23 21:31:02,932 - MainThread - INFO - === Ending cycle_5_20250623_213038 ===
+2025-06-23 21:31:04,021 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_5_20250623_213038
+2025-06-23 21:31:04,021 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:31:06,022 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:31:07,023 - MainThread - INFO - === Starting cycle_6_20250623_213107 ===
+2025-06-23 21:31:07,025 - MainThread - INFO - [cycle_6_20250623_213107] Starting capture for 10 seconds...
+2025-06-23 21:31:17,546 - MainThread - INFO - [cycle_6_20250623_213107] Capture successful: temp_processing\cycle_6_20250623_213107\cycle_6_20250623_213107_20250623_213107.pcap (3716444 bytes)
+2025-06-23 21:31:17,546 - MainThread - INFO - [cycle_6_20250623_213107] Converting PCAP to CSV...
+2025-06-23 21:31:18,390 - MainThread - INFO - [cycle_6_20250623_213107] CSV conversion successful: temp_processing\cycle_6_20250623_213107\csv_output\cycle_6_20250623_213107_20250623_213107.pcap_Flow.csv (26 flows)
+2025-06-23 21:31:18,390 - MainThread - INFO - [cycle_6_20250623_213107] Processing predictions...
+2025-06-23 21:31:18,391 - MainThread - INFO - [cycle_6_20250623_213107] Sending 26 flows for prediction (from 26 total)
+2025-06-23 21:31:33,423 - MainThread - INFO - [cycle_6_20250623_213107] Progress: 25/26 requests completed
+2025-06-23 21:31:33,603 - MainThread - INFO - [cycle_6_20250623_213107] CYCLE SUMMARY:
+2025-06-23 21:31:33,603 - MainThread - INFO - [cycle_6_20250623_213107]   Total flows: 26
+2025-06-23 21:31:33,603 - MainThread - INFO - [cycle_6_20250623_213107]   Normal: 0 (0.0%)
+2025-06-23 21:31:33,603 - MainThread - INFO - [cycle_6_20250623_213107]   Attack: 0 (0.0%)
+2025-06-23 21:31:33,603 - MainThread - INFO - [cycle_6_20250623_213107]   Errors: 26 (100.0%)
+2025-06-23 21:31:33,603 - MainThread - INFO - [cycle_6_20250623_213107] [OK] Normal traffic levels
+2025-06-23 21:31:33,604 - MainThread - INFO - === Ending cycle_6_20250623_213107 ===
+2025-06-23 21:31:34,724 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_6_20250623_213107
+2025-06-23 21:31:34,724 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:31:36,725 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:31:37,726 - MainThread - INFO - === Starting cycle_7_20250623_213137 ===
+2025-06-23 21:31:37,727 - MainThread - INFO - [cycle_7_20250623_213137] Starting capture for 10 seconds...
+2025-06-23 21:31:48,267 - MainThread - INFO - [cycle_7_20250623_213137] Capture successful: temp_processing\cycle_7_20250623_213137\cycle_7_20250623_213137_20250623_213137.pcap (3526392 bytes)
+2025-06-23 21:31:48,267 - MainThread - INFO - [cycle_7_20250623_213137] Converting PCAP to CSV...
+2025-06-23 21:31:49,088 - MainThread - INFO - [cycle_7_20250623_213137] CSV conversion successful: temp_processing\cycle_7_20250623_213137\csv_output\cycle_7_20250623_213137_20250623_213137.pcap_Flow.csv (13 flows)
+2025-06-23 21:31:49,088 - MainThread - INFO - [cycle_7_20250623_213137] Processing predictions...
+2025-06-23 21:31:49,089 - MainThread - INFO - [cycle_7_20250623_213137] Sending 13 flows for prediction (from 13 total)
+2025-06-23 21:31:57,844 - MainThread - INFO - [cycle_7_20250623_213137] CYCLE SUMMARY:
+2025-06-23 21:31:57,845 - MainThread - INFO - [cycle_7_20250623_213137]   Total flows: 13
+2025-06-23 21:31:57,845 - MainThread - INFO - [cycle_7_20250623_213137]   Normal: 0 (0.0%)
+2025-06-23 21:31:57,845 - MainThread - INFO - [cycle_7_20250623_213137]   Attack: 0 (0.0%)
+2025-06-23 21:31:57,845 - MainThread - INFO - [cycle_7_20250623_213137]   Errors: 13 (100.0%)
+2025-06-23 21:31:57,845 - MainThread - INFO - [cycle_7_20250623_213137] [OK] Normal traffic levels
+2025-06-23 21:31:57,845 - MainThread - INFO - === Ending cycle_7_20250623_213137 ===
+2025-06-23 21:31:58,942 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_7_20250623_213137
+2025-06-23 21:31:58,942 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:32:00,943 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:32:01,944 - MainThread - INFO - === Starting cycle_8_20250623_213201 ===
+2025-06-23 21:32:01,944 - MainThread - INFO - [cycle_8_20250623_213201] Starting capture for 10 seconds...
+2025-06-23 21:32:12,425 - MainThread - INFO - [cycle_8_20250623_213201] Capture successful: temp_processing\cycle_8_20250623_213201\cycle_8_20250623_213201_20250623_213201.pcap (3569180 bytes)
+2025-06-23 21:32:12,425 - MainThread - INFO - [cycle_8_20250623_213201] Converting PCAP to CSV...
+2025-06-23 21:32:13,300 - MainThread - INFO - [cycle_8_20250623_213201] CSV conversion successful: temp_processing\cycle_8_20250623_213201\csv_output\cycle_8_20250623_213201_20250623_213201.pcap_Flow.csv (18 flows)
+2025-06-23 21:32:13,300 - MainThread - INFO - [cycle_8_20250623_213201] Processing predictions...
+2025-06-23 21:32:13,301 - MainThread - INFO - [cycle_8_20250623_213201] Sending 18 flows for prediction (from 18 total)
+2025-06-23 21:32:24,125 - MainThread - INFO - [cycle_8_20250623_213201] CYCLE SUMMARY:
+2025-06-23 21:32:24,125 - MainThread - INFO - [cycle_8_20250623_213201]   Total flows: 18
+2025-06-23 21:32:24,126 - MainThread - INFO - [cycle_8_20250623_213201]   Normal: 0 (0.0%)
+2025-06-23 21:32:24,126 - MainThread - INFO - [cycle_8_20250623_213201]   Attack: 0 (0.0%)
+2025-06-23 21:32:24,126 - MainThread - INFO - [cycle_8_20250623_213201]   Errors: 18 (100.0%)
+2025-06-23 21:32:24,126 - MainThread - INFO - [cycle_8_20250623_213201] [OK] Normal traffic levels
+2025-06-23 21:32:24,126 - MainThread - INFO - === Ending cycle_8_20250623_213201 ===
+2025-06-23 21:32:25,237 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_8_20250623_213201
+2025-06-23 21:32:25,237 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:32:27,238 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:32:28,238 - MainThread - INFO - === Starting cycle_9_20250623_213228 ===
+2025-06-23 21:32:28,239 - MainThread - INFO - [cycle_9_20250623_213228] Starting capture for 10 seconds...
+2025-06-23 21:32:38,778 - MainThread - INFO - [cycle_9_20250623_213228] Capture successful: temp_processing\cycle_9_20250623_213228\cycle_9_20250623_213228_20250623_213228.pcap (3534936 bytes)
+2025-06-23 21:32:38,778 - MainThread - INFO - [cycle_9_20250623_213228] Converting PCAP to CSV...
+2025-06-23 21:32:39,716 - MainThread - INFO - [cycle_9_20250623_213228] CSV conversion successful: temp_processing\cycle_9_20250623_213228\csv_output\cycle_9_20250623_213228_20250623_213228.pcap_Flow.csv (58 flows)
+2025-06-23 21:32:39,716 - MainThread - INFO - [cycle_9_20250623_213228] Processing predictions...
+2025-06-23 21:32:39,717 - MainThread - INFO - [cycle_9_20250623_213228] Sending 58 flows for prediction (from 58 total)
+2025-06-23 21:32:54,796 - MainThread - INFO - [cycle_9_20250623_213228] Progress: 25/58 requests completed
+2025-06-23 21:33:07,798 - MainThread - INFO - [cycle_9_20250623_213228] Progress: 50/58 requests completed
+2025-06-23 21:33:12,069 - MainThread - ERROR - [cycle_9_20250623_213228] Error processing predictions: 6 (of 58) futures unfinished
+2025-06-23 21:33:12,069 - MainThread - INFO - === Ending cycle_9_20250623_213228 ===
+2025-06-23 21:33:13,264 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_9_20250623_213228
+2025-06-23 21:33:13,264 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:33:15,265 - MainThread - WARNING - [FAIL] Cycle failed (1/5)
+2025-06-23 21:33:16,266 - MainThread - INFO - === Starting cycle_10_20250623_213316 ===
+2025-06-23 21:33:16,266 - MainThread - INFO - [cycle_10_20250623_213316] Starting capture for 10 seconds...
+2025-06-23 21:33:26,657 - MainThread - INFO - [cycle_10_20250623_213316] Capture successful: temp_processing\cycle_10_20250623_213316\cycle_10_20250623_213316_20250623_213316.pcap (21420864 bytes)
+2025-06-23 21:33:26,657 - MainThread - INFO - [cycle_10_20250623_213316] Converting PCAP to CSV...
+2025-06-23 21:33:29,836 - MainThread - INFO - [cycle_10_20250623_213316] CSV conversion successful: temp_processing\cycle_10_20250623_213316\csv_output\cycle_10_20250623_213316_20250623_213316.pcap_Flow.csv (53692 flows)
+2025-06-23 21:33:29,836 - MainThread - INFO - [cycle_10_20250623_213316] Processing predictions...
+2025-06-23 21:33:30,376 - MainThread - INFO - [cycle_10_20250623_213316] Limiting flows from 53692 to 100
+2025-06-23 21:33:30,437 - MainThread - INFO - [cycle_10_20250623_213316] Sending 100 flows for prediction (from 53692 total)
+2025-06-23 21:33:45,459 - MainThread - INFO - [cycle_10_20250623_213316] Progress: 25/100 requests completed
+2025-06-23 21:33:58,468 - MainThread - INFO - [cycle_10_20250623_213316] Progress: 50/100 requests completed
+2025-06-23 21:34:24,402 - MainThread - ERROR - [cycle_10_20250623_213316] Error processing predictions: 48 (of 100) futures unfinished
+2025-06-23 21:34:24,419 - MainThread - INFO - === Ending cycle_10_20250623_213316 ===
+2025-06-23 21:34:25,538 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_10_20250623_213316
+2025-06-23 21:34:25,538 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:34:27,538 - MainThread - WARNING - [FAIL] Cycle failed (2/5)
+2025-06-23 21:34:28,539 - MainThread - INFO - === Starting cycle_11_20250623_213428 ===
+2025-06-23 21:34:28,540 - MainThread - INFO - [cycle_11_20250623_213428] Starting capture for 10 seconds...
+2025-06-23 21:34:38,966 - MainThread - INFO - [cycle_11_20250623_213428] Capture successful: temp_processing\cycle_11_20250623_213428\cycle_11_20250623_213428_20250623_213428.pcap (3476020 bytes)
+2025-06-23 21:34:38,966 - MainThread - INFO - [cycle_11_20250623_213428] Converting PCAP to CSV...
+2025-06-23 21:34:39,816 - MainThread - INFO - [cycle_11_20250623_213428] CSV conversion successful: temp_processing\cycle_11_20250623_213428\csv_output\cycle_11_20250623_213428_20250623_213428.pcap_Flow.csv (18 flows)
+2025-06-23 21:34:39,816 - MainThread - INFO - [cycle_11_20250623_213428] Processing predictions...
+2025-06-23 21:34:39,817 - MainThread - INFO - [cycle_11_20250623_213428] Sending 18 flows for prediction (from 18 total)
+2025-06-23 21:34:50,708 - MainThread - INFO - [cycle_11_20250623_213428] CYCLE SUMMARY:
+2025-06-23 21:34:50,710 - MainThread - INFO - [cycle_11_20250623_213428]   Total flows: 18
+2025-06-23 21:34:50,711 - MainThread - INFO - [cycle_11_20250623_213428]   Normal: 0 (0.0%)
+2025-06-23 21:34:50,711 - MainThread - INFO - [cycle_11_20250623_213428]   Attack: 0 (0.0%)
+2025-06-23 21:34:50,711 - MainThread - INFO - [cycle_11_20250623_213428]   Errors: 18 (100.0%)
+2025-06-23 21:34:50,711 - MainThread - INFO - [cycle_11_20250623_213428] [OK] Normal traffic levels
+2025-06-23 21:34:50,712 - MainThread - INFO - === Ending cycle_11_20250623_213428 ===
+2025-06-23 21:34:51,827 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_11_20250623_213428
+2025-06-23 21:34:51,827 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:34:53,827 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:34:54,828 - MainThread - INFO - === Starting cycle_12_20250623_213454 ===
+2025-06-23 21:34:54,828 - MainThread - INFO - [cycle_12_20250623_213454] Starting capture for 10 seconds...
+2025-06-23 21:35:05,410 - MainThread - INFO - [cycle_12_20250623_213454] Capture successful: temp_processing\cycle_12_20250623_213454\cycle_12_20250623_213454_20250623_213454.pcap (4043624 bytes)
+2025-06-23 21:35:05,410 - MainThread - INFO - [cycle_12_20250623_213454] Converting PCAP to CSV...
+2025-06-23 21:35:06,009 - MainThread - WARNING - [cycle_12_20250623_213454] No CSV file generated from temp_processing\cycle_12_20250623_213454\cycle_12_20250623_213454_20250623_213454.pcap
+2025-06-23 21:35:06,009 - MainThread - INFO - === Ending cycle_12_20250623_213454 ===
+2025-06-23 21:35:07,132 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_12_20250623_213454
+2025-06-23 21:35:07,132 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:35:09,133 - MainThread - WARNING - [FAIL] Cycle failed (1/5)
+2025-06-23 21:35:10,133 - MainThread - INFO - === Starting cycle_13_20250623_213510 ===
+2025-06-23 21:35:10,134 - MainThread - INFO - [cycle_13_20250623_213510] Starting capture for 10 seconds...
+2025-06-23 21:35:20,718 - MainThread - INFO - [cycle_13_20250623_213510] Capture successful: temp_processing\cycle_13_20250623_213510\cycle_13_20250623_213510_20250623_213510.pcap (3526036 bytes)
+2025-06-23 21:35:20,718 - MainThread - INFO - [cycle_13_20250623_213510] Converting PCAP to CSV...
+2025-06-23 21:35:21,554 - MainThread - INFO - [cycle_13_20250623_213510] CSV conversion successful: temp_processing\cycle_13_20250623_213510\csv_output\cycle_13_20250623_213510_20250623_213510.pcap_Flow.csv (30 flows)
+2025-06-23 21:35:21,554 - MainThread - INFO - [cycle_13_20250623_213510] Processing predictions...
+2025-06-23 21:35:21,555 - MainThread - INFO - [cycle_13_20250623_213510] Sending 30 flows for prediction (from 30 total)
+2025-06-23 21:35:36,490 - MainThread - INFO - [cycle_13_20250623_213510] Progress: 25/30 requests completed
+2025-06-23 21:35:38,859 - MainThread - INFO - [cycle_13_20250623_213510] CYCLE SUMMARY:
+2025-06-23 21:35:38,859 - MainThread - INFO - [cycle_13_20250623_213510]   Total flows: 30
+2025-06-23 21:35:38,860 - MainThread - INFO - [cycle_13_20250623_213510]   Normal: 0 (0.0%)
+2025-06-23 21:35:38,860 - MainThread - INFO - [cycle_13_20250623_213510]   Attack: 0 (0.0%)
+2025-06-23 21:35:38,860 - MainThread - INFO - [cycle_13_20250623_213510]   Errors: 30 (100.0%)
+2025-06-23 21:35:38,860 - MainThread - INFO - [cycle_13_20250623_213510] [OK] Normal traffic levels
+2025-06-23 21:35:38,860 - MainThread - INFO - === Ending cycle_13_20250623_213510 ===
+2025-06-23 21:35:39,966 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_13_20250623_213510
+2025-06-23 21:35:39,966 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:35:41,967 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:35:42,968 - MainThread - INFO - === Starting cycle_14_20250623_213542 ===
+2025-06-23 21:35:42,968 - MainThread - INFO - [cycle_14_20250623_213542] Starting capture for 10 seconds...
+2025-06-23 21:35:53,474 - MainThread - INFO - [cycle_14_20250623_213542] Capture successful: temp_processing\cycle_14_20250623_213542\cycle_14_20250623_213542_20250623_213542.pcap (7722540 bytes)
+2025-06-23 21:35:53,475 - MainThread - INFO - [cycle_14_20250623_213542] Converting PCAP to CSV...
+2025-06-23 21:35:56,006 - MainThread - INFO - [cycle_14_20250623_213542] CSV conversion successful: temp_processing\cycle_14_20250623_213542\csv_output\cycle_14_20250623_213542_20250623_213542.pcap_Flow.csv (6085 flows)
+2025-06-23 21:35:56,006 - MainThread - INFO - [cycle_14_20250623_213542] Processing predictions...
+2025-06-23 21:35:56,071 - MainThread - INFO - [cycle_14_20250623_213542] Limiting flows from 6085 to 100
+2025-06-23 21:35:56,083 - MainThread - INFO - [cycle_14_20250623_213542] Sending 100 flows for prediction (from 6085 total)
+2025-06-23 21:36:11,227 - MainThread - INFO - [cycle_14_20250623_213542] Progress: 25/100 requests completed
+2025-06-23 21:36:24,205 - MainThread - INFO - [cycle_14_20250623_213542] Progress: 50/100 requests completed
+2025-06-23 21:36:50,147 - MainThread - ERROR - [cycle_14_20250623_213542] Error processing predictions: 48 (of 100) futures unfinished
+2025-06-23 21:36:50,151 - MainThread - INFO - === Ending cycle_14_20250623_213542 ===
+2025-06-23 21:36:51,282 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_14_20250623_213542
+2025-06-23 21:36:51,282 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:36:53,282 - MainThread - WARNING - [FAIL] Cycle failed (1/5)
+2025-06-23 21:36:54,283 - MainThread - INFO - === Starting cycle_15_20250623_213654 ===
+2025-06-23 21:36:54,284 - MainThread - INFO - [cycle_15_20250623_213654] Starting capture for 10 seconds...
+2025-06-23 21:37:04,844 - MainThread - INFO - [cycle_15_20250623_213654] Capture successful: temp_processing\cycle_15_20250623_213654\cycle_15_20250623_213654_20250623_213654.pcap (4292724 bytes)
+2025-06-23 21:37:04,844 - MainThread - INFO - [cycle_15_20250623_213654] Converting PCAP to CSV...
+2025-06-23 21:37:05,441 - MainThread - WARNING - [cycle_15_20250623_213654] No CSV file generated from temp_processing\cycle_15_20250623_213654\cycle_15_20250623_213654_20250623_213654.pcap
+2025-06-23 21:37:05,441 - MainThread - INFO - === Ending cycle_15_20250623_213654 ===
+2025-06-23 21:37:06,563 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_15_20250623_213654
+2025-06-23 21:37:06,563 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:37:08,563 - MainThread - WARNING - [FAIL] Cycle failed (2/5)
+2025-06-23 21:37:09,564 - MainThread - INFO - === Starting cycle_16_20250623_213709 ===
+2025-06-23 21:37:09,565 - MainThread - INFO - [cycle_16_20250623_213709] Starting capture for 10 seconds...
+2025-06-23 21:37:19,971 - MainThread - INFO - [cycle_16_20250623_213709] Capture successful: temp_processing\cycle_16_20250623_213709\cycle_16_20250623_213709_20250623_213709.pcap (3409740 bytes)
+2025-06-23 21:37:19,971 - MainThread - INFO - [cycle_16_20250623_213709] Converting PCAP to CSV...
+2025-06-23 21:37:20,871 - MainThread - INFO - [cycle_16_20250623_213709] CSV conversion successful: temp_processing\cycle_16_20250623_213709\csv_output\cycle_16_20250623_213709_20250623_213709.pcap_Flow.csv (7 flows)
+2025-06-23 21:37:20,871 - MainThread - INFO - [cycle_16_20250623_213709] Processing predictions...
+2025-06-23 21:37:20,872 - MainThread - INFO - [cycle_16_20250623_213709] Sending 7 flows for prediction (from 7 total)
+2025-06-23 21:37:25,421 - MainThread - INFO - [cycle_16_20250623_213709] CYCLE SUMMARY:
+2025-06-23 21:37:25,422 - MainThread - INFO - [cycle_16_20250623_213709]   Total flows: 7
+2025-06-23 21:37:25,422 - MainThread - INFO - [cycle_16_20250623_213709]   Normal: 0 (0.0%)
+2025-06-23 21:37:25,422 - MainThread - INFO - [cycle_16_20250623_213709]   Attack: 0 (0.0%)
+2025-06-23 21:37:25,422 - MainThread - INFO - [cycle_16_20250623_213709]   Errors: 7 (100.0%)
+2025-06-23 21:37:25,422 - MainThread - INFO - [cycle_16_20250623_213709] [OK] Normal traffic levels
+2025-06-23 21:37:25,422 - MainThread - INFO - === Ending cycle_16_20250623_213709 ===
+2025-06-23 21:37:26,521 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_16_20250623_213709
+2025-06-23 21:37:26,522 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:37:28,522 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:37:29,523 - MainThread - INFO - === Starting cycle_17_20250623_213729 ===
+2025-06-23 21:37:29,523 - MainThread - INFO - [cycle_17_20250623_213729] Starting capture for 10 seconds...
+2025-06-23 21:37:39,959 - MainThread - INFO - [cycle_17_20250623_213729] Capture successful: temp_processing\cycle_17_20250623_213729\cycle_17_20250623_213729_20250623_213729.pcap (17606448 bytes)
+2025-06-23 21:37:39,959 - MainThread - INFO - [cycle_17_20250623_213729] Converting PCAP to CSV...
+2025-06-23 21:37:45,942 - MainThread - INFO - [cycle_17_20250623_213729] CSV conversion successful: temp_processing\cycle_17_20250623_213729\csv_output\cycle_17_20250623_213729_20250623_213729.pcap_Flow.csv (20782 flows)
+2025-06-23 21:37:45,942 - MainThread - INFO - [cycle_17_20250623_213729] Processing predictions...
+2025-06-23 21:37:46,164 - MainThread - INFO - [cycle_17_20250623_213729] Limiting flows from 20782 to 100
+2025-06-23 21:37:46,191 - MainThread - INFO - [cycle_17_20250623_213729] Sending 100 flows for prediction (from 20782 total)
+2025-06-23 21:38:01,185 - MainThread - INFO - [cycle_17_20250623_213729] Progress: 25/100 requests completed
+2025-06-23 21:38:14,250 - MainThread - INFO - [cycle_17_20250623_213729] Progress: 50/100 requests completed
+2025-06-23 21:38:40,195 - MainThread - ERROR - [cycle_17_20250623_213729] Error processing predictions: 48 (of 100) futures unfinished
+2025-06-23 21:38:40,201 - MainThread - INFO - === Ending cycle_17_20250623_213729 ===
+2025-06-23 21:38:41,326 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_17_20250623_213729
+2025-06-23 21:38:41,326 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:38:43,326 - MainThread - WARNING - [FAIL] Cycle failed (1/5)
+2025-06-23 21:38:44,327 - MainThread - INFO - === Starting cycle_18_20250623_213844 ===
+2025-06-23 21:38:44,328 - MainThread - INFO - [cycle_18_20250623_213844] Starting capture for 10 seconds...
+2025-06-23 21:38:54,794 - MainThread - INFO - [cycle_18_20250623_213844] Capture successful: temp_processing\cycle_18_20250623_213844\cycle_18_20250623_213844_20250623_213844.pcap (16946592 bytes)
+2025-06-23 21:38:54,794 - MainThread - INFO - [cycle_18_20250623_213844] Converting PCAP to CSV...
+2025-06-23 21:38:58,632 - MainThread - INFO - [cycle_18_20250623_213844] CSV conversion successful: temp_processing\cycle_18_20250623_213844\csv_output\cycle_18_20250623_213844_20250623_213844.pcap_Flow.csv (55601 flows)
+2025-06-23 21:38:58,632 - MainThread - INFO - [cycle_18_20250623_213844] Processing predictions...
+2025-06-23 21:38:59,124 - MainThread - INFO - [cycle_18_20250623_213844] Limiting flows from 55601 to 100
+2025-06-23 21:38:59,197 - MainThread - INFO - [cycle_18_20250623_213844] Sending 100 flows for prediction (from 55601 total)
+2025-06-23 21:39:14,190 - MainThread - INFO - [cycle_18_20250623_213844] Progress: 25/100 requests completed
+2025-06-23 21:39:27,042 - MainThread - INFO - [cycle_18_20250623_213844] Progress: 50/100 requests completed
+2025-06-23 21:39:52,779 - MainThread - ERROR - [cycle_18_20250623_213844] Error processing predictions: 46 (of 100) futures unfinished
+2025-06-23 21:39:52,789 - MainThread - INFO - === Ending cycle_18_20250623_213844 ===
+2025-06-23 21:39:53,871 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_18_20250623_213844
+2025-06-23 21:39:53,872 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:39:55,872 - MainThread - WARNING - [FAIL] Cycle failed (2/5)
+2025-06-23 21:39:56,873 - MainThread - INFO - === Starting cycle_19_20250623_213956 ===
+2025-06-23 21:39:56,874 - MainThread - INFO - [cycle_19_20250623_213956] Starting capture for 10 seconds...
+2025-06-23 21:40:01,096 - MainThread - INFO - === Ending cycle_19_20250623_213956 ===
+2025-06-23 21:40:01,213 - MainThread - INFO - Shutdown requested by user
+2025-06-23 21:40:01,214 - MainThread - INFO - Shutting down...
+2025-06-23 21:40:18,580 - MainThread - INFO - === Starting Robust Network Intrusion Detection System ===
+2025-06-23 21:40:18,581 - MainThread - INFO - Interface: Ethernet
+2025-06-23 21:40:18,581 - MainThread - INFO - Capture duration: 10 seconds
+2025-06-23 21:40:18,581 - MainThread - INFO - Endpoint: http://localhost:8000/predict/
+2025-06-23 21:40:18,581 - MainThread - INFO - Filtering traffic to localhost:8080
+2025-06-23 21:40:18,581 - MainThread - INFO - Cycle cooldown: 2 seconds
+2025-06-23 21:40:18,581 - MainThread - INFO - Max workers: 2
+2025-06-23 21:40:18,581 - MainThread - INFO - Connection pool size: 10
+2025-06-23 21:40:18,581 - MainThread - INFO - Created session with pool size: 10
+2025-06-23 21:40:18,582 - MainThread - INFO - === Starting cycle_1_20250623_214018 ===
+2025-06-23 21:40:18,582 - MainThread - INFO - [cycle_1_20250623_214018] Starting capture for 10 seconds...
+2025-06-23 21:40:18,664 - MainThread - ERROR - [cycle_1_20250623_214018] Capture failed: Command '['tshark', '-i', 'Ethernet', '-a', 'duration:10', '-f', 'not (host localhost and port 8080)', '-F', 'pcap', '-w', 'temp_processing\\cycle_1_20250623_214018\\cycle_1_20250623_214018_20250623_214018.pcap', '-q']' returned non-zero exit status 1.
+2025-06-23 21:40:18,665 - MainThread - INFO - === Ending cycle_1_20250623_214018 ===
+2025-06-23 21:40:19,739 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:40:21,740 - MainThread - WARNING - [FAIL] Cycle failed (1/5)
+2025-06-23 21:40:22,740 - MainThread - INFO - === Starting cycle_2_20250623_214022 ===
+2025-06-23 21:40:22,741 - MainThread - INFO - [cycle_2_20250623_214022] Starting capture for 10 seconds...
+2025-06-23 21:40:33,153 - MainThread - INFO - [cycle_2_20250623_214022] Capture successful: temp_processing\cycle_2_20250623_214022\cycle_2_20250623_214022_20250623_214022.pcap (3501985 bytes)
+2025-06-23 21:40:33,153 - MainThread - INFO - [cycle_2_20250623_214022] Converting PCAP to CSV...
+2025-06-23 21:40:33,889 - MainThread - INFO - [cycle_2_20250623_214022] CSV conversion successful: temp_processing\cycle_2_20250623_214022\csv_output\cycle_2_20250623_214022_20250623_214022.pcap_Flow.csv (26 flows)
+2025-06-23 21:40:33,889 - MainThread - INFO - [cycle_2_20250623_214022] Processing predictions...
+2025-06-23 21:40:33,890 - MainThread - INFO - [cycle_2_20250623_214022] Sending 26 flows for prediction (from 26 total)
+2025-06-23 21:40:36,624 - MainThread - INFO - [cycle_2_20250623_214022] Progress: 2/26 flows processed
+2025-06-23 21:40:37,382 - MainThread - INFO - [cycle_2_20250623_214022] Progress: 4/26 flows processed
+2025-06-23 21:40:38,108 - MainThread - INFO - [cycle_2_20250623_214022] Progress: 6/26 flows processed
+2025-06-23 21:40:38,855 - MainThread - INFO - [cycle_2_20250623_214022] Progress: 8/26 flows processed
+2025-06-23 21:40:39,642 - MainThread - INFO - [cycle_2_20250623_214022] Progress: 10/26 flows processed
+2025-06-23 21:40:40,371 - MainThread - INFO - [cycle_2_20250623_214022] Progress: 12/26 flows processed
+2025-06-23 21:40:41,150 - MainThread - INFO - [cycle_2_20250623_214022] Progress: 14/26 flows processed
+2025-06-23 21:40:41,865 - MainThread - INFO - [cycle_2_20250623_214022] Progress: 16/26 flows processed
+2025-06-23 21:40:42,592 - MainThread - INFO - [cycle_2_20250623_214022] Progress: 18/26 flows processed
+2025-06-23 21:40:43,318 - MainThread - INFO - [cycle_2_20250623_214022] Progress: 20/26 flows processed
+2025-06-23 21:40:44,086 - MainThread - INFO - [cycle_2_20250623_214022] Progress: 22/26 flows processed
+2025-06-23 21:40:44,813 - MainThread - INFO - [cycle_2_20250623_214022] Progress: 24/26 flows processed
+2025-06-23 21:40:45,060 - MainThread - INFO - [cycle_2_20250623_214022] Progress: 26/26 flows processed
+2025-06-23 21:40:45,060 - MainThread - INFO - [cycle_2_20250623_214022] CYCLE SUMMARY:
+2025-06-23 21:40:45,060 - MainThread - INFO - [cycle_2_20250623_214022]   Total flows: 26
+2025-06-23 21:40:45,060 - MainThread - INFO - [cycle_2_20250623_214022]   Normal: 0 (0.0%)
+2025-06-23 21:40:45,060 - MainThread - INFO - [cycle_2_20250623_214022]   Attack: 0 (0.0%)
+2025-06-23 21:40:45,060 - MainThread - INFO - [cycle_2_20250623_214022]   Errors: 26 (100.0%)
+2025-06-23 21:40:45,060 - MainThread - INFO - [cycle_2_20250623_214022] [OK] Normal traffic levels
+2025-06-23 21:40:45,060 - MainThread - INFO - [cycle_2_20250623_214022] Success rate: 100.00%
+2025-06-23 21:40:45,060 - MainThread - INFO - === Ending cycle_2_20250623_214022 ===
+2025-06-23 21:40:46,134 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_2_20250623_214022
+2025-06-23 21:40:46,134 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:40:48,134 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:40:49,135 - MainThread - INFO - === Starting cycle_3_20250623_214049 ===
+2025-06-23 21:40:49,136 - MainThread - INFO - [cycle_3_20250623_214049] Starting capture for 10 seconds...
+2025-06-23 21:40:59,535 - MainThread - INFO - [cycle_3_20250623_214049] Capture successful: temp_processing\cycle_3_20250623_214049\cycle_3_20250623_214049_20250623_214049.pcap (4151802 bytes)
+2025-06-23 21:40:59,535 - MainThread - INFO - [cycle_3_20250623_214049] Converting PCAP to CSV...
+2025-06-23 21:41:00,389 - MainThread - INFO - [cycle_3_20250623_214049] CSV conversion successful: temp_processing\cycle_3_20250623_214049\csv_output\cycle_3_20250623_214049_20250623_214049.pcap_Flow.csv (63 flows)
+2025-06-23 21:41:00,389 - MainThread - INFO - [cycle_3_20250623_214049] Processing predictions...
+2025-06-23 21:41:00,390 - MainThread - INFO - [cycle_3_20250623_214049] Limiting flows from 63 to 50
+2025-06-23 21:41:00,390 - MainThread - INFO - [cycle_3_20250623_214049] Sending 50 flows for prediction (from 63 total)
+2025-06-23 21:41:01,149 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 2/50 flows processed
+2025-06-23 21:41:01,990 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 4/50 flows processed
+2025-06-23 21:41:02,728 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 6/50 flows processed
+2025-06-23 21:41:03,485 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 8/50 flows processed
+2025-06-23 21:41:04,233 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 10/50 flows processed
+2025-06-23 21:41:04,960 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 12/50 flows processed
+2025-06-23 21:41:05,685 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 14/50 flows processed
+2025-06-23 21:41:06,401 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 16/50 flows processed
+2025-06-23 21:41:07,170 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 18/50 flows processed
+2025-06-23 21:41:07,896 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 20/50 flows processed
+2025-06-23 21:41:08,622 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 22/50 flows processed
+2025-06-23 21:41:09,348 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 24/50 flows processed
+2025-06-23 21:41:10,191 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 26/50 flows processed
+2025-06-23 21:41:10,970 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 28/50 flows processed
+2025-06-23 21:41:11,653 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 30/50 flows processed
+2025-06-23 21:41:12,485 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 32/50 flows processed
+2025-06-23 21:41:13,211 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 34/50 flows processed
+2025-06-23 21:41:13,968 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 36/50 flows processed
+2025-06-23 21:41:14,684 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 38/50 flows processed
+2025-06-23 21:41:15,442 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 40/50 flows processed
+2025-06-23 21:41:16,284 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 42/50 flows processed
+2025-06-23 21:41:16,989 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 44/50 flows processed
+2025-06-23 21:41:17,727 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 46/50 flows processed
+2025-06-23 21:41:18,463 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 48/50 flows processed
+2025-06-23 21:41:18,720 - MainThread - INFO - [cycle_3_20250623_214049] Progress: 50/50 flows processed
+2025-06-23 21:41:18,720 - MainThread - INFO - [cycle_3_20250623_214049] CYCLE SUMMARY:
+2025-06-23 21:41:18,720 - MainThread - INFO - [cycle_3_20250623_214049]   Original flows: 63 (sampled: 50)
+2025-06-23 21:41:18,721 - MainThread - INFO - [cycle_3_20250623_214049]   Normal: 0 (0.0%)
+2025-06-23 21:41:18,721 - MainThread - INFO - [cycle_3_20250623_214049]   Attack: 0 (0.0%)
+2025-06-23 21:41:18,721 - MainThread - INFO - [cycle_3_20250623_214049]   Errors: 50 (100.0%)
+2025-06-23 21:41:18,721 - MainThread - INFO - [cycle_3_20250623_214049] [OK] Normal traffic levels
+2025-06-23 21:41:18,721 - MainThread - INFO - [cycle_3_20250623_214049] Success rate: 100.00%
+2025-06-23 21:41:18,721 - MainThread - INFO - === Ending cycle_3_20250623_214049 ===
+2025-06-23 21:41:19,814 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_3_20250623_214049
+2025-06-23 21:41:19,814 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:41:21,815 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:41:22,815 - MainThread - INFO - === Starting cycle_4_20250623_214122 ===
+2025-06-23 21:41:22,816 - MainThread - INFO - [cycle_4_20250623_214122] Starting capture for 10 seconds...
+2025-06-23 21:41:33,259 - MainThread - INFO - [cycle_4_20250623_214122] Capture successful: temp_processing\cycle_4_20250623_214122\cycle_4_20250623_214122_20250623_214122.pcap (17885599 bytes)
+2025-06-23 21:41:33,259 - MainThread - INFO - [cycle_4_20250623_214122] Converting PCAP to CSV...
+2025-06-23 21:41:37,084 - MainThread - INFO - [cycle_4_20250623_214122] CSV conversion successful: temp_processing\cycle_4_20250623_214122\csv_output\cycle_4_20250623_214122_20250623_214122.pcap_Flow.csv (54500 flows)
+2025-06-23 21:41:37,084 - MainThread - INFO - [cycle_4_20250623_214122] Processing predictions...
+2025-06-23 21:41:37,746 - MainThread - INFO - [cycle_4_20250623_214122] Limiting flows from 54500 to 50
+2025-06-23 21:41:37,828 - MainThread - INFO - [cycle_4_20250623_214122] Sending 50 flows for prediction (from 54500 total)
+2025-06-23 21:41:38,567 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 2/50 flows processed
+2025-06-23 21:41:39,314 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 4/50 flows processed
+2025-06-23 21:41:40,062 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 6/50 flows processed
+2025-06-23 21:41:40,862 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 8/50 flows processed
+2025-06-23 21:41:41,578 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 10/50 flows processed
+2025-06-23 21:41:42,356 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 12/50 flows processed
+2025-06-23 21:41:43,093 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 14/50 flows processed
+2025-06-23 21:41:43,820 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 16/50 flows processed
+2025-06-23 21:41:44,546 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 18/50 flows processed
+2025-06-23 21:41:45,283 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 20/50 flows processed
+2025-06-23 21:41:46,009 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 22/50 flows processed
+2025-06-23 21:41:46,798 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 24/50 flows processed
+2025-06-23 21:41:47,566 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 26/50 flows processed
+2025-06-23 21:41:48,356 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 28/50 flows processed
+2025-06-23 21:41:49,155 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 30/50 flows processed
+2025-06-23 21:41:49,924 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 32/50 flows processed
+2025-06-23 21:41:50,693 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 34/50 flows processed
+2025-06-23 21:41:51,430 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 36/50 flows processed
+2025-06-23 21:41:52,165 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 38/50 flows processed
+2025-06-23 21:41:52,902 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 40/50 flows processed
+2025-06-23 21:41:53,671 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 42/50 flows processed
+2025-06-23 21:41:54,450 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 44/50 flows processed
+2025-06-23 21:41:55,218 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 46/50 flows processed
+2025-06-23 21:41:55,934 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 48/50 flows processed
+2025-06-23 21:41:56,171 - MainThread - INFO - [cycle_4_20250623_214122] Progress: 50/50 flows processed
+2025-06-23 21:41:56,171 - MainThread - INFO - [cycle_4_20250623_214122] CYCLE SUMMARY:
+2025-06-23 21:41:56,171 - MainThread - INFO - [cycle_4_20250623_214122]   Original flows: 54500 (sampled: 50)
+2025-06-23 21:41:56,171 - MainThread - INFO - [cycle_4_20250623_214122]   Normal: 0 (0.0%)
+2025-06-23 21:41:56,172 - MainThread - INFO - [cycle_4_20250623_214122]   Attack: 0 (0.0%)
+2025-06-23 21:41:56,172 - MainThread - INFO - [cycle_4_20250623_214122]   Errors: 50 (100.0%)
+2025-06-23 21:41:56,172 - MainThread - INFO - [cycle_4_20250623_214122] [OK] Normal traffic levels
+2025-06-23 21:41:56,172 - MainThread - INFO - [cycle_4_20250623_214122] Success rate: 100.00%
+2025-06-23 21:41:56,180 - MainThread - INFO - === Ending cycle_4_20250623_214122 ===
+2025-06-23 21:41:57,285 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_4_20250623_214122
+2025-06-23 21:41:57,286 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:41:59,286 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:42:00,286 - MainThread - INFO - === Starting cycle_5_20250623_214200 ===
+2025-06-23 21:42:00,287 - MainThread - INFO - [cycle_5_20250623_214200] Starting capture for 10 seconds...
+2025-06-23 21:42:10,667 - MainThread - INFO - [cycle_5_20250623_214200] Capture successful: temp_processing\cycle_5_20250623_214200\cycle_5_20250623_214200_20250623_214200.pcap (8928624 bytes)
+2025-06-23 21:42:10,668 - MainThread - INFO - [cycle_5_20250623_214200] Converting PCAP to CSV...
+2025-06-23 21:42:15,360 - MainThread - INFO - [cycle_5_20250623_214200] CSV conversion successful: temp_processing\cycle_5_20250623_214200\csv_output\cycle_5_20250623_214200_20250623_214200.pcap_Flow.csv (15308 flows)
+2025-06-23 21:42:15,360 - MainThread - INFO - [cycle_5_20250623_214200] Processing predictions...
+2025-06-23 21:42:15,517 - MainThread - INFO - [cycle_5_20250623_214200] Limiting flows from 15308 to 50
+2025-06-23 21:42:15,538 - MainThread - INFO - [cycle_5_20250623_214200] Sending 50 flows for prediction (from 15308 total)
+2025-06-23 21:42:16,269 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 2/50 flows processed
+2025-06-23 21:42:16,986 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 4/50 flows processed
+2025-06-23 21:42:17,765 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 6/50 flows processed
+2025-06-23 21:42:18,500 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 8/50 flows processed
+2025-06-23 21:42:19,259 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 10/50 flows processed
+2025-06-23 21:42:19,985 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 12/50 flows processed
+2025-06-23 21:42:20,751 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 14/50 flows processed
+2025-06-23 21:42:21,491 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 16/50 flows processed
+2025-06-23 21:42:22,290 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 18/50 flows processed
+2025-06-23 21:42:23,028 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 20/50 flows processed
+2025-06-23 21:42:23,796 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 22/50 flows processed
+2025-06-23 21:42:24,531 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 24/50 flows processed
+2025-06-23 21:42:25,227 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 26/50 flows processed
+2025-06-23 21:42:26,006 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 28/50 flows processed
+2025-06-23 21:42:26,753 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 30/50 flows processed
+2025-06-23 21:42:27,468 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 32/50 flows processed
+2025-06-23 21:42:28,206 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 34/50 flows processed
+2025-06-23 21:42:28,942 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 36/50 flows processed
+2025-06-23 21:42:29,700 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 38/50 flows processed
+2025-06-23 21:42:30,479 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 40/50 flows processed
+2025-06-23 21:42:31,300 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 42/50 flows processed
+2025-06-23 21:42:32,069 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 44/50 flows processed
+2025-06-23 21:42:32,795 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 46/50 flows processed
+2025-06-23 21:42:33,532 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 48/50 flows processed
+2025-06-23 21:42:33,789 - MainThread - INFO - [cycle_5_20250623_214200] Progress: 50/50 flows processed
+2025-06-23 21:42:33,789 - MainThread - INFO - [cycle_5_20250623_214200] CYCLE SUMMARY:
+2025-06-23 21:42:33,790 - MainThread - INFO - [cycle_5_20250623_214200]   Original flows: 15308 (sampled: 50)
+2025-06-23 21:42:33,790 - MainThread - INFO - [cycle_5_20250623_214200]   Normal: 0 (0.0%)
+2025-06-23 21:42:33,790 - MainThread - INFO - [cycle_5_20250623_214200]   Attack: 0 (0.0%)
+2025-06-23 21:42:33,790 - MainThread - INFO - [cycle_5_20250623_214200]   Errors: 50 (100.0%)
+2025-06-23 21:42:33,790 - MainThread - INFO - [cycle_5_20250623_214200] [OK] Normal traffic levels
+2025-06-23 21:42:33,790 - MainThread - INFO - [cycle_5_20250623_214200] Success rate: 100.00%
+2025-06-23 21:42:33,793 - MainThread - INFO - === Ending cycle_5_20250623_214200 ===
+2025-06-23 21:42:34,888 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_5_20250623_214200
+2025-06-23 21:42:34,888 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:42:36,889 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:42:37,889 - MainThread - INFO - === Starting cycle_6_20250623_214237 ===
+2025-06-23 21:42:37,890 - MainThread - INFO - [cycle_6_20250623_214237] Starting capture for 10 seconds...
+2025-06-23 21:42:48,414 - MainThread - INFO - [cycle_6_20250623_214237] Capture successful: temp_processing\cycle_6_20250623_214237\cycle_6_20250623_214237_20250623_214237.pcap (268058 bytes)
+2025-06-23 21:42:48,414 - MainThread - INFO - [cycle_6_20250623_214237] Converting PCAP to CSV...
+2025-06-23 21:42:49,241 - MainThread - INFO - [cycle_6_20250623_214237] CSV conversion successful: temp_processing\cycle_6_20250623_214237\csv_output\cycle_6_20250623_214237_20250623_214237.pcap_Flow.csv (24 flows)
+2025-06-23 21:42:49,241 - MainThread - INFO - [cycle_6_20250623_214237] Processing predictions...
+2025-06-23 21:42:49,241 - MainThread - INFO - [cycle_6_20250623_214237] Sending 24 flows for prediction (from 24 total)
+2025-06-23 21:42:49,983 - MainThread - INFO - [cycle_6_20250623_214237] Progress: 2/24 flows processed
+2025-06-23 21:42:50,763 - MainThread - INFO - [cycle_6_20250623_214237] Progress: 4/24 flows processed
+2025-06-23 21:42:51,509 - MainThread - INFO - [cycle_6_20250623_214237] Progress: 6/24 flows processed
+2025-06-23 21:42:52,278 - MainThread - INFO - [cycle_6_20250623_214237] Progress: 8/24 flows processed
+2025-06-23 21:42:53,015 - MainThread - INFO - [cycle_6_20250623_214237] Progress: 10/24 flows processed
+2025-06-23 21:42:53,762 - MainThread - INFO - [cycle_6_20250623_214237] Progress: 12/24 flows processed
+2025-06-23 21:42:54,604 - MainThread - INFO - [cycle_6_20250623_214237] Progress: 14/24 flows processed
+2025-06-23 21:42:55,351 - MainThread - INFO - [cycle_6_20250623_214237] Progress: 16/24 flows processed
+2025-06-23 21:42:56,203 - MainThread - INFO - [cycle_6_20250623_214237] Progress: 18/24 flows processed
+2025-06-23 21:42:56,972 - MainThread - INFO - [cycle_6_20250623_214237] Progress: 20/24 flows processed
+2025-06-23 21:42:57,814 - MainThread - INFO - [cycle_6_20250623_214237] Progress: 22/24 flows processed
+2025-06-23 21:42:58,071 - MainThread - INFO - [cycle_6_20250623_214237] Progress: 24/24 flows processed
+2025-06-23 21:42:58,072 - MainThread - INFO - [cycle_6_20250623_214237] CYCLE SUMMARY:
+2025-06-23 21:42:58,072 - MainThread - INFO - [cycle_6_20250623_214237]   Total flows: 24
+2025-06-23 21:42:58,072 - MainThread - INFO - [cycle_6_20250623_214237]   Normal: 0 (0.0%)
+2025-06-23 21:42:58,072 - MainThread - INFO - [cycle_6_20250623_214237]   Attack: 0 (0.0%)
+2025-06-23 21:42:58,072 - MainThread - INFO - [cycle_6_20250623_214237]   Errors: 24 (100.0%)
+2025-06-23 21:42:58,072 - MainThread - INFO - [cycle_6_20250623_214237] [OK] Normal traffic levels
+2025-06-23 21:42:58,072 - MainThread - INFO - [cycle_6_20250623_214237] Success rate: 100.00%
+2025-06-23 21:42:58,072 - MainThread - INFO - === Ending cycle_6_20250623_214237 ===
+2025-06-23 21:42:59,179 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_6_20250623_214237
+2025-06-23 21:42:59,179 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:43:01,180 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:43:02,180 - MainThread - INFO - === Starting cycle_7_20250623_214302 ===
+2025-06-23 21:43:02,181 - MainThread - INFO - [cycle_7_20250623_214302] Starting capture for 10 seconds...
+2025-06-23 21:43:12,605 - MainThread - INFO - [cycle_7_20250623_214302] Capture successful: temp_processing\cycle_7_20250623_214302\cycle_7_20250623_214302_20250623_214302.pcap (128417 bytes)
+2025-06-23 21:43:12,605 - MainThread - INFO - [cycle_7_20250623_214302] Converting PCAP to CSV...
+2025-06-23 21:43:13,448 - MainThread - INFO - [cycle_7_20250623_214302] CSV conversion successful: temp_processing\cycle_7_20250623_214302\csv_output\cycle_7_20250623_214302_20250623_214302.pcap_Flow.csv (38 flows)
+2025-06-23 21:43:13,448 - MainThread - INFO - [cycle_7_20250623_214302] Processing predictions...
+2025-06-23 21:43:13,449 - MainThread - INFO - [cycle_7_20250623_214302] Sending 38 flows for prediction (from 38 total)
+2025-06-23 21:43:14,189 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 2/38 flows processed
+2025-06-23 21:43:14,950 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 4/38 flows processed
+2025-06-23 21:43:15,687 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 6/38 flows processed
+2025-06-23 21:43:16,487 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 8/38 flows processed
+2025-06-23 21:43:17,234 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 10/38 flows processed
+2025-06-23 21:43:17,970 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 12/38 flows processed
+2025-06-23 21:43:18,707 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 14/38 flows processed
+2025-06-23 21:43:19,444 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 16/38 flows processed
+2025-06-23 21:43:20,297 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 18/38 flows processed
+2025-06-23 21:43:21,170 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 20/38 flows processed
+2025-06-23 21:43:21,928 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 22/38 flows processed
+2025-06-23 21:43:22,634 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 24/38 flows processed
+2025-06-23 21:43:23,381 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 26/38 flows processed
+2025-06-23 21:43:24,096 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 28/38 flows processed
+2025-06-23 21:43:24,844 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 30/38 flows processed
+2025-06-23 21:43:25,580 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 32/38 flows processed
+2025-06-23 21:43:26,349 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 34/38 flows processed
+2025-06-23 21:43:27,107 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 36/38 flows processed
+2025-06-23 21:43:27,375 - MainThread - INFO - [cycle_7_20250623_214302] Progress: 38/38 flows processed
+2025-06-23 21:43:27,375 - MainThread - INFO - [cycle_7_20250623_214302] CYCLE SUMMARY:
+2025-06-23 21:43:27,376 - MainThread - INFO - [cycle_7_20250623_214302]   Total flows: 38
+2025-06-23 21:43:27,376 - MainThread - INFO - [cycle_7_20250623_214302]   Normal: 0 (0.0%)
+2025-06-23 21:43:27,376 - MainThread - INFO - [cycle_7_20250623_214302]   Attack: 0 (0.0%)
+2025-06-23 21:43:27,376 - MainThread - INFO - [cycle_7_20250623_214302]   Errors: 38 (100.0%)
+2025-06-23 21:43:27,376 - MainThread - INFO - [cycle_7_20250623_214302] [OK] Normal traffic levels
+2025-06-23 21:43:27,376 - MainThread - INFO - [cycle_7_20250623_214302] Success rate: 100.00%
+2025-06-23 21:43:27,376 - MainThread - INFO - === Ending cycle_7_20250623_214302 ===
+2025-06-23 21:43:28,467 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_7_20250623_214302
+2025-06-23 21:43:28,467 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:43:30,468 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:43:31,468 - MainThread - INFO - === Starting cycle_8_20250623_214331 ===
+2025-06-23 21:43:31,469 - MainThread - INFO - [cycle_8_20250623_214331] Starting capture for 10 seconds...
+2025-06-23 21:43:41,880 - MainThread - INFO - [cycle_8_20250623_214331] Capture successful: temp_processing\cycle_8_20250623_214331\cycle_8_20250623_214331_20250623_214331.pcap (143498 bytes)
+2025-06-23 21:43:41,880 - MainThread - INFO - [cycle_8_20250623_214331] Converting PCAP to CSV...
+2025-06-23 21:43:42,710 - MainThread - INFO - [cycle_8_20250623_214331] CSV conversion successful: temp_processing\cycle_8_20250623_214331\csv_output\cycle_8_20250623_214331_20250623_214331.pcap_Flow.csv (9 flows)
+2025-06-23 21:43:42,710 - MainThread - INFO - [cycle_8_20250623_214331] Processing predictions...
+2025-06-23 21:43:42,710 - MainThread - INFO - [cycle_8_20250623_214331] Sending 9 flows for prediction (from 9 total)
+2025-06-23 21:43:43,453 - MainThread - INFO - [cycle_8_20250623_214331] Progress: 2/9 flows processed
+2025-06-23 21:43:44,212 - MainThread - INFO - [cycle_8_20250623_214331] Progress: 4/9 flows processed
+2025-06-23 21:43:44,979 - MainThread - INFO - [cycle_8_20250623_214331] Progress: 6/9 flows processed
+2025-06-23 21:43:45,716 - MainThread - INFO - [cycle_8_20250623_214331] Progress: 8/9 flows processed
+2025-06-23 21:43:45,845 - MainThread - INFO - [cycle_8_20250623_214331] Progress: 9/9 flows processed
+2025-06-23 21:43:45,845 - MainThread - INFO - [cycle_8_20250623_214331] CYCLE SUMMARY:
+2025-06-23 21:43:45,845 - MainThread - INFO - [cycle_8_20250623_214331]   Total flows: 9
+2025-06-23 21:43:45,845 - MainThread - INFO - [cycle_8_20250623_214331]   Normal: 0 (0.0%)
+2025-06-23 21:43:45,845 - MainThread - INFO - [cycle_8_20250623_214331]   Attack: 0 (0.0%)
+2025-06-23 21:43:45,845 - MainThread - INFO - [cycle_8_20250623_214331]   Errors: 9 (100.0%)
+2025-06-23 21:43:45,846 - MainThread - INFO - [cycle_8_20250623_214331] [OK] Normal traffic levels
+2025-06-23 21:43:45,846 - MainThread - INFO - [cycle_8_20250623_214331] Success rate: 100.00%
+2025-06-23 21:43:45,846 - MainThread - INFO - === Ending cycle_8_20250623_214331 ===
+2025-06-23 21:43:46,950 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_8_20250623_214331
+2025-06-23 21:43:46,951 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:43:48,951 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:43:49,952 - MainThread - INFO - === Starting cycle_9_20250623_214349 ===
+2025-06-23 21:43:49,952 - MainThread - INFO - [cycle_9_20250623_214349] Starting capture for 10 seconds...
+2025-06-23 21:44:00,693 - MainThread - INFO - [cycle_9_20250623_214349] Capture successful: temp_processing\cycle_9_20250623_214349\cycle_9_20250623_214349_20250623_214349.pcap (717093 bytes)
+2025-06-23 21:44:00,693 - MainThread - INFO - [cycle_9_20250623_214349] Converting PCAP to CSV...
+2025-06-23 21:44:01,532 - MainThread - INFO - [cycle_9_20250623_214349] CSV conversion successful: temp_processing\cycle_9_20250623_214349\csv_output\cycle_9_20250623_214349_20250623_214349.pcap_Flow.csv (40 flows)
+2025-06-23 21:44:01,532 - MainThread - INFO - [cycle_9_20250623_214349] Processing predictions...
+2025-06-23 21:44:01,533 - MainThread - INFO - [cycle_9_20250623_214349] Sending 40 flows for prediction (from 40 total)
+2025-06-23 21:44:02,294 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 2/40 flows processed
+2025-06-23 21:44:03,051 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 4/40 flows processed
+2025-06-23 21:44:03,778 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 6/40 flows processed
+2025-06-23 21:44:04,577 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 8/40 flows processed
+2025-06-23 21:44:05,377 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 10/40 flows processed
+2025-06-23 21:44:06,148 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 12/40 flows processed
+2025-06-23 21:44:06,914 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 14/40 flows processed
+2025-06-23 21:44:07,533 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 16/40 flows processed
+2025-06-23 21:44:08,272 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 18/40 flows processed
+2025-06-23 21:44:08,985 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 20/40 flows processed
+2025-06-23 21:44:09,735 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 22/40 flows processed
+2025-06-23 21:44:10,472 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 24/40 flows processed
+2025-06-23 21:44:11,261 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 26/40 flows processed
+2025-06-23 21:44:12,051 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 28/40 flows processed
+2025-06-23 21:44:12,840 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 30/40 flows processed
+2025-06-23 21:44:13,597 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 32/40 flows processed
+2025-06-23 21:44:14,324 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 34/40 flows processed
+2025-06-23 21:44:15,040 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 36/40 flows processed
+2025-06-23 21:44:15,776 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 38/40 flows processed
+2025-06-23 21:44:16,003 - MainThread - INFO - [cycle_9_20250623_214349] Progress: 40/40 flows processed
+2025-06-23 21:44:16,003 - MainThread - INFO - [cycle_9_20250623_214349] CYCLE SUMMARY:
+2025-06-23 21:44:16,003 - MainThread - INFO - [cycle_9_20250623_214349]   Total flows: 40
+2025-06-23 21:44:16,003 - MainThread - INFO - [cycle_9_20250623_214349]   Normal: 0 (0.0%)
+2025-06-23 21:44:16,003 - MainThread - INFO - [cycle_9_20250623_214349]   Attack: 0 (0.0%)
+2025-06-23 21:44:16,003 - MainThread - INFO - [cycle_9_20250623_214349]   Errors: 40 (100.0%)
+2025-06-23 21:44:16,003 - MainThread - INFO - [cycle_9_20250623_214349] [OK] Normal traffic levels
+2025-06-23 21:44:16,004 - MainThread - INFO - [cycle_9_20250623_214349] Success rate: 100.00%
+2025-06-23 21:44:16,004 - MainThread - INFO - === Ending cycle_9_20250623_214349 ===
+2025-06-23 21:44:17,079 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_9_20250623_214349
+2025-06-23 21:44:17,079 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:44:19,079 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:44:20,080 - MainThread - INFO - === Starting cycle_10_20250623_214420 ===
+2025-06-23 21:44:20,080 - MainThread - INFO - [cycle_10_20250623_214420] Starting capture for 10 seconds...
+2025-06-23 21:44:30,580 - MainThread - INFO - [cycle_10_20250623_214420] Capture successful: temp_processing\cycle_10_20250623_214420\cycle_10_20250623_214420_20250623_214420.pcap (227064 bytes)
+2025-06-23 21:44:30,580 - MainThread - INFO - [cycle_10_20250623_214420] Converting PCAP to CSV...
+2025-06-23 21:44:31,281 - MainThread - INFO - [cycle_10_20250623_214420] CSV conversion successful: temp_processing\cycle_10_20250623_214420\csv_output\cycle_10_20250623_214420_20250623_214420.pcap_Flow.csv (25 flows)
+2025-06-23 21:44:31,282 - MainThread - INFO - [cycle_10_20250623_214420] Processing predictions...
+2025-06-23 21:44:31,282 - MainThread - INFO - [cycle_10_20250623_214420] Sending 25 flows for prediction (from 25 total)
+2025-06-23 21:44:32,007 - MainThread - INFO - [cycle_10_20250623_214420] Progress: 2/25 flows processed
+2025-06-23 21:44:32,754 - MainThread - INFO - [cycle_10_20250623_214420] Progress: 4/25 flows processed
+2025-06-23 21:44:33,492 - MainThread - INFO - [cycle_10_20250623_214420] Progress: 6/25 flows processed
+2025-06-23 21:44:34,248 - MainThread - INFO - [cycle_10_20250623_214420] Progress: 8/25 flows processed
+2025-06-23 21:44:34,975 - MainThread - INFO - [cycle_10_20250623_214420] Progress: 10/25 flows processed
+2025-06-23 21:44:35,754 - MainThread - INFO - [cycle_10_20250623_214420] Progress: 12/25 flows processed
+2025-06-23 21:44:36,491 - MainThread - INFO - [cycle_10_20250623_214420] Progress: 14/25 flows processed
+2025-06-23 21:44:37,228 - MainThread - INFO - [cycle_10_20250623_214420] Progress: 16/25 flows processed
+2025-06-23 21:44:37,965 - MainThread - INFO - [cycle_10_20250623_214420] Progress: 18/25 flows processed
+2025-06-23 21:44:38,754 - MainThread - INFO - [cycle_10_20250623_214420] Progress: 20/25 flows processed
+2025-06-23 21:44:39,596 - MainThread - INFO - [cycle_10_20250623_214420] Progress: 22/25 flows processed
+2025-06-23 21:44:40,322 - MainThread - INFO - [cycle_10_20250623_214420] Progress: 24/25 flows processed
+2025-06-23 21:44:40,440 - MainThread - INFO - [cycle_10_20250623_214420] Progress: 25/25 flows processed
+2025-06-23 21:44:40,440 - MainThread - INFO - [cycle_10_20250623_214420] CYCLE SUMMARY:
+2025-06-23 21:44:40,440 - MainThread - INFO - [cycle_10_20250623_214420]   Total flows: 25
+2025-06-23 21:44:40,440 - MainThread - INFO - [cycle_10_20250623_214420]   Normal: 0 (0.0%)
+2025-06-23 21:44:40,440 - MainThread - INFO - [cycle_10_20250623_214420]   Attack: 0 (0.0%)
+2025-06-23 21:44:40,440 - MainThread - INFO - [cycle_10_20250623_214420]   Errors: 25 (100.0%)
+2025-06-23 21:44:40,440 - MainThread - INFO - [cycle_10_20250623_214420] [OK] Normal traffic levels
+2025-06-23 21:44:40,441 - MainThread - INFO - [cycle_10_20250623_214420] Success rate: 100.00%
+2025-06-23 21:44:40,441 - MainThread - INFO - === Ending cycle_10_20250623_214420 ===
+2025-06-23 21:44:41,517 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_10_20250623_214420
+2025-06-23 21:44:41,517 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:44:43,517 - MainThread - INFO - [OK] Cycle completed successfully
+2025-06-23 21:44:44,518 - MainThread - INFO - === Starting cycle_11_20250623_214444 ===
+2025-06-23 21:44:44,519 - MainThread - INFO - [cycle_11_20250623_214444] Starting capture for 10 seconds...
+2025-06-23 21:44:46,327 - MainThread - ERROR - [cycle_11_20250623_214444] Capture failed: Command '['tshark', '-i', 'Ethernet', '-a', 'duration:10', '-f', 'not (host localhost and port 8080)', '-F', 'pcap', '-w', 'temp_processing\\cycle_11_20250623_214444\\cycle_11_20250623_214444_20250623_214444.pcap', '-q']' returned non-zero exit status 3221225786.
+2025-06-23 21:45:06,094 - MainThread - INFO - === Starting Robust Network Intrusion Detection System ===
+2025-06-23 21:45:06,094 - MainThread - INFO - Interface: Ethernet
+2025-06-23 21:45:06,094 - MainThread - INFO - Capture duration: 10 seconds
+2025-06-23 21:45:06,094 - MainThread - INFO - Endpoint: http://localhost:8000/predict/
+2025-06-23 21:45:06,095 - MainThread - INFO - Filtering traffic to localhost:8080
+2025-06-23 21:45:06,095 - MainThread - INFO - Cycle cooldown: 2 seconds
+2025-06-23 21:45:06,095 - MainThread - INFO - Max workers: 2
+2025-06-23 21:45:06,095 - MainThread - INFO - Connection pool size: 10
+2025-06-23 21:45:06,095 - MainThread - INFO - Created session with pool size: 10
+2025-06-23 21:45:06,096 - MainThread - INFO - === Starting cycle_1_20250623_214506 ===
+2025-06-23 21:45:06,096 - MainThread - INFO - [cycle_1_20250623_214506] Starting capture for 10 seconds...
+2025-06-23 21:45:06,180 - MainThread - ERROR - [cycle_1_20250623_214506] Capture failed: Command '['tshark', '-i', 'Ethernet', '-a', 'duration:10', '-f', 'not (host localhost and port 8080)', '-F', 'pcap', '-w', 'temp_processing\\cycle_1_20250623_214506\\cycle_1_20250623_214506_20250623_214506.pcap', '-q']' returned non-zero exit status 1.
+2025-06-23 21:45:06,180 - MainThread - INFO - === Ending cycle_1_20250623_214506 ===
+2025-06-23 21:45:07,254 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-23 21:45:09,254 - MainThread - WARNING - [FAIL] Cycle failed (1/5)
+2025-06-23 21:45:10,255 - MainThread - INFO - === Starting cycle_2_20250623_214510 ===
+2025-06-23 21:45:10,256 - MainThread - INFO - [cycle_2_20250623_214510] Starting capture for 10 seconds...
+2025-06-23 21:45:20,586 - MainThread - INFO - [cycle_2_20250623_214510] Capture successful: temp_processing\cycle_2_20250623_214510\cycle_2_20250623_214510_20250623_214510.pcap (100402 bytes)
+2025-06-23 21:45:20,586 - MainThread - INFO - [cycle_2_20250623_214510] Converting PCAP to CSV...
+2025-06-23 21:45:21,282 - MainThread - INFO - [cycle_2_20250623_214510] CSV conversion successful: temp_processing\cycle_2_20250623_214510\csv_output\cycle_2_20250623_214510_20250623_214510.pcap_Flow.csv (21 flows)
+2025-06-23 21:45:21,282 - MainThread - INFO - [cycle_2_20250623_214510] Processing predictions...
+2025-06-23 21:45:21,283 - MainThread - INFO - [cycle_2_20250623_214510] Sending 21 flows for prediction (from 21 total)
+2025-06-23 21:45:23,907 - MainThread - INFO - === Ending cycle_2_20250623_214510 ===
+2025-06-23 21:45:24,227 - MainThread - INFO - Shutdown requested by user
+2025-06-23 21:45:24,227 - MainThread - INFO - Shutting down...
+2025-06-23 21:45:24,227 - MainThread - INFO - Closed HTTP session
+2025-06-25 20:25:53,842 - MainThread - INFO - === Starting Robust Network Intrusion Detection System ===
+2025-06-25 20:25:53,856 - MainThread - INFO - Interface: Ethernet
+2025-06-25 20:25:53,857 - MainThread - INFO - Capture duration: 10 seconds
+2025-06-25 20:25:53,857 - MainThread - INFO - Endpoint: http://localhost:8000/predict/
+2025-06-25 20:25:53,857 - MainThread - INFO - Filtering traffic to localhost:8080
+2025-06-25 20:25:53,857 - MainThread - INFO - Cycle cooldown: 2 seconds
+2025-06-25 20:25:53,858 - MainThread - INFO - Max workers: 2
+2025-06-25 20:25:53,858 - MainThread - INFO - Connection pool size: 10
+2025-06-25 20:25:53,858 - MainThread - INFO - Created session with pool size: 10
+2025-06-25 20:25:53,858 - MainThread - INFO - === Starting cycle_1_20250625_202553 ===
+2025-06-25 20:25:53,876 - MainThread - INFO - [cycle_1_20250625_202553] Starting capture for 10 seconds...
+2025-06-25 20:25:54,664 - MainThread - ERROR - [cycle_1_20250625_202553] Capture failed: Command '['tshark', '-i', 'Ethernet', '-a', 'duration:10', '-f', 'not (host localhost and port 8080)', '-F', 'pcap', '-w', 'temp_processing\\cycle_1_20250625_202553\\cycle_1_20250625_202553_20250625_202553.pcap', '-q']' returned non-zero exit status 1.
+2025-06-25 20:25:54,664 - MainThread - INFO - === Ending cycle_1_20250625_202553 ===
+2025-06-25 20:25:55,738 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-25 20:25:57,738 - MainThread - WARNING - [FAIL] Cycle failed (1/5)
+2025-06-25 20:25:58,739 - MainThread - INFO - === Starting cycle_2_20250625_202558 ===
+2025-06-25 20:25:58,739 - MainThread - INFO - [cycle_2_20250625_202558] Starting capture for 10 seconds...
+2025-06-25 20:26:10,413 - MainThread - INFO - [cycle_2_20250625_202558] Capture successful: temp_processing\cycle_2_20250625_202558\cycle_2_20250625_202558_20250625_202558.pcap (29892326 bytes)
+2025-06-25 20:26:10,413 - MainThread - INFO - [cycle_2_20250625_202558] Converting PCAP to CSV...
+2025-06-25 20:26:20,738 - MainThread - INFO - [cycle_2_20250625_202558] CSV conversion successful: temp_processing\cycle_2_20250625_202558\csv_output\cycle_2_20250625_202558_20250625_202558.pcap_Flow.csv (115 flows)
+2025-06-25 20:26:20,738 - MainThread - INFO - [cycle_2_20250625_202558] Processing predictions...
+2025-06-25 20:26:20,740 - MainThread - INFO - [cycle_2_20250625_202558] Limiting flows from 115 to 50
+2025-06-25 20:26:20,740 - MainThread - INFO - [cycle_2_20250625_202558] Sending 50 flows for prediction (from 115 total)
+2025-06-25 20:26:39,067 - MainThread - INFO - [cycle_2_20250625_202558] Progress: 2/50 flows processed
+2025-06-25 20:27:05,388 - MainThread - ERROR - [cycle_2_20250625_202558] Error processing predictions: 2 (of 2) futures unfinished
+2025-06-25 20:27:05,389 - MainThread - INFO - === Ending cycle_2_20250625_202558 ===
+2025-06-25 20:27:06,512 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_2_20250625_202558
+2025-06-25 20:27:06,513 - MainThread - INFO - Cycle cooldown: 2s
+2025-06-25 20:27:08,513 - MainThread - WARNING - [FAIL] Cycle failed (2/5)
+2025-06-25 20:27:09,514 - MainThread - INFO - === Starting cycle_3_20250625_202709 ===
+2025-06-25 20:27:09,515 - MainThread - INFO - [cycle_3_20250625_202709] Starting capture for 10 seconds...
+2025-06-25 20:27:19,971 - MainThread - INFO - [cycle_3_20250625_202709] Capture successful: temp_processing\cycle_3_20250625_202709\cycle_3_20250625_202709_20250625_202709.pcap (4793481 bytes)
+2025-06-25 20:27:19,971 - MainThread - INFO - [cycle_3_20250625_202709] Converting PCAP to CSV...
+2025-06-25 20:27:20,825 - MainThread - INFO - [cycle_3_20250625_202709] CSV conversion successful: temp_processing\cycle_3_20250625_202709\csv_output\cycle_3_20250625_202709_20250625_202709.pcap_Flow.csv (33 flows)
+2025-06-25 20:27:20,825 - MainThread - INFO - [cycle_3_20250625_202709] Processing predictions...
+2025-06-25 20:27:20,826 - MainThread - INFO - [cycle_3_20250625_202709] Sending 33 flows for prediction (from 33 total)
+2025-06-25 20:27:23,593 - MainThread - INFO - [cycle_3_20250625_202709] Progress: 2/33 flows processed
+2025-06-25 20:27:24,320 - MainThread - INFO - [cycle_3_20250625_202709] Progress: 4/33 flows processed
+2025-06-25 20:27:25,067 - MainThread - INFO - [cycle_3_20250625_202709] Progress: 6/33 flows processed
+2025-06-25 20:27:25,835 - MainThread - INFO - [cycle_3_20250625_202709] Progress: 8/33 flows processed
+2025-06-25 20:27:26,604 - MainThread - INFO - [cycle_3_20250625_202709] Progress: 10/33 flows processed
+2025-06-25 20:27:27,404 - MainThread - INFO - [cycle_3_20250625_202709] Progress: 12/33 flows processed
+2025-06-25 20:27:28,151 - MainThread - INFO - [cycle_3_20250625_202709] Progress: 14/33 flows processed
+2025-06-25 20:27:29,034 - MainThread - INFO - [cycle_3_20250625_202709] Progress: 16/33 flows processed
+2025-06-25 20:27:29,909 - MainThread - INFO - [cycle_3_20250625_202709] Progress: 18/33 flows processed
+2025-06-25 20:27:30,656 - MainThread - INFO - [cycle_3_20250625_202709] Progress: 20/33 flows processed
+2025-06-25 20:27:31,435 - MainThread - INFO - [cycle_3_20250625_202709] Progress: 22/33 flows processed
+2025-06-25 20:27:32,140 - MainThread - INFO - [cycle_3_20250625_202709] Progress: 24/33 flows processed
+2025-06-25 20:27:32,940 - MainThread - INFO - [cycle_3_20250625_202709] Progress: 26/33 flows processed
+2025-06-25 20:27:33,635 - MainThread - INFO - [cycle_3_20250625_202709] Progress: 28/33 flows processed
+2025-06-25 20:27:34,434 - MainThread - INFO - [cycle_3_20250625_202709] Progress: 30/33 flows processed
+2025-06-25 20:27:35,257 - MainThread - INFO - [cycle_3_20250625_202709] Progress: 32/33 flows processed
+2025-06-25 20:27:35,408 - MainThread - INFO - [cycle_3_20250625_202709] Progress: 33/33 flows processed
+2025-06-25 20:27:35,408 - MainThread - INFO - [cycle_3_20250625_202709] CYCLE SUMMARY:
+2025-06-25 20:27:35,408 - MainThread - INFO - [cycle_3_20250625_202709]   Total flows: 33
+2025-06-25 20:27:35,409 - MainThread - INFO - [cycle_3_20250625_202709]   Normal: 0 (0.0%)
+2025-06-25 20:27:35,409 - MainThread - INFO - [cycle_3_20250625_202709]   Attack: 0 (0.0%)
+2025-06-25 20:27:35,409 - MainThread - INFO - [cycle_3_20250625_202709]   Errors: 33 (100.0%)
+2025-06-25 20:27:35,409 - MainThread - INFO - [cycle_3_20250625_202709] [OK] Normal traffic levels
+2025-06-25 20:27:35,409 - MainThread - INFO - [cycle_3_20250625_202709] Success rate: 100.00%
+2025-06-25 20:27:35,409 - MainThread - INFO - === Ending cycle_3_20250625_202709 ===
+2025-06-25 20:27:36,499 - MainThread - INFO - Cleaned up workspace: temp_processing\cycle_3_20250625_202709
+2025-06-25 20:27:36,499 - MainThread - INFO - Cycle cooldown: 2s
