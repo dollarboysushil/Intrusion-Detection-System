@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NIDS Real-Time Dashboard</title>
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #34495e;
+        --accent-color: #3498db;
+        --danger-color: #e74c3c;
+        --warning-color: #f39c12;
+        --success-color: #2ecc71;
+        --info-color: #1abc9c; /* Added for SqlInjection */
+        --text-color: #ecf0f1;
+        --card-bg: #2c3e50;
+        --border-color: #34495e;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        background-color: #1a1a2e;
+        color: var(--text-color);
+      }
+      .container {
+        padding: 20px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: var(--primary-color);
+        border-bottom: 1px solid var(--border-color);
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .logo h1 {
+        font-size: 24px;
+        margin-left: 10px;
+      }
+      .logo-icon {
+        color: var(--accent-color);
+        font-size: 24px;
+      }
+      .header-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .system-status {
+        display: flex;
+        gap: 15px;
+      }
+      .status-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+      }
+      .status-value {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .dashboard-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .card {
+        background-color: var(--card-bg);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        position: relative;
+      }
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--border-color);
+      }
+      .card-title {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .card-actions {
+        cursor: pointer;
+        color: var(--accent-color);
+      }
+      .summary-metrics {
+        grid-column: span 4;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* Increased to 5 columns */
+        gap: 20px;
+      }
+      .metric-card {
+        background-color: var(--card-bg);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+      }
+      .metric-title {
+        font-size: 14px;
+        color: #bdc3c7;
+      }
+      .metric-value {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+      .metric-trend {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+      }
+      .trend-up {
+        color: var(--danger-color);
+      }
+      .trend-down {
+        color: var(--success-color);
+      }
+      .chart-container {
+        height: 300px;
+        position: relative;
+      }
+      .attack-distribution {
+        grid-column: span 1;
+      }
+      .attack-trends {
+        grid-column: span 2;
+      }
+      .event-rate {
+        grid-column: span 1;
+      }
+      .alerts-table {
+        grid-column: span 4;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      thead {
+        background-color: var(--secondary-color);
+      }
+      th,
+      td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid var(--border-color);
+      }
+      tr:hover {
+        background-color: var(--secondary-color);
+      }
+      .alert-severity {
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: bold;
+      }
+      .high {
+        background-color: var(--danger-color);
+      }
+      .medium {
+        background-color: var(--warning-color);
+      }
+      .low {
+        background-color: var(--success-color);
+      }
+      .events-per-second {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin: 30px 0;
+      }
+      .eps-label {
+        font-size: 14px;
+        color: #bdc3c7;
+        text-align: center;
+      }
+      /* Real-time indicator pulse */
+      .realtime-indicator {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .pulse {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--success-color);
+        box-shadow: 0 0 0 rgba(46, 204, 113, 0.4);
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.4);
+        }
+        70% {
+          box-shadow: 0 0 0 10px rgba(46, 204, 113, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(46, 204, 113, 0);
+        }
+      }
+      .progress-container {
+        width: 100%;
+        background-color: var(--secondary-color);
+        border-radius: 10px;
+        margin: 5px 0;
+      }
+      .progress-bar {
+        height: 10px;
+        border-radius: 10px;
+        transition: width 0.5s ease-in-out;
+      }
+      .cpu-bar {
+        background-color: var(--accent-color);
+      }
+      .ram-bar {
+        background-color: var(--warning-color);
+      }
+      .disk-bar {
+        background-color: var(--danger-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <span class="logo-icon">⚛</span>
+          <h1>NIDS Real-Time Dashboard</h1>
+        </div>
+        <div class="header-right">
+          <div class="realtime-indicator">
+            <span class="pulse"></span>
+            <span>Live</span>
+          </div>
+          <div class="system-status">
+            <div class="status-item">
+              <span>CPU</span>
+              <div class="progress-container">
+                <div
+                  class="progress-bar cpu-bar"
+                  id="cpu-bar"
+                  style="width: 45%"
+                ></div>
+              </div>
+              <span class="status-value" id="cpu-value">45%</span>
+            </div>
+            <div class="status-item">
+              <span>RAM</span>
+              <div class="progress-container">
+                <div
+                  class="progress-bar ram-bar"
+                  id="ram-bar"
+                  style="width: 62%"
+                ></div>
+              </div>
+              <span class="status-value" id="ram-value">62%</span>
+            </div>
+            <div class="status-item">
+              <span>DISK</span>
+              <div class="progress-container">
+                <div
+                  class="progress-bar disk-bar"
+                  id="disk-bar"
+                  style="width: 28%"
+                ></div>
+              </div>
+              <span class="status-value" id="disk-value">28%</span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="dashboard-grid">
+        <div class="summary-metrics">
+          <div class="metric-card">
+            <div class="metric-title">TOTAL FLOWS</div>
+            <div class="metric-value" id="totalFlows">0</div>
+            <div class="metric-trend">
+              <span class="trend-up">▲ -- </span> from last hour
+            </div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-title">DDOS ATTACKS</div>
+            <div class="metric-value" id="ddosCount">0</div>
+            <div class="metric-trend">
+              <span class="trend-up">▲ -- </span> from last hour
+            </div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-title">PORT SCANS</div>
+            <div class="metric-value" id="portscanCount">0</div>
+            <div class="metric-trend">
+              <span class="trend-down">▼ -- </span> from last hour
+            </div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-title">SQL INJECTIONS</div>
+            <div class="metric-value" id="sqlInjectionCount">0</div> <!-- Added -->
+            <div class="metric-trend">
+              <span class="trend-up">▲ -- </span> from last hour
+            </div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-title">BRUTEFORCE</div> <!-- Changed title -->
+            <div class="metric-value" id="otherAttacksCount">0</div> <!-- ID kept for simplicity, but now shows BruteForce -->
+            <div class="metric-trend">
+              <span class="trend-up">▲ -- </span> from last hour
+            </div>
+          </div>
+        </div>
+        <div class="card attack-distribution">
+          <div class="card-header">
+            <div class="card-title">Attack Type Distribution</div>
+            <div class="card-actions">⋮</div>
+          </div>
+          <div class="chart-container">
+            <canvas id="attackDistributionChart"></canvas>
+          </div>
+        </div>
+        <div class="card attack-trends">
+          <div class="card-header">
+            <div class="card-title">Attack Trends (Last 5 Minutes)</div> <!-- Updated title -->
+            <div class="card-actions">⋮</div>
+          </div>
+          <div class="chart-container">
+            <canvas id="attackTrendsChart"></canvas>
+          </div>
+        </div>
+        <div class="card event-rate">
+          <div class="card-header">
+            <div class="card-title">Events Per Second</div>
+            <div class="card-actions">⋮</div>
+          </div>
+          <div class="events-per-second" id="eventsPerSecond">0.00</div> <!-- Initialize with decimal -->
+          <div class="eps-label">FLOWS/SECOND</div>
+          <div class="chart-container">
+            <canvas id="epsChart"></canvas>
+          </div>
+        </div>
+        <div class="card alerts-table">
+          <div class="card-header">
+            <div class="card-title">Recent Alerts</div>
+            <div class="card-actions">⋮</div>
+          </div>
+          <table id="alertsTable">
+            <thead>
+              <tr>
+                <th>Timestamp</th>
+                <th>Source IP</th>
+                <th>Destination IP</th>
+                <th>Protocol</th>
+                <th>Attack Type</th>
+                <th>Severity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Alert rows will be populated by JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- Include Chart.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script>
+      // Global variables for charts
+      let attackDistChart, attackTrendsChart, epsChart;
+      // Function to fetch and update ALL dashboard data from Flask backend
+      async function updateDashboardData() {
+        console.log("--- Starting Dashboard Update Cycle ---");
+        try {
+          // --- 1. Update Attack Trends Chart (Main Request) ---
+          console.log("Fetching Attack Trends data...");
+          const trendsResponse = await fetch('/api/dashboard-data/'); // Use relative URL
+          if (!trendsResponse.ok) {
+            const errorText = await trendsResponse.text();
+            throw new Error(`HTTP error for trends! status: ${trendsResponse.status}, message: ${errorText}`);
+          }
+          const trendsData = await trendsResponse.json();
+          console.log("Received Attack Trends Data:", trendsData);
+
+          if (attackTrendsChart) {
+            attackTrendsChart.data.labels = trendsData.labels || [];
+            // --- CRITICAL UPDATE LOGIC ---
+            // Iterate through ALL datasets provided by the API
+            // This ensures 'Normal' (or any other type the API sends) is handled
+            (trendsData.datasets || []).forEach(apiDataset => {
+                // Find the corresponding dataset in the chart by its label
+                const chartDatasetIndex = attackTrendsChart.data.datasets.findIndex(chartDataset => chartDataset.label === apiDataset.label);
+
+                if (chartDatasetIndex !== -1) {
+                    // If the dataset already exists in the chart, update its data
+                    console.log(`Updating chart dataset '${apiDataset.label}' with data:`, apiDataset.data);
+                    attackTrendsChart.data.datasets[chartDatasetIndex].data = apiDataset.data || [];
+                } else {
+                    // If the dataset doesn't exist (e.g., 'Normal' wasn't pre-defined),
+                    // we could dynamically add it. However, for simplicity and consistency,
+                    // it's better to define all expected datasets during initialization.
+                    console.warn(`Dataset label '${apiDataset.label}' from API not found in initialized chart datasets.`);
+                }
+            });
+            attackTrendsChart.update('none'); // Use 'none' for faster updates if needed
+            console.log("Attack Trends Chart updated.");
+          } else {
+              console.warn("attackTrendsChart is not initialized yet.");
+          }
+
+          // --- 2. Update Attack Distribution Chart ---
+          console.log("Fetching Attack Distribution data...");
+          const distResponse = await fetch('/api/attack-distribution/');
+          if (!distResponse.ok) {
+            const errorText = await distResponse.text();
+            throw new Error(`HTTP error for distribution! status: ${distResponse.status}, message: ${errorText}`);
+          }
+          const distData = await distResponse.json();
+          console.log("Received Attack Distribution Data:", distData);
+
+          if (attackDistChart) {
+            attackDistChart.data.labels = distData.labels || [];
+            if (distData.datasets && distData.datasets.length > 0) {
+                attackDistChart.data.datasets[0].data = distData.datasets[0].data || [];
+                // Update colors if provided by the API (important for dynamic 'Normal', 'SqlInjection' colors)
+                if (distData.datasets[0].backgroundColor) {
+                    attackDistChart.data.datasets[0].backgroundColor = distData.datasets[0].backgroundColor;
+                }
+            }
+            attackDistChart.update('none');
+            console.log("Attack Distribution chart updated.");
+          } else {
+              console.warn("attackDistChart object is not initialized yet.");
+          }
+
+          // --- 3. Update Recent Alerts Table ---
+          console.log("Fetching Recent Alerts data...");
+          const alertsResponse = await fetch('/api/recent-alerts/');
+          if (!alertsResponse.ok) {
+            const errorText = await alertsResponse.text();
+            throw new Error(`HTTP error for alerts! status: ${alertsResponse.status}, message: ${errorText}`);
+          }
+          const alertsData = await alertsResponse.json();
+          console.log("Received Recent Alerts Data:", alertsData);
+          populateAlertsTable(alertsData);
+
+          // --- 4. Update System Status ---
+          console.log("Fetching System Status data...");
+          const statusResponse = await fetch('/api/system-status/');
+          if (!statusResponse.ok) {
+            const errorText = await statusResponse.text();
+            throw new Error(`HTTP error for system status! status: ${statusResponse.status}, message: ${errorText}`);
+          }
+          const statusData = await statusResponse.json();
+          console.log("Received System Status Data:", statusData);
+          updateSystemStatus(statusData);
+
+          // --- 5. Update Summary Metrics ---
+          console.log("Fetching Summary Metrics data...");
+          const metricsResponse = await fetch('/api/summary-metrics/');
+          if (!metricsResponse.ok) {
+            const errorText = await metricsResponse.text();
+            throw new Error(`HTTP error for metrics! status: ${metricsResponse.status}, message: ${errorText}`);
+          }
+          const metricsData = await metricsResponse.json();
+          console.log("Received Summary Metrics Data:", metricsData);
+
+          // --- KEY CHANGE: Update metric displays ---
+          // Use the specific counts provided by the backend API
+          document.getElementById("totalFlows").textContent = (metricsData.totalFlows || 0).toLocaleString();
+          document.getElementById("ddosCount").textContent = metricsData.ddosCount ?? '0';
+          document.getElementById("portscanCount").textContent = metricsData.portscanCount ?? '0';
+          document.getElementById("sqlInjectionCount").textContent = metricsData.sqlInjectionCount ?? '0';
+          // --- CHANGE HERE: Use bruteforceCount instead of otherAttacksCount ---
+          document.getElementById("otherAttacksCount").textContent = metricsData.bruteforceCount ?? '0'; // Now shows BruteForce
+
+          // --- 6. Update Events Per Second (EPS) ---
+          console.log("Calculating and updating Events Per Second (EPS)...");
+          // Derive EPS from the latest interval count in trends data
+          let epsValueCalculated = 0;
+          let totalEventsInLastInterval = 0;
+          if (trendsData.datasets && trendsData.datasets.length > 0) {
+            // Sum counts from all attack types for the last interval (e.g., last 30 seconds)
+            // We assume the last data point in each dataset corresponds to the latest interval
+            let totalLastInterval = 0;
+            trendsData.datasets.forEach(dataset => {
+                if (dataset.data && dataset.data.length > 0) {
+                    // Get the last element safely
+                    const lastValue = dataset.data[dataset.data.length - 1];
+                    // Ensure it's a number before adding
+                    if (typeof lastValue === 'number' && !isNaN(lastValue)) {
+                        totalLastInterval += lastValue;
+                    }
+                }
+            });
+            console.log("Total events in the last data interval:", totalLastInterval);
+
+            // Assuming 30 seconds per interval, calculate EPS
+            const epsValue = totalLastInterval > 0 ? (totalLastInterval / 30) : 0;
+            // Round to 2 decimal places and display
+            epsValueCalculated = parseFloat(epsValue.toFixed(2));
+            document.getElementById("eventsPerSecond").textContent = epsValueCalculated;
+            console.log("EPS value calculated and displayed:", epsValueCalculated);
+
+            // Update the mini EPS chart
+            if (epsChart && epsChart.data && epsChart.data.datasets && epsChart.data.datasets[0]) {
+              // Store the *count* for the interval, not the EPS rate, for the chart
+              totalEventsInLastInterval = totalLastInterval;
+              console.log("Updating EPS mini chart with interval count:", totalEventsInLastInterval);
+
+              // Add new data point
+              epsChart.data.datasets[0].data.push(totalEventsInLastInterval);
+              // Add a simple label (like a counter)
+              epsChart.data.labels.push(epsChart.data.labels.length.toString());
+
+              // Maintain only the last 30 points
+              if (epsChart.data.datasets[0].data.length > 30) {
+                epsChart.data.datasets[0].data.shift();
+                epsChart.data.labels.shift();
+              }
+
+              epsChart.update('none'); // Fast update
+              console.log("EPS mini chart updated.");
+            } else {
+                console.log("EPS chart object or its data structure not ready/fully initialized yet for chart update.");
+            }
+          } else {
+              // If no trends data, ensure EPS shows 0
+              document.getElementById("eventsPerSecond").textContent = "0.00";
+              console.log("No trends data available, EPS set to 0.00.");
+          }
+
+        } catch (error) {
+          console.error('--- Error during dashboard update cycle ---', error);
+          // Optionally display an error message on the dashboard
+          // e.g., document.getElementById('someErrorDiv').textContent = 'Failed to load data';
+        } finally {
+            console.log("--- Dashboard Update Cycle Completed ---\n");
+        }
+      }
+
+      // Populate the alerts table
+      function populateAlertsTable(alerts) {
+        console.log("Populating alerts table...");
+        const tableBody = document.querySelector("#alertsTable tbody");
+        // Clear existing rows or show a message if no data
+        if (!alerts || !Array.isArray(alerts)) {
+             tableBody.innerHTML = '<tr><td colspan="6" style="text-align:center;">Error loading alerts</td></tr>';
+             console.warn("Alerts data is invalid or not an array.");
+             return;
+        }
+        if (alerts.length === 0) {
+            tableBody.innerHTML = '<tr><td colspan="6" style="text-align:center;">No recent alerts</td></tr>';
+            console.log("No alerts to display.");
+            return;
+        }
+
+        // Clear the table body
+        tableBody.innerHTML = "";
+
+        // Populate with new data
+        alerts.forEach((alert) => {
+          const row = document.createElement("tr");
+
+          const timestampCell = document.createElement("td");
+          timestampCell.textContent = alert.timestamp || 'N/A';
+          row.appendChild(timestampCell);
+
+          const sourceIpCell = document.createElement("td");
+          sourceIpCell.textContent = alert.sourceIp || 'N/A';
+          row.appendChild(sourceIpCell);
+
+          const destIpCell = document.createElement("td");
+          destIpCell.textContent = alert.destIp || 'N/A';
+          row.appendChild(destIpCell);
+
+          const protocolCell = document.createElement("td");
+          protocolCell.textContent = alert.protocol || 'N/A';
+          row.appendChild(protocolCell);
+
+          const attackTypeCell = document.createElement("td");
+          // Use attackType from API, fallback to attack if needed, uppercase it
+          const attackTypeText = (alert.attackType || alert.attack || 'Unknown').toUpperCase();
+          attackTypeCell.textContent = attackTypeText;
+          row.appendChild(attackTypeCell);
+
+          const severityCell = document.createElement("td");
+          const severitySpan = document.createElement("span");
+          // Use severity from API, fallback to 'low' if not provided
+          const severityLevel = (alert.severity || 'low').toLowerCase();
+          severitySpan.textContent = severityLevel.toUpperCase();
+          severitySpan.classList.add("alert-severity", severityLevel);
+          severityCell.appendChild(severitySpan);
+          row.appendChild(severityCell);
+
+          tableBody.appendChild(row);
+        });
+        console.log("Alerts table populated.");
+      }
+
+      // Update system status metrics
+      function updateSystemStatus(status) {
+        console.log("Updating system status bars...");
+        // Check if status object and values are valid numbers before updating
+        if (status && typeof status.cpu === 'number' && status.cpu >= 0) {
+          const clampedCpu = Math.min(status.cpu, 100); // Clamp to 100%
+          document.getElementById("cpu-bar").style.width = `${clampedCpu}%`;
+          document.getElementById("cpu-value").textContent = `${clampedCpu}%`;
+          console.log(`CPU updated to ${clampedCpu}%`);
+        }
+        if (status && typeof status.ram === 'number' && status.ram >= 0) {
+          const clampedRam = Math.min(status.ram, 100);
+          document.getElementById("ram-bar").style.width = `${clampedRam}%`;
+          document.getElementById("ram-value").textContent = `${clampedRam}%`;
+          console.log(`RAM updated to ${clampedRam}%`);
+        }
+        if (status && typeof status.disk === 'number' && status.disk >= 0) {
+          const clampedDisk = Math.min(status.disk, 100);
+          document.getElementById("disk-bar").style.width = `${clampedDisk}%`;
+          document.getElementById("disk-value").textContent = `${clampedDisk}%`;
+          console.log(`DISK updated to ${clampedDisk}%`);
+        }
+        console.log("System status bars update attempt finished.");
+      }
+
+      // --- Initialize charts and start real-time updates ---
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("=== DOM Content Loaded - Initializing Dashboard ===");
+        // --- Initialize Attack Distribution Chart (Doughnut) ---
+        // Start with empty data, let the API populate it dynamically
+        console.log("Initializing Attack Distribution Chart...");
+        const attackDistCtx = document.getElementById("attackDistributionChart").getContext("2d");
+        attackDistChart = new Chart(attackDistCtx, {
+          type: "doughnut",
+          data: {
+            labels: [], // Start empty
+            datasets: [
+              {
+                 data:[], // Start empty
+                backgroundColor: [], // Start empty, API provides colors
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                position: "bottom",
+                labels: {
+                  color: "#ecf0f1",
+                },
+              },
+            },
+          },
+        });
+        console.log("Attack Distribution Chart initialized.");
+
+        // --- Initialize Attack Trends Chart (Line) ---
+        // --- KEY CHANGE: Add dataset definition for 'Normal' ---
+        console.log("Initializing Attack Trends Chart...");
+        const attackTrendsCtx = document.getElementById("attackTrendsChart").getContext("2d");
+        attackTrendsChart = new Chart(attackTrendsCtx, {
+          type: "line",
+          data: {
+            labels: [], // Will be populated by data
+            datasets: [
+              {
+                label: 'Normal', // Added dataset for 'Normal' traffic
+                 data: [],
+                borderColor: "#2ecc71", // Green color for Normal
+                backgroundColor: "rgba(46, 204, 113, 0.1)",
+                tension: 0.4
+              },
+              {
+                label: 'DDOS', // Initial label
+                 data:[],
+                borderColor: "#e74c3c",
+                backgroundColor: "rgba(231, 76, 60, 0.1)",
+                tension: 0.4
+              },
+              {
+                label: 'PortScan', // Initial label
+                 data:[],
+                borderColor: "#f39c12",
+                backgroundColor: "rgba(243, 156, 18, 0.1)",
+                tension: 0.4
+              },
+              {
+                label: 'BruteForce', // Initial label
+                 data:[],
+                borderColor: "#9b59b6",
+                backgroundColor: "rgba(155, 89, 182, 0.1)",
+                tension: 0.4
+              },
+              {
+                label: 'SqlInjection', // Added initial label
+                 data:[],
+                borderColor: "#1abc9c",
+                backgroundColor: "rgba(26, 188, 156, 0.1)",
+                tension: 0.4
+              }
+              // Add more datasets here if your API sends data for other types
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                position: "bottom",
+                labels: {
+                  color: "#ecf0f1",
+                },
+              },
+            },
+            scales: {
+              x: {
+                grid: {
+                  color: "rgba(255, 255, 255, 0.1)",
+                },
+                ticks: {
+                  color: "#ecf0f1",
+                  maxRotation: 45,
+                  minRotation: 45
+                },
+                title: { // Optional: Add X-axis title
+                    display: true,
+                    text: 'Time (30s intervals)',
+                    color: '#ecf0f1'
+                }
+              },
+              y: {
+                grid: {
+                  color: "rgba(255, 255, 255, 0.1)",
+                },
+                ticks: {
+                  color: "#ecf0f1",
+                },
+                beginAtZero: true,
+                title: { // Optional: Add Y-axis title
+                    display: true,
+                    text: 'Event Count',
+                    color: '#ecf0f1'
+                }
+              },
+            },
+          },
+        });
+        console.log("Attack Trends Chart initialized.");
+
+        // --- Initialize EPS Chart (Line) ---
+        console.log("Initializing EPS Chart...");
+        const epsCtx = document.getElementById("epsChart").getContext("2d");
+        epsChart = new Chart(epsCtx, {
+          type: "line",
+          data: {
+            labels: Array.from({length: 30}, (_, i) => i.toString()), // Initial dummy labels (0-29)
+            datasets: [
+              {
+                label: "Events (30s intervals)",
+                 data:Array(30).fill(0), // Initial dummy data
+                borderColor: "#3498db",
+                backgroundColor: "rgba(52, 152, 219, 0.1)",
+                tension: 0.4,
+                fill: true,
+                pointRadius: 0 // Hide points for a cleaner look
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                display: false,
+              },
+              tooltip: {
+                mode: 'index',
+                intersect: false
+              }
+            },
+            interaction: {
+                mode: 'nearest',
+                axis: 'x',
+                intersect: false
+            },
+            scales: {
+              x: {
+                display: false, // Hide x-axis labels for EPS chart
+              },
+              y: {
+                grid: {
+                  color: "rgba(255, 255, 255, 0.1)",
+                },
+                ticks: {
+                  color: "#ecf0f1",
+                  // callback: function(value) {
+                  //     // Show count instead of rate on Y axis for simplicity
+                  //     return value;
+                  // }
+                },
+                title: {
+                    display: true,
+                    text: 'Events (30s bin)',
+                    color: '#ecf0f1',
+                    font: {
+                        size: 10
+                    }
+                }
+              },
+            },
+          },
+        });
+        console.log("EPS Chart initialized.");
+
+        // --- Initial Population and Setup ---
+        console.log("Performing initial data load...");
+        // Populate with initial data from backend
+        updateDashboardData();
+
+        // Set up interval for real-time updates
+        // 5 seconds is a good balance between real-time feel and server/database load
+        const updateInterval = 1000; // 5 seconds
+        console.log(`Setting up periodic updates every ${updateInterval}ms...`);
+        setInterval(updateDashboardData, updateInterval);
+        console.log("=== Dashboard Initialization Complete ===\n");
+      });
+
+    </script>
+  </body>
+</html>

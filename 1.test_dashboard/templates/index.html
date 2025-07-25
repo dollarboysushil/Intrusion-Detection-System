@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NIDS Real-Time Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Header -->
+      <header>
+        <h1><i class="fas fa-shield-alt"></i> NIDS Real-Time Dashboard</h1>
+        <div class="status-indicators">
+          <span class="indicator live"><i class="fas fa-circle"></i> Live</span>
+          <span class="indicator cpu"
+            ><i class="fas fa-microchip"></i> CPU: 40%</span
+          >
+          <span class="indicator ram"
+            ><i class="fas fa-memory"></i> RAM: 64%</span
+          >
+          <span class="indicator disk"
+            ><i class="fas fa-hdd"></i> DISK: 28%</span
+          >
+        </div>
+      </header>
+
+      <!-- Metrics Section -->
+      <section class="metrics-section">
+        <div class="metric-card total-flows">
+          <h2>TOTAL FLOWS</h2>
+          <div class="value">
+            24,892
+            <small
+              ><i class="fas fa-arrow-up red"></i> 12.4% from last hour</small
+            >
+          </div>
+        </div>
+        <div class="metric-card ddos-attacks">
+          <h2>DDOS ATTACKS</h2>
+          <div class="value">
+            187
+            <small
+              ><i class="fas fa-arrow-up red"></i> 26.8% from last hour</small
+            >
+          </div>
+        </div>
+        <div class="metric-card port-scans">
+          <h2>PORT SCANS</h2>
+          <div class="value">
+            42
+            <small
+              ><i class="fas fa-arrow-down orange"></i> 8.2% from last
+              hour</small
+            >
+          </div>
+        </div>
+        <div class="metric-card other-attacks">
+          <h2>OTHER ATTACKS</h2>
+          <div class="value">
+            93
+            <small
+              ><i class="fas fa-arrow-up yellow"></i> 15.3% from last
+              hour</small
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Charts Section -->
+      <section class="charts-section">
+        <div class="chart-card attack-distribution">
+          <h2>Attack Type Distribution</h2>
+          <canvas id="attack-distribution-chart"></canvas>
+        </div>
+        <div class="chart-card attack-trends">
+          <h2>Attack Trends (Last 24 Hours)</h2>
+          <canvas id="attack-trends-chart"></canvas>
+        </div>
+        <div class="chart-card events-per-second">
+          <h2>Events Per Second</h2>
+          <canvas id="events-per-second-chart"></canvas>
+        </div>
+      </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>

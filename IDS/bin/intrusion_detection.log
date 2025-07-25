@@ -8961,3 +8961,1545 @@ cic.cs.unb.ca.ifm.Cmd Out folder: temp_processing\cycle_8_20250626_234130\csv_ou
 2025-07-22 15:53:46,263 - PID:26300 - MainThread - INFO - Initiating graceful shutdown...
 2025-07-22 15:53:46,263 - PID:26300 - MainThread - INFO - All processes stopped
 2025-07-22 15:53:46,263 - PID:26300 - MainThread - INFO - === System shutdown complete ===
+2025-07-22 16:30:24,768 - PID:1608 - MainThread - INFO - === Starting Multiprocessing Network Intrusion Detection System ===
+2025-07-22 16:30:24,768 - PID:1608 - MainThread - INFO - Configuration:
+2025-07-22 16:30:24,768 - PID:1608 - MainThread - INFO -   - Capture processes: 1
+2025-07-22 16:30:24,768 - PID:1608 - MainThread - INFO -   - Conversion processes: 2
+2025-07-22 16:30:24,768 - PID:1608 - MainThread - INFO -   - Prediction processes: 2
+2025-07-22 16:30:24,769 - PID:1608 - MainThread - INFO -   - Interface: Ethernet
+2025-07-22 16:30:24,769 - PID:1608 - MainThread - INFO -   - Capture duration: 10s
+2025-07-22 16:30:24,769 - PID:1608 - MainThread - INFO -   - Endpoint: http://localhost:8000/predict/
+2025-07-22 16:30:24,782 - PID:1608 - MainThread - INFO - Started capture worker 0 (PID: 19512)
+2025-07-22 16:30:24,794 - PID:1608 - MainThread - INFO - Started conversion worker 0 (PID: 8644)
+2025-07-22 16:30:24,807 - PID:1608 - MainThread - INFO - Started conversion worker 1 (PID: 20388)
+2025-07-22 16:30:24,820 - PID:1608 - MainThread - INFO - Started prediction worker 0 (PID: 25212)
+2025-07-22 16:30:24,835 - PID:1608 - MainThread - INFO - Started prediction worker 1 (PID: 27404)
+2025-07-22 16:30:24,852 - PID:1608 - MainThread - INFO - Started result collector (PID: 22872)
+2025-07-22 16:30:24,871 - PID:1608 - MainThread - INFO - Started stats reporter (PID: 2760)
+2025-07-22 16:30:25,419 - PID:19512 - MainThread - INFO - Capture worker 0 started
+2025-07-22 16:30:25,419 - PID:19512 - MainThread - INFO - [capture_0_1_1753181125] Starting capture for 10 seconds...
+2025-07-22 16:30:25,462 - PID:8644 - MainThread - INFO - Conversion worker 0 started
+2025-07-22 16:30:25,483 - PID:25212 - MainThread - INFO - Prediction worker 0 started
+2025-07-22 16:30:25,494 - PID:20388 - MainThread - INFO - Conversion worker 1 started
+2025-07-22 16:30:25,505 - PID:22872 - MainThread - INFO - Result collector started
+2025-07-22 16:30:25,512 - PID:27404 - MainThread - INFO - Prediction worker 1 started
+2025-07-22 16:30:25,519 - PID:2760 - MainThread - INFO - Stats reporter started
+2025-07-22 16:30:35,887 - PID:19512 - MainThread - INFO - [capture_0_1_1753181125] Capture successful: 394360 bytes
+2025-07-22 16:30:35,887 - PID:19512 - MainThread - INFO - [capture_0_1_1753181125] Queued for conversion
+2025-07-22 16:30:35,887 - PID:8644 - MainThread - INFO - [capture_0_1_1753181125] Converting PCAP to CSV
+2025-07-22 16:30:35,888 - PID:8644 - MainThread - INFO - [capture_0_1_1753181125] Converting PCAP to CSV...
+2025-07-22 16:30:36,780 - PID:8644 - MainThread - INFO - [capture_0_1_1753181125] CSV conversion successful: 90 flows
+2025-07-22 16:30:36,781 - PID:8644 - MainThread - INFO - [capture_0_1_1753181125] Queued for prediction
+2025-07-22 16:30:36,781 - PID:25212 - MainThread - INFO - [capture_0_1_1753181125] Processing predictions
+2025-07-22 16:30:36,781 - PID:25212 - MainThread - INFO - [capture_0_1_1753181125] Processing predictions...
+2025-07-22 16:30:36,783 - PID:25212 - MainThread - INFO - [capture_0_1_1753181125] Processing 90 flows (from 90 total)
+2025-07-22 16:30:36,888 - PID:19512 - MainThread - INFO - [capture_0_2_1753181136] Starting capture for 10 seconds...
+2025-07-22 16:30:47,297 - PID:19512 - MainThread - INFO - [capture_0_2_1753181136] Capture successful: 3255642 bytes
+2025-07-22 16:30:47,297 - PID:19512 - MainThread - INFO - [capture_0_2_1753181136] Queued for conversion
+2025-07-22 16:30:47,298 - PID:20388 - MainThread - INFO - [capture_0_2_1753181136] Converting PCAP to CSV
+2025-07-22 16:30:47,298 - PID:20388 - MainThread - INFO - [capture_0_2_1753181136] Converting PCAP to CSV...
+2025-07-22 16:30:48,191 - PID:20388 - MainThread - INFO - [capture_0_2_1753181136] CSV conversion successful: 204 flows
+2025-07-22 16:30:48,191 - PID:20388 - MainThread - INFO - [capture_0_2_1753181136] Queued for prediction
+2025-07-22 16:30:48,192 - PID:27404 - MainThread - INFO - [capture_0_2_1753181136] Processing predictions
+2025-07-22 16:30:48,192 - PID:27404 - MainThread - INFO - [capture_0_2_1753181136] Processing predictions...
+2025-07-22 16:30:48,195 - PID:27404 - MainThread - INFO - [capture_0_2_1753181136] Processing 100 flows (from 204 total)
+2025-07-22 16:30:48,298 - PID:19512 - MainThread - INFO - [capture_0_3_1753181148] Starting capture for 10 seconds...
+2025-07-22 16:30:55,521 - PID:2760 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-22 16:30:55,521 - PID:2760 - MainThread - INFO - Runtime: 31s
+2025-07-22 16:30:55,521 - PID:2760 - MainThread - INFO - Cycles completed: 0
+2025-07-22 16:30:55,521 - PID:2760 - MainThread - INFO - Total flows processed: 0
+2025-07-22 16:30:55,521 - PID:2760 - MainThread - INFO - Attacks detected: 0
+2025-07-22 16:30:55,521 - PID:2760 - MainThread - INFO - Errors: 0
+2025-07-22 16:30:58,698 - PID:19512 - MainThread - INFO - [capture_0_3_1753181148] Capture successful: 9641427 bytes
+2025-07-22 16:30:58,698 - PID:19512 - MainThread - INFO - [capture_0_3_1753181148] Queued for conversion
+2025-07-22 16:30:58,699 - PID:8644 - MainThread - INFO - [capture_0_3_1753181148] Converting PCAP to CSV
+2025-07-22 16:30:58,699 - PID:8644 - MainThread - INFO - [capture_0_3_1753181148] Converting PCAP to CSV...
+2025-07-22 16:30:59,582 - PID:8644 - MainThread - INFO - [capture_0_3_1753181148] CSV conversion successful: 114 flows
+2025-07-22 16:30:59,582 - PID:8644 - MainThread - INFO - [capture_0_3_1753181148] Queued for prediction
+2025-07-22 16:30:59,699 - PID:19512 - MainThread - INFO - [capture_0_4_1753181159] Starting capture for 10 seconds...
+2025-07-22 16:31:03,130 - PID:25212 - MainThread - INFO - [capture_0_1_1753181125] Results sent to collector
+2025-07-22 16:31:03,131 - PID:25212 - MainThread - INFO - [capture_0_3_1753181148] Processing predictions
+2025-07-22 16:31:03,132 - PID:25212 - MainThread - INFO - [capture_0_3_1753181148] Processing predictions...
+2025-07-22 16:31:03,132 - PID:22872 - MainThread - INFO - [capture_0_1_1753181125] RESULTS:
+2025-07-22 16:31:03,132 - PID:22872 - MainThread - INFO - [capture_0_1_1753181125]   Flows: 90
+2025-07-22 16:31:03,132 - PID:22872 - MainThread - INFO - [capture_0_1_1753181125]   Normal: 0 (0.0%)
+2025-07-22 16:31:03,132 - PID:22872 - MainThread - INFO - [capture_0_1_1753181125]   Attack: 0 (0.0%)
+2025-07-22 16:31:03,132 - PID:22872 - MainThread - INFO - [capture_0_1_1753181125]   Errors: 90 (100.0%)
+2025-07-22 16:31:03,133 - PID:25212 - MainThread - INFO - [capture_0_3_1753181148] Processing 100 flows (from 114 total)
+2025-07-22 16:31:10,048 - PID:19512 - MainThread - INFO - [capture_0_4_1753181159] Capture successful: 182424 bytes
+2025-07-22 16:31:10,048 - PID:19512 - MainThread - INFO - [capture_0_4_1753181159] Queued for conversion
+2025-07-22 16:31:10,048 - PID:20388 - MainThread - INFO - [capture_0_4_1753181159] Converting PCAP to CSV
+2025-07-22 16:31:10,049 - PID:20388 - MainThread - INFO - [capture_0_4_1753181159] Converting PCAP to CSV...
+2025-07-22 16:31:10,771 - PID:20388 - MainThread - INFO - [capture_0_4_1753181159] CSV conversion successful: 42 flows
+2025-07-22 16:31:10,772 - PID:20388 - MainThread - INFO - [capture_0_4_1753181159] Queued for prediction
+2025-07-22 16:31:11,049 - PID:19512 - MainThread - INFO - [capture_0_5_1753181171] Starting capture for 10 seconds...
+2025-07-22 16:31:17,024 - PID:27404 - MainThread - INFO - [capture_0_2_1753181136] Results sent to collector
+2025-07-22 16:31:17,025 - PID:22872 - MainThread - INFO - [capture_0_2_1753181136] RESULTS:
+2025-07-22 16:31:17,025 - PID:22872 - MainThread - INFO - [capture_0_2_1753181136]   Flows: 100 (from 204)
+2025-07-22 16:31:17,025 - PID:22872 - MainThread - INFO - [capture_0_2_1753181136]   Normal: 0 (0.0%)
+2025-07-22 16:31:17,025 - PID:22872 - MainThread - INFO - [capture_0_2_1753181136]   Attack: 0 (0.0%)
+2025-07-22 16:31:17,026 - PID:22872 - MainThread - INFO - [capture_0_2_1753181136]   Errors: 100 (100.0%)
+2025-07-22 16:31:17,026 - PID:27404 - MainThread - INFO - [capture_0_4_1753181159] Processing predictions
+2025-07-22 16:31:17,026 - PID:27404 - MainThread - INFO - [capture_0_4_1753181159] Processing predictions...
+2025-07-22 16:31:17,026 - PID:27404 - MainThread - INFO - [capture_0_4_1753181159] Processing 42 flows (from 42 total)
+2025-07-22 16:31:21,397 - PID:19512 - MainThread - INFO - [capture_0_5_1753181171] Capture successful: 153017 bytes
+2025-07-22 16:31:21,397 - PID:19512 - MainThread - INFO - [capture_0_5_1753181171] Queued for conversion
+2025-07-22 16:31:21,398 - PID:8644 - MainThread - INFO - [capture_0_5_1753181171] Converting PCAP to CSV
+2025-07-22 16:31:21,398 - PID:8644 - MainThread - INFO - [capture_0_5_1753181171] Converting PCAP to CSV...
+2025-07-22 16:31:22,134 - PID:8644 - MainThread - INFO - [capture_0_5_1753181171] CSV conversion successful: 29 flows
+2025-07-22 16:31:22,135 - PID:8644 - MainThread - INFO - [capture_0_5_1753181171] Queued for prediction
+2025-07-22 16:31:22,398 - PID:19512 - MainThread - INFO - [capture_0_6_1753181182] Starting capture for 10 seconds...
+2025-07-22 16:31:25,283 - PID:2760 - MainThread - INFO - Stats reporter shutting down
+2025-07-22 16:31:25,283 - PID:22872 - MainThread - INFO - Result collector shutting down
+2025-07-22 16:31:25,283 - PID:20388 - MainThread - INFO - Conversion worker 1 shutting down
+2025-07-22 16:31:25,283 - PID:8644 - MainThread - INFO - Conversion worker 0 shutting down
+2025-07-22 16:31:25,283 - PID:1608 - MainThread - INFO - Received signal 2, initiating shutdown...
+2025-07-22 16:31:25,283 - PID:1608 - MainThread - INFO - Initiating graceful shutdown...
+2025-07-22 16:31:25,499 - PID:19512 - MainThread - INFO - Capture worker 0 shutting down
+2025-07-22 16:31:31,043 - PID:25212 - MainThread - INFO - Prediction worker 0 shutting down
+2025-07-22 16:31:32,423 - PID:27404 - MainThread - INFO - Prediction worker 1 shutting down
+2025-07-22 16:31:32,587 - PID:1608 - MainThread - INFO - Received signal 2, initiating shutdown...
+2025-07-22 16:31:32,587 - PID:1608 - MainThread - INFO - Initiating graceful shutdown...
+2025-07-22 16:31:46,562 - PID:1608 - MainThread - INFO - All processes stopped
+2025-07-22 16:31:46,562 - PID:1608 - MainThread - INFO - Initiating graceful shutdown...
+2025-07-22 16:31:46,562 - PID:1608 - MainThread - INFO - All processes stopped
+2025-07-22 16:31:46,562 - PID:1608 - MainThread - INFO - === System shutdown complete ===
+2025-07-22 16:32:33,194 - PID:25212 - MainThread - INFO - === Starting Multiprocessing Network Intrusion Detection System ===
+2025-07-22 16:32:33,195 - PID:25212 - MainThread - INFO - Configuration:
+2025-07-22 16:32:33,195 - PID:25212 - MainThread - INFO -   - Capture processes: 1
+2025-07-22 16:32:33,195 - PID:25212 - MainThread - INFO -   - Conversion processes: 2
+2025-07-22 16:32:33,195 - PID:25212 - MainThread - INFO -   - Prediction processes: 2
+2025-07-22 16:32:33,195 - PID:25212 - MainThread - INFO -   - Interface: Ethernet
+2025-07-22 16:32:33,195 - PID:25212 - MainThread - INFO -   - Capture duration: 10s
+2025-07-22 16:32:33,195 - PID:25212 - MainThread - INFO -   - Endpoint: http://localhost:8000/predict/
+2025-07-22 16:32:33,208 - PID:25212 - MainThread - INFO - Started capture worker 0 (PID: 8236)
+2025-07-22 16:32:33,220 - PID:25212 - MainThread - INFO - Started conversion worker 0 (PID: 7748)
+2025-07-22 16:32:33,233 - PID:25212 - MainThread - INFO - Started conversion worker 1 (PID: 13080)
+2025-07-22 16:32:33,247 - PID:25212 - MainThread - INFO - Started prediction worker 0 (PID: 23144)
+2025-07-22 16:32:33,264 - PID:25212 - MainThread - INFO - Started prediction worker 1 (PID: 21852)
+2025-07-22 16:32:33,280 - PID:25212 - MainThread - INFO - Started result collector (PID: 27596)
+2025-07-22 16:32:33,297 - PID:25212 - MainThread - INFO - Started stats reporter (PID: 2812)
+2025-07-22 16:32:33,861 - PID:8236 - MainThread - INFO - Capture worker 0 started
+2025-07-22 16:32:33,861 - PID:8236 - MainThread - INFO - [capture_0_1_1753181253] Starting capture for 10 seconds...
+2025-07-22 16:32:33,881 - PID:7748 - MainThread - INFO - Conversion worker 0 started
+2025-07-22 16:32:33,886 - PID:13080 - MainThread - INFO - Conversion worker 1 started
+2025-07-22 16:32:33,941 - PID:23144 - MainThread - INFO - Prediction worker 0 started
+2025-07-22 16:32:33,948 - PID:21852 - MainThread - INFO - Prediction worker 1 started
+2025-07-22 16:32:33,957 - PID:2812 - MainThread - INFO - Stats reporter started
+2025-07-22 16:32:33,959 - PID:27596 - MainThread - INFO - Result collector started
+2025-07-22 16:32:44,225 - PID:8236 - MainThread - INFO - [capture_0_1_1753181253] Capture successful: 15852 bytes
+2025-07-22 16:32:44,226 - PID:8236 - MainThread - INFO - [capture_0_1_1753181253] Queued for conversion
+2025-07-22 16:32:44,226 - PID:7748 - MainThread - INFO - [capture_0_1_1753181253] Converting PCAP to CSV
+2025-07-22 16:32:44,226 - PID:7748 - MainThread - INFO - [capture_0_1_1753181253] Converting PCAP to CSV...
+2025-07-22 16:32:44,927 - PID:7748 - MainThread - INFO - [capture_0_1_1753181253] CSV conversion successful: 23 flows
+2025-07-22 16:32:44,928 - PID:7748 - MainThread - INFO - [capture_0_1_1753181253] Queued for prediction
+2025-07-22 16:32:44,928 - PID:23144 - MainThread - INFO - [capture_0_1_1753181253] Processing predictions
+2025-07-22 16:32:44,928 - PID:23144 - MainThread - INFO - [capture_0_1_1753181253] Processing predictions...
+2025-07-22 16:32:44,928 - PID:23144 - MainThread - INFO - [capture_0_1_1753181253] Processing 23 flows (from 23 total)
+2025-07-22 16:32:45,227 - PID:8236 - MainThread - INFO - [capture_0_2_1753181265] Starting capture for 10 seconds...
+2025-07-22 16:32:51,280 - PID:23144 - MainThread - INFO - [capture_0_1_1753181253] Results sent to collector
+2025-07-22 16:32:51,281 - PID:27596 - MainThread - INFO - [capture_0_1_1753181253] RESULTS:
+2025-07-22 16:32:51,281 - PID:27596 - MainThread - INFO - [capture_0_1_1753181253]   Flows: 23
+2025-07-22 16:32:51,281 - PID:27596 - MainThread - INFO - [capture_0_1_1753181253]   Normal: 0 (0.0%)
+2025-07-22 16:32:51,282 - PID:27596 - MainThread - INFO - [capture_0_1_1753181253]   Attack: 0 (0.0%)
+2025-07-22 16:32:51,282 - PID:27596 - MainThread - INFO - [capture_0_1_1753181253]   Errors: 23 (100.0%)
+2025-07-22 16:32:55,663 - PID:8236 - MainThread - INFO - [capture_0_2_1753181265] Capture successful: 322572 bytes
+2025-07-22 16:32:55,663 - PID:8236 - MainThread - INFO - [capture_0_2_1753181265] Queued for conversion
+2025-07-22 16:32:55,663 - PID:13080 - MainThread - INFO - [capture_0_2_1753181265] Converting PCAP to CSV
+2025-07-22 16:32:55,664 - PID:13080 - MainThread - INFO - [capture_0_2_1753181265] Converting PCAP to CSV...
+2025-07-22 16:32:56,387 - PID:13080 - MainThread - INFO - [capture_0_2_1753181265] CSV conversion successful: 41 flows
+2025-07-22 16:32:56,387 - PID:13080 - MainThread - INFO - [capture_0_2_1753181265] Queued for prediction
+2025-07-22 16:32:56,387 - PID:21852 - MainThread - INFO - [capture_0_2_1753181265] Processing predictions
+2025-07-22 16:32:56,387 - PID:21852 - MainThread - INFO - [capture_0_2_1753181265] Processing predictions...
+2025-07-22 16:32:56,388 - PID:21852 - MainThread - INFO - [capture_0_2_1753181265] Processing 41 flows (from 41 total)
+2025-07-22 16:32:56,664 - PID:8236 - MainThread - INFO - [capture_0_3_1753181276] Starting capture for 10 seconds...
+2025-07-22 16:33:03,848 - PID:21852 - MainThread - INFO - [capture_0_2_1753181265] Results sent to collector
+2025-07-22 16:33:03,849 - PID:27596 - MainThread - INFO - [capture_0_2_1753181265] RESULTS:
+2025-07-22 16:33:03,849 - PID:27596 - MainThread - INFO - [capture_0_2_1753181265]   Flows: 41
+2025-07-22 16:33:03,849 - PID:27596 - MainThread - INFO - [capture_0_2_1753181265]   Normal: 0 (0.0%)
+2025-07-22 16:33:03,849 - PID:27596 - MainThread - INFO - [capture_0_2_1753181265]   Attack: 0 (0.0%)
+2025-07-22 16:33:03,849 - PID:27596 - MainThread - INFO - [capture_0_2_1753181265]   Errors: 41 (100.0%)
+2025-07-22 16:33:03,958 - PID:2812 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-22 16:33:03,958 - PID:2812 - MainThread - INFO - Runtime: 31s
+2025-07-22 16:33:03,959 - PID:2812 - MainThread - INFO - Cycles completed: 2
+2025-07-22 16:33:03,959 - PID:2812 - MainThread - INFO - Total flows processed: 64
+2025-07-22 16:33:03,959 - PID:2812 - MainThread - INFO - Attacks detected: 0
+2025-07-22 16:33:03,959 - PID:2812 - MainThread - INFO - Errors: 64
+2025-07-22 16:33:03,959 - PID:2812 - MainThread - INFO - Average flows per cycle: 32.0
+2025-07-22 16:33:03,959 - PID:2812 - MainThread - INFO - Cycles per minute: 3.9
+2025-07-22 16:33:03,959 - PID:2812 - MainThread - INFO - Attack rate: 0.00%
+2025-07-22 16:33:07,197 - PID:8236 - MainThread - INFO - [capture_0_3_1753181276] Capture successful: 160790 bytes
+2025-07-22 16:33:07,197 - PID:8236 - MainThread - INFO - [capture_0_3_1753181276] Queued for conversion
+2025-07-22 16:33:07,198 - PID:7748 - MainThread - INFO - [capture_0_3_1753181276] Converting PCAP to CSV
+2025-07-22 16:33:07,198 - PID:7748 - MainThread - INFO - [capture_0_3_1753181276] Converting PCAP to CSV...
+2025-07-22 16:33:07,957 - PID:7748 - MainThread - INFO - [capture_0_3_1753181276] CSV conversion successful: 64 flows
+2025-07-22 16:33:07,958 - PID:7748 - MainThread - INFO - [capture_0_3_1753181276] Queued for prediction
+2025-07-22 16:33:07,958 - PID:21852 - MainThread - INFO - [capture_0_3_1753181276] Processing predictions
+2025-07-22 16:33:07,958 - PID:21852 - MainThread - INFO - [capture_0_3_1753181276] Processing predictions...
+2025-07-22 16:33:07,959 - PID:21852 - MainThread - INFO - [capture_0_3_1753181276] Processing 64 flows (from 64 total)
+2025-07-22 16:33:08,198 - PID:8236 - MainThread - INFO - [capture_0_4_1753181288] Starting capture for 10 seconds...
+2025-07-22 16:33:18,743 - PID:8236 - MainThread - INFO - [capture_0_4_1753181288] Capture successful: 74224 bytes
+2025-07-22 16:33:18,743 - PID:8236 - MainThread - INFO - [capture_0_4_1753181288] Queued for conversion
+2025-07-22 16:33:18,743 - PID:13080 - MainThread - INFO - [capture_0_4_1753181288] Converting PCAP to CSV
+2025-07-22 16:33:18,744 - PID:13080 - MainThread - INFO - [capture_0_4_1753181288] Converting PCAP to CSV...
+2025-07-22 16:33:19,090 - PID:21852 - MainThread - INFO - [capture_0_3_1753181276] Results sent to collector
+2025-07-22 16:33:19,090 - PID:27596 - MainThread - INFO - [capture_0_3_1753181276] RESULTS:
+2025-07-22 16:33:19,091 - PID:27596 - MainThread - INFO - [capture_0_3_1753181276]   Flows: 64
+2025-07-22 16:33:19,091 - PID:27596 - MainThread - INFO - [capture_0_3_1753181276]   Normal: 0 (0.0%)
+2025-07-22 16:33:19,091 - PID:27596 - MainThread - INFO - [capture_0_3_1753181276]   Attack: 0 (0.0%)
+2025-07-22 16:33:19,091 - PID:27596 - MainThread - INFO - [capture_0_3_1753181276]   Errors: 64 (100.0%)
+2025-07-22 16:33:19,454 - PID:13080 - MainThread - INFO - [capture_0_4_1753181288] CSV conversion successful: 27 flows
+2025-07-22 16:33:19,455 - PID:13080 - MainThread - INFO - [capture_0_4_1753181288] Queued for prediction
+2025-07-22 16:33:19,455 - PID:23144 - MainThread - INFO - [capture_0_4_1753181288] Processing predictions
+2025-07-22 16:33:19,455 - PID:23144 - MainThread - INFO - [capture_0_4_1753181288] Processing predictions...
+2025-07-22 16:33:19,456 - PID:23144 - MainThread - INFO - [capture_0_4_1753181288] Processing 27 flows (from 27 total)
+2025-07-22 16:33:19,744 - PID:8236 - MainThread - INFO - [capture_0_5_1753181299] Starting capture for 10 seconds...
+2025-07-22 16:33:25,225 - PID:23144 - MainThread - INFO - [capture_0_4_1753181288] Results sent to collector
+2025-07-22 16:33:25,226 - PID:27596 - MainThread - INFO - [capture_0_4_1753181288] RESULTS:
+2025-07-22 16:33:25,226 - PID:27596 - MainThread - INFO - [capture_0_4_1753181288]   Flows: 27
+2025-07-22 16:33:25,226 - PID:27596 - MainThread - INFO - [capture_0_4_1753181288]   Normal: 0 (0.0%)
+2025-07-22 16:33:25,226 - PID:27596 - MainThread - INFO - [capture_0_4_1753181288]   Attack: 0 (0.0%)
+2025-07-22 16:33:25,227 - PID:27596 - MainThread - INFO - [capture_0_4_1753181288]   Errors: 27 (100.0%)
+2025-07-22 16:33:30,067 - PID:8236 - MainThread - INFO - [capture_0_5_1753181299] Capture successful: 39870 bytes
+2025-07-22 16:33:30,067 - PID:8236 - MainThread - INFO - [capture_0_5_1753181299] Queued for conversion
+2025-07-22 16:33:30,067 - PID:7748 - MainThread - INFO - [capture_0_5_1753181299] Converting PCAP to CSV
+2025-07-22 16:33:30,067 - PID:7748 - MainThread - INFO - [capture_0_5_1753181299] Converting PCAP to CSV...
+2025-07-22 16:33:30,759 - PID:7748 - MainThread - INFO - [capture_0_5_1753181299] CSV conversion successful: 23 flows
+2025-07-22 16:33:30,759 - PID:7748 - MainThread - INFO - [capture_0_5_1753181299] Queued for prediction
+2025-07-22 16:33:30,760 - PID:21852 - MainThread - INFO - [capture_0_5_1753181299] Processing predictions
+2025-07-22 16:33:30,760 - PID:21852 - MainThread - INFO - [capture_0_5_1753181299] Processing predictions...
+2025-07-22 16:33:30,760 - PID:21852 - MainThread - INFO - [capture_0_5_1753181299] Processing 23 flows (from 23 total)
+2025-07-22 16:33:31,068 - PID:8236 - MainThread - INFO - [capture_0_6_1753181311] Starting capture for 10 seconds...
+2025-07-22 16:33:33,960 - PID:2812 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-22 16:33:33,961 - PID:2812 - MainThread - INFO - Runtime: 61s
+2025-07-22 16:33:33,961 - PID:2812 - MainThread - INFO - Cycles completed: 4
+2025-07-22 16:33:33,961 - PID:2812 - MainThread - INFO - Total flows processed: 155
+2025-07-22 16:33:33,961 - PID:2812 - MainThread - INFO - Attacks detected: 0
+2025-07-22 16:33:33,961 - PID:2812 - MainThread - INFO - Errors: 155
+2025-07-22 16:33:33,961 - PID:2812 - MainThread - INFO - Average flows per cycle: 38.8
+2025-07-22 16:33:33,961 - PID:2812 - MainThread - INFO - Cycles per minute: 3.9
+2025-07-22 16:33:33,961 - PID:2812 - MainThread - INFO - Attack rate: 0.00%
+2025-07-22 16:33:34,014 - PID:21852 - MainThread - INFO - [capture_0_5_1753181299] Results sent to collector
+2025-07-22 16:33:34,015 - PID:27596 - MainThread - INFO - [capture_0_5_1753181299] RESULTS:
+2025-07-22 16:33:34,015 - PID:27596 - MainThread - INFO - [capture_0_5_1753181299]   Flows: 23
+2025-07-22 16:33:34,016 - PID:27596 - MainThread - INFO - [capture_0_5_1753181299]   Normal: 0 (0.0%)
+2025-07-22 16:33:34,016 - PID:27596 - MainThread - INFO - [capture_0_5_1753181299]   Attack: 0 (0.0%)
+2025-07-22 16:33:34,016 - PID:27596 - MainThread - INFO - [capture_0_5_1753181299]   Errors: 23 (100.0%)
+2025-07-22 16:33:41,419 - PID:8236 - MainThread - INFO - [capture_0_6_1753181311] Capture successful: 32351 bytes
+2025-07-22 16:33:41,419 - PID:8236 - MainThread - INFO - [capture_0_6_1753181311] Queued for conversion
+2025-07-22 16:33:41,419 - PID:13080 - MainThread - INFO - [capture_0_6_1753181311] Converting PCAP to CSV
+2025-07-22 16:33:41,419 - PID:13080 - MainThread - INFO - [capture_0_6_1753181311] Converting PCAP to CSV...
+2025-07-22 16:33:42,119 - PID:13080 - MainThread - INFO - [capture_0_6_1753181311] CSV conversion successful: 18 flows
+2025-07-22 16:33:42,119 - PID:13080 - MainThread - INFO - [capture_0_6_1753181311] Queued for prediction
+2025-07-22 16:33:42,120 - PID:21852 - MainThread - INFO - [capture_0_6_1753181311] Processing predictions
+2025-07-22 16:33:42,120 - PID:21852 - MainThread - INFO - [capture_0_6_1753181311] Processing predictions...
+2025-07-22 16:33:42,120 - PID:21852 - MainThread - INFO - [capture_0_6_1753181311] Processing 18 flows (from 18 total)
+2025-07-22 16:33:42,420 - PID:8236 - MainThread - INFO - [capture_0_7_1753181322] Starting capture for 10 seconds...
+2025-07-22 16:33:44,750 - PID:21852 - MainThread - INFO - [capture_0_6_1753181311] Results sent to collector
+2025-07-22 16:33:44,751 - PID:27596 - MainThread - INFO - [capture_0_6_1753181311] RESULTS:
+2025-07-22 16:33:44,751 - PID:27596 - MainThread - INFO - [capture_0_6_1753181311]   Flows: 18
+2025-07-22 16:33:44,751 - PID:27596 - MainThread - INFO - [capture_0_6_1753181311]   Normal: 0 (0.0%)
+2025-07-22 16:33:44,751 - PID:27596 - MainThread - INFO - [capture_0_6_1753181311]   Attack: 0 (0.0%)
+2025-07-22 16:33:44,751 - PID:27596 - MainThread - INFO - [capture_0_6_1753181311]   Errors: 18 (100.0%)
+2025-07-22 16:33:52,393 - PID:2812 - MainThread - INFO - Stats reporter shutting down
+2025-07-22 16:33:52,394 - PID:27596 - MainThread - INFO - Result collector shutting down
+2025-07-22 16:33:52,394 - PID:13080 - MainThread - INFO - Conversion worker 1 shutting down
+2025-07-22 16:33:52,394 - PID:7748 - MainThread - INFO - Conversion worker 0 shutting down
+2025-07-22 16:33:52,394 - PID:25212 - MainThread - INFO - Received signal 2, initiating shutd2025-07-22 16:33:52,394 - PID:23144 - MainThread - INFO - Prediction worker 0 shutting down
+2025-07-22 16:33:52,394 - PID:25212 - MainThread - INFO - Initiating graceful shutdown...
+2025-07-22 16:33:52,513 - PID:8236 - MainThread - INFO - Capture worker 0 shutting down
+2025-07-22 16:33:52,530 - PID:25212 - MainThread - INFO - All processes stopped
+2025-07-22 16:33:52,530 - PID:25212 - MainThread - INFO - Initiating graceful shutdown...
+2025-07-22 16:33:52,530 - PID:25212 - MainThread - INFO - All processes stopped
+2025-07-22 16:33:52,531 - PID:25212 - MainThread - INFO - === System shutdown complete ===
+2025-07-22 16:43:42,062 - PID:17500 - MainThread - INFO - === Starting Multiprocessing Network Intrusion Detection System ===
+2025-07-22 16:43:42,062 - PID:17500 - MainThread - INFO - Configuration:
+2025-07-22 16:43:42,062 - PID:17500 - MainThread - INFO -   - Capture processes: 1
+2025-07-22 16:43:42,062 - PID:17500 - MainThread - INFO -   - Conversion processes: 2
+2025-07-22 16:43:42,062 - PID:17500 - MainThread - INFO -   - Prediction processes: 2
+2025-07-22 16:43:42,062 - PID:17500 - MainThread - INFO -   - Interface: Ethernet
+2025-07-22 16:43:42,062 - PID:17500 - MainThread - INFO -   - Capture duration: 10s
+2025-07-22 16:43:42,063 - PID:17500 - MainThread - INFO -   - Endpoint: http://localhost:8000/predict/
+2025-07-22 16:43:42,076 - PID:17500 - MainThread - INFO - Started capture worker 0 (PID: 22512)
+2025-07-22 16:43:42,089 - PID:17500 - MainThread - INFO - Started conversion worker 0 (PID: 6804)
+2025-07-22 16:43:42,102 - PID:17500 - MainThread - INFO - Started conversion worker 1 (PID: 26296)
+2025-07-22 16:43:42,117 - PID:17500 - MainThread - INFO - Started prediction worker 0 (PID: 2092)
+2025-07-22 16:43:42,136 - PID:17500 - MainThread - INFO - Started prediction worker 1 (PID: 17108)
+2025-07-22 16:43:42,156 - PID:17500 - MainThread - INFO - Started result collector (PID: 1636)
+2025-07-22 16:43:42,178 - PID:17500 - MainThread - INFO - Started stats reporter (PID: 27468)
+2025-07-22 16:43:42,826 - PID:6804 - MainThread - INFO - Conversion worker 0 started
+2025-07-22 16:43:42,827 - PID:26296 - MainThread - INFO - Conversion worker 1 started
+2025-07-22 16:43:42,828 - PID:22512 - MainThread - INFO - Capture worker 0 started
+2025-07-22 16:43:42,828 - PID:22512 - MainThread - INFO - [capture_0_1_1753181922] Starting capture for 10 seconds...
+2025-07-22 16:43:42,865 - PID:2092 - MainThread - INFO - Prediction worker 0 started
+2025-07-22 16:43:42,881 - PID:17108 - MainThread - INFO - Prediction worker 1 started
+2025-07-22 16:43:42,899 - PID:1636 - MainThread - INFO - Result collector started
+2025-07-22 16:43:42,905 - PID:27468 - MainThread - INFO - Stats reporter started
+2025-07-22 16:43:53,383 - PID:22512 - MainThread - INFO - [capture_0_1_1753181922] Capture successful: 834852 bytes
+2025-07-22 16:43:53,384 - PID:22512 - MainThread - INFO - [capture_0_1_1753181922] Queued for conversion
+2025-07-22 16:43:53,384 - PID:6804 - MainThread - INFO - [capture_0_1_1753181922] Converting PCAP to CSV
+2025-07-22 16:43:53,384 - PID:6804 - MainThread - INFO - [capture_0_1_1753181922] Converting PCAP to CSV...
+2025-07-22 16:43:54,256 - PID:6804 - MainThread - INFO - [capture_0_1_1753181922] CSV conversion successful: 108 flows
+2025-07-22 16:43:54,256 - PID:6804 - MainThread - INFO - [capture_0_1_1753181922] Queued for prediction
+2025-07-22 16:43:54,256 - PID:2092 - MainThread - INFO - [capture_0_1_1753181922] Processing predictions
+2025-07-22 16:43:54,257 - PID:2092 - MainThread - INFO - [capture_0_1_1753181922] Processing predictions...
+2025-07-22 16:43:54,258 - PID:2092 - MainThread - INFO - [capture_0_1_1753181922] Processing 100 flows (from 108 total)
+2025-07-22 16:43:54,385 - PID:22512 - MainThread - INFO - [capture_0_2_1753181934] Starting capture for 10 seconds...
+2025-07-22 16:44:04,992 - PID:22512 - MainThread - INFO - [capture_0_2_1753181934] Capture successful: 68544 bytes
+2025-07-22 16:44:04,992 - PID:22512 - MainThread - INFO - [capture_0_2_1753181934] Queued for conversion
+2025-07-22 16:44:04,993 - PID:26296 - MainThread - INFO - [capture_0_2_1753181934] Converting PCAP to CSV
+2025-07-22 16:44:04,993 - PID:26296 - MainThread - INFO - [capture_0_2_1753181934] Converting PCAP to CSV...
+2025-07-22 16:44:05,968 - PID:26296 - MainThread - INFO - [capture_0_2_1753181934] CSV conversion successful: 27 flows
+2025-07-22 16:44:05,968 - PID:26296 - MainThread - INFO - [capture_0_2_1753181934] Queued for prediction
+2025-07-22 16:44:05,968 - PID:17108 - MainThread - INFO - [capture_0_2_1753181934] Processing predictions
+2025-07-22 16:44:05,969 - PID:17108 - MainThread - INFO - [capture_0_2_1753181934] Processing predictions...
+2025-07-22 16:44:05,969 - PID:17108 - MainThread - INFO - [capture_0_2_1753181934] Processing 27 flows (from 27 total)
+2025-07-22 16:44:05,994 - PID:22512 - MainThread - INFO - [capture_0_3_1753181945] Starting capture for 10 seconds...
+2025-07-22 16:44:12,907 - PID:27468 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-22 16:44:12,907 - PID:27468 - MainThread - INFO - Runtime: 31s
+2025-07-22 16:44:12,907 - PID:27468 - MainThread - INFO - Cycles completed: 0
+2025-07-22 16:44:12,907 - PID:27468 - MainThread - INFO - Total flows processed: 0
+2025-07-22 16:44:12,908 - PID:27468 - MainThread - INFO - Attacks detected: 0
+2025-07-22 16:44:12,908 - PID:27468 - MainThread - INFO - Errors: 0
+2025-07-22 16:44:13,750 - PID:2092 - MainThread - INFO - [capture_0_1_1753181922] Results sent to collector
+2025-07-22 16:44:13,752 - PID:1636 - MainThread - INFO - [capture_0_1_1753181922] RESULTS:
+2025-07-22 16:44:13,752 - PID:1636 - MainThread - INFO - [capture_0_1_1753181922]   Flows: 100 (from 108)
+2025-07-22 16:44:13,752 - PID:1636 - MainThread - INFO - [capture_0_1_1753181922]   Normal: 0 (0.0%)
+2025-07-22 16:44:13,752 - PID:1636 - MainThread - INFO - [capture_0_1_1753181922]   Attack: 0 (0.0%)
+2025-07-22 16:44:13,752 - PID:1636 - MainThread - INFO - [capture_0_1_1753181922]   Errors: 100 (100.0%)
+2025-07-22 16:44:13,940 - PID:17108 - MainThread - INFO - [capture_0_2_1753181934] Results sent to collector
+2025-07-22 16:44:13,941 - PID:1636 - MainThread - INFO - [capture_0_2_1753181934] RESULTS:
+2025-07-22 16:44:13,941 - PID:1636 - MainThread - INFO - [capture_0_2_1753181934]   Flows: 27
+2025-07-22 16:44:13,941 - PID:1636 - MainThread - INFO - [capture_0_2_1753181934]   Normal: 0 (0.0%)
+2025-07-22 16:44:13,941 - PID:1636 - MainThread - INFO - [capture_0_2_1753181934]   Attack: 0 (0.0%)
+2025-07-22 16:44:13,941 - PID:1636 - MainThread - INFO - [capture_0_2_1753181934]   Errors: 27 (100.0%)
+2025-07-22 16:44:16,450 - PID:22512 - MainThread - INFO - [capture_0_3_1753181945] Capture successful: 56033 bytes
+2025-07-22 16:44:16,451 - PID:22512 - MainThread - INFO - [capture_0_3_1753181945] Queued for conversion
+2025-07-22 16:44:16,451 - PID:6804 - MainThread - INFO - [capture_0_3_1753181945] Converting PCAP to CSV
+2025-07-22 16:44:16,451 - PID:6804 - MainThread - INFO - [capture_0_3_1753181945] Converting PCAP to CSV...
+2025-07-22 16:44:17,237 - PID:6804 - MainThread - INFO - [capture_0_3_1753181945] CSV conversion successful: 26 flows
+2025-07-22 16:44:17,237 - PID:6804 - MainThread - INFO - [capture_0_3_1753181945] Queued for prediction
+2025-07-22 16:44:17,238 - PID:2092 - MainThread - INFO - [capture_0_3_1753181945] Processing predictions
+2025-07-22 16:44:17,238 - PID:2092 - MainThread - INFO - [capture_0_3_1753181945] Processing predictions...
+2025-07-22 16:44:17,238 - PID:2092 - MainThread - INFO - [capture_0_3_1753181945] Processing 26 flows (from 26 total)
+2025-07-22 16:44:17,452 - PID:22512 - MainThread - INFO - [capture_0_4_1753181957] Starting capture for 10 seconds...
+2025-07-22 16:44:20,750 - PID:2092 - MainThread - INFO - [capture_0_3_1753181945] Results sent to collector
+2025-07-22 16:44:20,751 - PID:1636 - MainThread - INFO - [capture_0_3_1753181945] RESULTS:
+2025-07-22 16:44:20,751 - PID:1636 - MainThread - INFO - [capture_0_3_1753181945]   Flows: 26
+2025-07-22 16:44:20,751 - PID:1636 - MainThread - INFO - [capture_0_3_1753181945]   Normal: 0 (0.0%)
+2025-07-22 16:44:20,751 - PID:1636 - MainThread - INFO - [capture_0_3_1753181945]   Attack: 0 (0.0%)
+2025-07-22 16:44:20,751 - PID:1636 - MainThread - INFO - [capture_0_3_1753181945]   Errors: 26 (100.0%)
+2025-07-22 16:44:27,977 - PID:22512 - MainThread - INFO - [capture_0_4_1753181957] Capture successful: 100451 bytes
+2025-07-22 16:44:27,977 - PID:22512 - MainThread - INFO - [capture_0_4_1753181957] Queued for conversion
+2025-07-22 16:44:27,977 - PID:26296 - MainThread - INFO - [capture_0_4_1753181957] Converting PCAP to CSV
+2025-07-22 16:44:27,977 - PID:26296 - MainThread - INFO - [capture_0_4_1753181957] Converting PCAP to CSV...
+2025-07-22 16:44:28,713 - PID:26296 - MainThread - INFO - [capture_0_4_1753181957] CSV conversion successful: 33 flows
+2025-07-22 16:44:28,713 - PID:26296 - MainThread - INFO - [capture_0_4_1753181957] Queued for prediction
+2025-07-22 16:44:28,713 - PID:17108 - MainThread - INFO - [capture_0_4_1753181957] Processing predictions
+2025-07-22 16:44:28,714 - PID:17108 - MainThread - INFO - [capture_0_4_1753181957] Processing predictions...
+2025-07-22 16:44:28,714 - PID:17108 - MainThread - INFO - [capture_0_4_1753181957] Processing 33 flows (from 33 total)
+2025-07-22 16:44:28,978 - PID:22512 - MainThread - INFO - [capture_0_5_1753181968] Starting capture for 10 seconds...
+2025-07-22 16:44:33,496 - PID:17108 - MainThread - INFO - [capture_0_4_1753181957] Results sent to collector
+2025-07-22 16:44:33,497 - PID:1636 - MainThread - INFO - [capture_0_4_1753181957] RESULTS:
+2025-07-22 16:44:33,497 - PID:1636 - MainThread - INFO - [capture_0_4_1753181957]   Flows: 33
+2025-07-22 16:44:33,497 - PID:1636 - MainThread - INFO - [capture_0_4_1753181957]   Normal: 0 (0.0%)
+2025-07-22 16:44:33,497 - PID:1636 - MainThread - INFO - [capture_0_4_1753181957]   Attack: 0 (0.0%)
+2025-07-22 16:44:33,498 - PID:1636 - MainThread - INFO - [capture_0_4_1753181957]   Errors: 33 (100.0%)
+2025-07-22 16:44:39,374 - PID:22512 - MainThread - INFO - [capture_0_5_1753181968] Capture successful: 23295 bytes
+2025-07-22 16:44:39,375 - PID:22512 - MainThread - INFO - [capture_0_5_1753181968] Queued for conversion
+2025-07-22 16:44:39,375 - PID:6804 - MainThread - INFO - [capture_0_5_1753181968] Converting PCAP to CSV
+2025-07-22 16:44:39,375 - PID:6804 - MainThread - INFO - [capture_0_5_1753181968] Converting PCAP to CSV...
+2025-07-22 16:44:40,158 - PID:6804 - MainThread - INFO - [capture_0_5_1753181968] CSV conversion successful: 17 flows
+2025-07-22 16:44:40,158 - PID:6804 - MainThread - INFO - [capture_0_5_1753181968] Queued for prediction
+2025-07-22 16:44:40,159 - PID:2092 - MainThread - INFO - [capture_0_5_1753181968] Processing predictions
+2025-07-22 16:44:40,159 - PID:2092 - MainThread - INFO - [capture_0_5_1753181968] Processing predictions...
+2025-07-22 16:44:40,160 - PID:2092 - MainThread - INFO - [capture_0_5_1753181968] Processing 17 flows (from 17 total)
+2025-07-22 16:44:40,375 - PID:22512 - MainThread - INFO - [capture_0_6_1753181980] Starting capture for 10 seconds...
+2025-07-22 16:44:42,674 - PID:2092 - MainThread - INFO - [capture_0_5_1753181968] Results sent to collector
+2025-07-22 16:44:42,675 - PID:1636 - MainThread - INFO - [capture_0_5_1753181968] RESULTS:
+2025-07-22 16:44:42,675 - PID:1636 - MainThread - INFO - [capture_0_5_1753181968]   Flows: 17
+2025-07-22 16:44:42,675 - PID:1636 - MainThread - INFO - [capture_0_5_1753181968]   Normal: 0 (0.0%)
+2025-07-22 16:44:42,675 - PID:1636 - MainThread - INFO - [capture_0_5_1753181968]   Attack: 0 (0.0%)
+2025-07-22 16:44:42,676 - PID:1636 - MainThread - INFO - [capture_0_5_1753181968]   Errors: 17 (100.0%)
+2025-07-22 16:44:42,908 - PID:27468 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-22 16:44:42,908 - PID:27468 - MainThread - INFO - Runtime: 61s
+2025-07-22 16:44:42,908 - PID:27468 - MainThread - INFO - Cycles completed: 5
+2025-07-22 16:44:42,908 - PID:27468 - MainThread - INFO - Total flows processed: 203
+2025-07-22 16:44:42,908 - PID:27468 - MainThread - INFO - Attacks detected: 0
+2025-07-22 16:44:42,909 - PID:27468 - MainThread - INFO - Errors: 203
+2025-07-22 16:44:42,909 - PID:27468 - MainThread - INFO - Average flows per cycle: 40.6
+2025-07-22 16:44:42,909 - PID:27468 - MainThread - INFO - Cycles per minute: 4.9
+2025-07-22 16:44:42,909 - PID:27468 - MainThread - INFO - Attack rate: 0.00%
+2025-07-22 16:44:50,779 - PID:22512 - MainThread - INFO - [capture_0_6_1753181980] Capture successful: 113388 bytes
+2025-07-22 16:44:50,779 - PID:22512 - MainThread - INFO - [capture_0_6_1753181980] Queued for conversion
+2025-07-22 16:44:50,779 - PID:26296 - MainThread - INFO - [capture_0_6_1753181980] Converting PCAP to CSV
+2025-07-22 16:44:50,780 - PID:26296 - MainThread - INFO - [capture_0_6_1753181980] Converting PCAP to CSV...
+2025-07-22 16:44:51,582 - PID:26296 - MainThread - INFO - [capture_0_6_1753181980] CSV conversion successful: 23 flows
+2025-07-22 16:44:51,582 - PID:26296 - MainThread - INFO - [capture_0_6_1753181980] Queued for prediction
+2025-07-22 16:44:51,582 - PID:2092 - MainThread - INFO - [capture_0_6_1753181980] Processing predictions
+2025-07-22 16:44:51,582 - PID:2092 - MainThread - INFO - [capture_0_6_1753181980] Processing predictions...
+2025-07-22 16:44:51,583 - PID:2092 - MainThread - INFO - [capture_0_6_1753181980] Processing 23 flows (from 23 total)
+2025-07-22 16:44:51,780 - PID:22512 - MainThread - INFO - [capture_0_7_1753181991] Starting capture for 10 seconds...
+2025-07-22 16:44:54,768 - PID:2092 - MainThread - INFO - [capture_0_6_1753181980] Results sent to collector
+2025-07-22 16:44:54,769 - PID:1636 - MainThread - INFO - [capture_0_6_1753181980] RESULTS:
+2025-07-22 16:44:54,769 - PID:1636 - MainThread - INFO - [capture_0_6_1753181980]   Flows: 23
+2025-07-22 16:44:54,769 - PID:1636 - MainThread - INFO - [capture_0_6_1753181980]   Normal: 0 (0.0%)
+2025-07-22 16:44:54,769 - PID:1636 - MainThread - INFO - [capture_0_6_1753181980]   Attack: 0 (0.0%)
+2025-07-22 16:44:54,770 - PID:1636 - MainThread - INFO - [capture_0_6_1753181980]   Errors: 23 (100.0%)
+2025-07-22 16:45:02,219 - PID:22512 - MainThread - INFO - [capture_0_7_1753181991] Capture successful: 75372 bytes
+2025-07-22 16:45:02,220 - PID:22512 - MainThread - INFO - [capture_0_7_1753181991] Queued for conversion
+2025-07-22 16:45:02,220 - PID:6804 - MainThread - INFO - [capture_0_7_1753181991] Converting PCAP to CSV
+2025-07-22 16:45:02,220 - PID:6804 - MainThread - INFO - [capture_0_7_1753181991] Converting PCAP to CSV...
+2025-07-22 16:45:02,974 - PID:6804 - MainThread - INFO - [capture_0_7_1753181991] CSV conversion successful: 23 flows
+2025-07-22 16:45:02,975 - PID:6804 - MainThread - INFO - [capture_0_7_1753181991] Queued for prediction
+2025-07-22 16:45:02,975 - PID:17108 - MainThread - INFO - [capture_0_7_1753181991] Processing predictions
+2025-07-22 16:45:02,975 - PID:17108 - MainThread - INFO - [capture_0_7_1753181991] Processing predictions...
+2025-07-22 16:45:02,975 - PID:17108 - MainThread - INFO - [capture_0_7_1753181991] Processing 23 flows (from 23 total)
+2025-07-22 16:45:03,221 - PID:22512 - MainThread - INFO - [capture_0_8_1753182003] Starting capture for 10 seconds...
+2025-07-22 16:45:06,589 - PID:17108 - MainThread - INFO - [capture_0_7_1753181991] Results sent to collector
+2025-07-22 16:45:06,590 - PID:1636 - MainThread - INFO - [capture_0_7_1753181991] RESULTS:
+2025-07-22 16:45:06,590 - PID:1636 - MainThread - INFO - [capture_0_7_1753181991]   Flows: 23
+2025-07-22 16:45:06,590 - PID:1636 - MainThread - INFO - [capture_0_7_1753181991]   Normal: 0 (0.0%)
+2025-07-22 16:45:06,591 - PID:1636 - MainThread - INFO - [capture_0_7_1753181991]   Attack: 0 (0.0%)
+2025-07-22 16:45:06,591 - PID:1636 - MainThread - INFO - [capture_0_7_1753181991]   Errors: 23 (100.0%)
+2025-07-22 16:45:12,909 - PID:27468 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-22 16:45:12,909 - PID:27468 - MainThread - INFO - Runtime: 91s
+2025-07-22 16:45:12,909 - PID:27468 - MainThread - INFO - Cycles completed: 7
+2025-07-22 16:45:12,910 - PID:27468 - MainThread - INFO - Total flows processed: 249
+2025-07-22 16:45:12,910 - PID:27468 - MainThread - INFO - Attacks detected: 0
+2025-07-22 16:45:12,910 - PID:27468 - MainThread - INFO - Errors: 249
+2025-07-22 16:45:12,910 - PID:27468 - MainThread - INFO - Average flows per cycle: 35.6
+2025-07-22 16:45:12,910 - PID:27468 - MainThread - INFO - Cycles per minute: 4.6
+2025-07-22 16:45:12,910 - PID:27468 - MainThread - INFO - Attack rate: 0.00%
+2025-07-22 16:45:13,736 - PID:22512 - MainThread - INFO - [capture_0_8_1753182003] Capture successful: 116166 bytes
+2025-07-22 16:45:13,737 - PID:22512 - MainThread - INFO - [capture_0_8_1753182003] Queued for conversion
+2025-07-22 16:45:13,737 - PID:26296 - MainThread - INFO - [capture_0_8_1753182003] Converting PCAP to CSV
+2025-07-22 16:45:13,737 - PID:26296 - MainThread - INFO - [capture_0_8_1753182003] Converting PCAP to CSV...
+2025-07-22 16:45:14,475 - PID:26296 - MainThread - INFO - [capture_0_8_1753182003] CSV conversion successful: 34 flows
+2025-07-22 16:45:14,475 - PID:26296 - MainThread - INFO - [capture_0_8_1753182003] Queued for prediction
+2025-07-22 16:45:14,476 - PID:2092 - MainThread - INFO - [capture_0_8_1753182003] Processing predictions
+2025-07-22 16:45:14,476 - PID:2092 - MainThread - INFO - [capture_0_8_1753182003] Processing predictions...
+2025-07-22 16:45:14,476 - PID:2092 - MainThread - INFO - [capture_0_8_1753182003] Processing 34 flows (from 34 total)
+2025-07-22 16:45:14,737 - PID:22512 - MainThread - INFO - [capture_0_9_1753182014] Starting capture for 10 seconds...
+2025-07-22 16:45:19,362 - PID:2092 - MainThread - INFO - [capture_0_8_1753182003] Results sent to collector
+2025-07-22 16:45:19,363 - PID:1636 - MainThread - INFO - [capture_0_8_1753182003] RESULTS:
+2025-07-22 16:45:19,363 - PID:1636 - MainThread - INFO - [capture_0_8_1753182003]   Flows: 34
+2025-07-22 16:45:19,364 - PID:1636 - MainThread - INFO - [capture_0_8_1753182003]   Normal: 0 (0.0%)
+2025-07-22 16:45:19,364 - PID:1636 - MainThread - INFO - [capture_0_8_1753182003]   Attack: 0 (0.0%)
+2025-07-22 16:45:19,364 - PID:1636 - MainThread - INFO - [capture_0_8_1753182003]   Errors: 34 (100.0%)
+2025-07-22 16:45:25,159 - PID:22512 - MainThread - INFO - [capture_0_9_1753182014] Capture successful: 215153 bytes
+2025-07-22 16:45:25,159 - PID:22512 - MainThread - INFO - [capture_0_9_1753182014] Queued for conversion
+2025-07-22 16:45:25,160 - PID:6804 - MainThread - INFO - [capture_0_9_1753182014] Converting PCAP to CSV
+2025-07-22 16:45:25,160 - PID:6804 - MainThread - INFO - [capture_0_9_1753182014] Converting PCAP to CSV...
+2025-07-22 16:45:25,882 - PID:6804 - MainThread - INFO - [capture_0_9_1753182014] CSV conversion successful: 60 flows
+2025-07-22 16:45:25,882 - PID:6804 - MainThread - INFO - [capture_0_9_1753182014] Queued for prediction
+2025-07-22 16:45:25,882 - PID:17108 - MainThread - INFO - [capture_0_9_1753182014] Processing predictions
+2025-07-22 16:45:25,882 - PID:17108 - MainThread - INFO - [capture_0_9_1753182014] Processing predictions...
+2025-07-22 16:45:25,883 - PID:17108 - MainThread - INFO - [capture_0_9_1753182014] Processing 60 flows (from 60 total)
+2025-07-22 16:45:26,160 - PID:22512 - MainThread - INFO - [capture_0_10_1753182026] Starting capture for 10 seconds...
+2025-07-22 16:45:34,290 - PID:17108 - MainThread - INFO - [capture_0_9_1753182014] Results sent to collector
+2025-07-22 16:45:34,291 - PID:1636 - MainThread - INFO - [capture_0_9_1753182014] RESULTS:
+2025-07-22 16:45:34,291 - PID:1636 - MainThread - INFO - [capture_0_9_1753182014]   Flows: 60
+2025-07-22 16:45:34,291 - PID:1636 - MainThread - INFO - [capture_0_9_1753182014]   Normal: 0 (0.0%)
+2025-07-22 16:45:34,292 - PID:1636 - MainThread - INFO - [capture_0_9_1753182014]   Attack: 0 (0.0%)
+2025-07-22 16:45:34,292 - PID:1636 - MainThread - INFO - [capture_0_9_1753182014]   Errors: 60 (100.0%)
+2025-07-22 16:45:36,645 - PID:22512 - MainThread - INFO - [capture_0_10_1753182026] Capture successful: 125959 bytes
+2025-07-22 16:45:36,645 - PID:22512 - MainThread - INFO - [capture_0_10_1753182026] Queued for conversion
+2025-07-22 16:45:36,646 - PID:26296 - MainThread - INFO - [capture_0_10_1753182026] Converting PCAP to CSV
+2025-07-22 16:45:36,646 - PID:26296 - MainThread - INFO - [capture_0_10_1753182026] Converting PCAP to CSV...
+2025-07-22 16:45:37,400 - PID:26296 - MainThread - INFO - [capture_0_10_1753182026] CSV conversion successful: 27 flows
+2025-07-22 16:45:37,401 - PID:26296 - MainThread - INFO - [capture_0_10_1753182026] Queued for prediction
+2025-07-22 16:45:37,401 - PID:17108 - MainThread - INFO - [capture_0_10_1753182026] Processing predictions
+2025-07-22 16:45:37,401 - PID:17108 - MainThread - INFO - [capture_0_10_1753182026] Processing predictions...
+2025-07-22 16:45:37,402 - PID:17108 - MainThread - INFO - [capture_0_10_1753182026] Processing 27 flows (from 27 total)
+2025-07-22 16:45:37,646 - PID:22512 - MainThread - INFO - [capture_0_11_1753182037] Starting capture for 10 seconds...
+2025-07-22 16:45:41,407 - PID:17108 - MainThread - INFO - [capture_0_10_1753182026] Results sent to collector
+2025-07-22 16:45:41,408 - PID:1636 - MainThread - INFO - [capture_0_10_1753182026] RESULTS:
+2025-07-22 16:45:41,408 - PID:1636 - MainThread - INFO - [capture_0_10_1753182026]   Flows: 27
+2025-07-22 16:45:41,408 - PID:1636 - MainThread - INFO - [capture_0_10_1753182026]   Normal: 0 (0.0%)
+2025-07-22 16:45:41,408 - PID:1636 - MainThread - INFO - [capture_0_10_1753182026]   Attack: 0 (0.0%)
+2025-07-22 16:45:41,408 - PID:1636 - MainThread - INFO - [capture_0_10_1753182026]   Errors: 27 (100.0%)
+2025-07-22 16:45:42,910 - PID:27468 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-22 16:45:42,910 - PID:27468 - MainThread - INFO - Runtime: 121s
+2025-07-22 16:45:42,911 - PID:27468 - MainThread - INFO - Cycles completed: 10
+2025-07-22 16:45:42,911 - PID:27468 - MainThread - INFO - Total flows processed: 370
+2025-07-22 16:45:42,911 - PID:27468 - MainThread - INFO - Attacks detected: 0
+2025-07-22 16:45:42,911 - PID:27468 - MainThread - INFO - Errors: 370
+2025-07-22 16:45:42,911 - PID:27468 - MainThread - INFO - Average flows per cycle: 37.0
+2025-07-22 16:45:42,911 - PID:27468 - MainThread - INFO - Cycles per minute: 5.0
+2025-07-22 16:45:42,911 - PID:27468 - MainThread - INFO - Attack rate: 0.00%
+2025-07-22 16:45:48,006 - PID:22512 - MainThread - INFO - [capture_0_11_1753182037] Capture successful: 231775 bytes
+2025-07-22 16:45:48,007 - PID:22512 - MainThread - INFO - [capture_0_11_1753182037] Queued for conversion
+2025-07-22 16:45:48,007 - PID:6804 - MainThread - INFO - [capture_0_11_1753182037] Converting PCAP to CSV
+2025-07-22 16:45:48,007 - PID:6804 - MainThread - INFO - [capture_0_11_1753182037] Converting PCAP to CSV...
+2025-07-22 16:45:48,737 - PID:6804 - MainThread - INFO - [capture_0_11_1753182037] CSV conversion successful: 38 flows
+2025-07-22 16:45:48,738 - PID:6804 - MainThread - INFO - [capture_0_11_1753182037] Queued for prediction
+2025-07-22 16:45:48,738 - PID:2092 - MainThread - INFO - [capture_0_11_1753182037] Processing predictions
+2025-07-22 16:45:48,738 - PID:2092 - MainThread - INFO - [capture_0_11_1753182037] Processing predictions...
+2025-07-22 16:45:48,739 - PID:2092 - MainThread - INFO - [capture_0_11_1753182037] Processing 38 flows (from 38 total)
+2025-07-22 16:45:49,007 - PID:22512 - MainThread - INFO - [capture_0_12_1753182049] Starting capture for 10 seconds...
+2025-07-22 16:45:53,921 - PID:2092 - MainThread - INFO - [capture_0_11_1753182037] Results sent to collector
+2025-07-22 16:45:53,922 - PID:1636 - MainThread - INFO - [capture_0_11_1753182037] RESULTS:
+2025-07-22 16:45:53,922 - PID:1636 - MainThread - INFO - [capture_0_11_1753182037]   Flows: 38
+2025-07-22 16:45:53,922 - PID:1636 - MainThread - INFO - [capture_0_11_1753182037]   Normal: 0 (0.0%)
+2025-07-22 16:45:53,922 - PID:1636 - MainThread - INFO - [capture_0_11_1753182037]   Attack: 0 (0.0%)
+2025-07-22 16:45:53,922 - PID:1636 - MainThread - INFO - [capture_0_11_1753182037]   Errors: 38 (100.0%)
+2025-07-22 16:45:59,582 - PID:22512 - MainThread - INFO - [capture_0_12_1753182049] Capture successful: 59389 bytes
+2025-07-22 16:45:59,583 - PID:22512 - MainThread - INFO - [capture_0_12_1753182049] Queued for conversion
+2025-07-22 16:45:59,583 - PID:26296 - MainThread - INFO - [capture_0_12_1753182049] Converting PCAP to CSV
+2025-07-22 16:45:59,583 - PID:26296 - MainThread - INFO - [capture_0_12_1753182049] Converting PCAP to CSV...
+2025-07-22 16:46:00,309 - PID:26296 - MainThread - INFO - [capture_0_12_1753182049] CSV conversion successful: 25 flows
+2025-07-22 16:46:00,309 - PID:26296 - MainThread - INFO - [capture_0_12_1753182049] Queued for prediction
+2025-07-22 16:46:00,309 - PID:17108 - MainThread - INFO - [capture_0_12_1753182049] Processing predictions
+2025-07-22 16:46:00,309 - PID:17108 - MainThread - INFO - [capture_0_12_1753182049] Processing predictions...
+2025-07-22 16:46:00,310 - PID:17108 - MainThread - INFO - [capture_0_12_1753182049] Processing 25 flows (from 25 total)
+2025-07-22 16:46:00,584 - PID:22512 - MainThread - INFO - [capture_0_13_1753182060] Starting capture for 10 seconds...
+2025-07-22 16:46:03,730 - PID:17108 - MainThread - INFO - [capture_0_12_1753182049] Results sent to collector
+2025-07-22 16:46:03,731 - PID:1636 - MainThread - INFO - [capture_0_12_1753182049] RESULTS:
+2025-07-22 16:46:03,732 - PID:1636 - MainThread - INFO - [capture_0_12_1753182049]   Flows: 25
+2025-07-22 16:46:03,732 - PID:1636 - MainThread - INFO - [capture_0_12_1753182049]   Normal: 0 (0.0%)
+2025-07-22 16:46:03,732 - PID:1636 - MainThread - INFO - [capture_0_12_1753182049]   Attack: 0 (0.0%)
+2025-07-22 16:46:03,732 - PID:1636 - MainThread - INFO - [capture_0_12_1753182049]   Errors: 25 (100.0%)
+2025-07-22 16:46:10,916 - PID:22512 - MainThread - INFO - [capture_0_13_1753182060] Capture successful: 163008 bytes
+2025-07-22 16:46:10,917 - PID:22512 - MainThread - INFO - [capture_0_13_1753182060] Queued for conversion
+2025-07-22 16:46:10,917 - PID:6804 - MainThread - INFO - [capture_0_13_1753182060] Converting PCAP to CSV
+2025-07-22 16:46:10,917 - PID:6804 - MainThread - INFO - [capture_0_13_1753182060] Converting PCAP to CSV...
+2025-07-22 16:46:11,788 - PID:6804 - MainThread - INFO - [capture_0_13_1753182060] CSV conversion successful: 76 flows
+2025-07-22 16:46:11,788 - PID:6804 - MainThread - INFO - [capture_0_13_1753182060] Queued for prediction
+2025-07-22 16:46:11,789 - PID:17108 - MainThread - INFO - [capture_0_13_1753182060] Processing predictions
+2025-07-22 16:46:11,789 - PID:17108 - MainThread - INFO - [capture_0_13_1753182060] Processing predictions...
+2025-07-22 16:46:11,790 - PID:17108 - MainThread - INFO - [capture_0_13_1753182060] Processing 76 flows (from 76 total)
+2025-07-22 16:46:11,918 - PID:22512 - MainThread - INFO - [capture_0_14_1753182071] Starting capture for 10 seconds...
+2025-07-22 16:46:12,912 - PID:27468 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-22 16:46:12,912 - PID:27468 - MainThread - INFO - Runtime: 151s
+2025-07-22 16:46:12,913 - PID:27468 - MainThread - INFO - Cycles completed: 12
+2025-07-22 16:46:12,913 - PID:27468 - MainThread - INFO - Total flows processed: 433
+2025-07-22 16:46:12,913 - PID:27468 - MainThread - INFO - Attacks detected: 0
+2025-07-22 16:46:12,913 - PID:27468 - MainThread - INFO - Errors: 433
+2025-07-22 16:46:12,913 - PID:27468 - MainThread - INFO - Average flows per cycle: 36.1
+2025-07-22 16:46:12,913 - PID:27468 - MainThread - INFO - Cycles per minute: 4.8
+2025-07-22 16:46:12,914 - PID:27468 - MainThread - INFO - Attack rate: 0.00%
+2025-07-22 16:46:22,010 - PID:17108 - MainThread - INFO - [capture_0_13_1753182060] Results sent to collector
+2025-07-22 16:46:22,011 - PID:1636 - MainThread - INFO - [capture_0_13_1753182060] RESULTS:
+2025-07-22 16:46:22,011 - PID:1636 - MainThread - INFO - [capture_0_13_1753182060]   Flows: 76
+2025-07-22 16:46:22,011 - PID:1636 - MainThread - INFO - [capture_0_13_1753182060]   Normal: 0 (0.0%)
+2025-07-22 16:46:22,011 - PID:1636 - MainThread - INFO - [capture_0_13_1753182060]   Attack: 0 (0.0%)
+2025-07-22 16:46:22,011 - PID:1636 - MainThread - INFO - [capture_0_13_1753182060]   Errors: 76 (100.0%)
+2025-07-22 16:46:22,321 - PID:22512 - MainThread - INFO - [capture_0_14_1753182071] Capture successful: 2225918 bytes
+2025-07-22 16:46:22,321 - PID:22512 - MainThread - INFO - [capture_0_14_1753182071] Queued for conversion
+2025-07-22 16:46:22,322 - PID:26296 - MainThread - INFO - [capture_0_14_1753182071] Converting PCAP to CSV
+2025-07-22 16:46:22,322 - PID:26296 - MainThread - INFO - [capture_0_14_1753182071] Converting PCAP to CSV...
+2025-07-22 16:46:23,234 - PID:26296 - MainThread - INFO - [capture_0_14_1753182071] CSV conversion successful: 55 flows
+2025-07-22 16:46:23,235 - PID:26296 - MainThread - INFO - [capture_0_14_1753182071] Queued for prediction
+2025-07-22 16:46:23,235 - PID:2092 - MainThread - INFO - [capture_0_14_1753182071] Processing predictions
+2025-07-22 16:46:23,235 - PID:2092 - MainThread - INFO - [capture_0_14_1753182071] Processing predictions...
+2025-07-22 16:46:23,236 - PID:2092 - MainThread - INFO - [capture_0_14_1753182071] Processing 55 flows (from 55 total)
+2025-07-22 16:46:23,322 - PID:22512 - MainThread - INFO - [capture_0_15_1753182083] Starting capture for 10 seconds...
+2025-07-22 16:46:30,950 - PID:2092 - MainThread - INFO - [capture_0_14_1753182071] Results sent to collector
+2025-07-22 16:46:30,952 - PID:1636 - MainThread - INFO - [capture_0_14_1753182071] RESULTS:
+2025-07-22 16:46:30,952 - PID:1636 - MainThread - INFO - [capture_0_14_1753182071]   Flows: 55
+2025-07-22 16:46:30,952 - PID:1636 - MainThread - INFO - [capture_0_14_1753182071]   Normal: 0 (0.0%)
+2025-07-22 16:46:30,952 - PID:1636 - MainThread - INFO - [capture_0_14_1753182071]   Attack: 0 (0.0%)
+2025-07-22 16:46:30,952 - PID:1636 - MainThread - INFO - [capture_0_14_1753182071]   Errors: 55 (100.0%)
+2025-07-22 16:46:33,661 - PID:22512 - MainThread - INFO - [capture_0_15_1753182083] Capture successful: 109813 bytes
+2025-07-22 16:46:33,661 - PID:22512 - MainThread - INFO - [capture_0_15_1753182083] Queued for conversion
+2025-07-22 16:46:33,661 - PID:6804 - MainThread - INFO - [capture_0_15_1753182083] Converting PCAP to CSV
+2025-07-22 16:46:33,662 - PID:6804 - MainThread - INFO - [capture_0_15_1753182083] Converting PCAP to CSV...
+2025-07-22 16:46:34,443 - PID:6804 - MainThread - INFO - [capture_0_15_1753182083] CSV conversion successful: 45 flows
+2025-07-22 16:46:34,444 - PID:6804 - MainThread - INFO - [capture_0_15_1753182083] Queued for prediction
+2025-07-22 16:46:34,444 - PID:2092 - MainThread - INFO - [capture_0_15_1753182083] Processing predictions
+2025-07-22 16:46:34,444 - PID:2092 - MainThread - INFO - [capture_0_15_1753182083] Processing predictions...
+2025-07-22 16:46:34,445 - PID:2092 - MainThread - INFO - [capture_0_15_1753182083] Processing 45 flows (from 45 total)
+2025-07-22 16:46:34,662 - PID:22512 - MainThread - INFO - [capture_0_16_1753182094] Starting capture for 10 seconds...
+2025-07-22 16:46:40,707 - PID:2092 - MainThread - INFO - [capture_0_15_1753182083] Results sent to collector
+2025-07-22 16:46:40,708 - PID:1636 - MainThread - INFO - [capture_0_15_1753182083] RESULTS:
+2025-07-22 16:46:40,708 - PID:1636 - MainThread - INFO - [capture_0_15_1753182083]   Flows: 45
+2025-07-22 16:46:40,708 - PID:1636 - MainThread - INFO - [capture_0_15_1753182083]   Normal: 0 (0.0%)
+2025-07-22 16:46:40,709 - PID:1636 - MainThread - INFO - [capture_0_15_1753182083]   Attack: 0 (0.0%)
+2025-07-22 16:46:40,709 - PID:1636 - MainThread - INFO - [capture_0_15_1753182083]   Errors: 45 (100.0%)
+2025-07-22 16:46:42,915 - PID:27468 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-22 16:46:42,915 - PID:27468 - MainThread - INFO - Runtime: 181s
+2025-07-22 16:46:42,915 - PID:27468 - MainThread - INFO - Cycles completed: 15
+2025-07-22 16:46:42,915 - PID:27468 - MainThread - INFO - Total flows processed: 609
+2025-07-22 16:46:42,916 - PID:27468 - MainThread - INFO - Attacks detected: 0
+2025-07-22 16:46:42,916 - PID:27468 - MainThread - INFO - Errors: 609
+2025-07-22 16:46:42,916 - PID:27468 - MainThread - INFO - Average flows per cycle: 40.6
+2025-07-22 16:46:42,916 - PID:27468 - MainThread - INFO - Cycles per minute: 5.0
+2025-07-22 16:46:42,916 - PID:27468 - MainThread - INFO - Attack rate: 0.00%
+2025-07-22 16:46:45,216 - PID:22512 - MainThread - INFO - [capture_0_16_1753182094] Capture successful: 92619 bytes
+2025-07-22 16:46:45,217 - PID:22512 - MainThread - INFO - [capture_0_16_1753182094] Queued for conversion
+2025-07-22 16:46:45,217 - PID:26296 - MainThread - INFO - [capture_0_16_1753182094] Converting PCAP to CSV
+2025-07-22 16:46:45,217 - PID:26296 - MainThread - INFO - [capture_0_16_1753182094] Converting PCAP to CSV...
+2025-07-22 16:46:45,947 - PID:26296 - MainThread - INFO - [capture_0_16_1753182094] CSV conversion successful: 32 flows
+2025-07-22 16:46:45,947 - PID:26296 - MainThread - INFO - [capture_0_16_1753182094] Queued for prediction
+2025-07-22 16:46:45,947 - PID:17108 - MainThread - INFO - [capture_0_16_1753182094] Processing predictions
+2025-07-22 16:46:45,947 - PID:17108 - MainThread - INFO - [capture_0_16_1753182094] Processing predictions...
+2025-07-22 16:46:45,948 - PID:17108 - MainThread - INFO - [capture_0_16_1753182094] Processing 32 flows (from 32 total)
+2025-07-22 16:46:46,217 - PID:22512 - MainThread - INFO - [capture_0_17_1753182106] Starting capture for 10 seconds...
+2025-07-22 16:46:50,306 - PID:17108 - MainThread - INFO - [capture_0_16_1753182094] Results sent to collector
+2025-07-22 16:46:50,307 - PID:1636 - MainThread - INFO - [capture_0_16_1753182094] RESULTS:
+2025-07-22 16:46:50,307 - PID:1636 - MainThread - INFO - [capture_0_16_1753182094]   Flows: 32
+2025-07-22 16:46:50,308 - PID:1636 - MainThread - INFO - [capture_0_16_1753182094]   Normal: 0 (0.0%)
+2025-07-22 16:46:50,308 - PID:1636 - MainThread - INFO - [capture_0_16_1753182094]   Attack: 0 (0.0%)
+2025-07-22 16:46:50,308 - PID:1636 - MainThread - INFO - [capture_0_16_1753182094]   Errors: 32 (100.0%)
+2025-07-22 16:46:56,611 - PID:22512 - MainThread - INFO - [capture_0_17_1753182106] Capture successful: 602162 bytes
+2025-07-22 16:46:56,612 - PID:22512 - MainThread - INFO - [capture_0_17_1753182106] Queued for conversion
+2025-07-22 16:46:56,612 - PID:6804 - MainThread - INFO - [capture_0_17_1753182106] Converting PCAP to CSV
+2025-07-22 16:46:56,612 - PID:6804 - MainThread - INFO - [capture_0_17_1753182106] Converting PCAP to CSV...
+2025-07-22 16:46:57,433 - PID:6804 - MainThread - INFO - [capture_0_17_1753182106] CSV conversion successful: 112 flows
+2025-07-22 16:46:57,434 - PID:6804 - MainThread - INFO - [capture_0_17_1753182106] Queued for prediction
+2025-07-22 16:46:57,434 - PID:17108 - MainThread - INFO - [capture_0_17_1753182106] Processing predictions
+2025-07-22 16:46:57,434 - PID:17108 - MainThread - INFO - [capture_0_17_1753182106] Processing predictions...
+2025-07-22 16:46:57,435 - PID:17108 - MainThread - INFO - [capture_0_17_1753182106] Processing 100 flows (from 112 total)
+2025-07-22 16:46:57,613 - PID:22512 - MainThread - INFO - [capture_0_18_1753182117] Starting capture for 10 seconds...
+2025-07-22 16:47:08,248 - PID:22512 - MainThread - INFO - [capture_0_18_1753182117] Capture successful: 127626 bytes
+2025-07-22 16:47:08,249 - PID:22512 - MainThread - INFO - [capture_0_18_1753182117] Queued for conversion
+2025-07-22 16:47:08,249 - PID:26296 - MainThread - INFO - [capture_0_18_1753182117] Converting PCAP to CSV
+2025-07-22 16:47:08,249 - PID:26296 - MainThread - INFO - [capture_0_18_1753182117] Converting PCAP to CSV...
+2025-07-22 16:47:09,091 - PID:26296 - MainThread - INFO - [capture_0_18_1753182117] CSV conversion successful: 49 flows
+2025-07-22 16:47:09,091 - PID:26296 - MainThread - INFO - [capture_0_18_1753182117] Queued for prediction
+2025-07-22 16:47:09,092 - PID:2092 - MainThread - INFO - [capture_0_18_1753182117] Processing predictions
+2025-07-22 16:47:09,092 - PID:2092 - MainThread - INFO - [capture_0_18_1753182117] Processing predictions...
+2025-07-22 16:47:09,093 - PID:2092 - MainThread - INFO - [capture_0_18_1753182117] Processing 49 flows (from 49 total)
+2025-07-22 16:47:09,250 - PID:22512 - MainThread - INFO - [capture_0_19_1753182129] Starting capture for 10 seconds...
+2025-07-22 16:47:11,948 - PID:17108 - MainThread - INFO - [capture_0_17_1753182106] Results sent to collector
+2025-07-22 16:47:11,949 - PID:1636 - MainThread - INFO - [capture_0_17_1753182106] RESULTS:
+2025-07-22 16:47:11,950 - PID:1636 - MainThread - INFO - [capture_0_17_1753182106]   Flows: 100 (from 112)
+2025-07-22 16:47:11,950 - PID:1636 - MainThread - INFO - [capture_0_17_1753182106]   Normal: 0 (0.0%)
+2025-07-22 16:47:11,950 - PID:1636 - MainThread - INFO - [capture_0_17_1753182106]   Attack: 0 (0.0%)
+2025-07-22 16:47:11,950 - PID:1636 - MainThread - INFO - [capture_0_17_1753182106]   Errors: 100 (100.0%)
+2025-07-22 16:47:12,916 - PID:27468 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-22 16:47:12,917 - PID:27468 - MainThread - INFO - Runtime: 211s
+2025-07-22 16:47:12,917 - PID:27468 - MainThread - INFO - Cycles completed: 17
+2025-07-22 16:47:12,917 - PID:27468 - MainThread - INFO - Total flows processed: 741
+2025-07-22 16:47:12,917 - PID:27468 - MainThread - INFO - Attacks detected: 0
+2025-07-22 16:47:12,917 - PID:27468 - MainThread - INFO - Errors: 741
+2025-07-22 16:47:12,917 - PID:27468 - MainThread - INFO - Average flows per cycle: 43.6
+2025-07-22 16:47:12,917 - PID:27468 - MainThread - INFO - Cycles per minute: 4.8
+2025-07-22 16:47:12,918 - PID:27468 - MainThread - INFO - Attack rate: 0.00%
+2025-07-22 16:47:16,387 - PID:2092 - MainThread - INFO - [capture_0_18_1753182117] Results sent to collector
+2025-07-22 16:47:16,388 - PID:1636 - MainThread - INFO - [capture_0_18_1753182117] RESULTS:
+2025-07-22 16:47:16,388 - PID:1636 - MainThread - INFO - [capture_0_18_1753182117]   Flows: 49
+2025-07-22 16:47:16,389 - PID:1636 - MainThread - INFO - [capture_0_18_1753182117]   Normal: 0 (0.0%)
+2025-07-22 16:47:16,389 - PID:1636 - MainThread - INFO - [capture_0_18_1753182117]   Attack: 0 (0.0%)
+2025-07-22 16:47:16,389 - PID:1636 - MainThread - INFO - [capture_0_18_1753182117]   Errors: 49 (100.0%)
+2025-07-22 16:47:19,815 - PID:22512 - MainThread - INFO - [capture_0_19_1753182129] Capture successful: 273380 bytes
+2025-07-22 16:47:19,815 - PID:22512 - MainThread - INFO - [capture_0_19_1753182129] Queued for conversion
+2025-07-22 16:47:19,816 - PID:6804 - MainThread - INFO - [capture_0_19_1753182129] Converting PCAP to CSV
+2025-07-22 16:47:19,816 - PID:6804 - MainThread - INFO - [capture_0_19_1753182129] Converting PCAP to CSV...
+2025-07-22 16:47:20,594 - PID:6804 - MainThread - INFO - [capture_0_19_1753182129] CSV conversion successful: 39 flows
+2025-07-22 16:47:20,594 - PID:6804 - MainThread - INFO - [capture_0_19_1753182129] Queued for prediction
+2025-07-22 16:47:20,594 - PID:2092 - MainThread - INFO - [capture_0_19_1753182129] Processing predictions
+2025-07-22 16:47:20,594 - PID:2092 - MainThread - INFO - [capture_0_19_1753182129] Processing predictions...
+2025-07-22 16:47:20,595 - PID:2092 - MainThread - INFO - [capture_0_19_1753182129] Processing 39 flows (from 39 total)
+2025-07-22 16:47:20,817 - PID:22512 - MainThread - INFO - [capture_0_20_1753182140] Starting capture for 10 seconds...
+2025-07-22 16:47:25,944 - PID:2092 - MainThread - INFO - [capture_0_19_1753182129] Results sent to collector
+2025-07-22 16:47:25,946 - PID:1636 - MainThread - INFO - [capture_0_19_1753182129] RESULTS:
+2025-07-22 16:47:25,946 - PID:1636 - MainThread - INFO - [capture_0_19_1753182129]   Flows: 39
+2025-07-22 16:47:25,946 - PID:1636 - MainThread - INFO - [capture_0_19_1753182129]   Normal: 0 (0.0%)
+2025-07-22 16:47:25,946 - PID:1636 - MainThread - INFO - [capture_0_19_1753182129]   Attack: 0 (0.0%)
+2025-07-22 16:47:25,946 - PID:1636 - MainThread - INFO - [capture_0_19_1753182129]   Errors: 39 (100.0%)
+2025-07-22 16:47:30,778 - PID:22512 - MainThread - ERROR - [capture_0_20_1753182140] Capture error: Command '['tshark', '-i', 'Ethernet', '-a', 'duration:10', '-f', 'not (host localhost and port 8080)', '-F', 'pcap', '-w', 'temp_processing\\capture_0_20_1753182140\\capture_0_20_1753182140_20250722_164720.pcap', '-q']' returned non-zero exit status 3221225786.
+2025-07-22 16:47:30,778 - PID:22512 - MainThread - WARNING - [capture_0_20_1753182140] Capture failed or empty
+2025-07-23 23:39:58,678 - PID:24228 - MainThread - INFO - === Starting Multiprocessing Network Intrusion Detection System ===
+2025-07-23 23:39:58,704 - PID:24228 - MainThread - INFO - Configuration:
+2025-07-23 23:39:58,705 - PID:24228 - MainThread - INFO -   - Capture processes: 1
+2025-07-23 23:39:58,705 - PID:24228 - MainThread - INFO -   - Conversion processes: 2
+2025-07-23 23:39:58,705 - PID:24228 - MainThread - INFO -   - Prediction processes: 2
+2025-07-23 23:39:58,705 - PID:24228 - MainThread - INFO -   - Interface: Ethernet
+2025-07-23 23:39:58,705 - PID:24228 - MainThread - INFO -   - Capture duration: 10s
+2025-07-23 23:39:58,705 - PID:24228 - MainThread - INFO -   - Endpoint: http://localhost:8000/predict/
+2025-07-23 23:39:58,721 - PID:24228 - MainThread - INFO - Started capture worker 0 (PID: 24328)
+2025-07-23 23:39:58,738 - PID:24228 - MainThread - INFO - Started conversion worker 0 (PID: 24300)
+2025-07-23 23:39:58,772 - PID:24228 - MainThread - INFO - Started conversion worker 1 (PID: 24268)
+2025-07-23 23:39:58,796 - PID:24228 - MainThread - INFO - Started prediction worker 0 (PID: 22892)
+2025-07-23 23:39:58,815 - PID:24228 - MainThread - INFO - Started prediction worker 1 (PID: 8976)
+2025-07-23 23:39:58,838 - PID:24228 - MainThread - INFO - Started result collector (PID: 20668)
+2025-07-23 23:39:58,867 - PID:24228 - MainThread - INFO - Started stats reporter (PID: 11308)
+2025-07-23 23:39:59,667 - PID:24328 - MainThread - INFO - Capture worker 0 started
+2025-07-23 23:39:59,668 - PID:24328 - MainThread - INFO - [capture_0_1_1753293299] Starting capture for 10 seconds...
+2025-07-23 23:39:59,689 - PID:24300 - MainThread - INFO - Conversion worker 0 started
+2025-07-23 23:39:59,716 - PID:24268 - MainThread - INFO - Conversion worker 1 started
+2025-07-23 23:39:59,740 - PID:22892 - MainThread - INFO - Prediction worker 0 started
+2025-07-23 23:39:59,747 - PID:8976 - MainThread - INFO - Prediction worker 1 started
+2025-07-23 23:39:59,761 - PID:20668 - MainThread - INFO - Result collector started
+2025-07-23 23:39:59,782 - PID:11308 - MainThread - INFO - Stats reporter started
+2025-07-23 23:40:12,257 - PID:24328 - MainThread - INFO - [capture_0_1_1753293299] Capture successful: 2661879 bytes
+2025-07-23 23:40:12,257 - PID:24328 - MainThread - INFO - [capture_0_1_1753293299] Queued for conversion
+2025-07-23 23:40:12,258 - PID:24300 - MainThread - INFO - [capture_0_1_1753293299] Converting PCAP to CSV
+2025-07-23 23:40:12,259 - PID:24300 - MainThread - INFO - [capture_0_1_1753293299] Converting PCAP to CSV...
+2025-07-23 23:40:13,259 - PID:24328 - MainThread - INFO - [capture_0_2_1753293313] Starting capture for 10 seconds...
+2025-07-23 23:40:15,321 - PID:24300 - MainThread - INFO - [capture_0_1_1753293299] CSV conversion successful: 33 flows
+2025-07-23 23:40:15,321 - PID:24300 - MainThread - INFO - [capture_0_1_1753293299] Queued for prediction
+2025-07-23 23:40:15,322 - PID:8976 - MainThread - INFO - [capture_0_1_1753293299] Processing predictions
+2025-07-23 23:40:15,322 - PID:8976 - MainThread - INFO - [capture_0_1_1753293299] Processing predictions...
+2025-07-23 23:40:15,323 - PID:8976 - MainThread - INFO - [capture_0_1_1753293299] Processing 33 flows (from 33 total)
+2025-07-23 23:40:23,793 - PID:24328 - MainThread - INFO - [capture_0_2_1753293313] Capture successful: 3525579 bytes
+2025-07-23 23:40:23,793 - PID:24328 - MainThread - INFO - [capture_0_2_1753293313] Queued for conversion
+2025-07-23 23:40:23,794 - PID:24268 - MainThread - INFO - [capture_0_2_1753293313] Converting PCAP to CSV
+2025-07-23 23:40:23,794 - PID:24268 - MainThread - INFO - [capture_0_2_1753293313] Converting PCAP to CSV...
+2025-07-23 23:40:24,794 - PID:24328 - MainThread - INFO - [capture_0_3_1753293324] Starting capture for 10 seconds...
+2025-07-23 23:40:24,800 - PID:24268 - MainThread - INFO - [capture_0_2_1753293313] CSV conversion successful: 31 flows
+2025-07-23 23:40:24,800 - PID:24268 - MainThread - INFO - [capture_0_2_1753293313] Queued for prediction
+2025-07-23 23:40:24,801 - PID:22892 - MainThread - INFO - [capture_0_2_1753293313] Processing predictions
+2025-07-23 23:40:24,801 - PID:22892 - MainThread - INFO - [capture_0_2_1753293313] Processing predictions...
+2025-07-23 23:40:24,801 - PID:22892 - MainThread - INFO - [capture_0_2_1753293313] Processing 31 flows (from 31 total)
+2025-07-23 23:40:29,784 - PID:11308 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-23 23:40:29,784 - PID:11308 - MainThread - INFO - Runtime: 31s
+2025-07-23 23:40:29,784 - PID:11308 - MainThread - INFO - Cycles completed: 0
+2025-07-23 23:40:29,784 - PID:11308 - MainThread - INFO - Total flows processed: 0
+2025-07-23 23:40:29,785 - PID:11308 - MainThread - INFO - Attacks detected: 0
+2025-07-23 23:40:29,785 - PID:11308 - MainThread - INFO - Errors: 0
+2025-07-23 23:40:35,326 - PID:24328 - MainThread - INFO - [capture_0_3_1753293324] Capture successful: 2841737 bytes
+2025-07-23 23:40:35,327 - PID:24328 - MainThread - INFO - [capture_0_3_1753293324] Queued for conversion
+2025-07-23 23:40:35,327 - PID:24268 - MainThread - INFO - [capture_0_3_1753293324] Converting PCAP to CSV
+2025-07-23 23:40:35,327 - PID:24268 - MainThread - INFO - [capture_0_3_1753293324] Converting PCAP to CSV...
+2025-07-23 23:40:36,335 - PID:24328 - MainThread - INFO - [capture_0_4_1753293336] Starting capture for 10 seconds...
+2025-07-23 23:40:36,358 - PID:24268 - MainThread - INFO - [capture_0_3_1753293324] CSV conversion successful: 35 flows
+2025-07-23 23:40:36,358 - PID:24268 - MainThread - INFO - [capture_0_3_1753293324] Queued for prediction
+2025-07-23 23:40:36,954 - PID:8976 - MainThread - INFO - [capture_0_1_1753293299] Results sent to collector
+2025-07-23 23:40:36,955 - PID:8976 - MainThread - INFO - [capture_0_3_1753293324] Processing predictions
+2025-07-23 23:40:36,955 - PID:8976 - MainThread - INFO - [capture_0_3_1753293324] Processing predictions...
+2025-07-23 23:40:36,955 - PID:20668 - MainThread - INFO - [capture_0_1_1753293299] RESULTS:
+2025-07-23 23:40:36,956 - PID:20668 - MainThread - INFO - [capture_0_1_1753293299]   Flows: 33
+2025-07-23 23:40:36,956 - PID:20668 - MainThread - INFO - [capture_0_1_1753293299]   Normal: 0 (0.0%)
+2025-07-23 23:40:36,956 - PID:20668 - MainThread - INFO - [capture_0_1_1753293299]   Attack: 0 (0.0%)
+2025-07-23 23:40:36,956 - PID:20668 - MainThread - INFO - [capture_0_1_1753293299]   Errors: 33 (100.0%)
+2025-07-23 23:40:36,956 - PID:8976 - MainThread - INFO - [capture_0_3_1753293324] Processing 35 flows (from 35 total)
+2025-07-23 23:40:40,268 - PID:22892 - MainThread - INFO - [capture_0_2_1753293313] Results sent to collector
+2025-07-23 23:40:40,269 - PID:20668 - MainThread - INFO - [capture_0_2_1753293313] RESULTS:
+2025-07-23 23:40:40,269 - PID:20668 - MainThread - INFO - [capture_0_2_1753293313]   Flows: 31
+2025-07-23 23:40:40,269 - PID:20668 - MainThread - INFO - [capture_0_2_1753293313]   Normal: 0 (0.0%)
+2025-07-23 23:40:40,269 - PID:20668 - MainThread - INFO - [capture_0_2_1753293313]   Attack: 0 (0.0%)
+2025-07-23 23:40:40,269 - PID:20668 - MainThread - INFO - [capture_0_2_1753293313]   Errors: 31 (100.0%)
+2025-07-23 23:40:42,399 - PID:8976 - MainThread - INFO - [capture_0_3_1753293324] Results sent to collector
+2025-07-23 23:40:42,401 - PID:20668 - MainThread - INFO - [capture_0_3_1753293324] RESULTS:
+2025-07-23 23:40:42,401 - PID:20668 - MainThread - INFO - [capture_0_3_1753293324]   Flows: 35
+2025-07-23 23:40:42,401 - PID:20668 - MainThread - INFO - [capture_0_3_1753293324]   Normal: 0 (0.0%)
+2025-07-23 23:40:42,401 - PID:20668 - MainThread - INFO - [capture_0_3_1753293324]   Attack: 0 (0.0%)
+2025-07-23 23:40:42,401 - PID:20668 - MainThread - INFO - [capture_0_3_1753293324]   Errors: 35 (100.0%)
+2025-07-23 23:40:46,938 - PID:24328 - MainThread - INFO - [capture_0_4_1753293336] Capture successful: 2295251 bytes
+2025-07-23 23:40:46,938 - PID:24328 - MainThread - INFO - [capture_0_4_1753293336] Queued for conversion
+2025-07-23 23:40:46,939 - PID:24300 - MainThread - INFO - [capture_0_4_1753293336] Converting PCAP to CSV
+2025-07-23 23:40:46,939 - PID:24300 - MainThread - INFO - [capture_0_4_1753293336] Converting PCAP to CSV...
+2025-07-23 23:40:47,739 - PID:24300 - MainThread - INFO - [capture_0_4_1753293336] CSV conversion successful: 42 flows
+2025-07-23 23:40:47,739 - PID:24300 - MainThread - INFO - [capture_0_4_1753293336] Queued for prediction
+2025-07-23 23:40:47,739 - PID:22892 - MainThread - INFO - [capture_0_4_1753293336] Processing predictions
+2025-07-23 23:40:47,739 - PID:22892 - MainThread - INFO - [capture_0_4_1753293336] Processing predictions...
+2025-07-23 23:40:47,740 - PID:22892 - MainThread - INFO - [capture_0_4_1753293336] Processing 42 flows (from 42 total)
+2025-07-23 23:40:47,939 - PID:24328 - MainThread - INFO - [capture_0_5_1753293347] Starting capture for 10 seconds...
+2025-07-23 23:40:52,893 - PID:22892 - MainThread - INFO - [capture_0_4_1753293336] Results sent to collector
+2025-07-23 23:40:52,894 - PID:20668 - MainThread - INFO - [capture_0_4_1753293336] RESULTS:
+2025-07-23 23:40:52,894 - PID:20668 - MainThread - INFO - [capture_0_4_1753293336]   Flows: 42
+2025-07-23 23:40:52,895 - PID:20668 - MainThread - INFO - [capture_0_4_1753293336]   Normal: 0 (0.0%)
+2025-07-23 23:40:52,895 - PID:20668 - MainThread - INFO - [capture_0_4_1753293336]   Attack: 0 (0.0%)
+2025-07-23 23:40:52,895 - PID:20668 - MainThread - INFO - [capture_0_4_1753293336]   Errors: 42 (100.0%)
+2025-07-23 23:40:58,463 - PID:24328 - MainThread - INFO - [capture_0_5_1753293347] Capture successful: 1742057 bytes
+2025-07-23 23:40:58,463 - PID:24328 - MainThread - INFO - [capture_0_5_1753293347] Queued for conversion
+2025-07-23 23:40:58,464 - PID:24268 - MainThread - INFO - [capture_0_5_1753293347] Converting PCAP to CSV
+2025-07-23 23:40:58,464 - PID:24268 - MainThread - INFO - [capture_0_5_1753293347] Converting PCAP to CSV...
+2025-07-23 23:40:59,325 - PID:24268 - MainThread - INFO - [capture_0_5_1753293347] CSV conversion successful: 48 flows
+2025-07-23 23:40:59,325 - PID:24268 - MainThread - INFO - [capture_0_5_1753293347] Queued for prediction
+2025-07-23 23:40:59,325 - PID:8976 - MainThread - INFO - [capture_0_5_1753293347] Processing predictions
+2025-07-23 23:40:59,325 - PID:8976 - MainThread - INFO - [capture_0_5_1753293347] Processing predictions...
+2025-07-23 23:40:59,326 - PID:8976 - MainThread - INFO - [capture_0_5_1753293347] Processing 48 flows (from 48 total)
+2025-07-23 23:40:59,464 - PID:24328 - MainThread - INFO - [capture_0_6_1753293359] Starting capture for 10 seconds...
+2025-07-23 23:40:59,785 - PID:11308 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-23 23:40:59,785 - PID:11308 - MainThread - INFO - Runtime: 61s
+2025-07-23 23:40:59,785 - PID:11308 - MainThread - INFO - Cycles completed: 4
+2025-07-23 23:40:59,785 - PID:11308 - MainThread - INFO - Total flows processed: 141
+2025-07-23 23:40:59,786 - PID:11308 - MainThread - INFO - Attacks detected: 0
+2025-07-23 23:40:59,786 - PID:11308 - MainThread - INFO - Errors: 141
+2025-07-23 23:40:59,786 - PID:11308 - MainThread - INFO - Average flows per cycle: 35.2
+2025-07-23 23:40:59,786 - PID:11308 - MainThread - INFO - Cycles per minute: 3.9
+2025-07-23 23:40:59,786 - PID:11308 - MainThread - INFO - Attack rate: 0.00%
+2025-07-23 23:41:05,609 - PID:8976 - MainThread - INFO - [capture_0_5_1753293347] Results sent to collector
+2025-07-23 23:41:05,610 - PID:20668 - MainThread - INFO - [capture_0_5_1753293347] RESULTS:
+2025-07-23 23:41:05,610 - PID:20668 - MainThread - INFO - [capture_0_5_1753293347]   Flows: 48
+2025-07-23 23:41:05,610 - PID:20668 - MainThread - INFO - [capture_0_5_1753293347]   Normal: 0 (0.0%)
+2025-07-23 23:41:05,610 - PID:20668 - MainThread - INFO - [capture_0_5_1753293347]   Attack: 0 (0.0%)
+2025-07-23 23:41:05,610 - PID:20668 - MainThread - INFO - [capture_0_5_1753293347]   Errors: 48 (100.0%)
+2025-07-23 23:41:09,864 - PID:24328 - MainThread - INFO - [capture_0_6_1753293359] Capture successful: 3260280 bytes
+2025-07-23 23:41:09,864 - PID:24328 - MainThread - INFO - [capture_0_6_1753293359] Queued for conversion
+2025-07-23 23:41:09,864 - PID:24300 - MainThread - INFO - [capture_0_6_1753293359] Converting PCAP to CSV
+2025-07-23 23:41:09,865 - PID:24300 - MainThread - INFO - [capture_0_6_1753293359] Converting PCAP to CSV...
+2025-07-23 23:41:10,631 - PID:24300 - MainThread - INFO - [capture_0_6_1753293359] CSV conversion successful: 26 flows
+2025-07-23 23:41:10,631 - PID:24300 - MainThread - INFO - [capture_0_6_1753293359] Queued for prediction
+2025-07-23 23:41:10,631 - PID:22892 - MainThread - INFO - [capture_0_6_1753293359] Processing predictions
+2025-07-23 23:41:10,631 - PID:22892 - MainThread - INFO - [capture_0_6_1753293359] Processing predictions...
+2025-07-23 23:41:10,632 - PID:22892 - MainThread - INFO - [capture_0_6_1753293359] Processing 26 flows (from 26 total)
+2025-07-23 23:41:10,865 - PID:24328 - MainThread - INFO - [capture_0_7_1753293370] Starting capture for 10 seconds...
+2025-07-23 23:41:13,956 - PID:22892 - MainThread - INFO - [capture_0_6_1753293359] Results sent to collector
+2025-07-23 23:41:13,956 - PID:20668 - MainThread - INFO - [capture_0_6_1753293359] RESULTS:
+2025-07-23 23:41:13,956 - PID:20668 - MainThread - INFO - [capture_0_6_1753293359]   Flows: 26
+2025-07-23 23:41:13,957 - PID:20668 - MainThread - INFO - [capture_0_6_1753293359]   Normal: 0 (0.0%)
+2025-07-23 23:41:13,957 - PID:20668 - MainThread - INFO - [capture_0_6_1753293359]   Attack: 0 (0.0%)
+2025-07-23 23:41:13,957 - PID:20668 - MainThread - INFO - [capture_0_6_1753293359]   Errors: 26 (100.0%)
+2025-07-23 23:41:21,273 - PID:24328 - MainThread - INFO - [capture_0_7_1753293370] Capture successful: 3143281 bytes
+2025-07-23 23:41:21,274 - PID:24328 - MainThread - INFO - [capture_0_7_1753293370] Queued for conversion
+2025-07-23 23:41:21,274 - PID:24268 - MainThread - INFO - [capture_0_7_1753293370] Converting PCAP to CSV
+2025-07-23 23:41:21,274 - PID:24268 - MainThread - INFO - [capture_0_7_1753293370] Converting PCAP to CSV...
+2025-07-23 23:41:22,057 - PID:24268 - MainThread - INFO - [capture_0_7_1753293370] CSV conversion successful: 49 flows
+2025-07-23 23:41:22,057 - PID:24268 - MainThread - INFO - [capture_0_7_1753293370] Queued for prediction
+2025-07-23 23:41:22,057 - PID:22892 - MainThread - INFO - [capture_0_7_1753293370] Processing predictions
+2025-07-23 23:41:22,057 - PID:22892 - MainThread - INFO - [capture_0_7_1753293370] Processing predictions...
+2025-07-23 23:41:22,058 - PID:22892 - MainThread - INFO - [capture_0_7_1753293370] Processing 49 flows (from 49 total)
+2025-07-23 23:41:22,275 - PID:24328 - MainThread - INFO - [capture_0_8_1753293382] Starting capture for 10 seconds...
+2025-07-23 23:41:28,077 - PID:22892 - MainThread - INFO - [capture_0_7_1753293370] Results sent to collector
+2025-07-23 23:41:28,078 - PID:20668 - MainThread - INFO - [capture_0_7_1753293370] RESULTS:
+2025-07-23 23:41:28,078 - PID:20668 - MainThread - INFO - [capture_0_7_1753293370]   Flows: 49
+2025-07-23 23:41:28,078 - PID:20668 - MainThread - INFO - [capture_0_7_1753293370]   Normal: 0 (0.0%)
+2025-07-23 23:41:28,078 - PID:20668 - MainThread - INFO - [capture_0_7_1753293370]   Attack: 0 (0.0%)
+2025-07-23 23:41:28,078 - PID:20668 - MainThread - INFO - [capture_0_7_1753293370]   Errors: 49 (100.0%)
+2025-07-23 23:41:29,785 - PID:11308 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-23 23:41:29,786 - PID:11308 - MainThread - INFO - Runtime: 91s
+2025-07-23 23:41:29,786 - PID:11308 - MainThread - INFO - Cycles completed: 7
+2025-07-23 23:41:29,786 - PID:11308 - MainThread - INFO - Total flows processed: 264
+2025-07-23 23:41:29,786 - PID:11308 - MainThread - INFO - Attacks detected: 0
+2025-07-23 23:41:29,786 - PID:11308 - MainThread - INFO - Errors: 264
+2025-07-23 23:41:29,786 - PID:11308 - MainThread - INFO - Average flows per cycle: 37.7
+2025-07-23 23:41:29,786 - PID:11308 - MainThread - INFO - Cycles per minute: 4.6
+2025-07-23 23:41:29,786 - PID:11308 - MainThread - INFO - Attack rate: 0.00%
+2025-07-23 23:41:32,811 - PID:24328 - MainThread - INFO - [capture_0_8_1753293382] Capture successful: 3001269 bytes
+2025-07-23 23:41:32,812 - PID:24328 - MainThread - INFO - [capture_0_8_1753293382] Queued for conversion
+2025-07-23 23:41:32,812 - PID:24300 - MainThread - INFO - [capture_0_8_1753293382] Converting PCAP to CSV
+2025-07-23 23:41:32,812 - PID:24300 - MainThread - INFO - [capture_0_8_1753293382] Converting PCAP to CSV...
+2025-07-23 23:41:33,675 - PID:24300 - MainThread - INFO - [capture_0_8_1753293382] CSV conversion successful: 33 flows
+2025-07-23 23:41:33,675 - PID:24300 - MainThread - INFO - [capture_0_8_1753293382] Queued for prediction
+2025-07-23 23:41:33,675 - PID:8976 - MainThread - INFO - [capture_0_8_1753293382] Processing predictions
+2025-07-23 23:41:33,675 - PID:8976 - MainThread - INFO - [capture_0_8_1753293382] Processing predictions...
+2025-07-23 23:41:33,676 - PID:8976 - MainThread - INFO - [capture_0_8_1753293382] Processing 33 flows (from 33 total)
+2025-07-23 23:41:33,812 - PID:24328 - MainThread - INFO - [capture_0_9_1753293393] Starting capture for 10 seconds...
+2025-07-23 23:41:37,866 - PID:8976 - MainThread - INFO - [capture_0_8_1753293382] Results sent to collector
+2025-07-23 23:41:37,867 - PID:20668 - MainThread - INFO - [capture_0_8_1753293382] RESULTS:
+2025-07-23 23:41:37,867 - PID:20668 - MainThread - INFO - [capture_0_8_1753293382]   Flows: 33
+2025-07-23 23:41:37,867 - PID:20668 - MainThread - INFO - [capture_0_8_1753293382]   Normal: 0 (0.0%)
+2025-07-23 23:41:37,867 - PID:20668 - MainThread - INFO - [capture_0_8_1753293382]   Attack: 0 (0.0%)
+2025-07-23 23:41:37,867 - PID:20668 - MainThread - INFO - [capture_0_8_1753293382]   Errors: 33 (100.0%)
+2025-07-23 23:41:44,478 - PID:24328 - MainThread - INFO - [capture_0_9_1753293393] Capture successful: 3244738 bytes
+2025-07-23 23:41:44,478 - PID:24328 - MainThread - INFO - [capture_0_9_1753293393] Queued for conversion
+2025-07-23 23:41:44,478 - PID:24268 - MainThread - INFO - [capture_0_9_1753293393] Converting PCAP to CSV
+2025-07-23 23:41:44,478 - PID:24268 - MainThread - INFO - [capture_0_9_1753293393] Converting PCAP to CSV...
+2025-07-23 23:41:45,276 - PID:24268 - MainThread - INFO - [capture_0_9_1753293393] CSV conversion successful: 67 flows
+2025-07-23 23:41:45,276 - PID:24268 - MainThread - INFO - [capture_0_9_1753293393] Queued for prediction
+2025-07-23 23:41:45,276 - PID:8976 - MainThread - INFO - [capture_0_9_1753293393] Processing predictions
+2025-07-23 23:41:45,276 - PID:8976 - MainThread - INFO - [capture_0_9_1753293393] Processing predictions...
+2025-07-23 23:41:45,277 - PID:8976 - MainThread - INFO - [capture_0_9_1753293393] Processing 67 flows (from 67 total)
+2025-07-23 23:41:45,479 - PID:24328 - MainThread - INFO - [capture_0_10_1753293405] Starting capture for 10 seconds...
+2025-07-23 23:41:53,157 - PID:8976 - MainThread - INFO - [capture_0_9_1753293393] Results sent to collector
+2025-07-23 23:41:53,158 - PID:20668 - MainThread - INFO - [capture_0_9_1753293393] RESULTS:
+2025-07-23 23:41:53,158 - PID:20668 - MainThread - INFO - [capture_0_9_1753293393]   Flows: 67
+2025-07-23 23:41:53,158 - PID:20668 - MainThread - INFO - [capture_0_9_1753293393]   Normal: 0 (0.0%)
+2025-07-23 23:41:53,159 - PID:20668 - MainThread - INFO - [capture_0_9_1753293393]   Attack: 0 (0.0%)
+2025-07-23 23:41:53,159 - PID:20668 - MainThread - INFO - [capture_0_9_1753293393]   Errors: 67 (100.0%)
+2025-07-23 23:41:56,008 - PID:24328 - MainThread - INFO - [capture_0_10_1753293405] Capture successful: 3137597 bytes
+2025-07-23 23:41:56,008 - PID:24328 - MainThread - INFO - [capture_0_10_1753293405] Queued for conversion
+2025-07-23 23:41:56,008 - PID:24300 - MainThread - INFO - [capture_0_10_1753293405] Converting PCAP to CSV
+2025-07-23 23:41:56,009 - PID:24300 - MainThread - INFO - [capture_0_10_1753293405] Converting PCAP to CSV...
+2025-07-23 23:41:56,929 - PID:24300 - MainThread - INFO - [capture_0_10_1753293405] CSV conversion successful: 32 flows
+2025-07-23 23:41:56,929 - PID:24300 - MainThread - INFO - [capture_0_10_1753293405] Queued for prediction
+2025-07-23 23:41:56,929 - PID:22892 - MainThread - INFO - [capture_0_10_1753293405] Processing predictions
+2025-07-23 23:41:56,929 - PID:22892 - MainThread - INFO - [capture_0_10_1753293405] Processing predictions...
+2025-07-23 23:41:56,930 - PID:22892 - MainThread - INFO - [capture_0_10_1753293405] Processing 32 flows (from 32 total)
+2025-07-23 23:41:57,009 - PID:24328 - MainThread - INFO - [capture_0_11_1753293417] Starting capture for 10 seconds...
+2025-07-23 23:41:59,787 - PID:11308 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-23 23:41:59,788 - PID:11308 - MainThread - INFO - Runtime: 121s
+2025-07-23 23:41:59,788 - PID:11308 - MainThread - INFO - Cycles completed: 9
+2025-07-23 23:41:59,788 - PID:11308 - MainThread - INFO - Total flows processed: 364
+2025-07-23 23:41:59,788 - PID:11308 - MainThread - INFO - Attacks detected: 0
+2025-07-23 23:41:59,788 - PID:11308 - MainThread - INFO - Errors: 364
+2025-07-23 23:41:59,788 - PID:11308 - MainThread - INFO - Average flows per cycle: 40.4
+2025-07-23 23:41:59,788 - PID:11308 - MainThread - INFO - Cycles per minute: 4.5
+2025-07-23 23:41:59,788 - PID:11308 - MainThread - INFO - Attack rate: 0.00%
+2025-07-23 23:42:00,778 - PID:22892 - MainThread - INFO - [capture_0_10_1753293405] Results sent to collector
+2025-07-23 23:42:00,778 - PID:20668 - MainThread - INFO - [capture_0_10_1753293405] RESULTS:
+2025-07-23 23:42:00,779 - PID:20668 - MainThread - INFO - [capture_0_10_1753293405]   Flows: 32
+2025-07-23 23:42:00,779 - PID:20668 - MainThread - INFO - [capture_0_10_1753293405]   Normal: 0 (0.0%)
+2025-07-23 23:42:00,779 - PID:20668 - MainThread - INFO - [capture_0_10_1753293405]   Attack: 0 (0.0%)
+2025-07-23 23:42:00,779 - PID:20668 - MainThread - INFO - [capture_0_10_1753293405]   Errors: 32 (100.0%)
+2025-07-23 23:42:07,428 - PID:24328 - MainThread - INFO - [capture_0_11_1753293417] Capture successful: 3063304 bytes
+2025-07-23 23:42:07,428 - PID:24328 - MainThread - INFO - [capture_0_11_1753293417] Queued for conversion
+2025-07-23 23:42:07,428 - PID:24268 - MainThread - INFO - [capture_0_11_1753293417] Converting PCAP to CSV
+2025-07-23 23:42:07,428 - PID:24268 - MainThread - INFO - [capture_0_11_1753293417] Converting PCAP to CSV...
+2025-07-23 23:42:08,234 - PID:24268 - MainThread - INFO - [capture_0_11_1753293417] CSV conversion successful: 38 flows
+2025-07-23 23:42:08,234 - PID:24268 - MainThread - INFO - [capture_0_11_1753293417] Queued for prediction
+2025-07-23 23:42:08,235 - PID:22892 - MainThread - INFO - [capture_0_11_1753293417] Processing predictions
+2025-07-23 23:42:08,235 - PID:22892 - MainThread - INFO - [capture_0_11_1753293417] Processing predictions...
+2025-07-23 23:42:08,235 - PID:22892 - MainThread - INFO - [capture_0_11_1753293417] Processing 38 flows (from 38 total)
+2025-07-23 23:42:08,429 - PID:24328 - MainThread - INFO - [capture_0_12_1753293428] Starting capture for 10 seconds...
+2025-07-23 23:42:13,105 - PID:22892 - MainThread - INFO - [capture_0_11_1753293417] Results sent to collector
+2025-07-23 23:42:13,106 - PID:20668 - MainThread - INFO - [capture_0_11_1753293417] RESULTS:
+2025-07-23 23:42:13,107 - PID:20668 - MainThread - INFO - [capture_0_11_1753293417]   Flows: 38
+2025-07-23 23:42:13,107 - PID:20668 - MainThread - INFO - [capture_0_11_1753293417]   Normal: 0 (0.0%)
+2025-07-23 23:42:13,107 - PID:20668 - MainThread - INFO - [capture_0_11_1753293417]   Attack: 0 (0.0%)
+2025-07-23 23:42:13,107 - PID:20668 - MainThread - INFO - [capture_0_11_1753293417]   Errors: 38 (100.0%)
+2025-07-23 23:42:18,775 - PID:24328 - MainThread - INFO - [capture_0_12_1753293428] Capture successful: 3254351 bytes
+2025-07-23 23:42:18,776 - PID:24328 - MainThread - INFO - [capture_0_12_1753293428] Queued for conversion
+2025-07-23 23:42:18,776 - PID:24300 - MainThread - INFO - [capture_0_12_1753293428] Converting PCAP to CSV
+2025-07-23 23:42:18,776 - PID:24300 - MainThread - INFO - [capture_0_12_1753293428] Converting PCAP to CSV...
+2025-07-23 23:42:19,582 - PID:24300 - MainThread - INFO - [capture_0_12_1753293428] CSV conversion successful: 45 flows
+2025-07-23 23:42:19,582 - PID:24300 - MainThread - INFO - [capture_0_12_1753293428] Queued for prediction
+2025-07-23 23:42:19,583 - PID:22892 - MainThread - INFO - [capture_0_12_1753293428] Processing predictions
+2025-07-23 23:42:19,583 - PID:22892 - MainThread - INFO - [capture_0_12_1753293428] Processing predictions...
+2025-07-23 23:42:19,583 - PID:22892 - MainThread - INFO - [capture_0_12_1753293428] Processing 45 flows (from 45 total)
+2025-07-23 23:42:19,777 - PID:24328 - MainThread - INFO - [capture_0_13_1753293439] Starting capture for 10 seconds...
+2025-07-23 23:42:25,353 - PID:22892 - MainThread - INFO - [capture_0_12_1753293428] Results sent to collector
+2025-07-23 23:42:25,354 - PID:20668 - MainThread - INFO - [capture_0_12_1753293428] RESULTS:
+2025-07-23 23:42:25,355 - PID:20668 - MainThread - INFO - [capture_0_12_1753293428]   Flows: 45
+2025-07-23 23:42:25,355 - PID:20668 - MainThread - INFO - [capture_0_12_1753293428]   Normal: 0 (0.0%)
+2025-07-23 23:42:25,355 - PID:20668 - MainThread - INFO - [capture_0_12_1753293428]   Attack: 0 (0.0%)
+2025-07-23 23:42:25,355 - PID:20668 - MainThread - INFO - [capture_0_12_1753293428]   Errors: 45 (100.0%)
+2025-07-23 23:42:29,789 - PID:11308 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-23 23:42:29,789 - PID:11308 - MainThread - INFO - Runtime: 151s
+2025-07-23 23:42:29,789 - PID:11308 - MainThread - INFO - Cycles completed: 12
+2025-07-23 23:42:29,789 - PID:11308 - MainThread - INFO - Total flows processed: 479
+2025-07-23 23:42:29,789 - PID:11308 - MainThread - INFO - Attacks detected: 0
+2025-07-23 23:42:29,789 - PID:11308 - MainThread - INFO - Errors: 479
+2025-07-23 23:42:29,789 - PID:11308 - MainThread - INFO - Average flows per cycle: 39.9
+2025-07-23 23:42:29,790 - PID:11308 - MainThread - INFO - Cycles per minute: 4.8
+2025-07-23 23:42:29,790 - PID:11308 - MainThread - INFO - Attack rate: 0.00%
+2025-07-23 23:42:30,237 - PID:24328 - MainThread - INFO - [capture_0_13_1753293439] Capture successful: 3319064 bytes
+2025-07-23 23:42:30,238 - PID:24328 - MainThread - INFO - [capture_0_13_1753293439] Queued for conversion
+2025-07-23 23:42:30,238 - PID:24268 - MainThread - INFO - [capture_0_13_1753293439] Converting PCAP to CSV
+2025-07-23 23:42:30,238 - PID:24268 - MainThread - INFO - [capture_0_13_1753293439] Converting PCAP to CSV...
+2025-07-23 23:42:31,082 - PID:24268 - MainThread - INFO - [capture_0_13_1753293439] CSV conversion successful: 60 flows
+2025-07-23 23:42:31,082 - PID:24268 - MainThread - INFO - [capture_0_13_1753293439] Queued for prediction
+2025-07-23 23:42:31,082 - PID:8976 - MainThread - INFO - [capture_0_13_1753293439] Processing predictions
+2025-07-23 23:42:31,082 - PID:8976 - MainThread - INFO - [capture_0_13_1753293439] Processing predictions...
+2025-07-23 23:42:31,083 - PID:8976 - MainThread - INFO - [capture_0_13_1753293439] Processing 60 flows (from 60 total)
+2025-07-23 23:42:31,239 - PID:24328 - MainThread - INFO - [capture_0_14_1753293451] Starting capture for 10 seconds...
+2025-07-23 23:42:38,902 - PID:8976 - MainThread - INFO - [capture_0_13_1753293439] Results sent to collector
+2025-07-23 23:42:38,903 - PID:20668 - MainThread - INFO - [capture_0_13_1753293439] RESULTS:
+2025-07-23 23:42:38,903 - PID:20668 - MainThread - INFO - [capture_0_13_1753293439]   Flows: 60
+2025-07-23 23:42:38,903 - PID:20668 - MainThread - INFO - [capture_0_13_1753293439]   Normal: 0 (0.0%)
+2025-07-23 23:42:38,903 - PID:20668 - MainThread - INFO - [capture_0_13_1753293439]   Attack: 0 (0.0%)
+2025-07-23 23:42:38,903 - PID:20668 - MainThread - INFO - [capture_0_13_1753293439]   Errors: 60 (100.0%)
+2025-07-23 23:42:41,763 - PID:24328 - MainThread - INFO - [capture_0_14_1753293451] Capture successful: 3308702 bytes
+2025-07-23 23:42:41,763 - PID:24328 - MainThread - INFO - [capture_0_14_1753293451] Queued for conversion
+2025-07-23 23:42:41,764 - PID:24300 - MainThread - INFO - [capture_0_14_1753293451] Converting PCAP to CSV
+2025-07-23 23:42:41,764 - PID:24300 - MainThread - INFO - [capture_0_14_1753293451] Converting PCAP to CSV...
+2025-07-23 23:42:42,549 - PID:24300 - MainThread - INFO - [capture_0_14_1753293451] CSV conversion successful: 56 flows
+2025-07-23 23:42:42,549 - PID:24300 - MainThread - INFO - [capture_0_14_1753293451] Queued for prediction
+2025-07-23 23:42:42,550 - PID:8976 - MainThread - INFO - [capture_0_14_1753293451] Processing predictions
+2025-07-23 23:42:42,550 - PID:8976 - MainThread - INFO - [capture_0_14_1753293451] Processing predictions...
+2025-07-23 23:42:42,551 - PID:8976 - MainThread - INFO - [capture_0_14_1753293451] Processing 56 flows (from 56 total)
+2025-07-23 23:42:42,765 - PID:24328 - MainThread - INFO - [capture_0_15_1753293462] Starting capture for 10 seconds...
+2025-07-23 23:42:50,040 - PID:8976 - MainThread - INFO - [capture_0_14_1753293451] Results sent to collector
+2025-07-23 23:42:50,042 - PID:20668 - MainThread - INFO - [capture_0_14_1753293451] RESULTS:
+2025-07-23 23:42:50,042 - PID:20668 - MainThread - INFO - [capture_0_14_1753293451]   Flows: 56
+2025-07-23 23:42:50,042 - PID:20668 - MainThread - INFO - [capture_0_14_1753293451]   Normal: 0 (0.0%)
+2025-07-23 23:42:50,042 - PID:20668 - MainThread - INFO - [capture_0_14_1753293451]   Attack: 0 (0.0%)
+2025-07-23 23:42:50,042 - PID:20668 - MainThread - INFO - [capture_0_14_1753293451]   Errors: 56 (100.0%)
+2025-07-23 23:42:53,134 - PID:24328 - MainThread - INFO - [capture_0_15_1753293462] Capture successful: 2710369 bytes
+2025-07-23 23:42:53,135 - PID:24328 - MainThread - INFO - [capture_0_15_1753293462] Queued for conversion
+2025-07-23 23:42:53,135 - PID:24268 - MainThread - INFO - [capture_0_15_1753293462] Converting PCAP to CSV
+2025-07-23 23:42:53,135 - PID:24268 - MainThread - INFO - [capture_0_15_1753293462] Converting PCAP to CSV...
+2025-07-23 23:42:53,945 - PID:24268 - MainThread - INFO - [capture_0_15_1753293462] CSV conversion successful: 45 flows
+2025-07-23 23:42:53,946 - PID:24268 - MainThread - INFO - [capture_0_15_1753293462] Queued for prediction
+2025-07-23 23:42:53,946 - PID:8976 - MainThread - INFO - [capture_0_15_1753293462] Processing predictions
+2025-07-23 23:42:53,946 - PID:8976 - MainThread - INFO - [capture_0_15_1753293462] Processing predictions...
+2025-07-23 23:42:53,947 - PID:8976 - MainThread - INFO - [capture_0_15_1753293462] Processing 45 flows (from 45 total)
+2025-07-23 23:42:54,136 - PID:24328 - MainThread - INFO - [capture_0_16_1753293474] Starting capture for 10 seconds...
+2025-07-23 23:42:59,790 - PID:11308 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-23 23:42:59,790 - PID:11308 - MainThread - INFO - Runtime: 181s
+2025-07-23 23:42:59,790 - PID:11308 - MainThread - INFO - Cycles completed: 14
+2025-07-23 23:42:59,791 - PID:11308 - MainThread - INFO - Total flows processed: 595
+2025-07-23 23:42:59,791 - PID:11308 - MainThread - INFO - Attacks detected: 0
+2025-07-23 23:42:59,791 - PID:11308 - MainThread - INFO - Errors: 595
+2025-07-23 23:42:59,791 - PID:11308 - MainThread - INFO - Average flows per cycle: 42.5
+2025-07-23 23:42:59,791 - PID:11308 - MainThread - INFO - Cycles per minute: 4.6
+2025-07-23 23:42:59,791 - PID:11308 - MainThread - INFO - Attack rate: 0.00%
+2025-07-23 23:43:00,049 - PID:8976 - MainThread - INFO - [capture_0_15_1753293462] Results sent to collector
+2025-07-23 23:43:00,050 - PID:20668 - MainThread - INFO - [capture_0_15_1753293462] RESULTS:
+2025-07-23 23:43:00,050 - PID:20668 - MainThread - INFO - [capture_0_15_1753293462]   Flows: 45
+2025-07-23 23:43:00,050 - PID:20668 - MainThread - INFO - [capture_0_15_1753293462]   Normal: 0 (0.0%)
+2025-07-23 23:43:00,050 - PID:20668 - MainThread - INFO - [capture_0_15_1753293462]   Attack: 0 (0.0%)
+2025-07-23 23:43:00,050 - PID:20668 - MainThread - INFO - [capture_0_15_1753293462]   Errors: 45 (100.0%)
+2025-07-23 23:43:04,675 - PID:24328 - MainThread - INFO - [capture_0_16_1753293474] Capture successful: 1980756 bytes
+2025-07-23 23:43:04,676 - PID:24328 - MainThread - INFO - [capture_0_16_1753293474] Queued for conversion
+2025-07-23 23:43:04,676 - PID:24300 - MainThread - INFO - [capture_0_16_1753293474] Converting PCAP to CSV
+2025-07-23 23:43:04,676 - PID:24300 - MainThread - INFO - [capture_0_16_1753293474] Converting PCAP to CSV...
+2025-07-23 23:43:05,442 - PID:24300 - MainThread - INFO - [capture_0_16_1753293474] CSV conversion successful: 57 flows
+2025-07-23 23:43:05,442 - PID:24300 - MainThread - INFO - [capture_0_16_1753293474] Queued for prediction
+2025-07-23 23:43:05,443 - PID:8976 - MainThread - INFO - [capture_0_16_1753293474] Processing predictions
+2025-07-23 23:43:05,443 - PID:8976 - MainThread - INFO - [capture_0_16_1753293474] Processing predictions...
+2025-07-23 23:43:05,444 - PID:8976 - MainThread - INFO - [capture_0_16_1753293474] Processing 57 flows (from 57 total)
+2025-07-23 23:43:05,676 - PID:24328 - MainThread - INFO - [capture_0_17_1753293485] Starting capture for 10 seconds...
+2025-07-23 23:43:12,983 - PID:8976 - MainThread - INFO - [capture_0_16_1753293474] Results sent to collector
+2025-07-23 23:43:12,984 - PID:20668 - MainThread - INFO - [capture_0_16_1753293474] RESULTS:
+2025-07-23 23:43:12,984 - PID:20668 - MainThread - INFO - [capture_0_16_1753293474]   Flows: 57
+2025-07-23 23:43:12,985 - PID:20668 - MainThread - INFO - [capture_0_16_1753293474]   Normal: 0 (0.0%)
+2025-07-23 23:43:12,985 - PID:20668 - MainThread - INFO - [capture_0_16_1753293474]   Attack: 0 (0.0%)
+2025-07-23 23:43:12,985 - PID:20668 - MainThread - INFO - [capture_0_16_1753293474]   Errors: 57 (100.0%)
+2025-07-23 23:43:16,126 - PID:24328 - MainThread - INFO - [capture_0_17_1753293485] Capture successful: 1803914 bytes
+2025-07-23 23:43:16,127 - PID:24328 - MainThread - INFO - [capture_0_17_1753293485] Queued for conversion
+2025-07-23 23:43:16,127 - PID:24268 - MainThread - INFO - [capture_0_17_1753293485] Converting PCAP to CSV
+2025-07-23 23:43:16,127 - PID:24268 - MainThread - INFO - [capture_0_17_1753293485] Converting PCAP to CSV...
+2025-07-23 23:43:16,935 - PID:24268 - MainThread - INFO - [capture_0_17_1753293485] CSV conversion successful: 51 flows
+2025-07-23 23:43:16,936 - PID:24268 - MainThread - INFO - [capture_0_17_1753293485] Queued for prediction
+2025-07-23 23:43:16,936 - PID:8976 - MainThread - INFO - [capture_0_17_1753293485] Processing predictions
+2025-07-23 23:43:16,936 - PID:8976 - MainThread - INFO - [capture_0_17_1753293485] Processing predictions...
+2025-07-23 23:43:16,937 - PID:8976 - MainThread - INFO - [capture_0_17_1753293485] Processing 51 flows (from 51 total)
+2025-07-23 23:43:17,127 - PID:24328 - MainThread - INFO - [capture_0_18_1753293497] Starting capture for 10 seconds...
+2025-07-23 23:43:23,780 - PID:8976 - MainThread - INFO - [capture_0_17_1753293485] Results sent to collector
+2025-07-23 23:43:23,781 - PID:20668 - MainThread - INFO - [capture_0_17_1753293485] RESULTS:
+2025-07-23 23:43:23,781 - PID:20668 - MainThread - INFO - [capture_0_17_1753293485]   Flows: 51
+2025-07-23 23:43:23,781 - PID:20668 - MainThread - INFO - [capture_0_17_1753293485]   Normal: 0 (0.0%)
+2025-07-23 23:43:23,782 - PID:20668 - MainThread - INFO - [capture_0_17_1753293485]   Attack: 0 (0.0%)
+2025-07-23 23:43:23,782 - PID:20668 - MainThread - INFO - [capture_0_17_1753293485]   Errors: 51 (100.0%)
+2025-07-23 23:43:27,741 - PID:24328 - MainThread - INFO - [capture_0_18_1753293497] Capture successful: 1939455 bytes
+2025-07-23 23:43:27,741 - PID:24328 - MainThread - INFO - [capture_0_18_1753293497] Queued for conversion
+2025-07-23 23:43:27,742 - PID:24300 - MainThread - INFO - [capture_0_18_1753293497] Converting PCAP to CSV
+2025-07-23 23:43:27,742 - PID:24300 - MainThread - INFO - [capture_0_18_1753293497] Converting PCAP to CSV...
+2025-07-23 23:43:28,493 - PID:24300 - MainThread - INFO - [capture_0_18_1753293497] CSV conversion successful: 46 flows
+2025-07-23 23:43:28,494 - PID:24300 - MainThread - INFO - [capture_0_18_1753293497] Queued for prediction
+2025-07-23 23:43:28,494 - PID:8976 - MainThread - INFO - [capture_0_18_1753293497] Processing predictions
+2025-07-23 23:43:28,494 - PID:8976 - MainThread - INFO - [capture_0_18_1753293497] Processing predictions...
+2025-07-23 23:43:28,495 - PID:8976 - MainThread - INFO - [capture_0_18_1753293497] Processing 46 flows (from 46 total)
+2025-07-23 23:43:28,742 - PID:24328 - MainThread - INFO - [capture_0_19_1753293508] Starting capture for 10 seconds...
+2025-07-23 23:43:29,791 - PID:11308 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-23 23:43:29,791 - PID:11308 - MainThread - INFO - Runtime: 211s
+2025-07-23 23:43:29,791 - PID:11308 - MainThread - INFO - Cycles completed: 17
+2025-07-23 23:43:29,791 - PID:11308 - MainThread - INFO - Total flows processed: 748
+2025-07-23 23:43:29,791 - PID:11308 - MainThread - INFO - Attacks detected: 0
+2025-07-23 23:43:29,792 - PID:11308 - MainThread - INFO - Errors: 748
+2025-07-23 23:43:29,792 - PID:11308 - MainThread - INFO - Average flows per cycle: 44.0
+2025-07-23 23:43:29,792 - PID:11308 - MainThread - INFO - Cycles per minute: 4.8
+2025-07-23 23:43:29,792 - PID:11308 - MainThread - INFO - Attack rate: 0.00%
+2025-07-23 23:43:34,843 - PID:8976 - MainThread - INFO - [capture_0_18_1753293497] Results sent to collector
+2025-07-23 23:43:34,844 - PID:20668 - MainThread - INFO - [capture_0_18_1753293497] RESULTS:
+2025-07-23 23:43:34,844 - PID:20668 - MainThread - INFO - [capture_0_18_1753293497]   Flows: 46
+2025-07-23 23:43:34,844 - PID:20668 - MainThread - INFO - [capture_0_18_1753293497]   Normal: 0 (0.0%)
+2025-07-23 23:43:34,844 - PID:20668 - MainThread - INFO - [capture_0_18_1753293497]   Attack: 0 (0.0%)
+2025-07-23 23:43:34,844 - PID:20668 - MainThread - INFO - [capture_0_18_1753293497]   Errors: 46 (100.0%)
+2025-07-23 23:43:39,096 - PID:24328 - MainThread - INFO - [capture_0_19_1753293508] Capture successful: 1906472 bytes
+2025-07-23 23:43:39,097 - PID:24328 - MainThread - INFO - [capture_0_19_1753293508] Queued for conversion
+2025-07-23 23:43:39,097 - PID:24268 - MainThread - INFO - [capture_0_19_1753293508] Converting PCAP to CSV
+2025-07-23 23:43:39,097 - PID:24268 - MainThread - INFO - [capture_0_19_1753293508] Converting PCAP to CSV...
+2025-07-23 23:43:40,021 - PID:24268 - MainThread - INFO - [capture_0_19_1753293508] CSV conversion successful: 38 flows
+2025-07-23 23:43:40,022 - PID:24268 - MainThread - INFO - [capture_0_19_1753293508] Queued for prediction
+2025-07-23 23:43:40,022 - PID:22892 - MainThread - INFO - [capture_0_19_1753293508] Processing predictions
+2025-07-23 23:43:40,022 - PID:22892 - MainThread - INFO - [capture_0_19_1753293508] Processing predictions...
+2025-07-23 23:43:40,023 - PID:22892 - MainThread - INFO - [capture_0_19_1753293508] Processing 38 flows (from 38 total)
+2025-07-23 23:43:40,098 - PID:24328 - MainThread - INFO - [capture_0_20_1753293520] Starting capture for 10 seconds...
+2025-07-23 23:43:45,109 - PID:22892 - MainThread - INFO - [capture_0_19_1753293508] Results sent to collector
+2025-07-23 23:43:45,110 - PID:20668 - MainThread - INFO - [capture_0_19_1753293508] RESULTS:
+2025-07-23 23:43:45,110 - PID:20668 - MainThread - INFO - [capture_0_19_1753293508]   Flows: 38
+2025-07-23 23:43:45,110 - PID:20668 - MainThread - INFO - [capture_0_19_1753293508]   Normal: 0 (0.0%)
+2025-07-23 23:43:45,110 - PID:20668 - MainThread - INFO - [capture_0_19_1753293508]   Attack: 0 (0.0%)
+2025-07-23 23:43:45,110 - PID:20668 - MainThread - INFO - [capture_0_19_1753293508]   Errors: 38 (100.0%)
+2025-07-23 23:43:50,539 - PID:24328 - MainThread - INFO - [capture_0_20_1753293520] Capture successful: 2160149 bytes
+2025-07-23 23:43:50,539 - PID:24328 - MainThread - INFO - [capture_0_20_1753293520] Queued for conversion
+2025-07-23 23:43:50,539 - PID:24300 - MainThread - INFO - [capture_0_20_1753293520] Converting PCAP to CSV
+2025-07-23 23:43:50,540 - PID:24300 - MainThread - INFO - [capture_0_20_1753293520] Converting PCAP to CSV...
+2025-07-23 23:43:51,372 - PID:24300 - MainThread - INFO - [capture_0_20_1753293520] CSV conversion successful: 51 flows
+2025-07-23 23:43:51,372 - PID:24300 - MainThread - INFO - [capture_0_20_1753293520] Queued for prediction
+2025-07-23 23:43:51,372 - PID:8976 - MainThread - INFO - [capture_0_20_1753293520] Processing predictions
+2025-07-23 23:43:51,373 - PID:8976 - MainThread - INFO - [capture_0_20_1753293520] Processing predictions...
+2025-07-23 23:43:51,374 - PID:8976 - MainThread - INFO - [capture_0_20_1753293520] Processing 51 flows (from 51 total)
+2025-07-23 23:43:51,540 - PID:24328 - MainThread - INFO - [capture_0_21_1753293531] Starting capture for 10 seconds...
+2025-07-23 23:43:57,842 - PID:8976 - MainThread - INFO - [capture_0_20_1753293520] Results sent to collector
+2025-07-23 23:43:57,843 - PID:20668 - MainThread - INFO - [capture_0_20_1753293520] RESULTS:
+2025-07-23 23:43:57,843 - PID:20668 - MainThread - INFO - [capture_0_20_1753293520]   Flows: 51
+2025-07-23 23:43:57,843 - PID:20668 - MainThread - INFO - [capture_0_20_1753293520]   Normal: 0 (0.0%)
+2025-07-23 23:43:57,843 - PID:20668 - MainThread - INFO - [capture_0_20_1753293520]   Attack: 0 (0.0%)
+2025-07-23 23:43:57,843 - PID:20668 - MainThread - INFO - [capture_0_20_1753293520]   Errors: 51 (100.0%)
+2025-07-23 23:43:59,793 - PID:11308 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-23 23:43:59,793 - PID:11308 - MainThread - INFO - Runtime: 241s
+2025-07-23 23:43:59,793 - PID:11308 - MainThread - INFO - Cycles completed: 20
+2025-07-23 23:43:59,793 - PID:11308 - MainThread - INFO - Total flows processed: 883
+2025-07-23 23:43:59,793 - PID:11308 - MainThread - INFO - Attacks detected: 0
+2025-07-23 23:43:59,793 - PID:11308 - MainThread - INFO - Errors: 883
+2025-07-23 23:43:59,793 - PID:11308 - MainThread - INFO - Average flows per cycle: 44.1
+2025-07-23 23:43:59,793 - PID:11308 - MainThread - INFO - Cycles per minute: 5.0
+2025-07-23 23:43:59,793 - PID:11308 - MainThread - INFO - Attack rate: 0.00%
+2025-07-23 23:44:01,961 - PID:24328 - MainThread - INFO - [capture_0_21_1753293531] Capture successful: 3539979 bytes
+2025-07-23 23:44:01,962 - PID:24328 - MainThread - INFO - [capture_0_21_1753293531] Queued for conversion
+2025-07-23 23:44:01,962 - PID:24268 - MainThread - INFO - [capture_0_21_1753293531] Converting PCAP to CSV
+2025-07-23 23:44:01,962 - PID:24268 - MainThread - INFO - [capture_0_21_1753293531] Converting PCAP to CSV...
+2025-07-23 23:44:02,773 - PID:24268 - MainThread - INFO - [capture_0_21_1753293531] CSV conversion successful: 54 flows
+2025-07-23 23:44:02,773 - PID:24268 - MainThread - INFO - [capture_0_21_1753293531] Queued for prediction
+2025-07-23 23:44:02,774 - PID:8976 - MainThread - INFO - [capture_0_21_1753293531] Processing predictions
+2025-07-23 23:44:02,774 - PID:8976 - MainThread - INFO - [capture_0_21_1753293531] Processing predictions...
+2025-07-23 23:44:02,775 - PID:8976 - MainThread - INFO - [capture_0_21_1753293531] Processing 54 flows (from 54 total)
+2025-07-23 23:44:02,963 - PID:24328 - MainThread - INFO - [capture_0_22_1753293542] Starting capture for 10 seconds...
+2025-07-23 23:44:10,019 - PID:8976 - MainThread - INFO - [capture_0_21_1753293531] Results sent to collector
+2025-07-23 23:44:10,020 - PID:20668 - MainThread - INFO - [capture_0_21_1753293531] RESULTS:
+2025-07-23 23:44:10,020 - PID:20668 - MainThread - INFO - [capture_0_21_1753293531]   Flows: 54
+2025-07-23 23:44:10,020 - PID:20668 - MainThread - INFO - [capture_0_21_1753293531]   Normal: 0 (0.0%)
+2025-07-23 23:44:10,021 - PID:20668 - MainThread - INFO - [capture_0_21_1753293531]   Attack: 0 (0.0%)
+2025-07-23 23:44:10,021 - PID:20668 - MainThread - INFO - [capture_0_21_1753293531]   Errors: 54 (100.0%)
+2025-07-23 23:44:13,374 - PID:24328 - MainThread - INFO - [capture_0_22_1753293542] Capture successful: 3153849 bytes
+2025-07-23 23:44:13,375 - PID:24328 - MainThread - INFO - [capture_0_22_1753293542] Queued for conversion
+2025-07-23 23:44:13,375 - PID:24300 - MainThread - INFO - [capture_0_22_1753293542] Converting PCAP to CSV
+2025-07-23 23:44:13,375 - PID:24300 - MainThread - INFO - [capture_0_22_1753293542] Converting PCAP to CSV...
+2025-07-23 23:44:14,196 - PID:24300 - MainThread - INFO - [capture_0_22_1753293542] CSV conversion successful: 49 flows
+2025-07-23 23:44:14,196 - PID:24300 - MainThread - INFO - [capture_0_22_1753293542] Queued for prediction
+2025-07-23 23:44:14,196 - PID:8976 - MainThread - INFO - [capture_0_22_1753293542] Processing predictions
+2025-07-23 23:44:14,196 - PID:8976 - MainThread - INFO - [capture_0_22_1753293542] Processing predictions...
+2025-07-23 23:44:14,197 - PID:8976 - MainThread - INFO - [capture_0_22_1753293542] Processing 49 flows (from 49 total)
+2025-07-23 23:44:14,376 - PID:24328 - MainThread - INFO - [capture_0_23_1753293554] Starting capture for 10 seconds...
+2025-07-23 23:44:20,829 - PID:8976 - MainThread - INFO - [capture_0_22_1753293542] Results sent to collector
+2025-07-23 23:44:20,830 - PID:20668 - MainThread - INFO - [capture_0_22_1753293542] RESULTS:
+2025-07-23 23:44:20,830 - PID:20668 - MainThread - INFO - [capture_0_22_1753293542]   Flows: 49
+2025-07-23 23:44:20,830 - PID:20668 - MainThread - INFO - [capture_0_22_1753293542]   Normal: 0 (0.0%)
+2025-07-23 23:44:20,830 - PID:20668 - MainThread - INFO - [capture_0_22_1753293542]   Attack: 0 (0.0%)
+2025-07-23 23:44:20,830 - PID:20668 - MainThread - INFO - [capture_0_22_1753293542]   Errors: 49 (100.0%)
+2025-07-23 23:44:24,835 - PID:24328 - MainThread - INFO - [capture_0_23_1753293554] Capture successful: 2783165 bytes
+2025-07-23 23:44:24,835 - PID:24328 - MainThread - INFO - [capture_0_23_1753293554] Queued for conversion
+2025-07-23 23:44:24,836 - PID:24268 - MainThread - INFO - [capture_0_23_1753293554] Converting PCAP to CSV
+2025-07-23 23:44:24,836 - PID:24268 - MainThread - INFO - [capture_0_23_1753293554] Converting PCAP to CSV...
+2025-07-23 23:44:25,601 - PID:24268 - MainThread - INFO - [capture_0_23_1753293554] CSV conversion successful: 37 flows
+2025-07-23 23:44:25,601 - PID:24268 - MainThread - INFO - [capture_0_23_1753293554] Queued for prediction
+2025-07-23 23:44:25,601 - PID:8976 - MainThread - INFO - [capture_0_23_1753293554] Processing predictions
+2025-07-23 23:44:25,601 - PID:8976 - MainThread - INFO - [capture_0_23_1753293554] Processing predictions...
+2025-07-23 23:44:25,602 - PID:8976 - MainThread - INFO - [capture_0_23_1753293554] Processing 37 flows (from 37 total)
+2025-07-23 23:44:25,836 - PID:24328 - MainThread - INFO - [capture_0_24_1753293565] Starting capture for 10 seconds...
+2025-07-23 23:44:29,794 - PID:11308 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-23 23:44:29,794 - PID:11308 - MainThread - INFO - Runtime: 271s
+2025-07-23 23:44:29,794 - PID:11308 - MainThread - INFO - Cycles completed: 22
+2025-07-23 23:44:29,794 - PID:11308 - MainThread - INFO - Total flows processed: 986
+2025-07-23 23:44:29,795 - PID:11308 - MainThread - INFO - Attacks detected: 0
+2025-07-23 23:44:29,795 - PID:11308 - MainThread - INFO - Errors: 986
+2025-07-23 23:44:29,795 - PID:11308 - MainThread - INFO - Average flows per cycle: 44.8
+2025-07-23 23:44:29,795 - PID:11308 - MainThread - INFO - Cycles per minute: 4.9
+2025-07-23 23:44:29,795 - PID:11308 - MainThread - INFO - Attack rate: 0.00%
+2025-07-23 23:44:30,754 - PID:8976 - MainThread - INFO - [capture_0_23_1753293554] Results sent to collector
+2025-07-23 23:44:30,755 - PID:20668 - MainThread - INFO - [capture_0_23_1753293554] RESULTS:
+2025-07-23 23:44:30,755 - PID:20668 - MainThread - INFO - [capture_0_23_1753293554]   Flows: 37
+2025-07-23 23:44:30,755 - PID:20668 - MainThread - INFO - [capture_0_23_1753293554]   Normal: 0 (0.0%)
+2025-07-23 23:44:30,756 - PID:20668 - MainThread - INFO - [capture_0_23_1753293554]   Attack: 0 (0.0%)
+2025-07-23 23:44:30,756 - PID:20668 - MainThread - INFO - [capture_0_23_1753293554]   Errors: 37 (100.0%)
+2025-07-23 23:44:36,363 - PID:24328 - MainThread - INFO - [capture_0_24_1753293565] Capture successful: 3589030 bytes
+2025-07-23 23:44:36,363 - PID:24328 - MainThread - INFO - [capture_0_24_1753293565] Queued for conversion
+2025-07-23 23:44:36,363 - PID:24300 - MainThread - INFO - [capture_0_24_1753293565] Converting PCAP to CSV
+2025-07-23 23:44:36,363 - PID:24300 - MainThread - INFO - [capture_0_24_1753293565] Converting PCAP to CSV...
+2025-07-23 23:44:37,151 - PID:24300 - MainThread - INFO - [capture_0_24_1753293565] CSV conversion successful: 39 flows
+2025-07-23 23:44:37,151 - PID:24300 - MainThread - INFO - [capture_0_24_1753293565] Queued for prediction
+2025-07-23 23:44:37,152 - PID:22892 - MainThread - INFO - [capture_0_24_1753293565] Processing predictions
+2025-07-23 23:44:37,152 - PID:22892 - MainThread - INFO - [capture_0_24_1753293565] Processing predictions...
+2025-07-23 23:44:37,153 - PID:22892 - MainThread - INFO - [capture_0_24_1753293565] Processing 39 flows (from 39 total)
+2025-07-23 23:44:37,364 - PID:24328 - MainThread - INFO - [capture_0_25_1753293577] Starting capture for 10 seconds...
+2025-07-23 23:44:42,459 - PID:22892 - MainThread - INFO - [capture_0_24_1753293565] Results sent to collector
+2025-07-23 23:44:42,460 - PID:20668 - MainThread - INFO - [capture_0_24_1753293565] RESULTS:
+2025-07-23 23:44:42,460 - PID:20668 - MainThread - INFO - [capture_0_24_1753293565]   Flows: 39
+2025-07-23 23:44:42,460 - PID:20668 - MainThread - INFO - [capture_0_24_1753293565]   Normal: 0 (0.0%)
+2025-07-23 23:44:42,460 - PID:20668 - MainThread - INFO - [capture_0_24_1753293565]   Attack: 0 (0.0%)
+2025-07-23 23:44:42,460 - PID:20668 - MainThread - INFO - [capture_0_24_1753293565]   Errors: 39 (100.0%)
+2025-07-23 23:44:47,848 - PID:24328 - MainThread - INFO - [capture_0_25_1753293577] Capture successful: 5157019 bytes
+2025-07-23 23:44:47,848 - PID:24328 - MainThread - INFO - [capture_0_25_1753293577] Queued for conversion
+2025-07-23 23:44:47,848 - PID:24268 - MainThread - INFO - [capture_0_25_1753293577] Converting PCAP to CSV
+2025-07-23 23:44:47,848 - PID:24268 - MainThread - INFO - [capture_0_25_1753293577] Converting PCAP to CSV...
+2025-07-23 23:44:48,659 - PID:24268 - MainThread - INFO - [capture_0_25_1753293577] CSV conversion successful: 39 flows
+2025-07-23 23:44:48,659 - PID:24268 - MainThread - INFO - [capture_0_25_1753293577] Queued for prediction
+2025-07-23 23:44:48,660 - PID:8976 - MainThread - INFO - [capture_0_25_1753293577] Processing predictions
+2025-07-23 23:44:48,660 - PID:8976 - MainThread - INFO - [capture_0_25_1753293577] Processing predictions...
+2025-07-23 23:44:48,660 - PID:8976 - MainThread - INFO - [capture_0_25_1753293577] Processing 39 flows (from 39 total)
+2025-07-23 23:44:48,849 - PID:24328 - MainThread - INFO - [capture_0_26_1753293588] Starting capture for 10 seconds...
+2025-07-23 23:44:53,817 - PID:8976 - MainThread - INFO - [capture_0_25_1753293577] Results sent to collector
+2025-07-23 23:44:53,818 - PID:20668 - MainThread - INFO - [capture_0_25_1753293577] RESULTS:
+2025-07-23 23:44:53,818 - PID:20668 - MainThread - INFO - [capture_0_25_1753293577]   Flows: 39
+2025-07-23 23:44:53,818 - PID:20668 - MainThread - INFO - [capture_0_25_1753293577]   Normal: 0 (0.0%)
+2025-07-23 23:44:53,818 - PID:20668 - MainThread - INFO - [capture_0_25_1753293577]   Attack: 0 (0.0%)
+2025-07-23 23:44:53,818 - PID:20668 - MainThread - INFO - [capture_0_25_1753293577]   Errors: 39 (100.0%)
+2025-07-23 23:44:59,227 - PID:24328 - MainThread - INFO - [capture_0_26_1753293588] Capture successful: 6931334 bytes
+2025-07-23 23:44:59,227 - PID:24328 - MainThread - INFO - [capture_0_26_1753293588] Queued for conversion
+2025-07-23 23:44:59,228 - PID:24300 - MainThread - INFO - [capture_0_26_1753293588] Converting PCAP to CSV
+2025-07-23 23:44:59,228 - PID:24300 - MainThread - INFO - [capture_0_26_1753293588] Converting PCAP to CSV...
+2025-07-23 23:44:59,796 - PID:11308 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-23 23:44:59,796 - PID:11308 - MainThread - INFO - Runtime: 301s
+2025-07-23 23:44:59,796 - PID:11308 - MainThread - INFO - Cycles completed: 25
+2025-07-23 23:44:59,796 - PID:11308 - MainThread - INFO - Total flows processed: 1101
+2025-07-23 23:44:59,797 - PID:11308 - MainThread - INFO - Attacks detected: 0
+2025-07-23 23:44:59,797 - PID:11308 - MainThread - INFO - Errors: 1101
+2025-07-23 23:44:59,797 - PID:11308 - MainThread - INFO - Average flows per cycle: 44.0
+2025-07-23 23:44:59,797 - PID:11308 - MainThread - INFO - Cycles per minute: 5.0
+2025-07-23 23:44:59,797 - PID:11308 - MainThread - INFO - Attack rate: 0.00%
+2025-07-23 23:45:00,056 - PID:24300 - MainThread - INFO - [capture_0_26_1753293588] CSV conversion successful: 35 flows
+2025-07-23 23:45:00,056 - PID:24300 - MainThread - INFO - [capture_0_26_1753293588] Queued for prediction
+2025-07-23 23:45:00,057 - PID:22892 - MainThread - INFO - [capture_0_26_1753293588] Processing predictions
+2025-07-23 23:45:00,057 - PID:22892 - MainThread - INFO - [capture_0_26_1753293588] Processing predictions...
+2025-07-23 23:45:00,057 - PID:22892 - MainThread - INFO - [capture_0_26_1753293588] Processing 35 flows (from 35 total)
+2025-07-23 23:45:00,228 - PID:24328 - MainThread - INFO - [capture_0_27_1753293600] Starting capture for 10 seconds...
+2025-07-23 23:45:04,994 - PID:22892 - MainThread - INFO - [capture_0_26_1753293588] Results sent to collector
+2025-07-23 23:45:04,995 - PID:20668 - MainThread - INFO - [capture_0_26_1753293588] RESULTS:
+2025-07-23 23:45:04,995 - PID:20668 - MainThread - INFO - [capture_0_26_1753293588]   Flows: 35
+2025-07-23 23:45:04,995 - PID:20668 - MainThread - INFO - [capture_0_26_1753293588]   Normal: 0 (0.0%)
+2025-07-23 23:45:04,995 - PID:20668 - MainThread - INFO - [capture_0_26_1753293588]   Attack: 0 (0.0%)
+2025-07-23 23:45:04,995 - PID:20668 - MainThread - INFO - [capture_0_26_1753293588]   Errors: 35 (100.0%)
+2025-07-23 23:45:10,678 - PID:24328 - MainThread - INFO - [capture_0_27_1753293600] Capture successful: 5821078 bytes
+2025-07-23 23:45:10,678 - PID:24328 - MainThread - INFO - [capture_0_27_1753293600] Queued for conversion
+2025-07-23 23:45:10,678 - PID:24268 - MainThread - INFO - [capture_0_27_1753293600] Converting PCAP to CSV
+2025-07-23 23:45:10,679 - PID:24268 - MainThread - INFO - [capture_0_27_1753293600] Converting PCAP to CSV...
+2025-07-23 23:45:11,655 - PID:24268 - MainThread - INFO - [capture_0_27_1753293600] CSV conversion successful: 42 flows
+2025-07-23 23:45:11,656 - PID:24268 - MainThread - INFO - [capture_0_27_1753293600] Queued for prediction
+2025-07-23 23:45:11,656 - PID:8976 - MainThread - INFO - [capture_0_27_1753293600] Processing predictions
+2025-07-23 23:45:11,656 - PID:8976 - MainThread - INFO - [capture_0_27_1753293600] Processing predictions...
+2025-07-23 23:45:11,657 - PID:8976 - MainThread - INFO - [capture_0_27_1753293600] Processing 42 flows (from 42 total)
+2025-07-23 23:45:11,679 - PID:24328 - MainThread - INFO - [capture_0_28_1753293611] Starting capture for 10 seconds...
+2025-07-23 23:45:17,393 - PID:8976 - MainThread - INFO - [capture_0_27_1753293600] Results sent to collector
+2025-07-23 23:45:17,394 - PID:20668 - MainThread - INFO - [capture_0_27_1753293600] RESULTS:
+2025-07-23 23:45:17,395 - PID:20668 - MainThread - INFO - [capture_0_27_1753293600]   Flows: 42
+2025-07-23 23:45:17,395 - PID:20668 - MainThread - INFO - [capture_0_27_1753293600]   Normal: 0 (0.0%)
+2025-07-23 23:45:17,395 - PID:20668 - MainThread - INFO - [capture_0_27_1753293600]   Attack: 0 (0.0%)
+2025-07-23 23:45:17,395 - PID:20668 - MainThread - INFO - [capture_0_27_1753293600]   Errors: 42 (100.0%)
+2025-07-23 23:45:22,164 - PID:24328 - MainThread - INFO - [capture_0_28_1753293611] Capture successful: 3920036 bytes
+2025-07-23 23:45:22,164 - PID:24328 - MainThread - INFO - [capture_0_28_1753293611] Queued for conversion
+2025-07-23 23:45:22,164 - PID:24300 - MainThread - INFO - [capture_0_28_1753293611] Converting PCAP to CSV
+2025-07-23 23:45:22,164 - PID:24300 - MainThread - INFO - [capture_0_28_1753293611] Converting PCAP to CSV...
+2025-07-23 23:45:22,928 - PID:24300 - MainThread - INFO - [capture_0_28_1753293611] CSV conversion successful: 46 flows
+2025-07-23 23:45:22,928 - PID:24300 - MainThread - INFO - [capture_0_28_1753293611] Queued for prediction
+2025-07-23 23:45:22,928 - PID:22892 - MainThread - INFO - [capture_0_28_1753293611] Processing predictions
+2025-07-23 23:45:22,929 - PID:22892 - MainThread - INFO - [capture_0_28_1753293611] Processing predictions...
+2025-07-23 23:45:22,930 - PID:22892 - MainThread - INFO - [capture_0_28_1753293611] Processing 46 flows (from 46 total)
+2025-07-23 23:45:23,165 - PID:24328 - MainThread - INFO - [capture_0_29_1753293623] Starting capture for 10 seconds...
+2025-07-23 23:45:29,530 - PID:22892 - MainThread - INFO - [capture_0_28_1753293611] Results sent to collector
+2025-07-23 23:45:29,531 - PID:20668 - MainThread - INFO - [capture_0_28_1753293611] RESULTS:
+2025-07-23 23:45:29,531 - PID:20668 - MainThread - INFO - [capture_0_28_1753293611]   Flows: 46
+2025-07-23 23:45:29,531 - PID:20668 - MainThread - INFO - [capture_0_28_1753293611]   Normal: 0 (0.0%)
+2025-07-23 23:45:29,532 - PID:20668 - MainThread - INFO - [capture_0_28_1753293611]   Attack: 0 (0.0%)
+2025-07-23 23:45:29,532 - PID:20668 - MainThread - INFO - [capture_0_28_1753293611]   Errors: 46 (100.0%)
+2025-07-23 23:45:29,797 - PID:11308 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-23 23:45:29,797 - PID:11308 - MainThread - INFO - Runtime: 331s
+2025-07-23 23:45:29,797 - PID:11308 - MainThread - INFO - Cycles completed: 28
+2025-07-23 23:45:29,797 - PID:11308 - MainThread - INFO - Total flows processed: 1224
+2025-07-23 23:45:29,797 - PID:11308 - MainThread - INFO - Attacks detected: 0
+2025-07-23 23:45:29,798 - PID:11308 - MainThread - INFO - Errors: 1224
+2025-07-23 23:45:29,798 - PID:11308 - MainThread - INFO - Average flows per cycle: 43.7
+2025-07-23 23:45:29,798 - PID:11308 - MainThread - INFO - Cycles per minute: 5.1
+2025-07-23 23:45:29,798 - PID:11308 - MainThread - INFO - Attack rate: 0.00%
+2025-07-23 23:45:33,585 - PID:24328 - MainThread - INFO - [capture_0_29_1753293623] Capture successful: 3445323 bytes
+2025-07-23 23:45:33,585 - PID:24328 - MainThread - INFO - [capture_0_29_1753293623] Queued for conversion
+2025-07-23 23:45:33,585 - PID:24268 - MainThread - INFO - [capture_0_29_1753293623] Converting PCAP to CSV
+2025-07-23 23:45:33,586 - PID:24268 - MainThread - INFO - [capture_0_29_1753293623] Converting PCAP to CSV...
+2025-07-23 23:45:34,561 - PID:24268 - MainThread - INFO - [capture_0_29_1753293623] CSV conversion successful: 48 flows
+2025-07-23 23:45:34,561 - PID:24268 - MainThread - INFO - [capture_0_29_1753293623] Queued for prediction
+2025-07-23 23:45:34,561 - PID:8976 - MainThread - INFO - [capture_0_29_1753293623] Processing predictions
+2025-07-23 23:45:34,562 - PID:8976 - MainThread - INFO - [capture_0_29_1753293623] Processing predictions...
+2025-07-23 23:45:34,563 - PID:8976 - MainThread - INFO - [capture_0_29_1753293623] Processing 48 flows (from 48 total)
+2025-07-23 23:45:34,586 - PID:24328 - MainThread - INFO - [capture_0_30_1753293634] Starting capture for 10 seconds...
+2025-07-23 23:45:42,210 - PID:8976 - MainThread - INFO - [capture_0_29_1753293623] Results sent to collector
+2025-07-23 23:45:42,211 - PID:20668 - MainThread - INFO - [capture_0_29_1753293623] RESULTS:
+2025-07-23 23:45:42,211 - PID:20668 - MainThread - INFO - [capture_0_29_1753293623]   Flows: 48
+2025-07-23 23:45:42,211 - PID:20668 - MainThread - INFO - [capture_0_29_1753293623]   Normal: 0 (0.0%)
+2025-07-23 23:45:42,211 - PID:20668 - MainThread - INFO - [capture_0_29_1753293623]   Attack: 0 (0.0%)
+2025-07-23 23:45:42,211 - PID:20668 - MainThread - INFO - [capture_0_29_1753293623]   Errors: 48 (100.0%)
+2025-07-23 23:45:45,016 - PID:24328 - MainThread - INFO - [capture_0_30_1753293634] Capture successful: 2161231 bytes
+2025-07-23 23:45:45,016 - PID:24328 - MainThread - INFO - [capture_0_30_1753293634] Queued for conversion
+2025-07-23 23:45:45,016 - PID:24300 - MainThread - INFO - [capture_0_30_1753293634] Converting PCAP to CSV
+2025-07-23 23:45:45,016 - PID:24300 - MainThread - INFO - [capture_0_30_1753293634] Converting PCAP to CSV...
+2025-07-23 23:45:45,804 - PID:24300 - MainThread - INFO - [capture_0_30_1753293634] CSV conversion successful: 45 flows
+2025-07-23 23:45:45,805 - PID:24300 - MainThread - INFO - [capture_0_30_1753293634] Queued for prediction
+2025-07-23 23:45:45,805 - PID:8976 - MainThread - INFO - [capture_0_30_1753293634] Processing predictions
+2025-07-23 23:45:45,805 - PID:8976 - MainThread - INFO - [capture_0_30_1753293634] Processing predictions...
+2025-07-23 23:45:45,806 - PID:8976 - MainThread - INFO - [capture_0_30_1753293634] Processing 45 flows (from 45 total)
+2025-07-23 23:45:46,017 - PID:24328 - MainThread - INFO - [capture_0_31_1753293646] Starting capture for 10 seconds...
+2025-07-23 23:45:51,504 - PID:8976 - MainThread - INFO - [capture_0_30_1753293634] Results sent to collector
+2025-07-23 23:45:51,505 - PID:20668 - MainThread - INFO - [capture_0_30_1753293634] RESULTS:
+2025-07-23 23:45:51,505 - PID:20668 - MainThread - INFO - [capture_0_30_1753293634]   Flows: 45
+2025-07-23 23:45:51,505 - PID:20668 - MainThread - INFO - [capture_0_30_1753293634]   Normal: 0 (0.0%)
+2025-07-23 23:45:51,505 - PID:20668 - MainThread - INFO - [capture_0_30_1753293634]   Attack: 0 (0.0%)
+2025-07-23 23:45:51,505 - PID:20668 - MainThread - INFO - [capture_0_30_1753293634]   Errors: 45 (100.0%)
+2025-07-23 23:45:56,498 - PID:24328 - MainThread - INFO - [capture_0_31_1753293646] Capture successful: 2109867 bytes
+2025-07-23 23:45:56,498 - PID:24328 - MainThread - INFO - [capture_0_31_1753293646] Queued for conversion
+2025-07-23 23:45:56,498 - PID:24268 - MainThread - INFO - [capture_0_31_1753293646] Converting PCAP to CSV
+2025-07-23 23:45:56,498 - PID:24268 - MainThread - INFO - [capture_0_31_1753293646] Converting PCAP to CSV...
+2025-07-23 23:45:57,367 - PID:24268 - MainThread - INFO - [capture_0_31_1753293646] CSV conversion successful: 38 flows
+2025-07-23 23:45:57,367 - PID:24268 - MainThread - INFO - [capture_0_31_1753293646] Queued for prediction
+2025-07-23 23:45:57,367 - PID:22892 - MainThread - INFO - [capture_0_31_1753293646] Processing predictions
+2025-07-23 23:45:57,367 - PID:22892 - MainThread - INFO - [capture_0_31_1753293646] Processing predictions...
+2025-07-23 23:45:57,368 - PID:22892 - MainThread - INFO - [capture_0_31_1753293646] Processing 38 flows (from 38 total)
+2025-07-23 23:45:57,499 - PID:24328 - MainThread - INFO - [capture_0_32_1753293657] Starting capture for 10 seconds...
+2025-07-23 23:45:59,799 - PID:11308 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-23 23:45:59,799 - PID:11308 - MainThread - INFO - Runtime: 361s
+2025-07-23 23:45:59,799 - PID:11308 - MainThread - INFO - Cycles completed: 30
+2025-07-23 23:45:59,800 - PID:11308 - MainThread - INFO - Total flows processed: 1317
+2025-07-23 23:45:59,800 - PID:11308 - MainThread - INFO - Attacks detected: 0
+2025-07-23 23:45:59,800 - PID:11308 - MainThread - INFO - Errors: 1317
+2025-07-23 23:45:59,800 - PID:11308 - MainThread - INFO - Average flows per cycle: 43.9
+2025-07-23 23:45:59,800 - PID:11308 - MainThread - INFO - Cycles per minute: 5.0
+2025-07-23 23:45:59,800 - PID:11308 - MainThread - INFO - Attack rate: 0.00%
+2025-07-23 23:46:03,285 - PID:22892 - MainThread - INFO - [capture_0_31_1753293646] Results sent to collector
+2025-07-23 23:46:03,286 - PID:20668 - MainThread - INFO - [capture_0_31_1753293646] RESULTS:
+2025-07-23 23:46:03,286 - PID:20668 - MainThread - INFO - [capture_0_31_1753293646]   Flows: 38
+2025-07-23 23:46:03,286 - PID:20668 - MainThread - INFO - [capture_0_31_1753293646]   Normal: 0 (0.0%)
+2025-07-23 23:46:03,286 - PID:20668 - MainThread - INFO - [capture_0_31_1753293646]   Attack: 0 (0.0%)
+2025-07-23 23:46:03,286 - PID:20668 - MainThread - INFO - [capture_0_31_1753293646]   Errors: 38 (100.0%)
+2025-07-23 23:46:08,099 - PID:24328 - MainThread - INFO - [capture_0_32_1753293657] Capture successful: 2114811 bytes
+2025-07-23 23:46:08,099 - PID:24328 - MainThread - INFO - [capture_0_32_1753293657] Queued for conversion
+2025-07-23 23:46:08,099 - PID:24300 - MainThread - INFO - [capture_0_32_1753293657] Converting PCAP to CSV
+2025-07-23 23:46:08,100 - PID:24300 - MainThread - INFO - [capture_0_32_1753293657] Converting PCAP to CSV...
+2025-07-23 23:46:08,938 - PID:24300 - MainThread - INFO - [capture_0_32_1753293657] CSV conversion successful: 41 flows
+2025-07-23 23:46:08,938 - PID:24300 - MainThread - INFO - [capture_0_32_1753293657] Queued for prediction
+2025-07-23 23:46:08,938 - PID:8976 - MainThread - INFO - [capture_0_32_1753293657] Processing predictions
+2025-07-23 23:46:08,939 - PID:8976 - MainThread - INFO - [capture_0_32_1753293657] Processing predictions...
+2025-07-23 23:46:08,939 - PID:8976 - MainThread - INFO - [capture_0_32_1753293657] Processing 41 flows (from 41 total)
+2025-07-23 23:46:09,100 - PID:24328 - MainThread - INFO - [capture_0_33_1753293669] Starting capture for 10 seconds...
+2025-07-23 23:46:14,359 - PID:8976 - MainThread - INFO - [capture_0_32_1753293657] Results sent to collector
+2025-07-23 23:46:14,360 - PID:20668 - MainThread - INFO - [capture_0_32_1753293657] RESULTS:
+2025-07-23 23:46:14,360 - PID:20668 - MainThread - INFO - [capture_0_32_1753293657]   Flows: 41
+2025-07-23 23:46:14,360 - PID:20668 - MainThread - INFO - [capture_0_32_1753293657]   Normal: 0 (0.0%)
+2025-07-23 23:46:14,360 - PID:20668 - MainThread - INFO - [capture_0_32_1753293657]   Attack: 0 (0.0%)
+2025-07-23 23:46:14,360 - PID:20668 - MainThread - INFO - [capture_0_32_1753293657]   Errors: 41 (100.0%)
+2025-07-23 23:46:19,614 - PID:24328 - MainThread - INFO - [capture_0_33_1753293669] Capture successful: 1357398 bytes
+2025-07-23 23:46:19,614 - PID:24328 - MainThread - INFO - [capture_0_33_1753293669] Queued for conversion
+2025-07-23 23:46:19,615 - PID:24268 - MainThread - INFO - [capture_0_33_1753293669] Converting PCAP to CSV
+2025-07-23 23:46:19,615 - PID:24268 - MainThread - INFO - [capture_0_33_1753293669] Converting PCAP to CSV...
+2025-07-23 23:46:20,376 - PID:24268 - MainThread - INFO - [capture_0_33_1753293669] CSV conversion successful: 38 flows
+2025-07-23 23:46:20,376 - PID:24268 - MainThread - INFO - [capture_0_33_1753293669] Queued for prediction
+2025-07-23 23:46:20,376 - PID:22892 - MainThread - INFO - [capture_0_33_1753293669] Processing predictions
+2025-07-23 23:46:20,376 - PID:22892 - MainThread - INFO - [capture_0_33_1753293669] Processing predictions...
+2025-07-23 23:46:20,377 - PID:22892 - MainThread - INFO - [capture_0_33_1753293669] Processing 38 flows (from 38 total)
+2025-07-23 23:46:20,615 - PID:24328 - MainThread - INFO - [capture_0_34_1753293680] Starting capture for 10 seconds...
+2025-07-23 23:46:25,579 - PID:22892 - MainThread - INFO - [capture_0_33_1753293669] Results sent to collector
+2025-07-23 23:46:25,580 - PID:20668 - MainThread - INFO - [capture_0_33_1753293669] RESULTS:
+2025-07-23 23:46:25,580 - PID:20668 - MainThread - INFO - [capture_0_33_1753293669]   Flows: 38
+2025-07-23 23:46:25,581 - PID:20668 - MainThread - INFO - [capture_0_33_1753293669]   Normal: 0 (0.0%)
+2025-07-23 23:46:25,581 - PID:20668 - MainThread - INFO - [capture_0_33_1753293669]   Attack: 0 (0.0%)
+2025-07-23 23:46:25,581 - PID:20668 - MainThread - INFO - [capture_0_33_1753293669]   Errors: 38 (100.0%)
+2025-07-23 23:46:29,800 - PID:11308 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-23 23:46:29,801 - PID:11308 - MainThread - INFO - Runtime: 391s
+2025-07-23 23:46:29,801 - PID:11308 - MainThread - INFO - Cycles completed: 33
+2025-07-23 23:46:29,801 - PID:11308 - MainThread - INFO - Total flows processed: 1434
+2025-07-23 23:46:29,801 - PID:11308 - MainThread - INFO - Attacks detected: 0
+2025-07-23 23:46:29,801 - PID:11308 - MainThread - INFO - Errors: 1434
+2025-07-23 23:46:29,801 - PID:11308 - MainThread - INFO - Average flows per cycle: 43.5
+2025-07-23 23:46:29,801 - PID:11308 - MainThread - INFO - Cycles per minute: 5.1
+2025-07-23 23:46:29,801 - PID:11308 - MainThread - INFO - Attack rate: 0.00%
+2025-07-23 23:46:31,110 - PID:24328 - MainThread - INFO - [capture_0_34_1753293680] Capture successful: 2090808 bytes
+2025-07-23 23:46:31,110 - PID:24328 - MainThread - INFO - [capture_0_34_1753293680] Queued for conversion
+2025-07-23 23:46:31,110 - PID:24300 - MainThread - INFO - [capture_0_34_1753293680] Converting PCAP to CSV
+2025-07-23 23:46:31,111 - PID:24300 - MainThread - INFO - [capture_0_34_1753293680] Converting PCAP to CSV...
+2025-07-23 23:46:32,049 - PID:24300 - MainThread - INFO - [capture_0_34_1753293680] CSV conversion successful: 37 flows
+2025-07-23 23:46:32,049 - PID:24300 - MainThread - INFO - [capture_0_34_1753293680] Queued for prediction
+2025-07-23 23:46:32,049 - PID:8976 - MainThread - INFO - [capture_0_34_1753293680] Processing predictions
+2025-07-23 23:46:32,049 - PID:8976 - MainThread - INFO - [capture_0_34_1753293680] Processing predictions...
+2025-07-23 23:46:32,050 - PID:8976 - MainThread - INFO - [capture_0_34_1753293680] Processing 37 flows (from 37 total)
+2025-07-23 23:46:32,111 - PID:24328 - MainThread - INFO - [capture_0_35_1753293692] Starting capture for 10 seconds...
+2025-07-23 23:46:37,349 - PID:8976 - MainThread - INFO - [capture_0_34_1753293680] Results sent to collector
+2025-07-23 23:46:37,351 - PID:20668 - MainThread - INFO - [capture_0_34_1753293680] RESULTS:
+2025-07-23 23:46:37,351 - PID:20668 - MainThread - INFO - [capture_0_34_1753293680]   Flows: 37
+2025-07-23 23:46:37,351 - PID:20668 - MainThread - INFO - [capture_0_34_1753293680]   Normal: 0 (0.0%)
+2025-07-23 23:46:37,351 - PID:20668 - MainThread - INFO - [capture_0_34_1753293680]   Attack: 0 (0.0%)
+2025-07-23 23:46:37,351 - PID:20668 - MainThread - INFO - [capture_0_34_1753293680]   Errors: 37 (100.0%)
+2025-07-23 23:46:42,490 - PID:24328 - MainThread - INFO - [capture_0_35_1753293692] Capture successful: 2981992 bytes
+2025-07-23 23:46:42,491 - PID:24328 - MainThread - INFO - [capture_0_35_1753293692] Queued for conversion
+2025-07-23 23:46:42,491 - PID:24268 - MainThread - INFO - [capture_0_35_1753293692] Converting PCAP to CSV
+2025-07-23 23:46:42,491 - PID:24268 - MainThread - INFO - [capture_0_35_1753293692] Converting PCAP to CSV...
+2025-07-23 23:46:43,318 - PID:24268 - MainThread - INFO - [capture_0_35_1753293692] CSV conversion successful: 34 flows
+2025-07-23 23:46:43,319 - PID:24268 - MainThread - INFO - [capture_0_35_1753293692] Queued for prediction
+2025-07-23 23:46:43,319 - PID:22892 - MainThread - INFO - [capture_0_35_1753293692] Processing predictions
+2025-07-23 23:46:43,319 - PID:22892 - MainThread - INFO - [capture_0_35_1753293692] Processing predictions...
+2025-07-23 23:46:43,320 - PID:22892 - MainThread - INFO - [capture_0_35_1753293692] Processing 34 flows (from 34 total)
+2025-07-23 23:46:43,491 - PID:24328 - MainThread - INFO - [capture_0_36_1753293703] Starting capture for 10 seconds...
+2025-07-23 23:46:48,073 - PID:22892 - MainThread - INFO - [capture_0_35_1753293692] Results sent to collector
+2025-07-23 23:46:48,074 - PID:20668 - MainThread - INFO - [capture_0_35_1753293692] RESULTS:
+2025-07-23 23:46:48,074 - PID:20668 - MainThread - INFO - [capture_0_35_1753293692]   Flows: 34
+2025-07-23 23:46:48,074 - PID:20668 - MainThread - INFO - [capture_0_35_1753293692]   Normal: 0 (0.0%)
+2025-07-23 23:46:48,074 - PID:20668 - MainThread - INFO - [capture_0_35_1753293692]   Attack: 0 (0.0%)
+2025-07-23 23:46:48,075 - PID:20668 - MainThread - INFO - [capture_0_35_1753293692]   Errors: 34 (100.0%)
+2025-07-23 23:46:53,928 - PID:24328 - MainThread - INFO - [capture_0_36_1753293703] Capture successful: 3155682 bytes
+2025-07-23 23:46:53,929 - PID:24328 - MainThread - INFO - [capture_0_36_1753293703] Queued for conversion
+2025-07-23 23:46:53,929 - PID:24300 - MainThread - INFO - [capture_0_36_1753293703] Converting PCAP to CSV
+2025-07-23 23:46:53,929 - PID:24300 - MainThread - INFO - [capture_0_36_1753293703] Converting PCAP to CSV...
+2025-07-23 23:46:54,701 - PID:24300 - MainThread - INFO - [capture_0_36_1753293703] CSV conversion successful: 39 flows
+2025-07-23 23:46:54,701 - PID:24300 - MainThread - INFO - [capture_0_36_1753293703] Queued for prediction
+2025-07-23 23:46:54,701 - PID:8976 - MainThread - INFO - [capture_0_36_1753293703] Processing predictions
+2025-07-23 23:46:54,701 - PID:8976 - MainThread - INFO - [capture_0_36_1753293703] Processing predictions...
+2025-07-23 23:46:54,702 - PID:8976 - MainThread - INFO - [capture_0_36_1753293703] Processing 39 flows (from 39 total)
+2025-07-23 23:46:54,930 - PID:24328 - MainThread - INFO - [capture_0_37_1753293714] Starting capture for 10 seconds...
+2025-07-23 23:46:59,802 - PID:11308 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-23 23:46:59,802 - PID:11308 - MainThread - INFO - Runtime: 421s
+2025-07-23 23:46:59,803 - PID:11308 - MainThread - INFO - Cycles completed: 35
+2025-07-23 23:46:59,803 - PID:11308 - MainThread - INFO - Total flows processed: 1505
+2025-07-23 23:46:59,803 - PID:11308 - MainThread - INFO - Attacks detected: 0
+2025-07-23 23:46:59,803 - PID:11308 - MainThread - INFO - Errors: 1505
+2025-07-23 23:46:59,803 - PID:11308 - MainThread - INFO - Average flows per cycle: 43.0
+2025-07-23 23:46:59,803 - PID:11308 - MainThread - INFO - Cycles per minute: 5.0
+2025-07-23 23:46:59,803 - PID:11308 - MainThread - INFO - Attack rate: 0.00%
+2025-07-23 23:46:59,849 - PID:8976 - MainThread - INFO - [capture_0_36_1753293703] Results sent to collector
+2025-07-23 23:46:59,850 - PID:20668 - MainThread - INFO - [capture_0_36_1753293703] RESULTS:
+2025-07-23 23:46:59,850 - PID:20668 - MainThread - INFO - [capture_0_36_1753293703]   Flows: 39
+2025-07-23 23:46:59,850 - PID:20668 - MainThread - INFO - [capture_0_36_1753293703]   Normal: 0 (0.0%)
+2025-07-23 23:46:59,850 - PID:20668 - MainThread - INFO - [capture_0_36_1753293703]   Attack: 0 (0.0%)
+2025-07-23 23:46:59,850 - PID:20668 - MainThread - INFO - [capture_0_36_1753293703]   Errors: 39 (100.0%)
+2025-07-23 23:47:05,445 - PID:24328 - MainThread - INFO - [capture_0_37_1753293714] Capture successful: 3304943 bytes
+2025-07-23 23:47:05,445 - PID:24328 - MainThread - INFO - [capture_0_37_1753293714] Queued for conversion
+2025-07-23 23:47:05,445 - PID:24268 - MainThread - INFO - [capture_0_37_1753293714] Converting PCAP to CSV
+2025-07-23 23:47:05,446 - PID:24268 - MainThread - INFO - [capture_0_37_1753293714] Converting PCAP to CSV...
+2025-07-23 23:47:06,401 - PID:24268 - MainThread - INFO - [capture_0_37_1753293714] CSV conversion successful: 46 flows
+2025-07-23 23:47:06,401 - PID:24268 - MainThread - INFO - [capture_0_37_1753293714] Queued for prediction
+2025-07-23 23:47:06,401 - PID:22892 - MainThread - INFO - [capture_0_37_1753293714] Processing predictions
+2025-07-23 23:47:06,401 - PID:22892 - MainThread - INFO - [capture_0_37_1753293714] Processing predictions...
+2025-07-23 23:47:06,402 - PID:22892 - MainThread - INFO - [capture_0_37_1753293714] Processing 46 flows (from 46 total)
+2025-07-23 23:47:06,446 - PID:24328 - MainThread - INFO - [capture_0_38_1753293726] Starting capture for 10 seconds...
+2025-07-23 23:47:12,430 - PID:22892 - MainThread - INFO - [capture_0_37_1753293714] Results sent to collector
+2025-07-23 23:47:12,431 - PID:20668 - MainThread - INFO - [capture_0_37_1753293714] RESULTS:
+2025-07-23 23:47:12,431 - PID:20668 - MainThread - INFO - [capture_0_37_1753293714]   Flows: 46
+2025-07-23 23:47:12,432 - PID:20668 - MainThread - INFO - [capture_0_37_1753293714]   Normal: 0 (0.0%)
+2025-07-23 23:47:12,432 - PID:20668 - MainThread - INFO - [capture_0_37_1753293714]   Attack: 0 (0.0%)
+2025-07-23 23:47:12,432 - PID:20668 - MainThread - INFO - [capture_0_37_1753293714]   Errors: 46 (100.0%)
+2025-07-23 23:47:16,989 - PID:24328 - MainThread - INFO - [capture_0_38_1753293726] Capture successful: 3759205 bytes
+2025-07-23 23:47:16,990 - PID:24328 - MainThread - INFO - [capture_0_38_1753293726] Queued for conversion
+2025-07-23 23:47:16,990 - PID:24300 - MainThread - INFO - [capture_0_38_1753293726] Converting PCAP to CSV
+2025-07-23 23:47:16,990 - PID:24300 - MainThread - INFO - [capture_0_38_1753293726] Converting PCAP to CSV...
+2025-07-23 23:47:17,751 - PID:24300 - MainThread - INFO - [capture_0_38_1753293726] CSV conversion successful: 69 flows
+2025-07-23 23:47:17,751 - PID:24300 - MainThread - INFO - [capture_0_38_1753293726] Queued for prediction
+2025-07-23 23:47:17,751 - PID:8976 - MainThread - INFO - [capture_0_38_1753293726] Processing predictions
+2025-07-23 23:47:17,751 - PID:8976 - MainThread - INFO - [capture_0_38_1753293726] Processing predictions...
+2025-07-23 23:47:17,752 - PID:8976 - MainThread - INFO - [capture_0_38_1753293726] Processing 69 flows (from 69 total)
+2025-07-23 23:47:17,991 - PID:24328 - MainThread - INFO - [capture_0_39_1753293737] Starting capture for 10 seconds...
+2025-07-23 23:47:26,418 - PID:8976 - MainThread - INFO - [capture_0_38_1753293726] Results sent to collector
+2025-07-23 23:47:26,419 - PID:20668 - MainThread - INFO - [capture_0_38_1753293726] RESULTS:
+2025-07-23 23:47:26,419 - PID:20668 - MainThread - INFO - [capture_0_38_1753293726]   Flows: 69
+2025-07-23 23:47:26,419 - PID:20668 - MainThread - INFO - [capture_0_38_1753293726]   Normal: 0 (0.0%)
+2025-07-23 23:47:26,419 - PID:20668 - MainThread - INFO - [capture_0_38_1753293726]   Attack: 0 (0.0%)
+2025-07-23 23:47:26,420 - PID:20668 - MainThread - INFO - [capture_0_38_1753293726]   Errors: 69 (100.0%)
+2025-07-23 23:47:28,393 - PID:24328 - MainThread - INFO - [capture_0_39_1753293737] Capture successful: 3293561 bytes
+2025-07-23 23:47:28,393 - PID:24328 - MainThread - INFO - [capture_0_39_1753293737] Queued for conversion
+2025-07-23 23:47:28,393 - PID:24268 - MainThread - INFO - [capture_0_39_1753293737] Converting PCAP to CSV
+2025-07-23 23:47:28,393 - PID:24268 - MainThread - INFO - [capture_0_39_1753293737] Converting PCAP to CSV...
+2025-07-23 23:47:29,177 - PID:24268 - MainThread - INFO - [capture_0_39_1753293737] CSV conversion successful: 51 flows
+2025-07-23 23:47:29,177 - PID:24268 - MainThread - INFO - [capture_0_39_1753293737] Queued for prediction
+2025-07-23 23:47:29,178 - PID:8976 - MainThread - INFO - [capture_0_39_1753293737] Processing predictions
+2025-07-23 23:47:29,178 - PID:8976 - MainThread - INFO - [capture_0_39_1753293737] Processing predictions...
+2025-07-23 23:47:29,179 - PID:8976 - MainThread - INFO - [capture_0_39_1753293737] Processing 51 flows (from 51 total)
+2025-07-23 23:47:29,394 - PID:24328 - MainThread - INFO - [capture_0_40_1753293749] Starting capture for 10 seconds...
+2025-07-23 23:47:29,804 - PID:11308 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-23 23:47:29,804 - PID:11308 - MainThread - INFO - Runtime: 451s
+2025-07-23 23:47:29,804 - PID:11308 - MainThread - INFO - Cycles completed: 38
+2025-07-23 23:47:29,804 - PID:11308 - MainThread - INFO - Total flows processed: 1659
+2025-07-23 23:47:29,804 - PID:11308 - MainThread - INFO - Attacks detected: 0
+2025-07-23 23:47:29,804 - PID:11308 - MainThread - INFO - Errors: 1659
+2025-07-23 23:47:29,804 - PID:11308 - MainThread - INFO - Average flows per cycle: 43.7
+2025-07-23 23:47:29,804 - PID:11308 - MainThread - INFO - Cycles per minute: 5.1
+2025-07-23 23:47:29,805 - PID:11308 - MainThread - INFO - Attack rate: 0.00%
+2025-07-23 23:47:35,575 - PID:8976 - MainThread - INFO - [capture_0_39_1753293737] Results sent to collector
+2025-07-23 23:47:35,576 - PID:20668 - MainThread - INFO - [capture_0_39_1753293737] RESULTS:
+2025-07-23 23:47:35,576 - PID:20668 - MainThread - INFO - [capture_0_39_1753293737]   Flows: 51
+2025-07-23 23:47:35,576 - PID:20668 - MainThread - INFO - [capture_0_39_1753293737]   Normal: 0 (0.0%)
+2025-07-23 23:47:35,576 - PID:20668 - MainThread - INFO - [capture_0_39_1753293737]   Attack: 0 (0.0%)
+2025-07-23 23:47:35,577 - PID:20668 - MainThread - INFO - [capture_0_39_1753293737]   Errors: 51 (100.0%)
+2025-07-23 23:47:39,805 - PID:24328 - MainThread - INFO - [capture_0_40_1753293749] Capture successful: 2283058 bytes
+2025-07-23 23:47:39,806 - PID:24328 - MainThread - INFO - [capture_0_40_1753293749] Queued for conversion
+2025-07-23 23:47:39,806 - PID:24300 - MainThread - INFO - [capture_0_40_1753293749] Converting PCAP to CSV
+2025-07-23 23:47:39,806 - PID:24300 - MainThread - INFO - [capture_0_40_1753293749] Converting PCAP to CSV...
+2025-07-23 23:47:40,638 - PID:24300 - MainThread - INFO - [capture_0_40_1753293749] CSV conversion successful: 56 flows
+2025-07-23 23:47:40,638 - PID:24300 - MainThread - INFO - [capture_0_40_1753293749] Queued for prediction
+2025-07-23 23:47:40,639 - PID:22892 - MainThread - INFO - [capture_0_40_1753293749] Processing predictions
+2025-07-23 23:47:40,639 - PID:22892 - MainThread - INFO - [capture_0_40_1753293749] Processing predictions...
+2025-07-23 23:47:40,640 - PID:22892 - MainThread - INFO - [capture_0_40_1753293749] Processing 56 flows (from 56 total)
+2025-07-23 23:47:40,807 - PID:24328 - MainThread - INFO - [capture_0_41_1753293760] Starting capture for 10 seconds...
+2025-07-23 23:47:47,081 - PID:22892 - MainThread - INFO - [capture_0_40_1753293749] Results sent to collector
+2025-07-23 23:47:47,082 - PID:20668 - MainThread - INFO - [capture_0_40_1753293749] RESULTS:
+2025-07-23 23:47:47,082 - PID:20668 - MainThread - INFO - [capture_0_40_1753293749]   Flows: 56
+2025-07-23 23:47:47,082 - PID:20668 - MainThread - INFO - [capture_0_40_1753293749]   Normal: 0 (0.0%)
+2025-07-23 23:47:47,082 - PID:20668 - MainThread - INFO - [capture_0_40_1753293749]   Attack: 0 (0.0%)
+2025-07-23 23:47:47,082 - PID:20668 - MainThread - INFO - [capture_0_40_1753293749]   Errors: 56 (100.0%)
+2025-07-23 23:47:51,432 - PID:24328 - MainThread - INFO - [capture_0_41_1753293760] Capture successful: 1991226 bytes
+2025-07-23 23:47:51,432 - PID:24328 - MainThread - INFO - [capture_0_41_1753293760] Queued for conversion
+2025-07-23 23:47:51,433 - PID:24268 - MainThread - INFO - [capture_0_41_1753293760] Converting PCAP to CSV
+2025-07-23 23:47:51,433 - PID:24268 - MainThread - INFO - [capture_0_41_1753293760] Converting PCAP to CSV...
+2025-07-23 23:47:52,227 - PID:24268 - MainThread - INFO - [capture_0_41_1753293760] CSV conversion successful: 41 flows
+2025-07-23 23:47:52,227 - PID:24268 - MainThread - INFO - [capture_0_41_1753293760] Queued for prediction
+2025-07-23 23:47:52,228 - PID:8976 - MainThread - INFO - [capture_0_41_1753293760] Processing predictions
+2025-07-23 23:47:52,228 - PID:8976 - MainThread - INFO - [capture_0_41_1753293760] Processing predictions...
+2025-07-23 23:47:52,229 - PID:8976 - MainThread - INFO - [capture_0_41_1753293760] Processing 41 flows (from 41 total)
+2025-07-23 23:47:52,433 - PID:24328 - MainThread - INFO - [capture_0_42_1753293772] Starting capture for 10 seconds...
+2025-07-23 23:47:57,724 - PID:8976 - MainThread - INFO - [capture_0_41_1753293760] Results sent to collector
+2025-07-23 23:47:57,725 - PID:20668 - MainThread - INFO - [capture_0_41_1753293760] RESULTS:
+2025-07-23 23:47:57,725 - PID:20668 - MainThread - INFO - [capture_0_41_1753293760]   Flows: 41
+2025-07-23 23:47:57,725 - PID:20668 - MainThread - INFO - [capture_0_41_1753293760]   Normal: 0 (0.0%)
+2025-07-23 23:47:57,726 - PID:20668 - MainThread - INFO - [capture_0_41_1753293760]   Attack: 0 (0.0%)
+2025-07-23 23:47:57,726 - PID:20668 - MainThread - INFO - [capture_0_41_1753293760]   Errors: 41 (100.0%)
+2025-07-23 23:47:59,805 - PID:11308 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-23 23:47:59,805 - PID:11308 - MainThread - INFO - Runtime: 481s
+2025-07-23 23:47:59,806 - PID:11308 - MainThread - INFO - Cycles completed: 41
+2025-07-23 23:47:59,806 - PID:11308 - MainThread - INFO - Total flows processed: 1807
+2025-07-23 23:47:59,806 - PID:11308 - MainThread - INFO - Attacks detected: 0
+2025-07-23 23:47:59,806 - PID:11308 - MainThread - INFO - Errors: 1807
+2025-07-23 23:47:59,806 - PID:11308 - MainThread - INFO - Average flows per cycle: 44.1
+2025-07-23 23:47:59,806 - PID:11308 - MainThread - INFO - Cycles per minute: 5.1
+2025-07-23 23:47:59,806 - PID:11308 - MainThread - INFO - Attack rate: 0.00%
+2025-07-23 23:48:02,810 - PID:24328 - MainThread - INFO - [capture_0_42_1753293772] Capture successful: 2371994 bytes
+2025-07-23 23:48:02,810 - PID:24328 - MainThread - INFO - [capture_0_42_1753293772] Queued for conversion
+2025-07-23 23:48:02,810 - PID:24300 - MainThread - INFO - [capture_0_42_1753293772] Converting PCAP to CSV
+2025-07-23 23:48:02,810 - PID:24300 - MainThread - INFO - [capture_0_42_1753293772] Converting PCAP to CSV...
+2025-07-23 23:48:03,579 - PID:24300 - MainThread - INFO - [capture_0_42_1753293772] CSV conversion successful: 53 flows
+2025-07-23 23:48:03,579 - PID:24300 - MainThread - INFO - [capture_0_42_1753293772] Queued for prediction
+2025-07-23 23:48:03,580 - PID:22892 - MainThread - INFO - [capture_0_42_1753293772] Processing predictions
+2025-07-23 23:48:03,580 - PID:22892 - MainThread - INFO - [capture_0_42_1753293772] Processing predictions...
+2025-07-23 23:48:03,581 - PID:22892 - MainThread - INFO - [capture_0_42_1753293772] Processing 53 flows (from 53 total)
+2025-07-23 23:48:03,811 - PID:24328 - MainThread - INFO - [capture_0_43_1753293783] Starting capture for 10 seconds...
+2025-07-23 23:48:10,668 - PID:22892 - MainThread - INFO - [capture_0_42_1753293772] Results sent to collector
+2025-07-23 23:48:10,669 - PID:20668 - MainThread - INFO - [capture_0_42_1753293772] RESULTS:
+2025-07-23 23:48:10,670 - PID:20668 - MainThread - INFO - [capture_0_42_1753293772]   Flows: 53
+2025-07-23 23:48:10,670 - PID:20668 - MainThread - INFO - [capture_0_42_1753293772]   Normal: 0 (0.0%)
+2025-07-23 23:48:10,670 - PID:20668 - MainThread - INFO - [capture_0_42_1753293772]   Attack: 0 (0.0%)
+2025-07-23 23:48:10,670 - PID:20668 - MainThread - INFO - [capture_0_42_1753293772]   Errors: 53 (100.0%)
+2025-07-23 23:48:14,167 - PID:24328 - MainThread - INFO - [capture_0_43_1753293783] Capture successful: 3646466 bytes
+2025-07-23 23:48:14,168 - PID:24328 - MainThread - INFO - [capture_0_43_1753293783] Queued for conversion
+2025-07-23 23:48:14,168 - PID:24268 - MainThread - INFO - [capture_0_43_1753293783] Converting PCAP to CSV
+2025-07-23 23:48:14,168 - PID:24268 - MainThread - INFO - [capture_0_43_1753293783] Converting PCAP to CSV...
+2025-07-23 23:48:14,935 - PID:24268 - MainThread - INFO - [capture_0_43_1753293783] CSV conversion successful: 48 flows
+2025-07-23 23:48:14,935 - PID:24268 - MainThread - INFO - [capture_0_43_1753293783] Queued for prediction
+2025-07-23 23:48:14,936 - PID:22892 - MainThread - INFO - [capture_0_43_1753293783] Processing predictions
+2025-07-23 23:48:14,936 - PID:22892 - MainThread - INFO - [capture_0_43_1753293783] Processing predictions...
+2025-07-23 23:48:14,937 - PID:22892 - MainThread - INFO - [capture_0_43_1753293783] Processing 48 flows (from 48 total)
+2025-07-23 23:48:15,168 - PID:24328 - MainThread - INFO - [capture_0_44_1753293795] Starting capture for 10 seconds...
+2025-07-23 23:48:21,331 - PID:22892 - MainThread - INFO - [capture_0_43_1753293783] Results sent to collector
+2025-07-23 23:48:21,332 - PID:20668 - MainThread - INFO - [capture_0_43_1753293783] RESULTS:
+2025-07-23 23:48:21,332 - PID:20668 - MainThread - INFO - [capture_0_43_1753293783]   Flows: 48
+2025-07-23 23:48:21,332 - PID:20668 - MainThread - INFO - [capture_0_43_1753293783]   Normal: 0 (0.0%)
+2025-07-23 23:48:21,332 - PID:20668 - MainThread - INFO - [capture_0_43_1753293783]   Attack: 0 (0.0%)
+2025-07-23 23:48:21,332 - PID:20668 - MainThread - INFO - [capture_0_43_1753293783]   Errors: 48 (100.0%)
+2025-07-23 23:48:25,643 - PID:24328 - MainThread - INFO - [capture_0_44_1753293795] Capture successful: 3203294 bytes
+2025-07-23 23:48:25,643 - PID:24328 - MainThread - INFO - [capture_0_44_1753293795] Queued for conversion
+2025-07-23 23:48:25,644 - PID:24300 - MainThread - INFO - [capture_0_44_1753293795] Converting PCAP to CSV
+2025-07-23 23:48:25,644 - PID:24300 - MainThread - INFO - [capture_0_44_1753293795] Converting PCAP to CSV...
+2025-07-23 23:48:26,585 - PID:24300 - MainThread - INFO - [capture_0_44_1753293795] CSV conversion successful: 66 flows
+2025-07-23 23:48:26,585 - PID:24300 - MainThread - INFO - [capture_0_44_1753293795] Queued for prediction
+2025-07-23 23:48:26,585 - PID:8976 - MainThread - INFO - [capture_0_44_1753293795] Processing predictions
+2025-07-23 23:48:26,585 - PID:8976 - MainThread - INFO - [capture_0_44_1753293795] Processing predictions...
+2025-07-23 23:48:26,587 - PID:8976 - MainThread - INFO - [capture_0_44_1753293795] Processing 66 flows (from 66 total)
+2025-07-23 23:48:26,644 - PID:24328 - MainThread - INFO - [capture_0_45_1753293806] Starting capture for 10 seconds...
+2025-07-23 23:48:29,807 - PID:11308 - MainThread - INFO - === SYSTEM STATISTICS ===
+2025-07-23 23:48:29,807 - PID:11308 - MainThread - INFO - Runtime: 511s
+2025-07-23 23:48:29,807 - PID:11308 - MainThread - INFO - Cycles completed: 43
+2025-07-23 23:48:29,807 - PID:11308 - MainThread - INFO - Total flows processed: 1908
+2025-07-23 23:48:29,807 - PID:11308 - MainThread - INFO - Attacks detected: 0
+2025-07-23 23:48:29,808 - PID:11308 - MainThread - INFO - Errors: 1908
+2025-07-23 23:48:29,808 - PID:11308 - MainThread - INFO - Average flows per cycle: 44.4
+2025-07-23 23:48:29,808 - PID:11308 - MainThread - INFO - Cycles per minute: 5.0
+2025-07-23 23:48:29,808 - PID:11308 - MainThread - INFO - Attack rate: 0.00%
+2025-07-23 23:48:35,148 - PID:8976 - MainThread - INFO - [capture_0_44_1753293795] Results sent to collector
+2025-07-23 23:48:35,149 - PID:20668 - MainThread - INFO - [capture_0_44_1753293795] RESULTS:
+2025-07-23 23:48:35,149 - PID:20668 - MainThread - INFO - [capture_0_44_1753293795]   Flows: 66
+2025-07-23 23:48:35,149 - PID:20668 - MainThread - INFO - [capture_0_44_1753293795]   Normal: 0 (0.0%)
+2025-07-23 23:48:35,149 - PID:20668 - MainThread - INFO - [capture_0_44_1753293795]   Attack: 0 (0.0%)
+2025-07-23 23:48:35,149 - PID:20668 - MainThread - INFO - [capture_0_44_1753293795]   Errors: 66 (100.0%)
+2025-07-23 23:48:37,099 - PID:24328 - MainThread - INFO - [capture_0_45_1753293806] Capture successful: 1638045 bytes
+2025-07-23 23:48:37,099 - PID:24328 - MainThread - INFO - [capture_0_45_1753293806] Queued for conversion
+2025-07-23 23:48:37,099 - PID:24268 - MainThread - INFO - [capture_0_45_1753293806] Converting PCAP to CSV
+2025-07-23 23:48:37,099 - PID:24268 - MainThread - INFO - [capture_0_45_1753293806] Converting PCAP to CSV...
+2025-07-23 23:48:37,855 - PID:24268 - MainThread - INFO - [capture_0_45_1753293806] CSV conversion successful: 43 flows
+2025-07-23 23:48:37,856 - PID:24268 - MainThread - INFO - [capture_0_45_1753293806] Queued for prediction
+2025-07-23 23:48:37,856 - PID:8976 - MainThread - INFO - [capture_0_45_1753293806] Processing predictions
+2025-07-23 23:48:37,856 - PID:8976 - MainThread - INFO - [capture_0_45_1753293806] Processing predictions...
+2025-07-23 23:48:37,857 - PID:8976 - MainThread - INFO - [capture_0_45_1753293806] Processing 43 flows (from 43 total)
+2025-07-23 23:48:38,100 - PID:24328 - MainThread - INFO - [capture_0_46_1753293818] Starting capture for 10 seconds...
+2025-07-23 23:48:39,159 - PID:24300 - MainThread - INFO - Conversion worker 0 shutting down
+2025-07-23 23:48:39,159 - PID:20668 - MainThread - INFO - Result collector shutting down
+2025-07-23 23:48:39,159 - PID:11308 - MainThread - INFO - Stats reporter shutting down
+2025-07-23 23:48:39,159 - PID:24228 - MainThread - INFO - Received signal 2, initiating shutdown...
+2025-07-23 23:48:39,159 - PID:24268 - MainThread - INFO - Conversion worker 1 shutting down
+2025-07-23 23:48:39,160 - PID:22892 - MainThread - INFO - Prediction worker 0 shutting down
+2025-07-23 23:48:39,162 - PID:24228 - MainThread - INFO - Initiating graceful shutdown...
+2025-07-23 23:48:39,270 - PID:24328 - MainThread - INFO - Capture worker 0 shutting down
+2025-07-23 23:48:43,249 - PID:8976 - MainThread - INFO - Prediction worker 1 shutting down
+2025-07-23 23:48:43,834 - PID:24228 - MainThread - INFO - Received signal 2, initiating shutdown...
+2025-07-23 23:48:43,834 - PID:24228 - MainThread - INFO - Initiating graceful shutdown...
+2025-07-23 23:48:43,834 - PID:24228 - MainThread - INFO - All processes stopped
+2025-07-23 23:48:43,834 - PID:24228 - MainThread - INFO - Initiating graceful shutdown...
+2025-07-23 23:48:43,835 - PID:24228 - MainThread - INFO - All processes stopped
+2025-07-23 23:48:43,835 - PID:24228 - MainThread - INFO - === System shutdown complete ===
